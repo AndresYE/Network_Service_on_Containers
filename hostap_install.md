@@ -1,15 +1,18 @@
 # Cómo instalar hostapd en Debian
 
-Esta guía te mostrará cómo instalar y desinstalar hostapd en Ubuntu.
+Esta guía te mostrará cómo instalar y desinstalar hostapd en Debian.
 
 ## Instalación
 
-Para instalar hostapd en Debian 11, sigue estos pasos:
+Para instalar hostapd en Debian, sigue estos pasos:
 
 1. Abre una terminal.
-2. Ejecuta los siguientes comandos:
+2. Actualiza la lista de paquetes disponibles en los repositorios de Debian:
 ```shell
 sudo apt-get update
+```
+3. Instalar el paquete hostapd en tu sistema:
+```shell
 sudo apt-get install hostapd
 ```
 
