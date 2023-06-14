@@ -50,7 +50,7 @@ sudo service hostapd restart
 
 5. **Paso 5**: Hbailitamos el servicio para que se ejecute al inicio de la sesión del host.
 ```shell
-sudo service hostapd enable
+sudo service hostapd enable 
 ```
 6. **Paso 6**: Verifica que la configuración se haya aplicado correctamente. Puedes revisar los registros o logs del servicio para obtener información adicional sobre el estado de la conexión y cualquier posible error. 
 
