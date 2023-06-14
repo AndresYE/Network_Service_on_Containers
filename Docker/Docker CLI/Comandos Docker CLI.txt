@@ -1,0 +1,76 @@
+#################################################################################################################################
+#                                                                       							#
+#						Servicios basados en Contenedores                				#
+#                                                                        							#
+#################################################################################################################################
+#					Universidad: Escuela Politécnica Nacional						#
+#																#
+#                                                                        							#
+# 						Autor: Andrés Lenin Yazán Endara                                 		#
+#                                                                        							#
+# 					 Archivo: Comandos para la ejecución de contenedores Docker                             #
+#                                                                        							#
+# 							Versión: 1.0                                    			#  
+#                                                                        							#
+# 						Fecha de Creación: 01/07/2023                                          		#
+#                                                                        							#
+#################################################################################################################################
+
+Descripción de la script:
+Breve descripción de la funcionalidad y el propósito de la script.
+
+Características principales:
+- Característica 1: Descripción de la característica 1.
+- Característica 2: Descripción de la característica 2.
+- Característica 3: Descripción de la característica 3.
+- Característica 4: Descripción de la característica 4.
+
+Uso:
+Instrucciones claras y concisas sobre cómo utilizar la script, incluyendo los comandos o parámetros necesarios.
+
+Ejemplos de uso:
+Aquí se proporcionan algunos ejemplos de cómo ejecutar la script y qué resultados esperar.
+
+Notas adicionales:
+Cualquier información adicional relevante o consideraciones especiales
+#################################################################################################################################
+
+
+Comandos de la script:
+
+# Comando 1: Comando para ejecutar el servicio DHCP sobre contenedor Docker para la interfaz WLAN0 
+
+docker run -dit -e IPV4_IFDHCP=wlan0 -e IPV4_SUBNET=192.168.0.0 -e MIN_IPV4_ADDRESS=192.168.0.10 -e MAX_IPV4_ADDRESS=192.168.0.100 -e IPV4_ROUTER=192.168.0.1 --net=host --name dhcp_server_eth0 andresye/dhcpd
+
+# Comando 2: Comando para ejecutar el servicio DNS sobre contenedor Docker para la interfaz WLAN0 
+
+docker run -dit --net=host --name dns_server andresye/bind
+
+# Comando 3: Comando para ejecutar el servicio FTP sobre contenedor Docker para la interfaz WLAN0 
+
+
+
+# Comando 4: Comando para ejecutar el servicio WEB sobre contenedor Docker para la interfaz WLAN0 
+
+docker run -dit --net=host --name web_server andresye/nginx
+
+# Comando 5: Comando para ejecutar el servicio VoIP sobre contenedor Docker para la interfaz WLAN0 
+
+docker run -dit --net host -v ~/asteriskconfig:/etc/asterisk -v /home/pi/Desktop/Andres-TIC2023/Docker\ DockerFile/VoIP/extensions.conf:/etc/asterisk/extensions.conf -v /home/pi/Desktop/Andres-TIC2023/Docker\ DockerFile/VoIP/sip.conf:/etc/asterisk/sip.conf --name voip_server christoofar/asterisk
+
+# Comando 5: Comando para ejecutar el servicio Routing sobre contenedor Docker para las interfaces ETH0/ETH1/ETH2
+
+docker run -dit --net host --privileged --name frrrouter frrouting/frr:v7.5.1
+
+# Comando 6: Comando para ejecutar el servicio DHCP sobre contenedor Docker para la interfaz ETH0
+
+docker run -dit -e IPV4_IFDHCP=eth0 -e IPV4_SUBNET=192.168.1.0 -e MIN_IPV4_ADDRESS=192.168.1.10 -e MAX_IPV4_ADDRESS=192.168.1.100 -e IPV4_ROUTER=192.168.1.1 --net=host --name dhcp_server_eth0 andresye/dhcpd
+
+# Comando 6: Comando para ejecutar el servicio DHCP sobre contenedor Docker para la interfaz ETH1
+
+docker run -dit -e IPV4_IFDHCP=eth1 -e IPV4_SUBNET=192.168.2.0 -e MIN_IPV4_ADDRESS=192.168.2.10 -e MAX_IPV4_ADDRESS=192.168.2.100 -e IPV4_ROUTER=192.168.2.1 --net=host --name dhcp_server_eth1 andresye/dhcpd
+
+# Comando 6: Comando para ejecutar el servicio DHCP sobre contenedor Docker para la interfaz ETH2
+
+docker run -dit -e IPV4_IFDHCP=eth2 -e IPV4_SUBNET=192.168.3.0 -e MIN_IPV4_ADDRESS=192.168.3.10 -e MAX_IPV4_ADDRESS=192.168.3.100 -e IPV4_ROUTER=192.168.3.1 --net=host --name dhcp_server_eth2 andresye/dhcpd
+
