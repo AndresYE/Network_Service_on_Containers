@@ -19,7 +19,7 @@ sudo apt-get install hostapd
 ```shell
 service hostapd status
 ```
-# Configuración de Hostap
+## Configuración de Hostap
 
 Sigue estos pasos para configurar Hostap en tu sistema:
 
