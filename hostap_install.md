@@ -11,7 +11,7 @@ Para instalar hostapd en Debian, sigue estos pasos:
 ```shell
 sudo apt-get update
 ```
-3. Instalar el paquete hostapd en tu sistema:
+3. Instala el paquete hostapd en tu sistema:
 ```shell
 sudo apt-get install hostapd
 ```
@@ -22,7 +22,20 @@ Sigue estos pasos para configurar Hostap en tu sistema:
 
 1. **Paso 1**: Abre el archivo de configuración de Hostap. Puedes encontrarlo en la ruta `/etc/hostapd/hostapd.conf`.
 
-2. **Paso 2**: Edita el archivo de configuración según tus necesidades. Aquí puedes especificar el nombre de la red (SSID), el tipo de seguridad, la contraseña, el canal, entre otras opciones. Asegúrate de seguir el formato adecuado y guarda los cambios.
+2. **Paso 2**: Edita el archivo de configuración según tus necesidades. Aquí puedes especificar el nombre de la red (SSID), el tipo de seguridad, la contraseña, el canal, entre otras opciones. A continuación, se describe la configuración implementada.
+
+```shell
+interface=wlan0
+driver=nl80211
+ssid=NombreDelHotspot
+hw_mode=g
+channel=7
+wpa=2
+wpa_passphrase=ContraseñaDelHotspot
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=CCMP
+rsn_pairwise=CCMP
+```
 
 3. **Paso 3**: Reinicia el servicio de Hostapd para aplicar los cambios realizados en la configuración. Puedes hacerlo ejecutando el siguiente comando en la terminal:
 ```shell
