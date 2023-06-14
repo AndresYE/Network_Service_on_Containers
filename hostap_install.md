@@ -52,7 +52,7 @@ sudo service hostapd restart
 ```shell
 sudo service hostapd enable
 ```
-6. **Paso 6**: Verifica que la configuración se haya aplicado correctamente. Puedes revisar los registros o logs del servicio para obtener información adicional sobre el estado de la conexión y cualquier posible error.
+6. **Paso 6**: Verifica que la configuración se haya aplicado correctamente. Puedes revisar los registros o logs del servicio para obtener información adicional sobre el estado de la conexión y cualquier posible error. 
 
 ## Uso
 
