@@ -12,13 +12,22 @@ Para instalar hostapd en Debian 11, sigue estos pasos:
 sudo apt-get update
 sudo apt-get install hostapd
 ```
-## Configuración
 
-Después de completar la instalación, sigue estos pasos para configurar Hostapd:
+# Configuración de Hostap
 
-1. Paso 1: Primer paso de configuración
-2. Paso 2: Segundo paso de configuración
-3. Paso 3: Tercer paso de configuración
+Sigue estos pasos para configurar Hostap en tu sistema:
+
+1. **Paso 1**: Abre el archivo de configuración de Hostap. Puedes encontrarlo en la ruta `/etc/hostapd/hostapd.conf`.
+
+2. **Paso 2**: Edita el archivo de configuración según tus necesidades. Aquí puedes especificar el nombre de la red (SSID), el tipo de seguridad, la contraseña, el canal, entre otras opciones. Asegúrate de seguir el formato adecuado y guarda los cambios.
+
+3. **Paso 3**: Reinicia el servicio de Hostapd para aplicar los cambios realizados en la configuración. Puedes hacerlo ejecutando el siguiente comando en la terminal:
+```shell
+sudo service hostapd restart
+```
+
+4. **Paso 4**: Verifica que la configuración se haya aplicado correctamente. Puedes revisar los registros o logs del servicio para obtener información adicional sobre el estado de la conexión y cualquier posible error.
+
 
 ## Uso
 
