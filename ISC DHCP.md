@@ -28,3 +28,21 @@ El Servicio DHCP ISC puede implementarse en diferentes escenarios de red, incluy
 3. Proveedores de servicios de Internet (ISP): Los ISP pueden utilizar el Servicio DHCP ISC para asignar direcciones IP a sus clientes y proporcionar configuraciones de red personalizadas.
 
 En resumen, el Servicio DHCP ISC es una herramienta esencial en la administración de redes, permitiendo una asignación automática y eficiente de direcciones IP y otros pará
+
+# Archivos principales de DHCP
+
+A continuación se muestran los archivos principales utilizados en el servicio DHCP, junto con sus descripciones:
+
+| Archivo        | Descripción                                           |
+| -------------- | ----------------------------------------------------- |
+| dhcpd.conf     | Archivo de configuración principal del servidor DHCP.  |
+| dhcpd.leases   | Archivo que registra los arrendamientos de direcciones IP realizados por el servidor DHCP. |
+| dhcpd.pid      | Archivo que almacena el ID de proceso del servidor DHCP en ejecución. |
+| dhcpd.options  | Archivo de opciones de configuración global del servidor DHCP. |
+| dhcpd6.conf    | Archivo de configuración principal para DHCPv6 (Protocolo de Configuración Dinámica de Host versión 6). |
+| dhcpd6.leases  | Archivo que registra los arrendamientos de direcciones IPv6 realizados por el servidor DHCPv6. |
+| dhcpd6.options | Archivo de opciones de configuración global para DHCPv6. |
+| dhclient.conf  | Archivo de configuración del cliente DHCP utilizado para configurar la interfaz de red de un cliente. |
+| dhclient.leases | Archivo que registra los arrendamientos de direcciones IP obtenidos por el cliente DHCP. |
+| dhclient6.conf | Archivo de configuración del cliente DHCPv6 utilizado para configurar la interfaz de red de un cliente IPv6. |
+
