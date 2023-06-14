@@ -11,7 +11,7 @@ Para instalar hostapd en Ubuntu, sigue estos pasos:
 ```shell
 sudo apt-get update
 sudo apt-get install hostapd
-shell```
+shell´´´
 ## Configuración
 
 Después de completar la instalación, sigue estos pasos para configurar Hostapd:
