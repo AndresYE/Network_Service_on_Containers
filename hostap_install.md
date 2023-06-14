@@ -1,21 +1,16 @@
-# Guía de instalación de Hostapd
+# Cómo instalar hostapd en Debian
 
-Esta es una guía paso a paso para instalar y configurar Hostapd en tu sistema.
-
-## Requisitos previos
-
-Asegúrate de tener los siguientes requisitos previos antes de comenzar la instalación:
-
-- [Sistema operativo compatible](https://howtoinstall.co/es/hostapd)
-- Otros requisitos previos (menciona cualquier requisito adicional)
+Esta guía te mostrará cómo instalar y desinstalar hostapd en Ubuntu.
 
 ## Instalación
 
-Sigue estos pasos para instalar Hostapd en tu sistema:
+Para instalar hostapd en Ubuntu, sigue estos pasos:
 
-1. Paso 1: Primer paso de instalación
-2. Paso 2: Segundo paso de instalación
-3. Paso 3: Tercer paso de instalación
+1. Abre una terminal.
+2. Ejecuta los siguientes comandos:
+```shell
+sudo apt-get update
+sudo apt-get install hostapd
 
 ## Configuración
 
