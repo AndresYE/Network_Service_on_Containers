@@ -45,7 +45,7 @@ rsn_pairwise=CCMP
 sudo service hostapd restart
 ```
 
-4. **Paso 4**: Hbailitamos el servicio para que se ejecute en el reinicio del sistema.
+4. **Paso 4**: Hbailitamos el servicio para que se ejecute al inicio de la sesión del host.
 ```shell
 sudo service hostapd enable
 ```
