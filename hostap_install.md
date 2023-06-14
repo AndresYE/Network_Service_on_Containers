@@ -39,17 +39,20 @@ wpa_key_mgmt=WPA-PSK
 wpa_pairwise=CCMP
 rsn_pairwise=CCMP
 ```
-
-3. **Paso 3**: Reinicia el servicio de Hostapd para aplicar los cambios realizados en la configuración. Puedes hacerlo ejecutando el siguiente comando en la terminal:
+3. **Paso 3**: Desenmascarar servicio Hostap, para poder habilitar servicio.
+```shell
+sudo systemctl unmask hostapd
+```
+4. **Paso 4**: Reinicia el servicio de Hostapd para aplicar los cambios realizados en la configuración. Puedes hacerlo ejecutando el siguiente comando en la terminal:
 ```shell
 sudo service hostapd restart
 ```
 
-4. **Paso 4**: Hbailitamos el servicio para que se ejecute al inicio de la sesión del host.
+5. **Paso 5**: Hbailitamos el servicio para que se ejecute al inicio de la sesión del host.
 ```shell
 sudo service hostapd enable
 ```
-5. **Paso 5**: Verifica que la configuración se haya aplicado correctamente. Puedes revisar los registros o logs del servicio para obtener información adicional sobre el estado de la conexión y cualquier posible error.
+6. **Paso 6**: Verifica que la configuración se haya aplicado correctamente. Puedes revisar los registros o logs del servicio para obtener información adicional sobre el estado de la conexión y cualquier posible error.
 
 ## Uso
 
