@@ -15,7 +15,10 @@ sudo apt-get update
 ```shell
 sudo apt-get install hostapd
 ```
-
+4. Verifica la instalación del paquete hostapd:
+```shell
+service hostapd status
+```
 # Configuración de Hostap
 
 Sigue estos pasos para configurar Hostap en tu sistema:
