@@ -45,8 +45,11 @@ rsn_pairwise=CCMP
 sudo service hostapd restart
 ```
 
-4. **Paso 4**: Verifica que la configuración se haya aplicado correctamente. Puedes revisar los registros o logs del servicio para obtener información adicional sobre el estado de la conexión y cualquier posible error.
-
+4. **Paso 4**: Hbailitamos el servicio para que se ejecute en el reinicio del sistema.
+```shell
+sudo service hostapd enable
+```
+5. **Paso 5**: Verifica que la configuración se haya aplicado correctamente. Puedes revisar los registros o logs del servicio para obtener información adicional sobre el estado de la conexión y cualquier posible error.
 
 ## Uso
 
