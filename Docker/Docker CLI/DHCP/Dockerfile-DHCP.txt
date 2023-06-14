@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+						Dockerfile: DHCP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+###### Referencias Dockerfile
+#  DockerFile DHCP, DNS, FTP, HTTP
+https://karneliuk.com/2019/04/building-zero-touch-provisioning-infrastructur-dhcp-dns-ftp-http-with-netbox-docker-and-ansible-for-arista-eos-cumulus-linux-cisco-ios-xr-and-nokia-sr-os/
+
+
+# DHCP ALPINE
+https://www.hiroom2.com/2017/08/22/alpinelinux-3-6-dhcp-en/
+# DHCP
+https://hcastellon.wordpress.com/2021/06/21/implementacion-servidor-dhcp-contenedor/
+# DHCP ALPINE
+https://github.com/wastrachan/docker-dhcpd/blob/master/Dockerfile
+# DHCP UBUNTU
+https://github.com/networkboot/docker-dhcpd/blob/master/Dockerfile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Comando Dockerfile %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Imagen de Contenedor: andresye/dhcpd
+Nombre de Contenedor: dhcp_server
+
+docker run -it  --net=host --name serverdhcp andresye/dhcpd
+docker run -e IPV4_IFDHCP=eth=eth0 -e IPV4_SUBNET=192.168.1.0 -e MIN_IPV4_ADDRESS=192.168.1.10 -e MAX_IPV4_ADDRESS=192.168.1.100 -e IPV4_ROUTER=192.168.1.1 -dit --net=host --name sdhcpeth0 andresye/dhcpd
+docker run -e IPV4_IFDHCP=eth=eth1 -e IPV4_SUBNET=192.168.2.0 -e MIN_IPV4_ADDRESS=192.168.2.10 -e MAX_IPV4_ADDRESS=192.168.2.100 -e IPV4_ROUTER=192.168.2.1 -dit --net=host --name sdhcpeth1 andresye/dhcpd
+docker run -e IPV4_IFDHCP=eth=eth2 -e IPV4_SUBNET=192.168.3.0 -e MIN_IPV4_ADDRESS=192.168.3.10 -e MAX_IPV4_ADDRESS=192.168.2.100 -e IPV4_ROUTER=192.168.3.1 -dit --net=host --name sdhcpeth2 andresye/dhcpd
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ERRORES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+permisos root:root de dhcpd.leases, para editar el archivo en ejecución
+Problemas de establecer interfaz de escucha de peticiones
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DOCUMENTACIÓN DHCP%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+https://gist.github.com/mikejoh/04978da4d52447ead7bdd045e878587d

@@ -1,0 +1,52 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;                                                		                                                                         ;
+;                                          		 Servicios basados en Contenedores                                               ;
+;                                                 		                                                                         ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;                                                                                                                           	 ;
+;                                         Universidad: Escuela Politécnica Nacional                                              ;
+;                                                                                                                                ;
+;                                                                                                                                ;
+;                                             Autor: Andrés Lenin Yazán Endara                                                   ;
+;                                                                                                                                ;
+;                       Archivo: "TIC2023.com.db"  Configuración de Zona Directa de servicio DNS Bind                            ;
+;                                                                                                                                ;
+;                                                                                                                                ;
+;                                               		Versión: 1.0                                                             ;
+;                                                                                                                                ;
+;                                              Fecha de Creación: 01/07/2023                                                     ;
+;                                                                                                                                ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	TIC2023.com. root.TIC2023.com. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+;@	IN	NS	localhost.
+;@	IN	A	127.0.0.1
+;@	IN	AAAA	::1
+
+;Información del Servidor DNS  Autoritario de la zona
+@		IN      NS      ns1.TIC2023.com.
+
+;Asignar dirección IPv4 a un nombre de dominio para el Servidor DNS
+ns1.TIC2023.com.     IN      A       192.168.0.2
+;Asignar dirección IPv4 a un nombre de dominio para el Servidor DHCP 
+dhcp.TIC2023.com.    IN      A       192.168.0.3
+;Asignar dirección IPv4 a un nombre de dominio para el Servidor FTP
+ftp.TIC2023.com.     IN      A       192.168.0.4
+;Asignar dirección IPv4 a un nombre de dominio para el Servidor WEB
+www.TIC2023.com.     IN      A       192.168.0.5
+;Asignar alias para un nombre de dominio de los Servidores Web Virtuales web1 y web2
+web1.TIC2023.com.    IN      CNAME   www.TIC2023.com.
+web2.TIC2023.com.    IN      CNAME   www.TIC2023.com. 
+;Asignar dirección IPv4 a un nombre de dominio para el Servidor VoIP 
+voip.TIC2023.com.     IN      A       192.168.0.6
