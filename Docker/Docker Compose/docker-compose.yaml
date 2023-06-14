@@ -1,0 +1,117 @@
+version: "2.0"
+services:
+  switch_server:
+  #Contrucción de Imagen
+    #build:
+    #Path relativo de Dockerfile
+    #  context: .
+    #Nombre alternativo de Dockerfile
+    #  dockerfile: ./Dockerfile
+    #Argumentos de construcción de Dockerfile
+    #  args:
+    image: openvswitch/ovs:2.11.2_debian
+    network_mode: "host"
+    #image: servicefractal/ovs
+    container_name: ovsserver_Compose
+    entrypoint:
+      - start-ovs
+      - ovs-vswitchd
+    deploy:
+      replicas: 1
+    depends_on:
+      - switch_db
+    #ports:
+    #Contenedores Dependientes
+    #Errores en redes Host y 
+    
+    #links:
+    #  - web
+    #  - dhcp
+    #  - dns
+    #  - ftp
+  switch_db:
+    image: openvswitch/ovs:2.11.2_debian
+    #image: servicefractal/ovs
+    container_name: ovsdb_Compose
+    entrypoint:
+      - start-ovs
+      - ovsdb-server
+    deploy:
+      replicas: 1
+  web:
+#Contrucción de Imagen
+    #build:
+    #Path relativo de Dockerfile
+    #  context: .
+    #Nombre alternativo de Dockerfile
+    #  dockerfile: ./Dockerfile
+    #Argumentos de construcción de Dockerfile
+    #  args:
+
+#Pull de Docker Hub
+    image: andresye/nginx
+    container_name: Nginx_Server_Compose
+    dns:
+      - 192.168.0.2
+      - 1.1.1.1
+      - 8.8.8.8
+          #dns_opt
+    #dns_search
+    #domain_name
+    network_mode: "host"
+    deploy:
+      replicas: 1
+    ports:
+      - 80/tcp
+      - 80/udp
+      - 443/tcp
+      - 443/udp
+    #depends_on:
+     # - switch_server
+    #volumes: 
+    #  - ./usr/share/nginx:./usr/share/nginx
+    #  - ./etc/nginx/nginx.conf:./host/path/nginx.conf
+    #  - ./etc/nginx/sites-E:./etc/nginx/sites-E
+    #  - ./var/log/nginx:./var/log/nginx
+ 
+  dhcp: 
+    image: andresye/dhcpd
+    container_name: Dhcp_Server_Compose
+    network_mode: "host"
+    deploy:
+      replicas: 1
+    ports:
+      - 67/udp   
+      - 68/udp
+      - 547/tcp
+      - 547/udp
+      - 546/tcp
+      - 546/udp
+    #depends_on:
+    #  - switch_server
+  dns:  
+    image: andresye/bind
+    container_name: DNS_Server_Compose
+    network_mode: "host"
+    deploy:
+      replicas: 1
+    ports:
+      - 53/tcp 
+      - 53/udp
+    #depends_on:
+    #  - switch_server
+  ftp:
+    image: andresye/vsftpd
+    container_name: FTP_Server_Compose
+    network_mode: "host"
+    deploy:
+      replicas: 1
+    ports:
+      - 20/udp
+      - 20/tcp
+      - 21/udp
+      - 21/tcp
+      - 21000-21110
+    #depends_on:
+    #  - switch_server
+
