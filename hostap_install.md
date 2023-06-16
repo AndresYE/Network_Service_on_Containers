@@ -29,12 +29,14 @@ Sigue estos pasos para configurar Hostap en tu sistema:
 
 ```shell
 interface=wlan0
-driver=nl80211
-ssid=NombreDelHotspot
+ssid=RPI-DOCKER
 hw_mode=g
-channel=7
+channel=4
+macaddr_acl=0
+auth_algs=1
+ignore_broadcast_ssid=0
 wpa=2
-wpa_passphrase=ContraseñaDelHotspot
+wpa_passphrase=1234567890
 wpa_key_mgmt=WPA-PSK
 wpa_pairwise=CCMP
 rsn_pairwise=CCMP
