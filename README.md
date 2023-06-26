@@ -44,8 +44,7 @@ Sigue las instrucciones proporcionadas en cada carpeta para configurar y despleg
 
 ## Topología
 La topología a implementar es la siguiente:
-![Figura 2 13](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/352e3110-65ab-479f-b36f-d92efeed9b91)
-
+![Figura 2 13](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/2eb564ed-30d2-4953-a3a2-b7ad96e34c54)
 
 ## Recursos adicionales
 
