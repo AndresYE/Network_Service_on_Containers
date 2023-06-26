@@ -49,15 +49,6 @@ La topología a implementar es la siguiente:
 # Características de Servicios y Contenedores
 
 A continuación se muestra una tabla con los servicios, las etiquetas de imagen, los nombres de contenedor y los nombres de los volúmenes con nombre correspondientes:
-dhcp_wlan0_leasess_volumen
-
-dhcp_eth0_leasess_volumen
-
-dhcp_eth1_leasess_volumen
-
-dhcp_eth2_leasess_volumen
-dhcp_eth2_logs_volumen
-
 
 | Servicio | Nombre de etiqueta de imagen | Nombre de contenedor | Nombre de volumen              |
 |----------|------------------------------|---------------------|---------------------------------------|
