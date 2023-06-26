@@ -46,6 +46,33 @@ Sigue las instrucciones proporcionadas en cada carpeta para configurar y despleg
 La topología a implementar es la siguiente:
 ![Figura 2 13](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/2eb564ed-30d2-4953-a3a2-b7ad96e34c54)
 
+# Características de Servicios y Contenedores
+
+A continuación se muestra una tabla con los servicios, las etiquetas de imagen, los nombres de contenedor y los nombres de los volúmenes con nombre correspondientes:
+dhcp_wlan0_leasess_volumen
+
+dhcp_eth0_leasess_volumen
+
+dhcp_eth1_leasess_volumen
+
+dhcp_eth2_leasess_volumen
+dhcp_eth2_logs_volumen
+
+
+| Servicio | Nombre de etiqueta de imagen | Nombre de contenedor | Nombre de named_volumes              |
+|----------|------------------------------|---------------------|---------------------------------------|
+| DHCP 0   | andresye/dhcpd               | dhcp_server_wlan0   | dhcp_wlan0_leasess_volumen    dhcp_wlan0_logs_volumen       |
+| DHCP 1   | andresye/dhcpd               | dhcp_server_eth0    | dhcp_eth0_leasess_volumen     dhcp_eth0_logs_volumen        |
+| DHCP 2   | andresye/dhcpd               | dhcp_server_eth1    | dhcp_eth1_leasess_volumen     dhcp_eth1_logs_volumen        |
+| DHCP 3   | andresye/dhcpd               | dhcp_server_eth2    | dhcp_eth2_leasess_volumen     dhcp_eth2_logs_volumen        |
+| DNS      | andresye/bind                | dns_server          | dns_logs_volumen                      |
+| FTP      | andresye/vsftpd              | ftp_server          | ftp_logs_volumen                      |
+| HTTP     | andresye/nginx               | http_server         | http_logs_volumen                     |
+| VoIP     | christoofar/asterisk         | voip_server         | voip_logs_volumen, voip_qos_volumen   |
+| Routing  | frrouting/frr:v7.5.1         | routing_server      | routing_logs_volumen                  |
+
+
+
 ## Recursos adicionales
 
 Aquí hay algunos enlaces útiles relacionados con los temas cubiertos en este proyecto:
