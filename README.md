@@ -42,6 +42,10 @@ Sigue las instrucciones proporcionadas en cada subcarpeta del repositorio para c
 
 Sigue las instrucciones proporcionadas en cada carpeta para configurar y desplegar los servicios de red deseados en tu entorno.
 
+## Topología
+La topología a implementar es la siguiente:
+![Figura 2 13](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/352e3110-65ab-479f-b36f-d92efeed9b91)
+
 
 ## Recursos adicionales
 
