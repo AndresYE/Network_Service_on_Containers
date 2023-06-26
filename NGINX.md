@@ -32,7 +32,25 @@ NGINX se puede implementar en varios escenarios, incluyendo:
 3. **Servidor de archivos estáticos**: NGINX puede servir contenido estático directamente sin pasar la solicitud a servidores backend.
 4. **Servidor de caché**: Puede configurarse como un servidor de caché para almacenar en caché contenido estático y reducir la carga en los servidores backend.
 5. **Servidor de equilibrio de carga**: Puede distribuir el tráfico de manera equilibrada entre varios servidores backend para mejorar la disponibilidad y el rendimiento.
+## Archivos Principales de NGINX
+
+A continuación se muestra una tabla que describe los archivos principales utilizados en NGINX:
+
+| Archivo             | Descripción                                                     |
+|---------------------|-----------------------------------------------------------------|
+| nginx.conf          | Archivo de configuración principal de NGINX                      |
+| mime.types          | Archivo que mapea las extensiones de archivo a los tipos MIME    |
+| fastcgi_params      | Archivo de configuración para los parámetros de FastCGI          |
+| proxy_params        | Archivo de configuración para los parámetros del proxy           |
+| ssl_certificate    | Certificado SSL utilizado para habilitar el cifrado HTTPS        |
+| ssl_certificate_key | Clave privada correspondiente al certificado SSL                 |
+| sites-available    | Directorio que contiene los archivos de configuración de sitios disponibles |
+| sites-enabled      | Directorio que contiene los enlaces simbólicos a los sitios activos |
+| conf.d              | Directorio utilizado para almacenar archivos de configuración adicionales |
+
+Puedes adaptar esta tabla según tus necesidades y añadir más archivos relevantes a medida que sea necesario.
 
 ¡Gracias por leer!
 
 Recuerda que puedes personalizar el contenido y el formato del archivo README.md según tus necesidades específicas.
+
