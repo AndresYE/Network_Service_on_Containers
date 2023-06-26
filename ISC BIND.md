@@ -33,3 +33,26 @@ BIND ISC se puede implementar en diversos escenarios, incluyendo:
 1. Servidores DNS autoritativos: Utilizados por organizaciones y proveedores de servicios de Internet para ser la fuente de información de los nombres de dominio y proporcionar respuestas autorizadas a las consultas de DNS.
 2. Servidores DNS recursivos: Configurados para buscar información de DNS en nombre de los clientes y proporcionar respuestas a sus consultas.
 3. Servidores DNS caché: Almacenan en caché
+4. 
+## Archivos principales de Bind9
+
+A continuación se muestran los archivos principales utilizados en el servicio Bind9, junto con sus descripciones:
+
+| Archivo        | Descripción                                           |
+| -------------- | ----------------------------------------------------- |
+| named.conf     | Archivo de configuración principal del servidor Bind9. |
+| named.conf.options   | Archivo de opciones de configuración global del servidor Bind9. |
+| named.conf.local  | Archivo de configuración de zonas locales para el servidor Bind9. |
+| named.conf.default-zones | Archivo de configuración de las zonas predeterminadas del servidor Bind9. |
+| named.conf.log | Archivo de configuración de registros de log del servidor Bind9. |
+| named.conf.options.local | Archivo de configuración de opciones locales adicionales del servidor Bind9. |
+| named.conf.default | Archivo de configuración predeterminada del servidor Bind9. |
+| named.conf.local.template | Plantilla de archivo de configuración de zonas locales para el servidor Bind9. |
+| named.conf.options.template | Plantilla de archivo de opciones de configuración global del servidor Bind9. |
+| named.conf.named-cache.template | Plantilla de archivo de configuración de caché del servidor Bind9. |
+| named.conf.recursion-template | Plantilla de archivo de configuración de recursión del servidor Bind9. |
+| named.conf.logging-template | Plantilla de archivo de configuración de registros de log del servidor Bind9. |
+
+Puedes personalizar y agregar más archivos y descripciones según sea necesario. Asegúrate de utilizar la sintaxis de la tabla Markdown, que consiste en delimitar las celdas y las filas con el carácter "|".
+
+¡Gracias por leer!
