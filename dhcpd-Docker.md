@@ -1,5 +1,5 @@
 # Docker DHCPd
-[Figura 2.13.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/11875446/Figura.2.13.pdf)
+
 
 ## Instrucciones de Uso
 
