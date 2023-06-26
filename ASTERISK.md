@@ -31,3 +31,26 @@ Asterisk sigue una arquitectura modular y se compone de diferentes componentes c
 Asterisk puede ser implementado en diversos escenarios, incluyendo:
 
 1. PBX empresariales: Asterisk puede utilizarse como una solución PBX completa para empresas de
+
+## Archivos principales de Asterisk
+
+A continuación se muestran los archivos principales utilizados en el sistema Asterisk, junto con sus descripciones:
+
+| Archivo               | Descripción                                                                 |
+| --------------------- | --------------------------------------------------------------------------- |
+| extensions.conf       | Archivo de configuración principal que define las extensiones y reglas de marcado en el plan de marcado de Asterisk. |
+| sip.conf              | Archivo de configuración que define los usuarios SIP y sus configuraciones en Asterisk. |
+| iax.conf              | Archivo de configuración que define los usuarios IAX (Inter-Asterisk eXchange) y sus configuraciones en Asterisk. |
+| voicemail.conf        | Archivo de configuración para la configuración y personalización del buzón de voz en Asterisk. |
+| meetme.conf           | Archivo de configuración para configurar y administrar las salas de conferencias MeetMe en Asterisk. |
+| cdr.conf              | Archivo de configuración para la configuración de registro de detalles de llamadas (CDR) en Asterisk. |
+| features.conf         | Archivo de configuración para la configuración de funciones adicionales y características de llamada en Asterisk. |
+| musiconhold.conf      | Archivo de configuración para la configuración de música en espera (MOH) en Asterisk. |
+| queues.conf           | Archivo de configuración para la configuración de colas de llamadas y agentes de llamadas en Asterisk. |
+| logger.conf           | Archivo de configuración para la configuración de registro y almacenamiento de registros en Asterisk. |
+| sip_additional.conf   | Archivo generado automáticamente que contiene configuraciones SIP adicionales en Asterisk. |
+| iax_additional.conf   | Archivo generado automáticamente que contiene configuraciones IAX adicionales en Asterisk. |
+
+Puedes personalizar y agregar más archivos y descripciones según sea necesario. Asegúrate de utilizar la sintaxis de la tabla Markdown, que consiste en delimitar las celdas y las filas con el carácter "|".
+
+¡Gracias por leer!
