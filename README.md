@@ -8,11 +8,16 @@ Para replicar este entorno en tu propio sistema, sigue los siguientes pasos:
 
 1. **Instalación de Docker**: Comienza instalando Docker en tu Raspberry Pi. Puedes seguir las instrucciones oficiales de Docker para Raspberry Pi para obtener la versión adecuada.
 
-2. **Clonación del repositorio**: Clona este repositorio en tu Raspberry Pi utilizando el siguiente comando:
+2. **Condiguración de Servicios**: Configurar los servicios de red que se describen más adelante. Puedes seguir las instrucciones adjuntadas en este repositorio para implementar cada uno de los servicios mediante los archivos de configuración asociados.
 
-```bash
-git clone https://github.com/tu-usuario/proyecto-titulacion.git
-```
+3.  **Diseño de ficheros Dockerfile**: Configurar los ficheros Dockerfile par construir imagenes para cada servicios de red. Los ficheros Dockerfle se adjunan con la descripción de cada una de las instrucciones que se emplean para implementar cada uno de los servicios.
+
+5.  **Construcción de Imágenes de contenedores**: Construir las imagenes a partir de los ficheros Dockerfile diseñados par construir imagenes para cada servicios de red. Los comandos empleadas para consutrir las imágenes se adjunan en cada uno de los directorios de los servicios.
+
+6.  **Ejecución de contenedores**: Ejecutar los contenedores Docker a partir de las imagenes construidas. Los comandos empleadas para ejecutar los servicios contenerizados se adjunan en cada uno de los directorios de los servicios.
+
+7.  **Ejecución de conjunta**: Ejecutar todos los contenedores Docker mediante Docker Compose. Los comandos empleadas para ejecutar los servicios contenerizados se adjunan en el direcotrio Docker Compose.
+   
 ## Configuración de servicios de red
 
 Sigue las instrucciones proporcionadas en cada subcarpeta del repositorio para configurar y desplegar los servicios de red deseados. A continuación, se muestra una breve descripción de cada servicio y su ubicación en el repositorio:
@@ -50,4 +55,3 @@ Aquí hay algunos enlaces útiles relacionados con los temas cubiertos en este p
 
 
 ---
-Espero que este README proporcione una guía clara sobre cómo configurar y desplegar los servicios de red en tu proyecto de titulación. Recuerda personalizarlo y adaptarlo según tus necesidades y requisitos específicos. ¡Buena suerte con tu trabajo de titulación!
