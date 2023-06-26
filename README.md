@@ -18,8 +18,8 @@ Para replicar este entorno en tu propio sistema, sigue los siguientes pasos:
 
    ```bash
    git clone https://github.com/tu-usuario/proyecto-titulacion.git
-```
-   ## Configuración de servicios de red
+   ```
+## Configuración de servicios de red
 
 Sigue las instrucciones proporcionadas en cada subcarpeta del repositorio para configurar y desplegar los servicios de red deseados. A continuación, se muestra una breve descripción de cada servicio y su ubicación en el repositorio:
 
