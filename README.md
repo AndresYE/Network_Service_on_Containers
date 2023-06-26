@@ -1,5 +1,4 @@
-# Network_Service_on_Containers
-# Proyecto de Titulación: Contenedores Docker en Raspberry Pi y Servicios de Red
+# Network Service on Containers
 
 Este proyecto de titulación se centra en la integración de contenedores Docker en Raspberry Pi, aprovechando la flexibilidad y la portabilidad de los contenedores para implementar y gestionar servicios de red clave. A lo largo de este README, se proporcionarán instrucciones detalladas sobre cómo configurar y utilizar este entorno, junto con una descripción general de los componentes principales y sus interacciones.
 
