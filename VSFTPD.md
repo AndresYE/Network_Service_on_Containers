@@ -30,3 +30,19 @@ VSFTPD se puede implementar en varios escenarios, incluyendo:
 
 Puedes personalizar este archivo README.md según tus necesidades específicas, agregando más detalles o adaptando la información a tu caso particular.
 
+# Archivos Principales de VSFTPD
+
+A continuación se muestra una tabla que describe los archivos principales utilizados en VSFTPD:
+
+| Archivo            | Descripción                                                   |
+|--------------------|---------------------------------------------------------------|
+| vsftpd.conf        | Archivo de configuración principal de VSFTPD                  |
+| vsftpd.chroot_list | Archivo que lista los usuarios permitidos para la restricción de chroot |
+| vsftpd.user_list   | Archivo que lista los usuarios permitidos para el acceso FTP   |
+| vsftpd.pam         | Archivo de configuración para la autenticación de usuarios a través de PAM |
+| vsftpd.log         | Archivo de registro de eventos y acciones de VSFTPD           |
+| vsftpd.pid         | Archivo que contiene el ID del proceso de VSFTPD en ejecución |
+| vsftpd.banner      | Archivo que contiene el mensaje de bienvenida del servidor     |
+
+Puedes adaptar esta tabla según tus necesidades y añadir más archivos relevantes a medida que sea necesario.
+
