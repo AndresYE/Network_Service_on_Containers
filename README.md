@@ -16,7 +16,7 @@ Para replicar este entorno en tu propio sistema, sigue los siguientes pasos:
 
 6.  **Ejecución de contenedores**: Ejecutar los contenedores Docker a partir de las imagenes construidas. Los comandos empleadas para ejecutar los servicios contenerizados se adjunan en cada uno de los directorios de los servicios.
 
-7.  **Ejecución de conjunta**: Ejecutar todos los contenedores Docker mediante Docker Compose. Los comandos empleadas para ejecutar los servicios contenerizados se adjunan en el direcotrio Docker Compose.
+7.  **Ejecución conjunta**: Ejecutar todos los contenedores Docker mediante Docker Compose. Los comandos empleadas para ejecutar los servicios contenerizados se adjunan en el direcotrio Docker Compose.
    
 ## Configuración de servicios de red
 
