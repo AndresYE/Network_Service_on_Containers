@@ -1,0 +1,26 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+						Servidor: DNS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+###### Referencias Dockerfile
+#  DockerFile DHCP, DNS, FTP, HTTP
+https://karneliuk.com/2019/04/building-zero-touch-provisioning-infrastructur-dhcp-dns-ftp-http-with-netbox-docker-and-ansible-for-arista-eos-cumulus-linux-cisco-ios-xr-and-nokia-sr-os/
+
+# BIND ALPINE
+https://github.com/cytopia/docker-bind/blob/master/Dockerfiles/Dockerfile.alpine
+# BIND ALPINE
+https://wiki.alpinelinux.org/wiki/Setting_up_nsd_DNS_server
+# BIND ALPINE
+https://www.hiroom2.com/2017/08/22/alpinelinux-3-6-bind-en/
+####################################  Comando Dockerfile #################################### 
+Imagen de Contenedor: andresye/bind
+Nombre de Contenedor: dns_server
+
+
+docker run -dit --rm --net=host --name dns_server andresye/bind
+
+
+
+#################################### Documentación Bind ####################################
+https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-18-04-es
+https://pkgs.alpinelinux.org/package/edge/main/x86/bind

@@ -1,0 +1,13 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+						Dockerfile: NGINX
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+docker build -t andresye/nginx .
+
+docker 
+###### Referencias Dockerfile
+#  DockerFile DHCP, DNS, FTP, HTTP
+https://karneliuk.com/2019/04/building-zero-touch-provisioning-infrastructur-dhcp-dns-ftp-http-with-netbox-docker-and-ansible-for-arista-eos-cumulus-linux-cisco-ios-xr-and-nokia-sr-os/
+# NGINX Docker
+https://www.nginx.com/blog/deploying-nginx-nginx-plus-docker/

@@ -1,0 +1,48 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+					Dockerfile: ASTERISK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+###### Referencias Dockerfile
+# Asterisk Alpine
+https://wiki.alpinelinux.org/wiki/Setting_up_Zaptel/Asterisk_on_Alpine
+# Asterik Debian
+https://hub.docker.com/r/christoofar/asterisk
+https://github.com/christoofar/asterisk
+# Asterik Debian
+https://hub.docker.com/r/andrius/asterisk/tags
+https://github.com/andrius/asterisk
+https://andrius.mobi/
+# Asterik Alpine
+https://github.com/smebberson/docker-alpine/blob/master/alpine-base/Dockerfile
+https://github.com/mlan/docker-asterisk
+https://github.com/ipoddubny/alpine-asterisk
+https://computingforgeeks.com/how-to-run-asterisk-in-docker-container/
+https://github.com/flaviostutz/freepbx/blob/master/Dockerfile
+
+
+################################### Documentación VoIP ###################################
+
+Protocolo SIP/RTP:
+SIP: 5060
+RTP:10000-20000(VOZ)  /9000-10999(VOZ)
+http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0123-921X2012000400013 
+https://www.3cx.es/docs/manual/configuracion-firewall-router/
+############################## Documentación  ASTERISK: ##############################
+
+https://github.com/asterisk/asterisk
+https://github.com/McOrts/centralita_voip_rpi
+
+https://manuais.iessanclemente.net/images/6/63/Guia-Rapida-Asterisk.pdf
+https://www.youtube.com/watch?v=yCpPo6aeKU4&ab_channel=RedesPlus
+https://pkgs.alpinelinux.org/package/edge/main/x86/asterisk
+http://entelsec.blogspot.com/2013/06/configuracion-de-extensiones-asterisk.html
+https://telefonia.blog.tartanga.eus/2019/12/31/configuracion-practica-de-asterisk-19-mensajes-subscribe-y-notify-visualizacion-del-estado-de-las-extensiones/
+https://www.youtube.com/watch?v=nHEqktBny2Y&ab_channel=Inverse404
+
+
+############################## COMANDOS  ############################## 
+docker run --net host -v ~/asteriskconfig:/etc/asterisk -v /home/pi/Desktop/Andres-TIC2023/Docker\ DockerFile/VoIP/extensions.conf:/etc/asterisk/extensions.conf -v /home/pi/Desktop/Andres-TIC2023/Docker\ DockerFile/VoIP/sip.conf:/etc/asterisk/sip.conf --name asterisk christoofar/asterisk
+
+
+https://github.com/jcollie/asterisk/blob/master/configs/extensions.conf.sample
+
+https://github.com/jcollie/asterisk/blob/master/configs/sip.conf.sample

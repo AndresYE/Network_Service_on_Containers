@@ -1,0 +1,44 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;                                                		                                                                         ;
+;                                          		 Servicios basados en Contenedores                                               ;
+;                                                 		                                                                         ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;                                                                                                                           	 ;
+;                                         Universidad: Escuela Politécnica Nacional                                              ;
+;                                                                                                                                ;
+;                                                                                                                                ;
+;                                             Autor: Andrés Lenin Yazán Endara                                                   ;
+;                                                                                                                                ;
+;                       Archivo: "0.168.192.rev"  Configuración de Zona Inversa de servicio DNS Bind                             ;
+;                                                                                                                                ;
+;                                                                                                                                ;
+;                                               		Versión: 1.0                                                             ;
+;                                                                                                                                ;
+;                                              Fecha de Creación: 01/07/2023                                                     ;
+;                                                                                                                                ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	TIC2023.com. root.TIC2023.com. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+
+;Información del Servidor DNS  Autoritario de la zona
+@		IN      NS     ns1.TIC2023.com.
+
+;Reverse lookup del Servidor DNS 
+2      IN      PTR    ns1.TIC2023.com.
+;Reverse lookupdel Servidor DHCP 
+3      IN      PTR    dhcp.TIC2023.com.
+;Reverse lookup del Servidor FTP
+4      IN      PTR    ftp.TIC2023.com.
+;Reverse lookup del Servidor WEB
+5      IN      PTR    www.TIC2023.com.
+;Reverse lookup del Servidor VoIP 
+6      IN      PTR    voip.TIC2023.com.
