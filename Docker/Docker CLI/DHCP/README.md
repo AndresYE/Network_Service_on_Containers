@@ -82,7 +82,7 @@ docker volume create dhcp_wlan0_logs_volumen
 ```
 2. **Ejecuta el contenedor**:
 ```shell
-docker run -dit -e IPV4_IFDHCP=wlan0 -e IPV4_SUBNET=192.168.0.0 -e MIN_IPV4_ADDRESS=192.168.0.10 -e MAX_IPV4_ADDRESS=192.168.0.100 -e IPV4_ROUTER=192.168.0.1 -v dhcp_wlan0_leases_volumen:/var/lib/dhcpd.leases -v dhcp_wlan0_logs_volumen:/var/log/dhcpd.log --net=host --name dhcp_server_eth0 andresye/dhcpd
+docker run -dit -e IPV4_IFDHCP=wlan0 -e IPV4_SUBNET=192.168.0.0 -e MIN_IPV4_ADDRESS=192.168.0.10 -e MAX_IPV4_ADDRESS=192.168.0.100 -e IPV4_ROUTER=192.168.0.1 -v dhcp_wlan0_leases_volumen:/var/lib/dhcpd.leases -v dhcp_wlan0_logs_volumen:/var/log/dhcpd.log --net=host --name dhcp_server_wlan0 andresye/dhcpd
 ```
 
 # DHCP 1 - Eth0
