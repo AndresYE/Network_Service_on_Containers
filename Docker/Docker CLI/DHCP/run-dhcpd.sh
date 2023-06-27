@@ -18,4 +18,4 @@ envsubst < ./etc/dhcp/dhcpd6.env.conf > ./etc/dhcp/dhcpd6.conf
     #-pf: Archivo de proceso DHCP alternativo (dhcpd.pid Default).
     #-q: Omitir mensaje de inicio DHCP.
     #-T: Pueba de base de datos de arrendamientos.
-&>/dev/null /usr/sbin/dhcpd -$DHCP_MOD -d -p $DHCP_PORT -f -cf $DHCP_CONF_FILE -lf $DHCP_LEASES_FILE -user $DHCP_USER -group $DHCP_GROUP $IFDHCP
+/usr/sbin/dhcpd -$DHCP_MOD -d -p $DHCP_PORT -cf $DHCP_CONF_FILE -lf $DHCP_LEASES_FILE -user $DHCP_USER -group $DHCP_GROUP $IFDHCP
