@@ -7,7 +7,7 @@ A continuación se detallan los pasos para construir la imagen y ejecutar los co
 ```shell
 docker build -t andresye/vsftpd .
 ```
-# BIND
+# VSFTPD
 1. **Crear Named Volumes**:
 Volumen para logs del servicio DHCP (vsftpd.log y xferlog):
  ```shell
