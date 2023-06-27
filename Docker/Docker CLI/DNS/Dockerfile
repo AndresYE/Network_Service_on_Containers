@@ -126,4 +126,4 @@ EXPOSE 53/tcp 53/udp
         #-s: Estadisticas de uso de memoria en stdout.
         #-t: encerrar directorio mediante chroot.
         #-u:  Colocar UID para completar procesos privilegiados.
-ENTRYPOINT /usr/sbin/named -$DNS_MOD  -c $DNS_CONF_FILE -f -g -p $DNS_PORT
+ENTRYPOINT /usr/sbin/named -$DNS_MOD  -c $DNS_CONF_FILE -f -p $DNS_PORT
