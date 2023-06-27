@@ -52,3 +52,23 @@ A continuación se muestran los archivos principales utilizados en el servicio B
 | named.conf.named-cache.template | Plantilla de archivo de configuración de caché del servidor Bind9. |
 | named.conf.recursion-template | Plantilla de archivo de configuración de recursión del servidor Bind9. |
 | named.conf.logging-template | Plantilla de archivo de configuración de registros de log del servidor Bind9. |
+
+# Docker Bind
+
+## Instrucciones de Uso
+
+A continuación se detallan los pasos para construir la imagen y ejecutar los contenedores Docker para dns:
+1. **Construye la imagen**:
+```shell
+docker build -t andresye/bind .
+```
+# BIND
+1. **Crear Named Volumes**:
+Volumen para logs del servicio DHCP (named.log):
+ ```shell
+docker volume create dns_logs_volumen
+```
+2. **Ejecuta el contenedor**:
+```shell
+docker run -dit -v dns_logs_volumen:/var/log/bind/named.log --net=host --name dns_server andresye/bind
+```
