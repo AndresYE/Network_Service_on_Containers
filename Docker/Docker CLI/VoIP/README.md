@@ -1,6 +1,8 @@
 
 # Asterisk
 
+![asterisk](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/d0ac8d26-efca-41b1-8ce3-929d76ea837c)
+
 Asterisk es un sistema de telefonía de código abierto y flexible que ofrece una amplia gama de funcionalidades de comunicación. Permite crear soluciones de telefonía personalizadas, desde pequeños sistemas PBX hasta servicios VoIP a gran escala.
 
 ## Descripción
