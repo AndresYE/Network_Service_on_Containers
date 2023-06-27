@@ -59,8 +59,8 @@ A continuación se muestra una tabla con los servicios, las etiquetas de imagen,
 | DNS      | andresye/bind                | dns_server          | dns_logs_volumen                      |
 | FTP      | andresye/vsftpd              | ftp_server          | ftp_logs_volumen                      |
 | HTTP     | andresye/nginx               | http_server         | http_logs_volumen                     |
-| VoIP     | christoofar/asterisk         | voip_server         | voip_logs_volumen, voip_qos_volumen   |
-| Routing  | frrouting/frr:v7.5.1         | routing_server      | routing_logs_volumen                  |
+| VoIP     | christoofar/asterisk         | voip_server         | voip_logs_volumen <br>voip_qos_volumen   |
+| Routing  | frrouting/frr:v7.5.1         | routing_server      | routing_config_volumen                  |
 
 
 
