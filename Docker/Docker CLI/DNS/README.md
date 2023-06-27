@@ -1,5 +1,7 @@
 # BIND ISC (Berkeley Internet Name Domain)
 
+![bind9](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/bb1e3955-2edd-4767-ad8f-da0fbe6bef90)
+
 BIND ISC es un servidor DNS (Domain Name System) de código abierto ampliamente utilizado en Internet. Proporciona la capacidad de traducir nombres de dominio en direcciones IP y viceversa, lo que permite la resolución de nombres y el funcionamiento de Internet.
 
 ## Descripción
