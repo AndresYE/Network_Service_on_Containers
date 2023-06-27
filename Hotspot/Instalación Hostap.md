@@ -1,3 +1,30 @@
+# Hostap
+
+![hostap](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/e8b68fde-6435-4150-9e9d-64c60f8fc44a)
+
+## Descripción
+
+Hostap es un servicio que permite convertir un dispositivo en un punto de acceso inalámbrico (AP) para compartir la conexión a Internet con otros dispositivos. Proporciona una funcionalidad de hotspot que permite a los usuarios conectarse y acceder a la red.
+
+## Características
+
+- **Punto de acceso inalámbrico**: Hostap permite crear un punto de acceso inalámbrico en un dispositivo, lo que permite a otros dispositivos conectarse y compartir la conexión a Internet.
+- **Seguridad**: Proporciona opciones de seguridad para proteger el punto de acceso, como cifrado de red (WPA2) y autenticación de usuarios.
+- **Configuración flexible**: Permite personalizar la configuración del punto de acceso, como el nombre de la red (SSID), el canal inalámbrico y las contraseñas de seguridad.
+- **Compatibilidad de dispositivos**: Hostap es compatible con una amplia gama de dispositivos y tarjetas de red inalámbricas.
+- **Gestión y monitoreo**: Proporciona herramientas para gestionar y monitorear el estado del punto de acceso, como la visualización de dispositivos conectados y estadísticas de uso.
+
+## Arquitectura
+
+El servicio Hostap se basa en el uso de software y controladores de red inalámbrica para permitir la funcionalidad de punto de acceso inalámbrico en un dispositivo. Utiliza protocolos estándar de red para la comunicación inalámbrica y se integra con el sistema operativo del dispositivo.
+
+## Tipos de Implementaciones
+
+- **Compartir Internet en hogares o pequeñas oficinas**: Hostap se puede utilizar en entornos domésticos o de oficina para compartir la conexión a Internet con dispositivos móviles, computadoras portátiles u otros dispositivos inalámbricos.
+- **Hotspots públicos**: El servicio Hostap también se puede implementar en lugares públicos como cafeterías, hoteles o aeropuertos, proporcionando a los usuarios acceso a Internet de forma inalámbrica.
+- **Redes empresariales**: En entornos empresariales, Hostap se puede utilizar para crear puntos de acceso inalámbrico para empleados, invitados o dispositivos de Internet de las cosas (IoT).
+
+
 # Cómo instalar hostapd en Debian
 
 Esta guía te mostrará cómo instalar y desinstalar hostapd en Debian.
