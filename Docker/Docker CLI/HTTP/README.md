@@ -66,5 +66,5 @@ docker volume create http_logs_volumen
 ```
 2. **Ejecuta el contenedor**:
 ```shell
-docker run -dit -v http_logs_volumen:/var/log/nginx/  -v "$(pwd)"/www.TIC2023.com:/usr/share/nginx/html/ -v "$(pwd)"/web1.TIC2023.com:/usr/share/nginx/html/  -v "$(pwd)"/web2.TIC2023.com:/usr/share/nginx/html/ --net=host --name http_server andresye/nginx
+docker run -dit -v http_logs_volumen:/var/log/nginx/  -v "$(pwd)"/html/:/usr/share/nginx/html/ --net=host --name http_server andresye/nginx
 ```
