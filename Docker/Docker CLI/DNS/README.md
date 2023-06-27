@@ -72,5 +72,5 @@ docker volume create dns_logs_volumen
 ```
 2. **Ejecuta el contenedor**:
 ```shell
-docker run -dit -v dns_logs_volumen:/var/log/bind/named.log --net=host --name dns_server andresye/bind
+docker run -dit -v dns_logs_volumen:/var/log/bind/ --net=host --name dns_server andresye/bind
 ```
