@@ -7,7 +7,7 @@ A continuación se detallan los pasos para ejecutar los contenedores Docker para
 
 # FRRouting
 1. **Crear Named Volumes**:
-Volumen para las configuraciones del servicio Routing (messages):
+Volumen para las configuraciones del servicio Routing (/etc/frr/):
  ```shell
 docker volume create routing_config_volumen 
 ```
