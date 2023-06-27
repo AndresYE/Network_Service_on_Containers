@@ -1,5 +1,7 @@
 # NGINX
 
+![NGINX](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/2fae52ce-51fa-4b69-ad75-2114d4b0debb)
+
 NGINX es un servidor web y proxy inverso de código abierto conocido por su alto rendimiento, escalabilidad y capacidad de manejar una carga significativa de tráfico web. Es ampliamente utilizado en la industria para alojar sitios web y aplicaciones web de alto tráfico.
 
 ## Descripción
