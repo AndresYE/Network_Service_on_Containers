@@ -8,7 +8,7 @@ Para replicar este entorno en tu propio sistema, sigue los siguientes pasos:
 
 1. **Instalación de Docker**: Comienza instalando Docker en tu Raspberry Pi. Puedes seguir las instrucciones oficiales de Docker para Raspberry Pi para obtener la versión adecuada.
 
-2. **Condiguración de Servicios**: Configurar los servicios de red que se describen más adelante. Puedes seguir las instrucciones adjuntadas en este repositorio para implementar cada uno de los servicios mediante los archivos de configuración asociados.
+2. **Configuración de Servicios**: Configurar los servicios de red que se describen más adelante. Puedes seguir las instrucciones adjuntadas en este repositorio para implementar cada uno de los servicios mediante los archivos de configuración asociados.
 
 3.  **Diseño de ficheros Dockerfile**: Configurar los ficheros Dockerfile par construir imagenes para cada servicios de red. Los ficheros Dockerfle se adjunan con la descripción de cada una de las instrucciones que se emplean para implementar cada uno de los servicios.
 
