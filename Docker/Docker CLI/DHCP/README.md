@@ -76,10 +76,7 @@ Volumen para archivos de arrendamiento DHCP (dhcpd.leases):
  ```shell
 docker volume create dhcp_wlan0_leases_volumen
 ```
-Volumen para logs del servicio DHCP (dhcpd.log):
- ```shell
-docker volume create dhcp_wlan0_logs_volumen
-```
+
 2. **Ejecuta el contenedor**:
 ```shell
 docker run -dit -e IFDHCP=wlan0 -e IPV4_SUBNET=192.168.0.0 -e MIN_IPV4_ADDRESS=192.168.0.10 -e MAX_IPV4_ADDRESS=192.168.0.100 -e IPV4_ROUTER=192.168.0.1 -v dhcp_wlan0_leases_volumen:/var/lib/dhcpd.leases -v dhcp_wlan0_logs_volumen:/var/log/dhcpd.log --net=host --name dhcp_server_wlan0 andresye/dhcpd
@@ -90,10 +87,6 @@ docker run -dit -e IFDHCP=wlan0 -e IPV4_SUBNET=192.168.0.0 -e MIN_IPV4_ADDRESS=1
 Volumen para archivos de arrendamiento DHCP (dhcpd.leases):
  ```shell
 docker volume create dhcp_eth0_leases_volumen
-```
-Volumen para logs del servicio DHCP (dhcpd.log):
- ```shell
-docker volume create dhcp_eth0_logs_volumen
 ```
 2. **Ejecuta el contenedor**:
 ```shell
@@ -106,10 +99,6 @@ Volumen para archivos de arrendamiento DHCP (dhcpd.leases):
  ```shell
 docker volume create dhcp_eth1_leases_volumen
 ```
-Volumen para logs del servicio DHCP (dhcpd.log):
- ```shell
-docker volume create dhcp_eth1_logs_volumen
-```
 2. **Ejecuta el contenedor**:
 ```shell
 docker run -dit -e IFDHCP=eth1 -e IPV4_SUBNET=192.168.2.0 -e MIN_IPV4_ADDRESS=192.168.2.10 -e MAX_IPV4_ADDRESS=192.168.2.100 -e IPV4_ROUTER=192.168.2.1 -v dhcp_eth1_leases_volumen:/var/lib/dhcpd.leases -v dhcp_eth1_logs_volumen:/var/log/dhcpd.log --net=host --name dhcp_server_eth1 andresye/dhcpd
@@ -120,10 +109,6 @@ docker run -dit -e IFDHCP=eth1 -e IPV4_SUBNET=192.168.2.0 -e MIN_IPV4_ADDRESS=19
 Volumen para archivos de arrendamiento DHCP (dhcpd.leases):
  ```shell
 docker volume create dhcp_eth2_leases_volumen
-```
-Volumen para logs del servicio DHCP (dhcpd.log):
- ```shell
-docker volume create dhcp_eth2_logs_volumen
 ```
 2. **Ejecuta el contenedor**:
 ```shell
