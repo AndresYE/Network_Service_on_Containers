@@ -1,0 +1,4 @@
+Archivo User.txt
+Implementación:
+Modo Activo
+Usuario Local Admin
