@@ -1,0 +1,26 @@
+root@pi:/home/pi/Resultados/Prueba_4# docker cp routing_server:/etc/frr/ /home/pi/Resultados/Prueba_4/
+Successfully copied 9.22kB to /home/pi/Resultados/Prueba_4/
+root@pi:/home/pi/Resultados/Prueba_4# docker logs routing_server
+2023/08/10 20:55:07 WATCHFRR: [T83RR-8SM5G] watchfrr 8.4_git starting: vty@0
+2023/08/10 20:55:07 WATCHFRR: [ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed
+2023/08/10 20:55:07 WATCHFRR: [ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed
+2023/08/10 20:55:07 WATCHFRR: [YFT0P-5Q5YX] Forked background command [pid 14]: /usr/lib/frr/watchfrr.sh restart all
+/usr/lib/frr/frrcommon.sh: line 211: kill: `': not a pid or valid job spec
+Cannot stop zebra: pid file not found
+2023/08/10 20:55:07 ZEBRA: [NNACN-54BDA][EC 4043309110] Disabling MPLS support (no kernel support)
+/etc/frr/frr.conf does not exist; skipping config apply
+2023/08/10 20:55:07 WATCHFRR: [QDG3Y-BY5TN] zebra state -> up : connect succeeded
+2023/08/10 20:55:07 WATCHFRR: [QDG3Y-BY5TN] staticd state -> up : connect succeeded
+2023/08/10 20:55:07 WATCHFRR: [KWE5Q-QNGFC] all daemons up, doing startup-complete notify
+2023/08/10 21:00:50 WATCHFRR: [T83RR-8SM5G] watchfrr 8.4_git starting: vty@0
+2023/08/10 21:00:50 WATCHFRR: [ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed
+2023/08/10 21:00:50 WATCHFRR: [ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed
+2023/08/10 21:00:50 WATCHFRR: [YFT0P-5Q5YX] Forked background command [pid 13]: /usr/lib/frr/watchfrr.sh restart all
+/usr/lib/frr/frrcommon.sh: line 211: kill: (28) - No such process
+Cannot stop zebra: pid 23 not running
+2023/08/10 21:00:50 ZEBRA: [NNACN-54BDA][EC 4043309110] Disabling MPLS support (no kernel support)
+/etc/frr/frr.conf does not exist; skipping config apply
+2023/08/10 21:00:50 WATCHFRR: [QDG3Y-BY5TN] zebra state -> up : connect succeeded
+2023/08/10 21:00:50 WATCHFRR: [QDG3Y-BY5TN] staticd state -> up : connect succeeded
+2023/08/10 21:00:50 WATCHFRR: [KWE5Q-QNGFC] all daemons up, doing startup-complete notify
+root@pi:/home/pi/Resultados/Prueba_4#
