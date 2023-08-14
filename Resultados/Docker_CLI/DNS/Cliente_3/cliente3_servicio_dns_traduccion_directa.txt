@@ -1,0 +1,70 @@
+Microsoft Windows [Versión 10.0.22621.2134]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Stephania Yazán>nslookup ns1.tic2023.com
+Servidor:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+Nombre:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+
+C:\Users\Stephania Yazán>nslookup dhcp.tic2023.com
+Servidor:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+Nombre:  dhcp.TIC2023.com
+Address:  192.168.0.3
+
+
+C:\Users\Stephania Yazán>nslookup ftp.tic2023.com
+Servidor:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+Nombre:  ftp.TIC2023.com
+Address:  192.168.0.4
+
+
+C:\Users\Stephania Yazán>nslookup www.tic2023.com
+Servidor:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+Nombre:  www.TIC2023.com
+Address:  192.168.0.5
+
+
+C:\Users\Stephania Yazán>nslookup web1.tic2023.com
+Servidor:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+Nombre:  www.TIC2023.com
+Address:  192.168.0.5
+Aliases:  web1.TIC2023.com
+
+
+C:\Users\Stephania Yazán>nslookup web2.tic2023.com
+Servidor:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+Nombre:  www.TIC2023.com
+Address:  192.168.0.5
+Aliases:  web2.TIC2023.com
+
+
+C:\Users\Stephania Yazán>nslookup voip.tic2023.com
+Servidor:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+Nombre:  voip.TIC2023.com
+Address:  192.168.0.6
+
+
+C:\Users\Stephania Yazán>nslookup monitor.tic2023.com
+Servidor:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+Nombre:  monitor.TIC2023.com
+Address:  192.168.0.7
+
+
+C:\Users\Stephania Yazán>
