@@ -1,0 +1,1278 @@
+# The format of this file is documented in the dhcpd.leases(5) manual page.
+# This lease file was written by isc-dhcp-4.4.1
+
+# authoring-byte-order entry is generated, DO NOT DELETE
+authoring-byte-order little-endian;
+
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:23:35;
+  ends 5 2023/08/11 02:25:35;
+  cltt 5 2023/08/11 02:23:35;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:24:09;
+  ends 5 2023/08/11 02:26:09;
+  cltt 5 2023/08/11 02:24:09;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:25:19;
+  ends 5 2023/08/11 02:27:19;
+  cltt 5 2023/08/11 02:25:19;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:26:29;
+  ends 5 2023/08/11 02:28:29;
+  cltt 5 2023/08/11 02:26:29;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:27:39;
+  ends 5 2023/08/11 02:29:39;
+  cltt 5 2023/08/11 02:27:39;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:28:50;
+  ends 5 2023/08/11 02:30:50;
+  cltt 5 2023/08/11 02:28:50;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:30:00;
+  ends 5 2023/08/11 02:32:00;
+  cltt 5 2023/08/11 02:30:00;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:31:10;
+  ends 5 2023/08/11 02:33:10;
+  cltt 5 2023/08/11 02:31:10;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:31:14;
+  ends 5 2023/08/11 02:33:14;
+  cltt 5 2023/08/11 02:31:14;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:32:15;
+  ends 5 2023/08/11 02:34:15;
+  cltt 5 2023/08/11 02:32:15;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:32:16;
+  ends 5 2023/08/11 02:34:16;
+  cltt 5 2023/08/11 02:32:16;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:33:15;
+  ends 5 2023/08/11 02:35:15;
+  cltt 5 2023/08/11 02:33:15;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:33:25;
+  ends 5 2023/08/11 02:35:25;
+  cltt 5 2023/08/11 02:33:25;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:34:15;
+  ends 5 2023/08/11 02:36:15;
+  cltt 5 2023/08/11 02:34:15;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:34:36;
+  ends 5 2023/08/11 02:36:36;
+  cltt 5 2023/08/11 02:34:36;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:35:15;
+  ends 5 2023/08/11 02:37:15;
+  cltt 5 2023/08/11 02:35:15;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:35:46;
+  ends 5 2023/08/11 02:37:46;
+  cltt 5 2023/08/11 02:35:46;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:36:15;
+  ends 5 2023/08/11 02:38:15;
+  cltt 5 2023/08/11 02:36:15;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:36:56;
+  ends 5 2023/08/11 02:38:56;
+  cltt 5 2023/08/11 02:36:56;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:37:15;
+  ends 5 2023/08/11 02:39:15;
+  cltt 5 2023/08/11 02:37:15;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:38:07;
+  ends 5 2023/08/11 02:40:07;
+  cltt 5 2023/08/11 02:38:07;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:38:15;
+  ends 5 2023/08/11 02:40:15;
+  cltt 5 2023/08/11 02:38:15;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:39:15;
+  ends 5 2023/08/11 02:41:15;
+  cltt 5 2023/08/11 02:39:15;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:39:17;
+  ends 5 2023/08/11 02:41:17;
+  cltt 5 2023/08/11 02:39:17;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:40:16;
+  ends 5 2023/08/11 02:42:16;
+  cltt 5 2023/08/11 02:40:16;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:40:23;
+  ends 5 2023/08/11 02:42:23;
+  cltt 5 2023/08/11 02:40:23;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:41:16;
+  ends 5 2023/08/11 02:43:16;
+  cltt 5 2023/08/11 02:41:16;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:41:33;
+  ends 5 2023/08/11 02:43:33;
+  cltt 5 2023/08/11 02:41:33;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:42:16;
+  ends 5 2023/08/11 02:44:16;
+  cltt 5 2023/08/11 02:42:16;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:42:43;
+  ends 5 2023/08/11 02:44:43;
+  cltt 5 2023/08/11 02:42:43;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:43:16;
+  ends 5 2023/08/11 02:45:16;
+  cltt 5 2023/08/11 02:43:16;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:43:53;
+  ends 5 2023/08/11 02:45:53;
+  cltt 5 2023/08/11 02:43:53;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:44:17;
+  ends 5 2023/08/11 02:46:17;
+  cltt 5 2023/08/11 02:44:17;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:45:04;
+  ends 5 2023/08/11 02:47:04;
+  cltt 5 2023/08/11 02:45:04;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:45:17;
+  ends 5 2023/08/11 02:47:17;
+  cltt 5 2023/08/11 02:45:17;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:46:14;
+  ends 5 2023/08/11 02:48:14;
+  cltt 5 2023/08/11 02:46:14;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:46:17;
+  ends 5 2023/08/11 02:48:17;
+  cltt 5 2023/08/11 02:46:17;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:47:17;
+  ends 5 2023/08/11 02:49:17;
+  cltt 5 2023/08/11 02:47:17;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:47:25;
+  ends 5 2023/08/11 02:49:25;
+  cltt 5 2023/08/11 02:47:25;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:48:17;
+  ends 5 2023/08/11 02:50:17;
+  cltt 5 2023/08/11 02:48:17;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:48:35;
+  ends 5 2023/08/11 02:50:35;
+  cltt 5 2023/08/11 02:48:35;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:49:17;
+  ends 5 2023/08/11 02:51:17;
+  cltt 5 2023/08/11 02:49:17;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:49:45;
+  ends 5 2023/08/11 02:51:45;
+  cltt 5 2023/08/11 02:49:45;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:50:17;
+  ends 5 2023/08/11 02:52:17;
+  cltt 5 2023/08/11 02:50:17;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:50:56;
+  ends 5 2023/08/11 02:52:56;
+  cltt 5 2023/08/11 02:50:56;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:51:17;
+  ends 5 2023/08/11 02:53:17;
+  cltt 5 2023/08/11 02:51:17;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:52:06;
+  ends 5 2023/08/11 02:54:06;
+  cltt 5 2023/08/11 02:52:06;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:52:17;
+  ends 5 2023/08/11 02:54:17;
+  cltt 5 2023/08/11 02:52:17;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:53:16;
+  ends 5 2023/08/11 02:55:16;
+  cltt 5 2023/08/11 02:53:16;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:53:17;
+  ends 5 2023/08/11 02:55:17;
+  cltt 5 2023/08/11 02:53:17;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:54:17;
+  ends 5 2023/08/11 02:56:17;
+  cltt 5 2023/08/11 02:54:17;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:54:26;
+  ends 5 2023/08/11 02:56:26;
+  cltt 5 2023/08/11 02:54:26;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:55:18;
+  ends 5 2023/08/11 02:57:18;
+  cltt 5 2023/08/11 02:55:18;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:55:36;
+  ends 5 2023/08/11 02:57:36;
+  cltt 5 2023/08/11 02:55:36;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:56:18;
+  ends 5 2023/08/11 02:58:18;
+  cltt 5 2023/08/11 02:56:18;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:56:46;
+  ends 5 2023/08/11 02:58:46;
+  cltt 5 2023/08/11 02:56:46;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:57:18;
+  ends 5 2023/08/11 02:59:18;
+  cltt 5 2023/08/11 02:57:18;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:57:57;
+  ends 5 2023/08/11 02:59:57;
+  cltt 5 2023/08/11 02:57:57;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:58:18;
+  ends 5 2023/08/11 03:00:18;
+  cltt 5 2023/08/11 02:58:18;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 02:59:07;
+  ends 5 2023/08/11 03:01:07;
+  cltt 5 2023/08/11 02:59:07;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 02:59:18;
+  ends 5 2023/08/11 03:01:18;
+  cltt 5 2023/08/11 02:59:18;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:00:17;
+  ends 5 2023/08/11 03:02:17;
+  cltt 5 2023/08/11 03:00:17;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:00:18;
+  ends 5 2023/08/11 03:02:18;
+  cltt 5 2023/08/11 03:00:18;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:01:18;
+  ends 5 2023/08/11 03:03:18;
+  cltt 5 2023/08/11 03:01:18;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:01:27;
+  ends 5 2023/08/11 03:03:27;
+  cltt 5 2023/08/11 03:01:27;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:02:19;
+  ends 5 2023/08/11 03:04:19;
+  cltt 5 2023/08/11 03:02:19;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:02:38;
+  ends 5 2023/08/11 03:04:38;
+  cltt 5 2023/08/11 03:02:38;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:03:19;
+  ends 5 2023/08/11 03:05:19;
+  cltt 5 2023/08/11 03:03:19;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:03:48;
+  ends 5 2023/08/11 03:05:48;
+  cltt 5 2023/08/11 03:03:48;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:04:20;
+  ends 5 2023/08/11 03:06:20;
+  cltt 5 2023/08/11 03:04:20;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:04:58;
+  ends 5 2023/08/11 03:06:58;
+  cltt 5 2023/08/11 03:04:58;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:05:22;
+  ends 5 2023/08/11 03:07:22;
+  cltt 5 2023/08/11 03:05:22;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:06:08;
+  ends 5 2023/08/11 03:08:08;
+  cltt 5 2023/08/11 03:06:08;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:06:22;
+  ends 5 2023/08/11 03:08:22;
+  cltt 5 2023/08/11 03:06:22;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:07:18;
+  ends 5 2023/08/11 03:09:18;
+  cltt 5 2023/08/11 03:07:18;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:07:23;
+  ends 5 2023/08/11 03:09:23;
+  cltt 5 2023/08/11 03:07:23;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:08:23;
+  ends 5 2023/08/11 03:10:23;
+  cltt 5 2023/08/11 03:08:23;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:08:28;
+  ends 5 2023/08/11 03:10:28;
+  cltt 5 2023/08/11 03:08:28;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:09:23;
+  ends 5 2023/08/11 03:11:23;
+  cltt 5 2023/08/11 03:09:23;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:09:39;
+  ends 5 2023/08/11 03:11:39;
+  cltt 5 2023/08/11 03:09:39;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:10:23;
+  ends 5 2023/08/11 03:12:23;
+  cltt 5 2023/08/11 03:10:23;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:10:49;
+  ends 5 2023/08/11 03:12:49;
+  cltt 5 2023/08/11 03:10:49;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:11:23;
+  ends 5 2023/08/11 03:13:23;
+  cltt 5 2023/08/11 03:11:23;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:11:59;
+  ends 5 2023/08/11 03:13:59;
+  cltt 5 2023/08/11 03:11:59;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:12:23;
+  ends 5 2023/08/11 03:14:23;
+  cltt 5 2023/08/11 03:12:23;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:13:09;
+  ends 5 2023/08/11 03:15:09;
+  cltt 5 2023/08/11 03:13:09;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:13:23;
+  ends 5 2023/08/11 03:15:23;
+  cltt 5 2023/08/11 03:13:23;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:14:20;
+  ends 5 2023/08/11 03:16:20;
+  cltt 5 2023/08/11 03:14:20;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:14:23;
+  ends 5 2023/08/11 03:16:23;
+  cltt 5 2023/08/11 03:14:23;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:15:23;
+  ends 5 2023/08/11 03:17:23;
+  cltt 5 2023/08/11 03:15:23;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:15:30;
+  ends 5 2023/08/11 03:17:30;
+  cltt 5 2023/08/11 03:15:30;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:16:23;
+  ends 5 2023/08/11 03:18:23;
+  cltt 5 2023/08/11 03:16:23;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:16:40;
+  ends 5 2023/08/11 03:18:40;
+  cltt 5 2023/08/11 03:16:40;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:17:23;
+  ends 5 2023/08/11 03:19:23;
+  cltt 5 2023/08/11 03:17:23;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:17:50;
+  ends 5 2023/08/11 03:19:50;
+  cltt 5 2023/08/11 03:17:50;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:18:23;
+  ends 5 2023/08/11 03:20:23;
+  cltt 5 2023/08/11 03:18:23;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:19:00;
+  ends 5 2023/08/11 03:21:00;
+  cltt 5 2023/08/11 03:19:00;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:19:24;
+  ends 5 2023/08/11 03:21:24;
+  cltt 5 2023/08/11 03:19:24;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:20:10;
+  ends 5 2023/08/11 03:22:10;
+  cltt 5 2023/08/11 03:20:10;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:20:24;
+  ends 5 2023/08/11 03:22:24;
+  cltt 5 2023/08/11 03:20:24;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:21:20;
+  ends 5 2023/08/11 03:23:20;
+  cltt 5 2023/08/11 03:21:20;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:21:24;
+  ends 5 2023/08/11 03:23:24;
+  cltt 5 2023/08/11 03:21:24;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:22:24;
+  ends 5 2023/08/11 03:24:24;
+  cltt 5 2023/08/11 03:22:24;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:22:30;
+  ends 5 2023/08/11 03:24:30;
+  cltt 5 2023/08/11 03:22:30;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
+lease 192.168.0.11 {
+  starts 5 2023/08/11 03:23:24;
+  ends 5 2023/08/11 03:25:24;
+  cltt 5 2023/08/11 03:23:24;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 0e:f8:a9:97:ed:31;
+  uid "\001\016\370\251\227\3551";
+  set vendor-class-identifier = "android-dhcp-13";
+  client-hostname "Galaxy-A12";
+}
+lease 192.168.0.10 {
+  starts 5 2023/08/11 03:23:40;
+  ends 5 2023/08/11 03:25:40;
+  cltt 5 2023/08/11 03:23:40;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:6c:80:0c:a5:e3;
+  uid "\001dl\200\014\245\343";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "LAPTOP-2QOQP09H";
+}
