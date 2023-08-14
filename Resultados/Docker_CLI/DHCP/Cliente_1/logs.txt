@@ -1,0 +1,586 @@
+root@pi:/home/pi/Resultados/Prueba_4# docker cp dhcp_server_eth1:/var/lib/dhcp/dhcpd.leases /h ome/pi/Resultados/Prueba_4/
+Successfully copied 12.8kB to /home/pi/Resultados/Prueba_4/
+root@pi:/home/pi/Resultados/Prueba_4# docker cp dhcp_server_eth1:/var/lib/dhcp/dhcpd.leases~ /home/pi/Resultados/Prueba_4/
+Successfully copied 23.6kB to /home/pi/Resultados/Prueba_4/
+root@pi:/home/pi/Resultados/Prueba_4# docker logs dhcp_server_eth1
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+
+No subnet declaration for eth1 (no IPv4 addresses).
+** Ignoring requests on eth1.  If this is not what
+   you want, please write a subnet declaration
+   in your dhcpd.conf file for the network segment
+   to which interface eth1 is attached. **
+
+
+Not configured to listen on any interfaces!
+
+If you think you have received this message due to a bug rather
+than a configuration issue please read the section on submitting
+bugs on either our web page at www.isc.org or in the README file
+before submitting a bug.  These pages explain the proper
+process and the information we find helpful for debugging.
+
+exiting.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+
+No subnet declaration for eth1 (no IPv4 addresses).
+** Ignoring requests on eth1.  If this is not what
+   you want, please write a subnet declaration
+   in your dhcpd.conf file for the network segment
+   to which interface eth1 is attached. **
+
+
+Not configured to listen on any interfaces!
+
+If you think you have received this message due to a bug rather
+than a configuration issue please read the section on submitting
+bugs on either our web page at www.isc.org or in the README file
+before submitting a bug.  These pages explain the proper
+process and the information we find helpful for debugging.
+
+exiting.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+
+No subnet declaration for eth1 (no IPv4 addresses).
+** Ignoring requests on eth1.  If this is not what
+   you want, please write a subnet declaration
+   in your dhcpd.conf file for the network segment
+   to which interface eth1 is attached. **
+
+
+Not configured to listen on any interfaces!
+
+If you think you have received this message due to a bug rather
+than a configuration issue please read the section on submitting
+bugs on either our web page at www.isc.org or in the README file
+before submitting a bug.  These pages explain the proper
+process and the information we find helpful for debugging.
+
+exiting.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+
+No subnet declaration for eth1 (no IPv4 addresses).
+** Ignoring requests on eth1.  If this is not what
+   you want, please write a subnet declaration
+   in your dhcpd.conf file for the network segment
+   to which interface eth1 is attached. **
+
+
+Not configured to listen on any interfaces!
+
+If you think you have received this message due to a bug rather
+than a configuration issue please read the section on submitting
+bugs on either our web page at www.isc.org or in the README file
+before submitting a bug.  These pages explain the proper
+process and the information we find helpful for debugging.
+
+exiting.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+
+No subnet declaration for eth1 (no IPv4 addresses).
+** Ignoring requests on eth1.  If this is not what
+   you want, please write a subnet declaration
+   in your dhcpd.conf file for the network segment
+   to which interface eth1 is attached. **
+
+
+Not configured to listen on any interfaces!
+
+If you think you have received this message due to a bug rather
+than a configuration issue please read the section on submitting
+bugs on either our web page at www.isc.org or in the README file
+before submitting a bug.  These pages explain the proper
+process and the information we find helpful for debugging.
+
+exiting.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+
+No subnet declaration for eth1 (no IPv4 addresses).
+** Ignoring requests on eth1.  If this is not what
+   you want, please write a subnet declaration
+   in your dhcpd.conf file for the network segment
+   to which interface eth1 is attached. **
+
+
+Not configured to listen on any interfaces!
+
+If you think you have received this message due to a bug rather
+than a configuration issue please read the section on submitting
+bugs on either our web page at www.isc.org or in the README file
+before submitting a bug.  These pages explain the proper
+process and the information we find helpful for debugging.
+
+exiting.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+
+No subnet declaration for eth1 (no IPv4 addresses).
+** Ignoring requests on eth1.  If this is not what
+   you want, please write a subnet declaration
+   in your dhcpd.conf file for the network segment
+   to which interface eth1 is attached. **
+
+
+Not configured to listen on any interfaces!
+
+If you think you have received this message due to a bug rather
+than a configuration issue please read the section on submitting
+bugs on either our web page at www.isc.org or in the README file
+before submitting a bug.  These pages explain the proper
+process and the information we find helpful for debugging.
+
+exiting.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+
+No subnet declaration for eth1 (no IPv4 addresses).
+** Ignoring requests on eth1.  If this is not what
+   you want, please write a subnet declaration
+   in your dhcpd.conf file for the network segment
+   to which interface eth1 is attached. **
+
+
+Not configured to listen on any interfaces!
+
+If you think you have received this message due to a bug rather
+than a configuration issue please read the section on submitting
+bugs on either our web page at www.isc.org or in the README file
+before submitting a bug.  These pages explain the proper
+process and the information we find helpful for debugging.
+
+exiting.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+
+No subnet declaration for eth1 (no IPv4 addresses).
+** Ignoring requests on eth1.  If this is not what
+   you want, please write a subnet declaration
+   in your dhcpd.conf file for the network segment
+   to which interface eth1 is attached. **
+
+
+Not configured to listen on any interfaces!
+
+If you think you have received this message due to a bug rather
+than a configuration issue please read the section on submitting
+bugs on either our web page at www.isc.org or in the README file
+before submitting a bug.  These pages explain the proper
+process and the information we find helpful for debugging.
+
+exiting.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+
+No subnet declaration for eth1 (no IPv4 addresses).
+** Ignoring requests on eth1.  If this is not what
+   you want, please write a subnet declaration
+   in your dhcpd.conf file for the network segment
+   to which interface eth1 is attached. **
+
+
+Not configured to listen on any interfaces!
+
+If you think you have received this message due to a bug rather
+than a configuration issue please read the section on submitting
+bugs on either our web page at www.isc.org or in the README file
+before submitting a bug.  These pages explain the proper
+process and the information we find helpful for debugging.
+
+exiting.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+
+No subnet declaration for eth1 (no IPv4 addresses).
+** Ignoring requests on eth1.  If this is not what
+   you want, please write a subnet declaration
+   in your dhcpd.conf file for the network segment
+   to which interface eth1 is attached. **
+
+
+Not configured to listen on any interfaces!
+
+If you think you have received this message due to a bug rather
+than a configuration issue please read the section on submitting
+bugs on either our web page at www.isc.org or in the README file
+before submitting a bug.  These pages explain the proper
+process and the information we find helpful for debugging.
+
+exiting.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+
+No subnet declaration for eth1 (no IPv4 addresses).
+** Ignoring requests on eth1.  If this is not what
+   you want, please write a subnet declaration
+   in your dhcpd.conf file for the network segment
+   to which interface eth1 is attached. **
+
+
+Not configured to listen on any interfaces!
+
+If you think you have received this message due to a bug rather
+than a configuration issue please read the section on submitting
+bugs on either our web page at www.isc.org or in the README file
+before submitting a bug.  These pages explain the proper
+process and the information we find helpful for debugging.
+
+exiting.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+
+No subnet declaration for eth1 (no IPv4 addresses).
+** Ignoring requests on eth1.  If this is not what
+   you want, please write a subnet declaration
+   in your dhcpd.conf file for the network segment
+   to which interface eth1 is attached. **
+
+
+Not configured to listen on any interfaces!
+
+If you think you have received this message due to a bug rather
+than a configuration issue please read the section on submitting
+bugs on either our web page at www.isc.org or in the README file
+before submitting a bug.  These pages explain the proper
+process and the information we find helpful for debugging.
+
+exiting.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+Listening on LPF/eth1/00:e0:4c:36:00:c8/192.168.1.0/24
+Sending on   LPF/eth1/00:e0:4c:36:00:c8/192.168.1.0/24
+Sending on   Socket/fallback/fallback-net
+Server starting service.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+
+No subnet declaration for eth1 (no IPv4 addresses).
+** Ignoring requests on eth1.  If this is not what
+   you want, please write a subnet declaration
+   in your dhcpd.conf file for the network segment
+   to which interface eth1 is attached. **
+
+
+Not configured to listen on any interfaces!
+
+If you think you have received this message due to a bug rather
+than a configuration issue please read the section on submitting
+bugs on either our web page at www.isc.org or in the README file
+before submitting a bug.  These pages explain the proper
+process and the information we find helpful for debugging.
+
+exiting.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+Listening on LPF/eth1/00:e0:4c:36:00:c8/192.168.1.0/24
+Sending on   LPF/eth1/00:e0:4c:36:00:c8/192.168.1.0/24
+Sending on   Socket/fallback/fallback-net
+Server starting service.
+DHCPREQUEST for 192.168.200.9 from c4:54:44:ac:34:9e via eth1: wrong network.
+DHCPNAK on 192.168.200.9 to c4:54:44:ac:34:9e via eth1
+DHCPDISCOVER from c4:54:44:ac:34:9e via eth1
+DHCPOFFER on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 (192.168.1.1) from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+Wrote 1 leases to leases file.
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+Wrote 1 leases to leases file.
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPREQUEST for 192.168.1.10 from c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+DHCPACK on 192.168.1.10 to c4:54:44:ac:34:9e (DESKTOP-EE99I73) via eth1
+root@pi:/home/pi/Resultados/Prueba_4#
