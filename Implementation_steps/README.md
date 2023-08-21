@@ -67,6 +67,7 @@ El procedimiento realizado se muestra en [Intalación y Configuración de Hostap
 | systemctl disable service_name        | Deshabilita la ejecución del servicio al inicio.      |
 
 El Procedemientos se describen en [Configuración de Servicios Interferentes](https://github.com/AndresYE/Network_Service_on_Containers/blob/c830396d7b75f31b365c386a5a2d68b509f10a54/Implementation_steps/Configuracion_Servicios_Interferentes/README.md).
+
 **NOTA: Una vez desactivado el servicio DHCPCD seperdera la conexión obtenida de la red local conecta, por lo que se debe configurar previamente la interfaz "eth0" en el archivo "/etc/network/interfaces" para perder el acceso al dispositivo** 
 # Implementación Individual
 ### Topología
