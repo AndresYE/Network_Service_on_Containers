@@ -1,21 +1,40 @@
 En el presente apartado se describe el procedimiento para la implementación de servicios de red mediante contenedores. A continuación se enlistan los pasos correspondientes.
 
-## Preconfiguraciones
+# Preconfiguraciones
 
-- **Instalación Raspberry OS:** Como primer paso se instalará el sistema operativo Raspberry OS en la placa de desarrollo Raspberry Pi 4B, en base a los pasos descritos en [Raspberry Pi Documentation](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system). La configuración se realizará para un sistema operativo basado en Debian 11 Bullseye arquitectura ARM de 32bits sin interfaz gráfica "RASPBERRY PI OS LITE (32-BIT)". Además, se configurará la red Wifi local y SSH, para realizar las configuraciones de manera remota. El procedimiento realizado se muestra en [Intalación de Raspberry OS](https://github.com/AndresYE/Network_Service_on_Containers/blob/195198dbbaa3d481e01358605d8de3d51a6c8db1/Implementation_steps/Instalacion_Raspberry_Pi_OS/README.md)
+## **Instalación Raspberry OS:**
+- Como primer paso se instalará el sistema operativo Raspberry OS en la placa de desarrollo Raspberry Pi 4B, en base a los pasos descritos en [Raspberry Pi Documentation](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system). La configuración se realizará para un sistema operativo basado en Debian 11 Bullseye arquitectura ARM de 32bits sin interfaz gráfica "RASPBERRY PI OS LITE (32-BIT)". Además, se configurará la red Wifi local y SSH, para realizar las configuraciones de manera remota. El procedimiento realizado se muestra en [Intalación de Raspberry OS](https://github.com/AndresYE/Network_Service_on_Containers/blob/195198dbbaa3d481e01358605d8de3d51a6c8db1/Implementation_steps/Instalacion_Raspberry_Pi_OS/README.md)
 
-- **Instalación Docker y Docker Compose:** Como segundo paso se instala el paquete de software Docker y sus herramientas asociadas, como Docker Compose. Para lo cual, se toma en cuenta la arquitectura y distribución de Raspberry OS dentro de la página de "Plataformas Soportadas" de Docker en [Docker Installation](https://docs.docker.com/engine/install/). Luego, se procede a la instalación de Docker para la distribución Debian 11 Bullseye descrita en [Docker Installation for Debian]((https://docs.docker.com/engine/install/debian/). Posterior a ello, se instala el complemento para el despliegue Multicontenedor sobre Docker Compose, como se describe en [Docker Compose Installation](https://docs.docker.com/compose/install/linux/). El procedimiento realizado se muestra en [Intalación de Docker para Debian](https://github.com/AndresYE/Network_Service_on_Containers/tree/df30bbdbaa23c1806ddec2c73ffccc4f755376c2/Implementation_steps/Instalacion_Docker).
+## **Instalación Docker y Docker Compose:** 
+- Como segundo paso se instala el paquete de software Docker y sus herramientas asociadas, como Docker Compose. Para lo cual, se toma en cuenta la arquitectura y distribución de Raspberry OS dentro de la página de "Plataformas Soportadas" de Docker en [Docker Installation](https://docs.docker.com/engine/install/). Luego, se procede a la instalación de Docker para la distribución Debian 11 Bullseye descrita en [Docker Installation for Debian]((https://docs.docker.com/engine/install/debian/). Posterior a ello, se instala el complemento para el despliegue Multicontenedor sobre Docker Compose, como se describe en [Docker Compose Installation](https://docs.docker.com/compose/install/linux/). El procedimiento realizado se muestra en [Intalación de Docker para Debian](https://github.com/AndresYE/Network_Service_on_Containers/tree/df30bbdbaa23c1806ddec2c73ffccc4f755376c2/Implementation_steps/Instalacion_Docker).
 
-- **Configuración de Interfaces:** Para agregar las interfaces de red (adaptadores USB-Ehternet) a la placa Raspberry Pi y asociar las interfaces  a un nombre especifico de interfaz mediante la MAC, se emplea la solución descrita en [Aosciación de Nombre de Interfaz de res a adaptador USB-Ethernet](https://unix.stackexchange.com/questions/388300/udev-does-not-rename-usb-ethernet-device). Donde se describe la configuración del archivo del sistema: "/etc/udev/rules.d/99-com.rules". El procedimiento realizado se muestra en [Configuración de Adaptadores Ethernet](https://github.com/AndresYE/Network_Service_on_Containers/blob/2781548ff7ee316803f6cab1c4f57f9c8e0194d6/Implementation_steps/Configuracion_Adaptadores_Ethernet/README.md), donde se adjunta los archivos de configuración para las dos placas Rasperry Pi.
-- **Direccionamiento:** Configuración de direccionamiento estático mediante fichero "/etc/network/interfaces", para asociar los servicios contenerizados a una dirección IP de escucha, de acuerdo a la topología de la Figura XXX y la Tabla a continuación:
+## **Configuración de Interfaces de Red y Direccionamiento:**
+- Para agregar las interfaces de red (adaptadores USB-Ehternet) a la placa Raspberry Pi y asociar las interfaces  a un nombre especifico de interfaz mediante la MAC, se emplea la solución descrita en [Aosciación de Nombre de Interfaz de res a adaptador USB-Ethernet](https://unix.stackexchange.com/questions/388300/udev-does-not-rename-usb-ethernet-device). Donde se describe la configuración del archivo del sistema: "/etc/udev/rules.d/99-com.rules".El procedimiento realizado se muestra en [Configuración de Adaptadores Ethernet].(https://github.com/AndresYE/Network_Service_on_Containers/blob/2781548ff7ee316803f6cab1c4f57f9c8e0194d6/Implementation_steps/Configuracion_Adaptadores_Ethernet/README.md), donde se adjunta los archivos de configuración para las dos placas Rasperry Pi.
 
-| Servicio    | Dirección IP  |
-|-------------|---------------|
-| Servicio 1  | xxx.xxx.xxx.1 |
-| Servicio 2  | xxx.xxx.xxx.2 |
-| Servicio 3  | xxx.xxx.xxx.3 |
-| ...         | ...           |
+- Para implementar interfaces virtuales se configuran "alias" de una interfaz, mediante el fichero "/etc/network/interfaces", de acuerdo a la solucion presentada en [Interfaces Virtuales](https://forums.raspberrypi.com/viewtopic.php?t=154471). Esta configuración aplica unicamente para la placa Raspberry PI I.
 
+- El direccionesmianeto se lo realiza mediante la configuración de direccionamiento estático y dinámico mediante el fichero "/etc/network/interfaces", para asociar los servicios contenerizados a una dirección IP y a la interfaz virtual creada. Para la placa Raspberry PI I se emplea  la Tabla a continuación:
+
+| Servicios de Red                | Interfaz | Dirección IPv4/Máscara | Dirección de Gateway |
+|---------------------------------|----------|------------------------|-----------------------|
+| SSH \| Hostap \| DHFP I         | Wlan0    | 192.168.0.1/24         | N/A                   |
+| SSH \| DNS                       | Wlan0:1  | 192.168.0.2/24         | N/A                   |
+| SSH \| FTP                       | Wlan0:3  | 192.168.0.4/24         | N/A                   |
+| SSH \| HTTP                      | Wlan0:4  | 192.168.0.5/24         | N/A                   |
+| SSH \| VoIP                      | Wlan0:5  | 192.168.0.6/24         | N/A                   |
+| SSH \| Rpi-Monitor               | Wlan0:6  | 192.168.0.7/24         | N/A                   |
+| SSH                             | Eth0     | (Cliente DHCP)         | (Cliente DHCP)        |
+| SSH \| Routing \| DHCP II        | Eth1     | 192.168.1.1/24         | 192.168.1.1           |
+| SSH \| Routing \| DHCP III       | Eth2     | 192.168.2.1/24         | 192.168.2.1           |
+| SSH \| Routing                   | Eth3     | 10.0.1.1/30            | N/A                   |
+
+Para el direccionamiento de la placa Raspberrry Pi II, se emplea la siguiente tabla:
+| Servicios de Red        | Interfaz | Dirección IPv4/Máscara | Dirección de Gateway |
+|-------------------------|----------|------------------------|-----------------------|
+| SSH                     | Eth0     | (Cliente DHCP)         | (Cliente DHCP)        |
+| SSH \| Routing \| DHCP I | Eth1     | 192.168.1.1/24         | 192.168.1.1           |
+| SSH \| Routing \| DHCP II | Eth2     | 192.168.2.1/24         | 192.168.2.1           |
+| SSH \| Routing           | Eth3     | 10.0.1.2/30            | N/A                   |
 - **Servicios asociados:** Instalación y configuración del driver de red Hostap para configurar un Access point en la placa Raspberry Pi. Para ello, se debe instalar el paquete de instalación Hostap siguiendo parte de la guía dada en [Hostap Installation](https://raspberrypi-guide.github.io/networking/create-wireless-access-point). Para la configuración se emplearán las especificaciones en la Tabla a continuación:
 
 | Parámetro                                    | Descripción        |
