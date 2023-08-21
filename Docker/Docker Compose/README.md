@@ -8,5 +8,5 @@ A continuación se muestra una tabla con los servicios, las etiquetas de imagen,
 | DNS      | andresye/bind                | dns_server_compose          | dns_logs_volumen                      |
 | FTP      | andresye/vsftpd              | ftp_server_compose          | ftp_logs_volumen                      |
 | HTTP     | andresye/nginx               | http_server_compose         | http_logs_volumen                     |
-| VoIP     | christoofar/asterisk         | voip_server_compose         | voip_logs_volumen <br>voip_qos_volumen   |
+| VoIP     | christoofar/asterisk         | voip_server_compose         | voip_logs_volumen   |
 | Routing  | frrouting/frr:v7.5.1         | routing_server_compose      | routing_config_volumen                  |
