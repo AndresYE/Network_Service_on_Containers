@@ -1,5 +1,3 @@
-![Instalacion_Raspberrry_Os_Paso_6 4](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/8641ae7c-3d99-4ec0-be8d-6e3d607305fd)
-![Instalacion_Raspberrry_Os_Paso_6 3](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/b659d53a-6e5a-4fd3-a611-19a97eedefed)
 
 1. **Descargar Raspberry Pi Imager**
 
