@@ -52,14 +52,4 @@
 ![Instalacion_Raspberrry_Os_Paso_8 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/39de3e99-d7d0-48f7-8a4b-dbba5802179b)
 
 
-11. **Actualización**
-
- - Para asegurarte de tener la última versión de Raspberry Pi OS y sus paquetes, abre una terminal y ejecuta:
-
- ```
- sudo apt update
- sudo apt upgrade
- ```
-
-
 
