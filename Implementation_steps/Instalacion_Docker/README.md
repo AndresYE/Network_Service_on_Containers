@@ -1,9 +1,7 @@
 
-# Instalación de Docker en Debian 32 bits
+# Instalación de Docker
 
-Este es un tutorial paso a paso sobre cómo instalar Docker en una distribución Debian de 32 bits.
-
-## Requisitos
+## Instlación Docker para Debian 32bits
 
 1. **Actualizar el sistema**
 Abre una terminal y ejecuta los siguientes comandos para asegurarte de que el sistema esté actualizado y luego reinicie el sistema:
