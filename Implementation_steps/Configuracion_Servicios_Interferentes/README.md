@@ -10,7 +10,7 @@ Ejecuta el siguiente comando para listar los servicios que están escuchando en 
 ```shell
 sudo netstat -tulnp
 ```
-Esto te proporcionará una lista de servicios y los puertos en los que están activos.
+
 
 2. **Ubicar Servicios Interferentes**
 Analiza la lista de servicios proporcionada en el Paso 1 y ubica aquellos que puedan interferir con los servicios que deseas configurar. Por ejemplo, servicios como dhcpcd, dnsmasq, vsftpd, y httpd pueden interferir con la configuración de red.
@@ -35,16 +35,15 @@ sudo systemctl stop dhcpcd
 
 
 4. **Verificar Estado Actual de Servicios**
-Para verificar el estado actual de los servicios y asegurarte de que se han detenido y deshabilitado correctamente, ejecuta el siguiente comando para cada servicio:
-
+Para verificar el estado actual del servicio DHCPCD y asegurar de que se ha detenido y deshabilitado correctamente, ejecuta el siguiente comando para cada servicio:
 ```shell
 sudo systemctl status service_name
 ```
-Esto te mostrará el estado actual del servicio.
+
 
 Además, puedes listar todos los servicios y sus estados con el siguiente comando:
 
 ```shell
 systemctl list-unit-files --type=service
 ```
-Esto proporcionará una lista completa de servicios y sus estados en tu sistema.
+
