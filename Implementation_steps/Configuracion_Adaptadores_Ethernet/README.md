@@ -7,20 +7,16 @@ Sigue estos pasos para configurar tus adaptadores USB-Ethernet:
 - Conectamos los adaptadores USB-Ethenet a la placa Raspberry Pi.
 2. **Identificar la MAC del adaptador USB-Ethernet**
 - Obtener la dirección MAC del adaptador USB-Ethernet. Ejecuta el siguiente comando en la terminal:
-
 ```shell
 ifcofing -a
 ```
 
 3. **Configurar Archivo**
 - Crea un archivo de reglas udev en el directorio /etc/udev/rules.d/ utilizando un nombre descriptivo, como 99-usb-ethernet.rules:
-´
-´´shell
+```shell
 sudo nano /etc/udev/rules.d/99-usb-ethernet.rules
-´´´
-
+```
 Escribir la siguiente regla udev para asociar la dirección MAC de los adaptadores USB-Ethernet con un nombre de interfaz específico. 
-
 ´´´shell
 SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="MAC_ADDRESS", NAME="INTERFACE_NAME
 ´´´
@@ -28,9 +24,7 @@ SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="MAC_ADDRESS", NAME="INTERFACE_N
 Donde:
 MAC_ADDRESS: Dirección MAC de tu adaptador.
 INTERFACE_NAME: Nombre que deseas asignar a la interfaz.
-
 Guarda el archivo y ciérralo.
-
 4. **Aplicar Configuraciones**
 Para que las reglas udev se apliquen, recárgalas con el siguiente comando:
 ´´´shell
