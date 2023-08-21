@@ -55,7 +55,8 @@ Para el direccionamiento de la placa Raspberrry Pi II, se emplea la siguiente ta
 El procedimiento realizado se muestra en [Intalación y Configuración de Hostap]()
 
 
-- **Servicios interferentes:** Configuración de servicios interferentes asociados a servicios contenerizados, establecidos en la Tabla a continuación. Esto se lo realiza para evitar interferencia de los servicios contenerizados con los servicios del host. Para ello, mediante la shell de Raspian OS se emplea los comandos de la Tabla a continuación, los cuales se deben emplearse para detener, deshabilitar y verificar cada uno de los servicios que generen interferencia en los servicios contenerizados.
+## **Servicios interferentes:** 
+- Configuración de servicios interferentes asociados a servicios contenerizados, como son: DHCPCD, DNSMASQ, HTTPD. Esto se lo realiza para evitar interferencia de los servicios contenerizados con los servicios del host.Para ello, se emplea  los comandos de la Tabla a continuación, para detener, deshabilitar y verificar cada uno de los servicios que generen interferencia en los servicios contenerizados.
 
 | Comando                                | Descripción                                           |
 |---------------------------------------|-------------------------------------------------------|
