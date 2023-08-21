@@ -5,30 +5,20 @@ Este es un tutorial paso a paso sobre cómo instalar Docker en una distribución
 
 ## Requisitos
 
-Antes de comenzar, asegúrate de tener los siguientes elementos:
-
-- Una computadora con Debian de 32 bits instalado.
-- Acceso a Internet.
-
-## Pasos
-
-Sigue estos pasos para instalar Docker en tu sistema Debian de 32 bits:
-
 1. **Actualizar el sistema**
 Abre una terminal y ejecuta los siguientes comandos para asegurarte de que el sistema esté actualizado y luego reinicie el sistema:
 ```shell
 sudo apt update
 sudo apt upgrade -y
 sudo reboot
-´´´
-
+```
 
 
 2. **Desinstalar paquetes Interferentes**
 Desisntalar paquetes previamente instalados, que generen conflictos con el paquete de instalación de Docker.
 ```shell
  for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
-  ´´´
+´´´
 
 
 
