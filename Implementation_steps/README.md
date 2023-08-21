@@ -1,7 +1,8 @@
+En el presente apartado se describe el procedimiento para la implementación de servicios de red mediante contenedores. Esta implementacion se la realizara mediante los dos escenarios propuestos. A continueación se enlistan los pasos correspondientes.
 
 ## Preconfiguraciones
 
-Antes de la construcción de ficheros Dockerfile y la posterior ejecución de los contadores, se debe configurar el sistema del host, esto es el sistema operativo, software Docker, la herramienta Docker Compose, y herramientas de software asociado para proporcionar los servicios de red y monitoreo.
+Antes de crear los archivos Dockerfile y ejecutar los contenedores, ya sea en implementaciones individuales o en ambas juntas, es necesario realizar una serie de pasos de configuración en el sistema host. Esto incluye la configuración inicial del sistema operativo, la instalación y configuración de Docker, así como la herramienta Docker Compose. Además, se deben considerar las herramientas de software relacionadas necesarias para brindar servicios de red y monitoreo.
 
 - **Instalación Raspberry OS:** Como primer paso se instalará el sistema operativo Raspberry OS en la placa de desarrollo Raspberry Pi 4B, en base a los pasos descritos en [Raspberry Pi Documentation](URL). La configuración se realizará para un sistema operativo basado en Debian 11 Bullseye arquitectura ARM de 32bits sin interfaz gráfica "RASPBERRY PI OS LITE (32-BIT)". Además, se configurará la red Wifi local y SSH, para realizar las configuraciones de manera remota.
 
