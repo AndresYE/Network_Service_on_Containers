@@ -42,3 +42,24 @@
 - Haz clic en "Write" para escribir la imagen de Raspberry Pi OS en la tarjeta microSD. Esto tomará unos minutos.
      ![Instalacion_Raspberrry_Os_Paso_7 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/bcf71c9f-8255-459e-b25d-a43b7754469f)
      ![Instalacion_Raspberrry_Os_Paso_7 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/67ac5657-0297-4700-884e-f444fd3c4176)
+
+
+8. **Ingreso mediante SSH**
+
+ - Encienda la Raspberry Pi e ingrese mediante conexión SSH a la dirección de la red local a través del software Putty.
+![Instalacion_Raspberrry_Os_Paso_8 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/5786b354-4571-475a-be8e-354f5f1c9fa1)
+
+![Instalacion_Raspberrry_Os_Paso_8 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/39de3e99-d7d0-48f7-8a4b-dbba5802179b)
+
+
+11. **Actualización**
+
+ - Para asegurarte de tener la última versión de Raspberry Pi OS y sus paquetes, abre una terminal y ejecuta:
+
+ ```
+ sudo apt update
+ sudo apt upgrade
+ ```
+
+
+
