@@ -10,6 +10,7 @@ Ejecuta el siguiente comando para listar los servicios que están escuchando en 
 ```shell
 sudo netstat -tulnp
 ```
+![verificacion_servicios_activos](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/9694079b-1375-4218-a7b0-5952376796c9)
 
 
 2. **Ubicar Servicios Interferentes**
