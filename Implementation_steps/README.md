@@ -1,4 +1,9 @@
-En el presente apartado se describe el procedimiento para la implementación de servicios de red mediante contenedores. A continuación se enlistan los pasos correspondientes.
+En el presente apartado se describe el procedimiento para la implementación de servicios de red mediante contenedores en base a la topología de la imagen adjunta. 
+# Topología
+La topología a implementar es la siguiente:
+![Figura 2 13](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/2eb564ed-30d2-4953-a3a2-b7ad96e34c54)
+
+A continuación se enlistan los pasos correspondientes.
 
 # Preconfiguraciones
 
