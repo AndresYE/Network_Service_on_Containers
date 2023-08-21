@@ -1,0 +1,212 @@
+#################################################################################################################################
+#                                                                        							                                          #
+#						                        Servicios basados en Contenedores     	                                                    #
+#                                                                        							                                          #
+#################################################################################################################################
+#					                        Universidad: Escuela Politécnica Nacional						                                          #
+#	                                    															                                                            #
+#                                                                        							                                          #
+# 						                        Autor: Andrés Lenin Yazán Endara                                 		                      #
+#                                                                        							                                          #
+# 			  Archivo: YAML - Configuración de fichero YML para despliegue multicontenedor Docker Compose                           #
+#                                                                        							                                          #
+# 							                                Versión: 1.0                                    			                          #  
+#                                                                        							                                          #
+# 						                            Fecha de Creación: 01/07/2023                                          		            #
+#                                                                        							                                          #
+#################################################################################################################################
+version: "1.0"
+services:
+  
+############################ Web Server #############################
+  web:
+    # Descargar imagen del registro Docker Hub
+    image: andresye/nginx
+    # Definir nombre del contenedor
+    container_name: http_server_compose
+    # Definir red del contenedor
+    network_mode: "host"
+    # Configurar terminal TTY
+
+    # Escalar servicio
+    deploy:
+      # Definir número de replicas
+      replicas: 1
+    # Reiniciar Servicio
+    restart: always
+    # Definir volumes del servicio
+    volumes:
+      - ./html/:/usr/share/nginx/html/
+      - http_logs_volumen:/var/log/nginx/
+############################ DHCP Server #############################
+  dhcp_wlan0:
+    # Descargar imagen del registro Docker Hub
+    image: andresye/dhcpd
+    # Definir nombre del contenedor
+    container_name: dhcp_server_wlan0_compose
+    # Configurar terminal TTY
+    tty: true 
+    # Definir red del contenedor
+    network_mode: "host"
+    # Definir variables de entorno
+    environment:
+      IFDHCP: wlan0
+      IPV4_SUBNET: 192.168.0.0
+      MIN_IPV4_ADDRESS: 192.168.0.10
+      MAX_IPV4_ADDRESS: 192.168.0.100
+      IPV4_GATEWAY: 192.168.0.1
+      IPV4_GATEWAY_MASK: 255.255.255.0
+    # Escalar servicio
+    deploy:
+      # Definir número de replicas
+      replicas: 1
+    # Reiniciar Servicio
+    restart: always
+    # Definir volumes del servicio
+    volumes: 
+      - dhcp_wlan0_leases_volumen:/var/lib/dhcp
+  dhcp_eth1:
+    # Descargar imagen del registro Docker Hub
+    image: andresye/dhcpd
+    # Definir nombre del contenedor
+    container_name: dhcp_server_eth1_compose
+    # Configurar terminal TTY
+    tty: true
+    # Definir red del contenedor
+    network_mode: "host"
+     # Definir variables de entorno
+    environment:
+      IFDHCP: eth1
+      IPV4_SUBNET: 192.168.1.0
+      MIN_IPV4_ADDRESS: 192.168.1.10
+      MAX_IPV4_ADDRESS: 192.168.1.100
+      IPV4_GATEWAY: 192.168.1.1
+      IPV4_GATEWAY_MASK: 255.255.255.0
+    # Escalar servicio
+    deploy:
+      # Definir número de replicas
+      replicas: 1
+    # Reiniciar Servicio
+    restart: always
+    # Definir volumes del servicio
+    volumes: 
+      - dhcp_eth1_leases_volumen:/var/lib/dhcp
+  dhcp_eth2:
+    # Descargar imagen del registro Docker Hub
+    image: andresye/dhcpd
+    # Definir nombre del contenedor
+    container_name: dhcp_server_eth2_compose
+    # Configurar terminal TTY
+    tty: true 
+    # Definir red del contenedor
+    network_mode: "host"
+     # Definir variables de entorno
+    environment:
+      IFDHCP: eth2
+      IPV4_SUBNET: 192.168.2.0
+      MIN_IPV4_ADDRESS: 192.168.2.10
+      MAX_IPV4_ADDRESS: 192.168.2.100
+      IPV4_GATEWAY: 192.168.2.1
+      IPV4_GATEWAY_MASK: 255.255.255.0
+    # Escalar servicio
+    deploy:
+      # Definir número de replicas
+      replicas: 1
+    # Reiniciar Servicio
+    restart: always
+    # Definir volumes del servicio
+    volumes: 
+      - dhcp_eth2_leases_volumen:/var/lib/dhcp
+############################ DNS Server #############################
+  dns:
+    # Descargar imagen del registro Docker Hub
+    image: andresye/bind
+    # Definir nombre del contenedor
+    container_name: DNS_Server_Compose
+    # Configurar terminal TTY
+    tty: true
+    # Definir red del contenedor
+    network_mode: "host"
+    # Escalar servicio
+    deploy:
+    # Definir número de replicas
+      replicas: 1
+    # Reiniciar Servicio
+    restart: always
+    # Definir volumes del servicio
+    volumes: 
+      - dns_logs_volumen:/var/log/bind/
+
+############################ FTP Server #############################
+  ftp:
+    # Descargar imagen del registro Docker Hub
+    image: andresye/vsftpd
+    # Definir nombre del contenedor
+    container_name: ftp_server_compose
+    # Configurar terminal TTY
+    tty: true 
+    # Definir red del contenedor
+    network_mode: "host"
+    # Escalar servicio
+    deploy:
+      # Definir número de replicas
+      replicas: 1
+    # Reiniciar Servicio
+    restart: always
+    # Establcer privilegios de host
+    privileged: true
+    # Definir volumes del servicio
+    volumes: 
+      - ftp_logs_volumen:/var/log/vsftpd/
+
+############################ VoIP Server #############################
+  voip:
+    # Descargar imagen del registro Docker Hub
+    image: christoofar/asterisk
+    # Definir nombre del contenedor
+    container_name: voip_server_compose
+    # Configurar terminal TTY
+    tty: true
+    # Definir red del contenedor
+    network_mode: "host"
+    # Escalar servicio
+    deploy:
+      # Definir número de replicas
+      replicas: 1
+    # Reiniciar Servicio
+    restart: always
+    # Definir volumes del servicio
+    volumes: 
+      - voip_logs_volumen:/var/log/asterisk/ 
+      - ./asterisk/:/etc/asterisk/
+############################ Routing Server #############################
+  routing:
+    # Descargar imagen del registro Docker Hub
+    image: frrouting/frr:v8.4.0
+    # Definir nombre del contenedor
+    container_name: routing_server_compose
+    # Configurar terminal TTY
+    tty: true
+    # Definir red del contenedor
+    network_mode: "host"
+    # Escalar servicio
+    deploy:
+      # Definir número de replicas
+      replicas: 1
+    # Reiniciar Servicio
+    restart: always
+    # Establcer privilegios de host
+    privileged: true
+    # Definir volumes del servicio
+    volumes: 
+      - routing_config_volumen:/etc/frr/ 
+# Definir volumes para los servicios
+volumes:
+  dhcp_wlan0_leases_volumen:
+  dhcp_eth1_leases_volumen:
+  dhcp_eth2_leases_volumen:
+  dns_logs_volumen:
+  ftp_logs_volumen:
+  http_logs_volumen:
+  voip_logs_volumen:
+  routing_config_volumen:
