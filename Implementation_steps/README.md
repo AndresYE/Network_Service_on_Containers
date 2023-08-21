@@ -1,9 +1,4 @@
-En el presente apartado se describe el procedimiento para la implementación de servicios de red mediante contenedores en base a la topología de la imagen adjunta. 
-# Topología
-La topología a implementar es la siguiente:
-![Figura 2 13](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/2eb564ed-30d2-4953-a3a2-b7ad96e34c54)
-
-A continuación se enlistan los pasos correspondientes.
+En el presente apartado se describe el procedimiento para la implementación de servicios de red mediante contenedores. A continuación se enlistan los pasos correspondientes.
 
 # Preconfiguraciones
 
@@ -73,24 +68,19 @@ El procedimiento realizado se muestra en [Intalación y Configuración de Hostap
 
 El Procedemientos se describen en [Configuración de Servicios Interferentes](https://github.com/AndresYE/Network_Service_on_Containers/blob/c830396d7b75f31b365c386a5a2d68b509f10a54/Implementation_steps/Configuracion_Servicios_Interferentes/README.md).
 
-## Implementación Individual Dockerfile
+# Implementación Individual
+### Topología
+La topología para implementación Individual y Conjunto mediante Docker CLI:
+![Figura 2 13](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/2eb564ed-30d2-4953-a3a2-b7ad96e34c54)
 
-Para esta primera fase, se implementará cada uno de los servicios de red de manera individual, mediante una imagen diseñada con un fichero Dockerfile, basadas en la Tabla XXX y posterior a ello se ejecutará el contenedor para cada servicio mediante Docker CLI de la Tabla XXX.
+Para esta primera fase, se implementará cada uno de los servicios de red de manera individual, mediante una imagen diseñada con un fichero Dockerfile, disponibles en [Docker CLI]().
 
-El fichero Dockerfile diseñado para cada uno de los servicios (DHCP, DNS, FTP, Web, VoIP y routing), se encuentran en el repositorio público de GitHub del [Anexo I](URL) donde se describe más a detalle cada una de las líneas de los ficheros. Además, de la descripción de cada uno de los servicios contenerizados, implementaciones y archivos de configuración asociados que se emplean en la implementación.
 
-Como siguiente paso se realiza el despliegue de los contenedores Docker mediante Docker CLI, de acuerdo con los comandos de las Tablas a continuación:
-
-| Comando Docker CLI                      | Descripción                                  |
-|----------------------------------------|----------------------------------------------|
-| docker run -d --name container_name    | Descripción del comando                      |
-| ...                                    | ...                                          |
-
-## Pruebas Individuales
+# Pruebas Individuales
 
 Las pruebas se las realiza considerando la topología de la Figura XXX y las herramientas descritas en la Tabla XXX. Donde cada uno de los clientes analizará el tráfico mediante la herramienta de software Wireshark. Además, en cada uno de los clientes se verificará el servicio red obtenido mediante una aplicación respectiva. A continuación, se describe el procedimiento para las pruebas.
 
-### Pruebas de Funcionamiento
+## Pruebas de Funcionamiento
 
 Para las pruebas de funcionamiento de cada uno de los servicios contenerizados se empleará una aplicación para obtener el recurso que cada servicio proporciona.
 
@@ -104,7 +94,7 @@ Para las pruebas de funcionamiento de cada uno de los servicios contenerizados s
 
 - **Servidor VoIP:** Pruebas de llamadas VoIP, a través de la aplicación móvil Liphone/Sip para realizar las llamadas de VoIP, donde se verificará la conexión al servidor y entre las extensiones configuradas.
 
-### Pruebas de Performance
+## Pruebas de Performance
 
 - **Pruebas de Conexión:** Las pruebas de conexión para cada uno de los clientes se las realizarán mediante un ping desde la terminal de consola de los clientes, hacia las direcciones IP configuradas para cada uno de los servicios DHCP, DNS, FTP, Web y VoIP; de acuerdo con la tabla de direccionamiento de la Tabla XXX.
 
@@ -121,17 +111,15 @@ Para las pruebas de funcionamiento de cada uno de los servicios contenerizados s
 
 Los resultados de las pruebas de cada uno de los servicios se analizan en el Capítulo III.
 
-## Implementación Docker Compose
+# Implementación Docker Compose
+### Topología
+La topología para implementación Conjunta mediante Docker Compose:
+![Figura 2 13](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/2eb564ed-30d2-4953-a3a2-b7ad96e34c54)
 
-Una vez finalizada la fase de implementación individual, se procede al despliegue conjunto con Docker Compose. La construcción del fichero yaml se la realiza en base a la Tabla XXX y XXX.
 
-Para la ejecución de los servicios mediante Docker Compose se emplean los comandos descritos en la Tabla a continuación:
+Una vez finalizada la fase de implementación individual, se procede al despliegue conjunto con Docker Compose. La construcción del fichero yaml que se encuentra disponible en [Docker Compose]() para la placa Raspberry Pi I [Archivo YAML RAPI I]() y para la placa Raspberry Pi II[Archivo YAML RAPI II](). 
 
-| Comando Docker Compose                  | Descripción                                  |
-|----------------------------------------|----------------------------------------------|
-| docker-compose up -d                   | Descripción del comando                      |
-| ...                                    | ...                                          |
 
-## Pruebas Conjuntas
+# Pruebas Conjuntas
 
 Para las pruebas conjuntas se empleará el mismo procedimiento de las pruebas individuales. Los resultados de las implementaciones en conjunto se analizan en el Capítulo III.
