@@ -2,11 +2,20 @@ En el presente apartado se describe el procedimiento para la implementación de 
 
 ## Preconfiguraciones
 
-- **Instalación Raspberry OS:** Como primer paso se instalará el sistema operativo Raspberry OS en la placa de desarrollo Raspberry Pi 4B, en base a los pasos descritos en [Raspberry Pi Documentation](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system). La configuración se realizará para un sistema operativo basado en Debian 11 Bullseye arquitectura ARM de 32bits sin interfaz gráfica "RASPBERRY PI OS LITE (32-BIT)". Además, se configurará la red Wifi local y SSH, para realizar las configuraciones de manera remota. Las configuraciones realizada se muestra en [Intalación de Raspberry OS](https://github.com/AndresYE/Network_Service_on_Containers/blob/195198dbbaa3d481e01358605d8de3d51a6c8db1/Implementation_steps/Instalacion_Raspberry_Pi_OS/README.md)
+- **Instalación Raspberry OS:** Como primer paso se instalará el sistema operativo Raspberry OS en la placa de desarrollo Raspberry Pi 4B, en base a los pasos descritos en [Raspberry Pi Documentation](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system). La configuración se realizará para un sistema operativo basado en Debian 11 Bullseye arquitectura ARM de 32bits sin interfaz gráfica "RASPBERRY PI OS LITE (32-BIT)". Además, se configurará la red Wifi local y SSH, para realizar las configuraciones de manera remota. El procedimiento realizado se muestra en [Intalación de Raspberry OS](https://github.com/AndresYE/Network_Service_on_Containers/blob/195198dbbaa3d481e01358605d8de3d51a6c8db1/Implementation_steps/Instalacion_Raspberry_Pi_OS/README.md)
 
-- **Instalación Docker y Docker Compose:** Como segundo paso se instala el paquete de software Docker y sus herramientas asociadas, como Docker Compose. Para lo cual, se toma en cuenta la arquitectura y distribución de Raspberry OS dentro de la página de "Plataformas Soportadas" de Docker en [Docker Installation](https://docs.docker.com/engine/install/). Luego, se procede a la instalación de Docker para la distribución Debian 11 Bullseye descrita en [Docker Installation for Debian]([URL](https://docs.docker.com/engine/install/debian/)). Posterior a ello, se instala el complemento para el despliegue Multicontenedor sobre Docker Compose, como se describe en [Docker Compose Installation](https://docs.docker.com/compose/install/linux/).
+- **Instalación Docker y Docker Compose:** Como segundo paso se instala el paquete de software Docker y sus herramientas asociadas, como Docker Compose. Para lo cual, se toma en cuenta la arquitectura y distribución de Raspberry OS dentro de la página de "Plataformas Soportadas" de Docker en [Docker Installation](https://docs.docker.com/engine/install/). Luego, se procede a la instalación de Docker para la distribución Debian 11 Bullseye descrita en [Docker Installation for Debian]([URL](https://docs.docker.com/engine/install/debian/)). Posterior a ello, se instala el complemento para el despliegue Multicontenedor sobre Docker Compose, como se describe en [Docker Compose Installation](https://docs.docker.com/compose/install/linux/). El procedimiento realizado se muestra en [Intalación de Docker para Debian]().
 
-- **Servicios asociados:** Instalación y configuración del driver de red Hostap para configurar un Access point en la placa Raspberry Pi. Para ello, se debe instalar el paquete de instalación Hostap siguiendo parte de las guías dadas en [Gentoo Hostap](URL) y [Hostap Installation](URL). Para la configuración se emplearán las especificaciones en la Tabla a continuación:
+- **Direccionamiento:** Configuración de direccionamiento estático mediante fichero "/etc/network/interfaces", para asociar los servicios contenerizados a una dirección IP de escucha, de acuerdo a la topología de la Figura XXX y la Tabla a continuación:
+
+| Servicio    | Dirección IP  |
+|-------------|---------------|
+| Servicio 1  | xxx.xxx.xxx.1 |
+| Servicio 2  | xxx.xxx.xxx.2 |
+| Servicio 3  | xxx.xxx.xxx.3 |
+| ...         | ...           |
+
+- **Servicios asociados:** Instalación y configuración del driver de red Hostap para configurar un Access point en la placa Raspberry Pi. Para ello, se debe instalar el paquete de instalación Hostap siguiendo parte de la guía dada en [Hostap Installation](https://raspberrypi-guide.github.io/networking/create-wireless-access-point). Para la configuración se emplearán las especificaciones en la Tabla a continuación:
 
 | Parámetro                                    | Descripción        |
 |----------------------------------------------|--------------------|
@@ -22,14 +31,8 @@ En el presente apartado se describe el procedimiento para la implementación de 
 | Cifrado entre access point y dispositivos    | CCMP               |
 | Cifrado entre dispositivos                   | CCMP               |
 
-- **Direccionamiento:** Configuración de direccionamiento estático mediante fichero "/etc/network/interfaces", para asociar los servicios contenerizados a una dirección IP de escucha, de acuerdo a la topología de la Figura XXX y la Tabla a continuación:
+El procedimiento realizado se muestra en [Intalación y Configuración de Hostap]()
 
-| Servicio    | Dirección IP  |
-|-------------|---------------|
-| Servicio 1  | xxx.xxx.xxx.1 |
-| Servicio 2  | xxx.xxx.xxx.2 |
-| Servicio 3  | xxx.xxx.xxx.3 |
-| ...         | ...           |
 
 - **Servicios interferentes:** Configuración de servicios interferentes asociados a servicios contenerizados, establecidos en la Tabla a continuación. Esto se lo realiza para evitar interferencia de los servicios contenerizados con los servicios del host. Para ello, mediante la shell de Raspian OS se emplea los comandos de la Tabla a continuación, los cuales se deben emplearse para detener, deshabilitar y verificar cada uno de los servicios que generen interferencia en los servicios contenerizados.
 
