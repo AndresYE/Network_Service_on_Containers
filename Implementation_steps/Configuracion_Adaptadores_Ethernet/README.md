@@ -18,8 +18,8 @@ sudo nano /etc/udev/rules.d/99-usb-ethernet.rules
 ```
 Escribir la siguiente regla udev para asociar la dirección MAC de los adaptadores USB-Ethernet con un nombre de interfaz específico. 
 ´´´shell
-
-´´´
+SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="MAC_ADDRESS", NAME="INTERFACE_NAME"
+```
 
 Donde:
 MAC_ADDRESS: Dirección MAC de tu adaptador.
@@ -29,10 +29,10 @@ Guarda el archivo y ciérralo.
 Para que las reglas udev se apliquen, recárgalas con el siguiente comando:
 ´´´shell
 sudo udevadm control --reload-rules
-´´´
+```
 
 5. **Verificar Configuración**
 Desconecta físicamente el adaptador USB-Ethernet de tu computadora y luego vuélvelo a conectar. Despues de ello verificar que el nombre de la interfaz permanezca estático.
 ```shell
 ifcofing -a
-´´´
+```
