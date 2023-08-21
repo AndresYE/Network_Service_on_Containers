@@ -40,8 +40,6 @@
 ![Instalacion_Raspberrry_Os_Paso_6 4](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/d289ddfe-0e05-4b47-87a7-efd4d314928d)
 
 7. **Escribir la imagen en la tarjeta SD**
-
-   - Haz clic en "Write" para escribir la imagen de Raspberry Pi OS en la tarjeta microSD. Esto tomará unos minutos.
-![Instalacion_Raspberrry_Os_Paso_7 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/bcf71c9f-8255-459e-b25d-a43b7754469f)
-
-![Instalacion_Raspberrry_Os_Paso_7 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/67ac5657-0297-4700-884e-f444fd3c4176)
+- Haz clic en "Write" para escribir la imagen de Raspberry Pi OS en la tarjeta microSD. Esto tomará unos minutos.
+   ![Instalacion_Raspberrry_Os_Paso_7 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/bcf71c9f-8255-459e-b25d-a43b7754469f)
+   ![Instalacion_Raspberrry_Os_Paso_7 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/67ac5657-0297-4700-884e-f444fd3c4176)
