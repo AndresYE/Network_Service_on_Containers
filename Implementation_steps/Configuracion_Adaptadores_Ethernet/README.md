@@ -23,14 +23,16 @@ SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="MAC_ADDRESS", NAME="INTERFACE_N
 Donde:
 * MAC_ADDRESS: Dirección MAC de tu adaptador.
 * INTERFACE_NAME: Nombre que deseas asignar a la interfaz.
-* Guarda el archivo y ciérralo.
-
+* Guarda el archivo y cierre. 
 4. **Aplicar Configuraciones**
-- Para que las reglas udev se apliquen, recárgalas con el siguiente comando:
+- Para que las reglas udev se apliquen, aplicar el siguiente comando:
 ```shell
 sudo udevadm control --reload-rules
 ```
-
+- Luego reiniciar el dispositivo.
+```shell
+sudo reboot
+```
 5. **Verificar Configuración**
 - Desconecta físicamente el adaptador USB-Ethernet de tu computadora y luego vuélvelo a conectar. Despues de ello verificar que el nombre de la interfaz permanezca estático.
 ```shell
