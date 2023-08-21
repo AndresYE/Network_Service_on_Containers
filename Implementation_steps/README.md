@@ -56,7 +56,7 @@ El procedimiento realizado se muestra en [Intalación y Configuración de Hostap
 
 
 ## **Servicios interferentes:** 
-- Configuración de servicios interferentes asociados a servicios contenerizados, como son: DHCPCD, DNSMASQ, HTTPD. Esto se lo realiza para evitar interferencia de los servicios contenerizados con los servicios del host.Para ello, se emplea  los comandos de la Tabla a continuación, para detener, deshabilitar y verificar cada uno de los servicios que generen interferencia en los servicios contenerizados.
+- Configuración de servicios interferentes asociados a servicios contenerizados, como son: DHCPCD, DNSMASQ, HTTPD. Esto se lo realiza para evitar interferencia de los servicios contenerizados con los servicios del host.Para ello, se emplea  los comandos de la Tabla a continuación, para detener, deshabilitar y verificar cada uno de los servicios que generen interferencia con los servicios contenerizados.
 
 | Comando                                | Descripción                                           |
 |---------------------------------------|-------------------------------------------------------|
@@ -65,6 +65,7 @@ El procedimiento realizado se muestra en [Intalación y Configuración de Hostap
 | systemctl status service_name         | Muestra el estado del servicio.                       |
 | systemctl stop service_name           | Detiene la ejecución del servicio.                    |
 | systemctl disable service_name        | Deshabilita la ejecución del servicio al inicio.      |
+El Procedemientos se describen en [Configuración de Servicios Interferentes]().
 
 ## Implementación Individual Dockerfile
 
