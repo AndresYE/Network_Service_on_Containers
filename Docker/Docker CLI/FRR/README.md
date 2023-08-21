@@ -4,32 +4,7 @@
 
 FRRouting, también conocido como FRR, es un conjunto de protocolos de enrutamiento de código abierto y de alta calidad que se utilizan para construir redes de área amplia (WAN) y redes de área local (LAN) de tamaño mediano a grande.
 
-## Descripción
-
-FRRouting es una implementación robusta y escalable de protocolos de enrutamiento como BGP, OSPF, IS-IS, RIP y EIGRP. Está diseñado para ser compatible con los estándares de enrutamiento y ofrecer un rendimiento óptimo en entornos de red complejos.
-
-## Características
-
-- **Protocolos de enrutamiento**: FRRouting admite una amplia gama de protocolos de enrutamiento, incluyendo BGP, OSPF, IS-IS, RIP y EIGRP, lo que permite construir redes complejas y flexibles.
-- **Escalabilidad**: FRRouting está diseñado para manejar redes de cualquier tamaño, desde pequeñas LAN hasta WAN de gran escala, garantizando un rendimiento óptimo y una administración eficiente.
-- **Alta disponibilidad**: FRRouting proporciona características de alta disponibilidad, como enrutamiento redundante, enlaces de respaldo y capacidades de conmutación por error, para garantizar la continuidad de la red.
-- **Enrutamiento basado en políticas**: Permite configurar políticas de enrutamiento avanzadas para controlar la forma en que se toman las decisiones de enrutamiento y gestionar el tráfico de manera eficiente.
-- **Enrutamiento IPv6**: FRRouting ofrece un soporte completo para enrutamiento IPv6, permitiendo la implementación de redes basadas en el protocolo de próxima generación.
-- **Integración con otras soluciones**: FRRouting se integra fácilmente con otras soluciones de red, como sistemas de monitorización y administración, para facilitar la gestión centralizada y el monitoreo de la red.
-
-## Arquitectura
-
-FRRouting sigue una arquitectura modular y flexible, donde cada protocolo de enrutamiento se implementa como un módulo independiente. Estos módulos interactúan entre sí a través de una capa de abstracción común para proporcionar un enrutamiento coherente y unificado en toda la red.
-
-## Implementaciones
-
-FRRouting se puede implementar en una variedad de escenarios, incluyendo:
-
-- **Redes de proveedores de servicios**: FRRouting es ampliamente utilizado por proveedores de servicios para construir y administrar redes de área amplia y ofrecer servicios de conectividad a sus clientes.
-- **Redes empresariales**: FRRouting se puede implementar en redes empresariales para establecer un enrutamiento eficiente y confiable entre las distintas ubicaciones y servicios.
-- **Redes de data center**: FRRouting es una opción popular para construir redes de data center y proporcionar enrutamiento entre los servidores y los diferentes componentes de la infraestructura.
-
-# Archivos Principales de FRRouting
+## Archivos Principales de FRRouting
 
 A continuación se muestra una tabla que describe los archivos principales utilizados en FRRouting:
 
