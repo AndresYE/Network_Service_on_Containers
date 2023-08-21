@@ -15,43 +15,76 @@ Antes de comenzar, asegúrate de tener los siguientes elementos:
 Sigue estos pasos para instalar Docker en tu sistema Debian de 32 bits:
 
 1. **Actualizar el sistema**
+Abre una terminal y ejecuta los siguientes comandos para asegurarte de que el sistema esté actualizado y luego reinicie el sistema:
+```shell
+sudo apt update
+sudo apt upgrade -y
+sudo reboot
+´´´
 
-   Abre una terminal y ejecuta los siguientes comandos para asegurarte de que el sistema esté actualizado:
 
+
+2. **Desinstalar paquetes Interferentes**
+Desisntalar paquetes previamente instalados, que generen conflictos con el paquete de instalación de Docker.
+```shell
+ for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
+  ´´´
+
+
+
+4. ** Actualiza el índice de paquetes e Instalar dependencias**
+Actualiza el índice de paquetes e instala las dependencias necesarias:
    ```shell
-   sudo apt update
-   sudo apt upgrade -y´´´
-2. **Instalar dependencias**
-   ```shell
-   Instala las dependencias necesarias:
-   sudo apt install -y apt-transport-https ca-certificates curl software-properties-common´´
+   sudo apt-get update
+   sudo apt-get install ca-certificates curl gnupg
+   ´´´
 
-4. **Agregar el repositorio de Docker**
+
+
+5. **Agregar el repositorio de Docker**
 Agrega la clave GPG oficial de Docker y el repositorio:
    ```shell
    curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
    echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
    ´´´
-5. **Instalar Docker Engine**
-Actualiza el índice de paquetes e instala Docker:
+
+
+
+6. **Instalar Docker Engine**
+Actualiza el índice de paquetes, instala Docker con sus dependencias y luego reinicie el sistema:
    ```shell
    sudo apt update
-   sudo apt install -y docker-ce docker-ce-cli containerd.io
+   sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo reboot
    ´´´
-6. **Iniciar y habilitar Docker**
-Inicia el servicio Docker y habilítalo para que se inicie automáticamente en el arranque del sistema:
-    ```shell
-   sudo systemctl start docker
-   sudo systemctl enable docker
-   ´´´
-7. **Verificar la instalación**
+
+
+
+8. **Verificar la instalación de Docker**
 Para asegurarte de que Docker se haya instalado correctamente, ejecuta el siguiente comando:
     ```shell
    sudo docker --version
    ´´´
-8. ** **
-```
 
-´´´
 
-´´´
+9. **Desplegar un contenedor**
+Verificar la instalación y funcionamiento de Docker, mediante el despliegue del contenedor de Docker "hello-word".
+   ```
+   sudo docker run hello-world
+   ´´´
+
+
+   
+10. **Verificar la instalación de Docker Compose**
+Para asegurarte de que Docker se haya instalado correctamente, ejecuta el siguiente comando:
+    ```shell
+   sudo docker compose version
+   ´´´
+
+
+   
+
