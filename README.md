@@ -6,12 +6,6 @@ El siguiente Repositorio se encuentra distribuido de la siguiente manera:
 2. **Pasos de Implementación**
 3. **Resultados**
 
-## Topología
-La topología a implementar es la siguiente:
-![Figura 2 13](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/2eb564ed-30d2-4953-a3a2-b7ad96e34c54)
-
-
-
 ## Recursos adicionales
 
 Aquí hay algunos enlaces útiles relacionados con los temas cubiertos en este proyecto:
