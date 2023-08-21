@@ -51,5 +51,11 @@
 
 ![Instalacion_Raspberrry_Os_Paso_8 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/39de3e99-d7d0-48f7-8a4b-dbba5802179b)
 
+![Instalacion_Raspberrry_Os_Paso_8 3](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/d93b449e-2600-4cc6-9bc8-46472e703cea)
 
+9. **Verificar la version del sistema operativo**
+  - Verificar la version del sistema operativo instalado mediante el comando:
+  ´´´ shell
+cat /etc/os-release´´´
 
+![Instalacion_Raspberrry_Os_Paso_9 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/288c5577-0eef-4687-ba10-c85cb4648302)
