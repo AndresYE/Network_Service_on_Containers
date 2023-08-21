@@ -53,26 +53,22 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo reboot
 ```
 
-
 8. **Verificar la instalación de Docker**
 Para asegurarte de que Docker se haya instalado correctamente, ejecuta el siguiente comando:
 ```shell
 sudo docker --version
 ´´´
 
-
 9. **Desplegar un contenedor**
 Verificar la instalación y funcionamiento de Docker, mediante el despliegue del contenedor de Docker "hello-word".
 ```shell
 sudo docker run hello-world
 ```
-
    
 10. **Verificar la instalación de Docker Compose**
 Para asegurarte de que Docker se haya instalado correctamente, ejecuta el siguiente comando:
 ```shell
 sudo docker compose version
 ```
-
    
 
