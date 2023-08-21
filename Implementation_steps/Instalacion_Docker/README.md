@@ -17,7 +17,7 @@ sudo reboot
 2. **Desinstalar paquetes Interferentes**
 Desisntalar paquetes previamente instalados, que generen conflictos con el paquete de instalación de Docker.
 ```shell
- for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
+for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
 ´´´
 
 
