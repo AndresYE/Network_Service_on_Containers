@@ -21,9 +21,9 @@ Escribir la siguiente regla udev para asociar la dirección MAC de los adaptador
 SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="MAC_ADDRESS", NAME="INTERFACE_NAME"
 ```
 Donde:
-MAC_ADDRESS: Dirección MAC de tu adaptador.
-INTERFACE_NAME: Nombre que deseas asignar a la interfaz.
-Guarda el archivo y ciérralo.
+* MAC_ADDRESS: Dirección MAC de tu adaptador.
+* INTERFACE_NAME: Nombre que deseas asignar a la interfaz.
+* Guarda el archivo y ciérralo.
 
 4. **Aplicar Configuraciones**
 Para que las reglas udev se apliquen, recárgalas con el siguiente comando:
