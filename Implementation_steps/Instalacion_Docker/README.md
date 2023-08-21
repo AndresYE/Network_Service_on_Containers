@@ -36,13 +36,13 @@ Agrega la clave GPG oficial de Docker y el repositorio:
 sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
+```
+```shell
 echo \
   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-´´´
-
-
+```
 
 6. **Instalar Docker Engine**
 Actualiza el índice de paquetes, instala Docker con sus dependencias y luego reinicie el sistema:
@@ -50,8 +50,7 @@ Actualiza el índice de paquetes, instala Docker con sus dependencias y luego re
 sudo apt update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo reboot
-´´´
-
+```
 
 
 8. **Verificar la instalación de Docker**
@@ -63,18 +62,16 @@ sudo docker --version
 
 9. **Desplegar un contenedor**
 Verificar la instalación y funcionamiento de Docker, mediante el despliegue del contenedor de Docker "hello-word".
-```
+```shell
 sudo docker run hello-world
-´´´
-
+```
 
    
 10. **Verificar la instalación de Docker Compose**
 Para asegurarte de que Docker se haya instalado correctamente, ejecuta el siguiente comando:
 ```shell
 sudo docker compose version
-´´´
-
+```
 
    
 
