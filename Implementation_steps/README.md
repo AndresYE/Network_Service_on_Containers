@@ -35,7 +35,8 @@ Para el direccionamiento de la placa Raspberrry Pi II, se emplea la siguiente ta
 | SSH \| Routing \| DHCP I | Eth1     | 192.168.1.1/24         | 192.168.1.1           |
 | SSH \| Routing \| DHCP II | Eth2     | 192.168.2.1/24         | 192.168.2.1           |
 | SSH \| Routing           | Eth3     | 10.0.1.2/30            | N/A                   |
-- **Servicios asociados:** Instalación y configuración del driver de red Hostap para configurar un Access point en la placa Raspberry Pi. Para ello, se debe instalar el paquete de instalación Hostap siguiendo parte de la guía dada en [Hostap Installation](https://raspberrypi-guide.github.io/networking/create-wireless-access-point). Para la configuración se emplearán las especificaciones en la Tabla a continuación:
+## **Instalación y Configuración de Servicios asociados:** 
+- Instalación y configuración del driver de red Hostap para configurar un Access point en la placa Raspberry Pi. Para ello, se debe instalar el paquete de instalación Hostap siguiendo parte de la guía dada en [Hostap Installation](https://raspberrypi-guide.github.io/networking/create-wireless-access-point). Para la configuración se emplearán las especificaciones en la Tabla a continuación:
 
 | Parámetro                                    | Descripción        |
 |----------------------------------------------|--------------------|
