@@ -59,4 +59,5 @@
 ´´´shell
 cat /etc/os-release
 ´´´
+
 ![Instalacion_Raspberrry_Os_Paso_9 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/288c5577-0eef-4687-ba10-c85cb4648302)
