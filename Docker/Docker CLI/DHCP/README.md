@@ -29,7 +29,7 @@ A continuación se detallan los pasos para construir la imagen y ejecutar los co
 docker build -t andresye/dhcpd .
 ```
 
-# DHCP 0 - Wlan0
+# DHCP 1 - Wlan0
 1. **Crear Named Volumes**:
 Volumen para archivos de arrendamiento DHCP (dhcpd.leases):
  ```shell
