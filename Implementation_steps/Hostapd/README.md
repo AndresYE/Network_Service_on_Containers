@@ -19,6 +19,8 @@ sudo apt-get install hostapd
 ```shell
 service hostapd status
 ```
+![hostapd_install](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/7ea1f04f-d7a7-4a47-b6de-83f956f1869d)
+
 ## Configuración de Hostap
 
 Sigue estos pasos para configurar Hostap en tu sistema:
@@ -41,6 +43,8 @@ wpa_key_mgmt=WPA-PSK
 wpa_pairwise=CCMP
 rsn_pairwise=CCMP
 ```
+![hostapd_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/78fc9afc-b0f9-471c-bfd6-7080b890914c)
+
 3. **Paso 3**: Desenmascarar servicio Hostap, para poder habilitar servicio.
 ```shell
 sudo systemctl unmask hostapd
@@ -54,4 +58,6 @@ sudo service hostapd restart
 ```shell
 sudo service hostapd enable 
 ```
+![hostapd_configuration_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/d09bf112-e397-4b5a-be13-688dadf17418)
+
 6. **Paso 6**: Verifica que la configuración se haya aplicado correctamente. Puedes revisar los registros o logs del servicio para obtener información adicional sobre el estado de la conexión y cualquier posible error. 
