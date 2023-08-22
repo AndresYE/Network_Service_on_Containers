@@ -138,3 +138,7 @@ Para los resulados de funcionamiento de los servicios desplegados mediante Docke
 
 Para los resulados de funcionamiento de los servicios desplegados mediante Docker Compose, se exponen los resultados obtenidos por parte del cliente remoto, cliente 1, despues de establecer conexión con el Host RPI I mediante OSPF para acceder a los servicios contenerizados. Estas conexiones se realizan a trav\'{e}s de los servicios de DHCP y enrutamiento desplegados mediante Docker Compose. En esta secci\'{o}n, se pone especial \'{e}nfasis en los resultados obtenidos para los servicios contenidos de DHCP, DNS, VoIP y enrutamiento. Cabe mencionar que los resultados para los servicios de FTP y HTTP son similares a los obtenidos previamente. A continuaci\'{o}n, se presentan los resultados detallados.
 Como se puede apreciar, ambos hosts pertenecen a subredes diferentes. En detalle, el cliente 1 est\'{a} situado en la subred 192.168.5.0/24 desempe\~{n}a el papel de cliente remoto para el host RPI 2, . Por otro lado, el cliente 2 tiene la tarea de supervisar las pruebas y est\'{a} ubicado en el host RPI 1, dentro de la subred 192.168.2.0/24.
+
+
+Antes de avanzar con las pruebas de los otros servicios contenidos en los contenedores, se ejecuta una evaluación de conexión hacia la red externa. Este procedimiento se realiza después de obtener una dirección IPv4 a través del servicio DHCP y de haber establecido la adyacencia OSPF en la red.
+
