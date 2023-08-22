@@ -141,4 +141,6 @@ Como se puede apreciar, ambos hosts pertenecen a subredes diferentes. En detalle
 
 
 Antes de avanzar con las pruebas de los otros servicios contenidos en los contenedores, se ejecuta una evaluación de conexión hacia la red externa. Este procedimiento se realiza después de obtener una dirección IPv4 a través del servicio DHCP y de haber establecido la adyacencia OSPF en la red.
+ se exponen los resultados de las pruebas de conexión de extremo a extremo entre clientes mediante la verificación de las conexiones. Estos resultados indican que el retardo aumenta progresivamente hasta llegar al extremo de la conexión, donde el retardo promedio entre los clientes es de aproximadamente 2 ms. Además, en la Figura \ref{fig:cliente1_docker_compose_servicio_routing_trace_route} del ANEXO \ref{Anexo VI}, se proporciona la ruta de extremo a extremo, lo cual permite verificar la trayectoria dentro de la topología diseñada.\\
 
+Al confirmar la conexión de extremo a extremo, se procede a verificar la conexión entre el cliente remoto y los servidores en contenedores. La Tabla \ref{table:tabla_cliente1_docker_compose_conexion_ping} del ANEXO \ref{Anexo VI} presenta los retardos para el cliente 1 conectado mediante Ethernet, los cuales oscilan alrededor de 1 ms.
