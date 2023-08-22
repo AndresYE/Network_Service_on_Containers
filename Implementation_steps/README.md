@@ -112,9 +112,12 @@ Antes de llevar a cabo las pruebas de los otros servicios, se ejecuta una prueba
 | FTP         | ftp                      | Filtrado de todo el tráfico ftp.                  |
 | HTTP        | http                     | Filtrado de todo el tráfico http.                 |
 
+Adicionalmente, el an\'{a}lisis del tr\'{a}fico SIP proporciona una visi\'{o}n detallada de las llamadas efectuadas entre los clientes SIP. Esta informaci\'{o}n incluye aspectos como la direcci\'{o}n IP de origen de la llamada, las extensiones SIP del remitente y el destinatario, el protocolo empleado, la duraci\'{o}n de la llamada, la cantidad de paquetes enviados, el estado de la llamada y los mensajes SIP intercambiados con el servidor VoIP.
+Tambi\'{e}n, con el an\'{a}lisis del tr\'{a}fico RTP se obtiene informaci\'{o}n adicional del QoS del servicio de VoIP
 - **Pruebas de uso de recursos:** En el lado del host de los servidores, se emplearán las herramientas de monitoreo de recursos mediante Htop, docker stats y nmap, para monitorear los parámetros anteriormente descritos respectivamente.
 
 Los resultados de las pruebas de cada uno de los servicios se analizan en el Capítulo III.
+Para llevar a cabo un an\'{a}lisis espec\'{i}fico de los servicios contenidos en los contenedores, inicialmente se utiliza la herramienta "docker stats" para exponer las estad\'{i}sticas de uso generales de los contenedores Docker. Estos datos pueden ser cotejados adem\'{a}s con la herramienta "htop", que proporciona una visi\'{o}n global de las estad\'{i}sticas de uso del sistema.
 
 # Implementación Docker Compose
 ### Topología
