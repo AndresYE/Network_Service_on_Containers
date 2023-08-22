@@ -13,7 +13,8 @@ En el presente apartado se describe el procedimiento para la implementación de 
 
 - Para implementar interfaces virtuales se configuran "alias" de una interfaz, mediante el fichero "/etc/network/interfaces", de acuerdo a la solucion presentada en [Interfaces Virtuales](https://forums.raspberrypi.com/viewtopic.php?t=154471). Esta configuración aplica unicamente para la placa Raspberry PI I.
 
-- El direccionesmianeto se lo realiza mediante la configuración de direccionamiento estático y dinámico mediante el fichero "/etc/network/interfaces", para asociar los servicios contenerizados a una dirección IP y a la interfaz virtual creada. Para la placa Raspberry PI I se emplea  la Tabla a continuación:
+- El direccionesmianeto se lo realiza mediante la configuración de direccionamiento estático y dinámico mediante el fichero "/etc/network/interfaces", para asociar los servicios contenerizados a una dirección IP y a la interfaz virtual creada.
+El direccionamiento IPv4 para la placa Raspberry PI I se presenta en la siguiente Tabla a continuación:
 
 | Servicios de Red                | Interfaz | Dirección IPv4/Máscara | Dirección de Gateway |
 |---------------------------------|----------|------------------------|-----------------------|
@@ -28,7 +29,7 @@ En el presente apartado se describe el procedimiento para la implementación de 
 | SSH \| Routing \| DHCP III       | Eth2     | 192.168.2.1/24         | 192.168.2.1           |
 | SSH \| Routing                   | Eth3     | 10.0.1.1/30            | N/A                   |
 
-Para el direccionamiento de la placa Raspberrry Pi II, se emplea la siguiente tabla:
+PEl direccionamiento IPv4 para la placa Raspberry PI III se presenta en la siguiente Tabla a continuación:
 | Servicios de Red        | Interfaz | Dirección IPv4/Máscara | Dirección de Gateway |
 |-------------------------|----------|------------------------|-----------------------|
 | SSH                     | Eth0     | (Cliente DHCP)         | (Cliente DHCP)        |
@@ -68,7 +69,7 @@ El procedimiento realizado se muestra en [Intalación y Configuración de Hostap
 
 El Procedemientos se describen en [Configuración de Servicios Interferentes](https://github.com/AndresYE/Network_Service_on_Containers/blob/c830396d7b75f31b365c386a5a2d68b509f10a54/Implementation_steps/Configuracion_Servicios_Interferentes/README.md).
 
-**NOTA: Una vez desactivado el servicio DHCPCD seperdera la conexión obtenida de la red local conecta, por lo que se debe configurar previamente la interfaz "eth0" en el archivo "/etc/network/interfaces" para perder el acceso al dispositivo** 
+**NOTA: Una vez desactivado el servicio DHCPCD se perdera la conexión obtenida de la red local conecta mediante Wlan y cualquier conexión que proporcione direccionamiento mediante DHCP, por lo que se debe configurar previamente la interfaz "eth0" en el archivo "/etc/network/interfaces" para perder el acceso al dispositivo.** 
 # Implementación Individual
 ### Topología
 La topología para implementación Individual y Conjunto mediante Docker CLI:
@@ -97,7 +98,10 @@ Para las pruebas de funcionamiento de cada uno de los servicios contenerizados s
 
 ## Pruebas de Performance
 
-- **Pruebas de Conexión:** Las pruebas de conexión para cada uno de los clientes se las realizarán mediante un ping desde la terminal de consola de los clientes, hacia las direcciones IP configuradas para cada uno de los servicios DHCP, DNS, FTP, Web y VoIP; de acuerdo con la tabla de direccionamiento de la Tabla XXX.
+- **Pruebas de Conexión:**
+Antes de llevar a cabo las pruebas de los otros servicios, se ejecuta una prueba de conexión hacia las direcciones asignadas a estos servidores. Esto se realiza una vez que se ha obtenido una dirección IPv4 del servicio DHCP para cada uno de los clientes Ethernet, como Wlan.
+
+- Las pruebas de conexión para cada uno de los clientes se las realizarán mediante un ping desde la terminal de consola de los clientes, hacia las direcciones IP configuradas para cada uno de los servicios DHCP, DNS, FTP, Web y VoIP; de acuerdo con la tabla de direccionamiento de la Tabla XXX.
 
 - **Pruebas de tráfico:** Mediante la herramienta Wireshark se realizará la captura de tráfico de los distintos servicios en la interfaz física conectada. Después, se realizará un filtrado para cada uno de los servicios, mediante la opción de filter de Wireshark. Las instrucciones empleadas para el filtrado de cada uno de los servicios se describen en la Tabla a continuación:
 
