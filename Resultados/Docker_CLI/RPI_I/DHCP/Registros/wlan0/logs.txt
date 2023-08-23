@@ -1,0 +1,464 @@
+root@pi:/home/pi# docker cp dhcp_server_wlan0:/var/lib/dhcp/dhcpd.leases /home/pi/Resultados/Prueba_4/
+Successfully copied 23.6kB to /home/pi/Resultados/Prueba_4/
+root@pi:/home/pi# docker cp dhcp_server_wlan0:/var/lib/dhcp/dhcpd.leases~ /home/pi/Resultados/Prueba_4/
+Successfully copied 38.9kB to /home/pi/Resultados/Prueba_4/
+root@pi:/home/pi# docker logs dhcp_server_wlan0
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+Multiple interfaces match the same subnet: wlan0 wlan0:1
+Multiple interfaces match the same shared network: wlan0 wlan0:1
+Multiple interfaces match the same subnet: wlan0 wlan0:2
+Multiple interfaces match the same shared network: wlan0 wlan0:2
+Multiple interfaces match the same subnet: wlan0 wlan0:3
+Multiple interfaces match the same shared network: wlan0 wlan0:3
+Multiple interfaces match the same subnet: wlan0 wlan0:4
+Multiple interfaces match the same shared network: wlan0 wlan0:4
+Multiple interfaces match the same subnet: wlan0 wlan0:5
+Multiple interfaces match the same shared network: wlan0 wlan0:5
+Multiple interfaces match the same subnet: wlan0 wlan0:6
+Multiple interfaces match the same shared network: wlan0 wlan0:6
+Listening on LPF/wlan0/d8:3a:dd:2b:27:ae/192.168.0.0/24
+Sending on   LPF/wlan0/d8:3a:dd:2b:27:ae/192.168.0.0/24
+Sending on   Socket/fallback/fallback-net
+Server starting service.
+binding to user-specified port 67
+Internet Systems Consortium DHCP Server 4.4.1
+Copyright 2004-2018 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /run/dhcp/dhcpd.pid
+Wrote 0 leases to leases file.
+Multiple interfaces match the same subnet: wlan0 wlan0:1
+Multiple interfaces match the same shared network: wlan0 wlan0:1
+Multiple interfaces match the same subnet: wlan0 wlan0:2
+Multiple interfaces match the same shared network: wlan0 wlan0:2
+Multiple interfaces match the same subnet: wlan0 wlan0:3
+Multiple interfaces match the same shared network: wlan0 wlan0:3
+Multiple interfaces match the same subnet: wlan0 wlan0:4
+Multiple interfaces match the same shared network: wlan0 wlan0:4
+Multiple interfaces match the same subnet: wlan0 wlan0:5
+Multiple interfaces match the same shared network: wlan0 wlan0:5
+Multiple interfaces match the same subnet: wlan0 wlan0:6
+Multiple interfaces match the same shared network: wlan0 wlan0:6
+Listening on LPF/wlan0/d8:3a:dd:2b:27:ae/192.168.0.0/24
+Sending on   LPF/wlan0/d8:3a:dd:2b:27:ae/192.168.0.0/24
+Sending on   Socket/fallback/fallback-net
+Server starting service.
+DHCPDISCOVER from 64:6c:80:0c:a5:e3 via wlan0
+DHCPOFFER on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.10 (192.168.0.1) from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+Wrote 1 leases to leases file.
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPDISCOVER from 0e:f8:a9:97:ed:31 via wlan0
+DHCPOFFER on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.11 (192.168.0.1) from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+reuse_lease: lease age 3 (secs) under 25% threshold, reply with unaltered, existing lease for 192.168.0.10
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+reuse_lease: lease age 0 (secs) under 25% threshold, reply with unaltered, existing lease for 192.168.0.11
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+reuse_lease: lease age 1 (secs) under 25% threshold, reply with unaltered, existing lease for 192.168.0.11
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+reuse_lease: lease age 1 (secs) under 25% threshold, reply with unaltered, existing lease for 192.168.0.11
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+Wrote 2 leases to leases file.
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPINFORM from 192.168.0.10 via wlan0
+DHCPACK to 192.168.0.10 (64:6c:80:0c:a5:e3) via wlan0
+DHCPREQUEST for 192.168.0.10 from 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPACK on 192.168.0.10 to 64:6c:80:0c:a5:e3 (LAPTOP-2QOQP09H) via wlan0
+DHCPREQUEST for 192.168.0.11 from 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+DHCPACK on 192.168.0.11 to 0e:f8:a9:97:ed:31 (Galaxy-A12) via wlan0
+root@pi:/home/pi#
