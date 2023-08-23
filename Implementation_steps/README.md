@@ -1,3 +1,4 @@
+
 En el presente apartado se describe el procedimiento para la implementación de servicios de red mediante contenedores. A continuación se enlistan los pasos correspondientes.
 
 # Preconfiguraciones
@@ -229,14 +230,20 @@ nslookup 192.168.0.7
 
 ## Pruebas de Performance
 [topologia_I.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/12414234/topologia_I.pdf)
-- **Pruebas de Conexión:** Verificar la el retardo de la conexión entre los clientes con los servidores contenerizados, a través de sus domain names.
-- 
-  **Pruebas de tráfico:** Mediante la herramienta Wireshark ejecutada en cada uno de los servicios
-  se realiza la captura de tráfico de los distintos servicios en la interfaz física conectada. Después, se realizará un filtrado para cada uno de los servicios, mediante la opción de filter de Wireshark. Las instrucciones empleadas para el filtrado de cada uno de los servicios se describen en la Tabla a continuación:
+- **Pruebas de Conexión:** Verificar la el retardo de los "pings" de conexión entre los clientes con los servidores contenerizados, a través de sus domain names.
+  **Pruebas de tráfico:** Captura de trádico de servicios contenerizados mediante Wireshark.
+Mediante la herramienta Wireshark ejecutada en cada uno de los clientes, monitorear el tráfico de red capturado durante todo el proceso de las pruebas:
+1. Ejecutar Wireshark en cada uno de los clientes.
+2. Seleccionar la interfaz de captura de tráfico conectadas a las interfaces del servidor "eth1", "eth2" y "wlan0" respectivas.
+3. Una vez finalizada las pruebas de funcionamiento, finalizar la captura del tráfico.
+4. Filtrar la información de red obtenida por cada uno de los clientes, mediante el servicio relacionado. Esto se realiza mediante la opcion de "filter" de Wireshark, se emplea los siguientes comandos de filtrado para obtener información de cada uno de los servicios.
 
 | Servicio    | Instrucción de filtrado  | Descripción                                       |
 |-------------|--------------------------|---------------------------------------------------|
-| DHCP        | dhcp                     | Filtrado de todo el tráfico dhcp.                 |
+| DHCP        |  
+```shell
+dhcp 
+```                    | Filtrado de todo el tráfico dhcp.                 |
 | DNS         | dns                      | Filtrado de todo el tráfico dns.                  |
 | FTP         | ftp                      | Filtrado de todo el tráfico ftp.                  |
 | HTTP        | http                     | Filtrado de todo el tráfico http.                 |
