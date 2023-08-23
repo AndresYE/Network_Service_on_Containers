@@ -77,9 +77,14 @@ El Procedemientos se describen en [Configuración de Servicios Interferentes](ht
 # Implementación Individual
 ## Topología
 La topología para la implementación Individual se muestra en la figura a continuación, donde se muesestra la distribución lógica de los contenedores en la placa Raspberry PI.
-[Prototipo_I.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/12414233/Prototipo_I.pdf)
+![Prototipo_I](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/72c7de45-2a90-4b13-aaa2-cec7a261c3de)
 
 Para esta primera fase, se implementa cada uno de los servicios de red de manera individual medainte el diseño de un fichero Dockerfile y Docker CLI. Los cuales se encuentran entran en el apartada [Ficheros Dockerfile](https://github.com/AndresYE/Network_Service_on_Containers/files/12414235/topologia_II.pdf).
+
+# Implementación Conjunta mediante Docker CLI
+## Topología
+La topología para la implementación mediante Docker CLI se muestra en la figura a continuación, donde se muesestra la conexión de los clientes 1, 2 y 3 a la placa Raspberry PI - RPI-I.
+![Topologia_I](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/9cf04412-7687-46f9-a52b-30fe38c5b038)
 
 ### Pruebas de Funcionamiento
 Para las pruebas de funcionamiento se intenta obtener el recurso que cada servicio proporciona. Esto puede ser medainte una aplicación o software específico para la mayoría de los servicios.
@@ -301,19 +306,20 @@ docker stats
 # Implementación Docker Compose
 ## Topología
 La topología para implementación Conjunta mediante Docker Compose:
-![Figura 2 13](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/2eb564ed-30d2-4953-a3a2-b7ad96e34c54)
-
+![topologia_II](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/293e3022-0146-44be-b389-1f2c1cfd9780)
 
 Una vez finalizada la fase de implementación individual, se procede al despliegue conjunto con Docker Compose. La construcción del fichero yaml que se encuentra disponible en [Docker Compose](https://github.com/AndresYE/Network_Service_on_Containers/tree/389fd8478edf6c580d836344d4b710d70477a052/Docker/Docker%20Compose) para la placa Raspberry Pi I [Archivo YAML RAPI I](https://github.com/AndresYE/Network_Service_on_Containers/tree/2370223085448122eaf9eafcdb2d4bace25d4175/Docker/Docker%20Compose/RPI%20I) y para la placa Raspberry Pi II[Archivo YAML RAPI II](https://github.com/AndresYE/Network_Service_on_Containers/tree/2370223085448122eaf9eafcdb2d4bace25d4175/Docker/Docker%20Compose/RPI%20II), junto con los archivos asociados para el despligue. 
 
 
-# Implementación Conjunta de Servicios con Docker Compose
+# Implementación Conjunta mediante Docker Compose
+## Topología
+La topología para la implementación mediante Docker Compose se muestra en la figura a continuación, donde se muesestra la conexión de los clientes 1 y 2 a las placas Raspberry PI  RPI-I y RPI-II.
+![topologia_II](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/419c37cb-2962-44dd-8ec3-331a39d5bbcb)
 
-![Docker Compose Logo](docker-compose-logo.png)
+Para esta fase, se implementan los servicios de red medainte el diseño de un fichero "YAML" y ejecutados mediante Docker Compose para cada un de las dos placas Raspberry Pi. Los ficheros se encuentran en el apartado de [Docker Compose](https://github.com/AndresYE/Network_Service_on_Containers/tree/e76001d08cef82f954f1894eab0c6aa7583e484d/Docker/Docker%20Compose).
 
-Este repositorio contiene una implementación conjunta de servicios utilizando Docker Compose. El objetivo principal de este proyecto es evaluar el funcionamiento de servicios contenidos en contenedores en un entorno Docker Compose.
-
-## Procedimiento de Pruebas Conjuntas
+### Pruebas de Funcionamiento
+Para las pruebas de funcionamiento se emplea los mismos procedimientos que en la prueba anterior. Sin embargo, para las pruebas de conexión se agrega una prueba 
 
 Para llevar a cabo las pruebas conjuntas, seguimos el mismo procedimiento que en las pruebas individuales. Los resultados de estas implementaciones se analizan en el Capítulo III de nuestro informe.
 
