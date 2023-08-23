@@ -37,8 +37,9 @@ El direccionamiento IPv4 para la placa Raspberry Pi RPI II se presenta en la sig
 | SSH \| Routing \| DHCP I | Eth1     | 192.168.1.1/24         | 192.168.1.1           |
 | SSH \| Routing \| DHCP II | Eth2     | 192.168.2.1/24         | 192.168.2.1           |
 | SSH \| Routing           | Eth3     | 10.0.1.2/30            | N/A                   |
+
 ## **Instalación y Configuración de Servicios asociados:** 
-- Instalación y configuración del driver de red Hostap para configurar un Access point en la placa Raspberry Pi. Para ello, se debe instalar el paquete de instalación Hostap siguiendo parte de la guía dada en [Hostap Installation](https://raspberrypi-guide.github.io/networking/create-wireless-access-point). Para la configuración se emplearán las especificaciones en la Tabla a continuación:
+- Instalación y configuración del driver de red Hostap para configurar un Access point en la placa Raspberry Pi. Para ello, se debe instalar el paquete de instalación Hostap siguiendo parte de la guía dada en [Hostap Installation](https://raspberrypi-guide.github.io/networking/create-wireless-access-point). Para la configuración se emplearán las especificaciones en la tabla descrita a continuación:
 
 | Parámetro                                    | Descripción        |
 |----------------------------------------------|--------------------|
@@ -54,11 +55,10 @@ El direccionamiento IPv4 para la placa Raspberry Pi RPI II se presenta en la sig
 | Cifrado entre access point y dispositivos    | CCMP               |
 | Cifrado entre dispositivos                   | CCMP               |
 
-El procedimiento realizado se muestra en [Intalación y Configuración de Hostap](https://github.com/AndresYE/Network_Service_on_Containers/blob/6b12f1d63b81de2bce23cdd342b0e84be72f3497/Implementation_steps/Hostapd/README.md)
-
+El procedimiento realizado enbase a esto, se muestra en [Intalación y Configuración de Hostap](https://github.com/AndresYE/Network_Service_on_Containers/blob/6b12f1d63b81de2bce23cdd342b0e84be72f3497/Implementation_steps/Hostapd/README.md)
 
 ## **Servicios interferentes:** 
-- Configuración de servicios interferentes asociados a servicios contenerizados, como son: DHCPCD, DNSMASQ, HTTPD. Esto se lo realiza para evitar interferencia de los servicios contenerizados con los servicios del host.Para ello, se emplea  los comandos de la Tabla a continuación, para detener, deshabilitar y verificar cada uno de los servicios que generen interferencia con los servicios contenerizados.
+- Configuración y detención de servicios asociados a los servicios contenerizados que pueden generar interferencia, como son: DHCPCD, DNSMASQ y HTTPD. Esto se lo realiza para evitar interferencia de los servicios contenerizados con los servicios del host. Para ello, se emplea  los comandos de la tabla a continuación, para detener, deshabilitar y verificar cada uno de los servicios interferentes. En la tabla que se muestra a continuación, se describen algunos de los comandos se emplean para este proceso.
 
 | Comando                                | Descripción                                           |
 |---------------------------------------|-------------------------------------------------------|
