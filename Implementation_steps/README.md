@@ -128,22 +128,45 @@ La topología para implementación Conjunta mediante Docker Compose:
 Una vez finalizada la fase de implementación individual, se procede al despliegue conjunto con Docker Compose. La construcción del fichero yaml que se encuentra disponible en [Docker Compose](https://github.com/AndresYE/Network_Service_on_Containers/tree/389fd8478edf6c580d836344d4b710d70477a052/Docker/Docker%20Compose) para la placa Raspberry Pi I [Archivo YAML RAPI I](https://github.com/AndresYE/Network_Service_on_Containers/tree/2370223085448122eaf9eafcdb2d4bace25d4175/Docker/Docker%20Compose/RPI%20I) y para la placa Raspberry Pi II[Archivo YAML RAPI II](https://github.com/AndresYE/Network_Service_on_Containers/tree/2370223085448122eaf9eafcdb2d4bace25d4175/Docker/Docker%20Compose/RPI%20II), junto con los archivos asociados para el despligue. 
 
 
-# Pruebas Conjuntas
+# Implementación Conjunta de Servicios con Docker Compose
 
-Para las pruebas conjuntas se empleará el mismo procedimiento de las pruebas individuales. Los resultados de las implementaciones en conjunto se analizan en el Capítulo III.
-Para el an\'{a}lisis de los servicios desplegados mediante Docker Compose, se consideran los mismos par\'{a}metros que en el despliegue individual. En este contexto, se tiene en cuenta la topolog\'{i}a ilustrada en la Figura \ref{fig:Figura 2.12}
+![Docker Compose Logo](docker-compose-logo.png)
 
+Este repositorio contiene una implementación conjunta de servicios utilizando Docker Compose. El objetivo principal de este proyecto es evaluar el funcionamiento de servicios contenidos en contenedores en un entorno Docker Compose.
 
-Para los resulados de funcionamiento de los servicios desplegados mediante Docker Compose, se exponen los resultados obtenidos por parte del cliente remoto, cliente 1, que establece conexiones con el Host RPI I. Estas conexiones se realizan a trav\'{e}s de los servicios de DHCP y enrutamiento desplegados mediante Docker Compose. E
+## Procedimiento de Pruebas Conjuntas
 
-Para los resulados de funcionamiento de los servicios desplegados mediante Docker Compose, se exponen los resultados obtenidos por parte del cliente remoto, cliente 1, despues de establecer conexión con el Host RPI I mediante OSPF para acceder a los servicios contenerizados. Estas conexiones se realizan a trav\'{e}s de los servicios de DHCP y enrutamiento desplegados mediante Docker Compose. En esta secci\'{o}n, se pone especial \'{e}nfasis en los resultados obtenidos para los servicios contenidos de DHCP, DNS, VoIP y enrutamiento. Cabe mencionar que los resultados para los servicios de FTP y HTTP son similares a los obtenidos previamente. A continuaci\'{o}n, se presentan los resultados detallados.
-Como se puede apreciar, ambos hosts pertenecen a subredes diferentes. En detalle, el cliente 1 est\'{a} situado en la subred 192.168.5.0/24 desempe\~{n}a el papel de cliente remoto para el host RPI 2, . Por otro lado, el cliente 2 tiene la tarea de supervisar las pruebas y est\'{a} ubicado en el host RPI 1, dentro de la subred 192.168.2.0/24.
+Para llevar a cabo las pruebas conjuntas, seguimos el mismo procedimiento que en las pruebas individuales. Los resultados de estas implementaciones se analizan en el Capítulo III de nuestro informe.
 
+## Análisis de los Servicios Desplegados
 
-Antes de avanzar con las pruebas de los otros servicios contenidos en los contenedores, se ejecuta una evaluación de conexión hacia la red externa. Este procedimiento se realiza después de obtener una dirección IPv4 a través del servicio DHCP y de haber establecido la adyacencia OSPF en la red.
- se exponen los resultados de las pruebas de conexión de extremo a extremo entre clientes mediante la verificación de las conexiones. Estos resultados indican que el retardo aumenta progresivamente hasta llegar al extremo de la conexión, donde el retardo promedio entre los clientes es de aproximadamente 2 ms. Además, en la Figura \ref{fig:cliente1_docker_compose_servicio_routing_trace_route} del ANEXO \ref{Anexo VI}, se proporciona la ruta de extremo a extremo, lo cual permite verificar la trayectoria dentro de la topología diseñada.\\
+Al analizar los servicios desplegados mediante Docker Compose, consideramos los mismos parámetros que en el despliegue individual. La topología utilizada se muestra en la Figura 2.12.
 
-Al confirmar la conexión de extremo a extremo, se procede a verificar la conexión entre el cliente remoto y los servidores en contenedores. La Tabla \ref{table:tabla_cliente1_docker_compose_conexion_ping} del ANEXO \ref{Anexo VI} presenta los retardos para el cliente 1 conectado mediante Ethernet, los cuales oscilan alrededor de 1 ms.
+## Resultados de Funcionamiento
 
+En esta sección, exponemos los resultados obtenidos por el cliente remoto (cliente 1) al establecer conexiones con el Host RPI I. Estas conexiones se realizan a través de los servicios de DHCP y enrutamiento desplegados mediante Docker Compose. Se presta especial atención a los resultados de los servicios de DHCP, DNS, VoIP y enrutamiento. Es importante destacar que los resultados para los servicios de FTP y HTTP son similares a los obtenidos previamente.
 
-Para la comparaci\'{o}n del uso de los recursos, se presentan las estad\'{i}sticas de utilizaci\'{o}n de la CPU, la memoria y la temperatura, recopiladas mediante la herramienta "rpi-monitor". Estos datos abarcan el intervalo de tiempo desde las 11:10 hasta las 12:20. La Figura 3.17 presenta la utilizaci\'{o}n general de la CPU del sistema anfitri\'{o}n, permitiendo observar la evoluci\'{o}n del consumo de CPU a lo largo de todo el proceso de pruebas de los servicios.
+### Conexiones entre Subredes
+
+Ambos hosts pertenecen a subredes diferentes. Cliente 1 se encuentra en la subred 192.168.5.0/24 y actúa como cliente remoto para el host RPI 2. Por otro lado, Cliente 2 supervisa las pruebas y está ubicado en el host RPI 1, dentro de la subred 192.168.2.0/24.
+
+### Evaluación de Conexión Externa
+
+Antes de avanzar con las pruebas de otros servicios contenidos en los contenedores, ejecutamos una evaluación de conexión hacia la red externa. Este procedimiento se realiza después de obtener una dirección IPv4 a través del servicio DHCP y de haber establecido la adyacencia OSPF en la red.
+
+Los resultados de las pruebas de conexión de extremo a extremo entre clientes indican que el retardo aumenta progresivamente hasta llegar al extremo de la conexión, donde el retardo promedio entre los clientes es de aproximadamente 2 ms. Además, en el [ANEXO VI](link_al_anexo), proporcionamos la ruta de extremo a extremo, lo cual permite verificar la trayectoria dentro de la topología diseñada.
+
+### Pruebas de Ping
+
+Una vez confirmada la conexión de extremo a extremo, verificamos la conexión entre el cliente remoto y los servidores en contenedores. Los retardos para el cliente 1 conectado mediante Ethernet oscilan alrededor de 1 ms. [Aquí](link_al_anexo) se pueden encontrar más detalles sobre estas pruebas.
+
+## Uso de Recursos
+
+Para la comparación del uso de recursos, presentamos estadísticas de utilización de la CPU, la memoria y la temperatura, recopiladas mediante la herramienta "rpi-monitor". Estos datos abarcan el intervalo de tiempo desde las 11:10 hasta las 12:20. La Figura 3.17 presenta la utilización general de la CPU del sistema anfitrión, permitiendo observar la evolución del consumo de CPU a lo largo de todo el proceso de pruebas de los servicios.
+
+## Conclusiones
+
+En resumen, este proyecto muestra cómo implementar servicios en conjunto mediante Docker Compose y evalúa su funcionamiento en un entorno controlado. Los resultados detallados se pueden encontrar en el informe completo en el Capítulo III.
+
+**¡Gracias por visitar nuestro repositorio! Si tienes alguna pregunta o comentario, no dudes en contactarnos.**
+
