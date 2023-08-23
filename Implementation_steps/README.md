@@ -164,7 +164,7 @@ nslookup voip.tic2023.com
 ```shell
 nslookup monitor.tic2023.com
 ```
-1. Verificar la traducción de direcciones IP a domain names:
+2. Verificar la traducción de direcciones IP a domain names:
   -Traducir de direcciones IP a domain names asociado al servidor DNS contenerizado:
 ```shell
 nslookup 192.168.0.2
@@ -228,10 +228,10 @@ nslookup 192.168.0.7
 10. Repetir los pasos 6 al 9.
 **NOTA:** Realizar más de una prueba de llamadas VoIP, para verificar el servicio.
 
-## Pruebas de Performance
+### Pruebas de Performance
 [topologia_I.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/12414234/topologia_I.pdf)
 - **Pruebas de Conexión:** Verificar la el retardo de los "pings" de conexión entre los clientes con los servidores contenerizados, a través de sus domain names.
-  **Pruebas de tráfico:** Captura de trádico de servicios contenerizados mediante Wireshark.
+  **Análisis de tráfico:** Captura de trádico de servicios contenerizados mediante Wireshark.
 Mediante la herramienta Wireshark ejecutada en cada uno de los clientes, monitorear el tráfico de red capturado durante todo el proceso de las pruebas:
 1. Ejecutar Wireshark en cada uno de los clientes.
 2. Seleccionar la interfaz de captura de tráfico conectadas a las interfaces del servidor "eth1", "eth2" y "wlan0" respectivas.
@@ -242,7 +242,7 @@ Mediante la herramienta Wireshark ejecutada en cada uno de los clientes, monitor
 |-------------|--------------------------|---------------------------------------------------|
 | DHCP        |          `dhcp `         | Filtrado de todo el tráfico dhcp.                 |
 | DNS         |           `dns`          | Filtrado de todo el todo el tráfico dns.          |
-| DNS         | dns.qry.name == "2.0.168.192.in-addr.arpa" || dns.qry.name == "3.0.168.192.in-addr.arpa" || dns.qry.name == "4.0.168.192.in-addr.arpa" || dns.qry.name == "5.0.168.192.in-addr.arpa" || dns.qry.name == "6.0.168.192.in-addr.arpa" || dns.qry.name == "7.0.168.192.in-addr.arpa" || dns.qry.name == "ns1.tic2023.com" || dns.qry.name == "dhcp.tic2023.com" || dns.qry.name == "ftp.tic2023.com" 	|| dns.qry.name == "www.tic2023.com" || dns.qry.name == "web1.tic2023.com" || dns.qry.name == "web2.tic2023.com" || dns.qry.name == "voip.tic2023.com" || dns.qry.name == "monitor.tic2023.com" | Filtrado de tráfico dns generado.          |
+| DNS         | `dns.qry.name == "2.0.168.192.in-addr.arpa" || dns.qry.name == "3.0.168.192.in-addr.arpa" || dns.qry.name == "4.0.168.192.in-addr.arpa" || dns.qry.name == "5.0.168.192.in-addr.arpa" || dns.qry.name == "6.0.168.192.in-addr.arpa" || dns.qry.name == "7.0.168.192.in-addr.arpa" || dns.qry.name == "ns1.tic2023.com" || dns.qry.name == "dhcp.tic2023.com" || dns.qry.name == "ftp.tic2023.com" 	|| dns.qry.name == "www.tic2023.com" || dns.qry.name == "web1.tic2023.com" || dns.qry.name == "web2.tic2023.com" || dns.qry.name == "voip.tic2023.com" || dns.qry.name == "monitor.tic2023.com"` | Filtrado de tráfico dns generado.          |
 | FTP         |           `ftp`          | Filtrado de todo el tráfico ftp.                  |
 | HTTP        |          `http`          | Filtrado de todo el tráfico http.                 |
 5. Obtener información del tráfico SIP y RTP del servicio de VoIP, empleando la herramienta "Telephony" para obtener información de las llamadas VoIP realizadas mediante la opción "VoIP calls" e información RTP de las llamadas mediante la opción "RTP>RTP Secuency". A través de estas opciones se obtiene la siguiente información:
@@ -261,13 +261,45 @@ Mediante la herramienta Wireshark ejecutada en cada uno de los clientes, monitor
 - **Retardos**: El tiempo de retardo experimentado durante la transmisión de audio.
 - **Jitter**: La variabilidad en el retardo de la transmisión.
 
-- **Pruebas de uso de recursos:** En el lado del host de los servidores, se emplearán las herramientas de monitoreo de recursos mediante Htop, docker stats y nmap, para monitorear los parámetros anteriormente descritos respectivamente.
+- **Analisis de uso de recursos:** Obtención de datos de uso de recursos de CPU, memoria, tráfico y almacenamiento.
+- Emplear las herramientas de monitoreo de recursos mediante Htop, docker stats y RPI-Monitor, para monitorear los parámetros de CPU, memoria y almacenamiento.
+1. Conectar via SSH al cliente 3 (monitor) con el servidor RPI-I, mediante 2 terminales a través de la aplicación "Putty".
+2. Logearse como super usuario "sudo".
+3. Ejecutar las aplicaciones "HTOP" y "docker stats"
+**NOTA: El analisis mediante HTOP y Docker Stats debe ser permanente para obtener los datos de los servicios al momento de ejcutarse las pruebas.**
+- **HTOP**
+1. Abrir en una terminal SSH la aplicación HTOP mediante el comando:
+```shell
+htop
+```
+2.Aplicar el filtrado de los procesos respectivos para cada uno de los servicios contenerizados, mediante la opción de "filter" de la aplicación. Los procesos de filtrados asociados se muestran a continuación.
+| Servicio    | Instrucción de filtrado  | Descripción                                       |
+|-------------|--------------------------|---------------------------------------------------|
+| DHCP        |          `dhcpd`         | Filtrado de todos los procesos de dhcpd.          |
+| DNS         |          `named`         | Filtrado de todos los procesos de bind.           |
+| FTP         |          `vsftpd`        | Filtrado de todos los procesos de vsftpd.         |
+| HTTP        |          `nginx`         | Filtrado de todos los procesos de nginx.          |
+| VoIP        |          `Asterisk`      | Filtrado de todos los procesos de asterisk.       |
+| Routing     |          `Frr`           | Filtrado de todos los procesos de Frrouting.      |
+3. Revisa la variación de las estadísticas de uso de los procesos.
 
-Los resultados de las pruebas de cada uno de los servicios se analizan en el Capítulo III.
-Para llevar a cabo un an\'{a}lisis espec\'{i}fico de los servicios contenidos en los contenedores, inicialmente se utiliza la herramienta "docker stats" para exponer las estad\'{i}sticas de uso generales de los contenedores Docker. Estos datos pueden ser cotejados adem\'{a}s con la herramienta "htop", que proporciona una visi\'{o}n global de las estad\'{i}sticas de uso del sistema.
+- **docker stats**
+1. Abrir en una terminal SSH la aplicación Docker Stats mediante el comando:
+```shell
+docker stats
+```
+2. Revisar la variación de las estadísticas de uso de los contenedores.
+
+- **RPI-Monitor** 
+1. Ingresar a la dirección "monitor.tic2023.com" a través de un navegar web.
+2. Ingresar a las estadísticas de uso seleccionando la pestaña "Stadistics" de la pagina web.
+3. Seleccionar el recurso del host a analizar: Load CPU Average, Memory Usage y Temperature.
+4. Seleccionar el periodo de tiempo de analisis.
+
+**NOTA: Emplear el periodo de 24horas dado que permite visualizar el rango de 24 horas con muestras de 1segundo a 10segundos.**  
 
 # Implementación Docker Compose
-### Topología
+## Topología
 La topología para implementación Conjunta mediante Docker Compose:
 ![Figura 2 13](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/2eb564ed-30d2-4953-a3a2-b7ad96e34c54)
 
