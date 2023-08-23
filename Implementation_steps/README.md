@@ -56,7 +56,7 @@ El direccionamiento IPv4 para la placa Raspberry Pi RPI II se presenta en la sig
 | Cifrado entre access point y dispositivos    | CCMP               |
 | Cifrado entre dispositivos                   | CCMP               |
 
-El procedimiento realizado enbase a esto, se muestra en [Intalación y Configuración de Hostap](https://github.com/AndresYE/Network_Service_on_Containers/blob/6b12f1d63b81de2bce23cdd342b0e84be72f3497/Implementation_steps/Hostapd/README.md)
+El procedimiento realizado se muestra en [Intalación y Configuración de Hostap](https://github.com/AndresYE/Network_Service_on_Containers/blob/6b12f1d63b81de2bce23cdd342b0e84be72f3497/Implementation_steps/Hostapd/README.md).
 
 ## **Servicios interferentes:** 
 - Configuración y detención de servicios asociados a los servicios contenerizados que pueden generar interferencia, como son: DHCPCD, DNSMASQ y HTTPD. Esto se lo realiza para evitar interferencia de los servicios contenerizados con los servicios del host. Para ello, se emplea  los comandos de la tabla a continuación, para detener, deshabilitar y verificar cada uno de los servicios interferentes. En la tabla que se muestra a continuación, se describen algunos de los comandos se emplean para este proceso.
@@ -75,15 +75,23 @@ El Procedemientos se describen en [Configuración de Servicios Interferentes](ht
 
 # Implementación Individual
 ### Topología
-La topología para implementación Individual y Conjunto mediante Docker CLI:
-![Figura 2 13](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/2eb564ed-30d2-4953-a3a2-b7ad96e34c54)
 
-Para esta primera fase, se implementará cada uno de los servicios de red de manera individual, mediante una imagen diseñada con un fichero Dockerfile, disponibles en [Docker CLI](https://github.com/AndresYE/Network_Service_on_Containers/tree/389fd8478edf6c580d836344d4b710d70477a052/Docker/Docker%20CLI).
+
+La topología para implementación Individual y Conjunto mediante Docker CLI:
+
+Para esta primera fase, se implementará cada uno de los servicios de red de manera individual, mediante una imagen diseñada con un fichero Dockerfile, 
+[Prototipo_I.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/12414233/Prototipo_I.pdf)
+
+[topologia_I.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/12414234/topologia_I.pdf)
+
+[topologia_II.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/12414235/topologia_II.pdf)
 
 
 # Pruebas Individuales
 
 Las pruebas se las realiza considerando la topología de la Figura XXX y las herramientas descritas en la Tabla XXX. Donde cada uno de los clientes analizará el tráfico mediante la herramienta de software Wireshark. Además, en cada uno de los clientes se verificará el servicio red obtenido mediante una aplicación respectiva. A continuación, se describe el procedimiento para las pruebas.
+
+
 
 ## Pruebas de Funcionamiento
 
