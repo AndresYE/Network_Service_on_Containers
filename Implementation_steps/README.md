@@ -95,8 +95,41 @@ ipconfig /all
  ```shell
 ipconfig /all
 ```
-- **Servicio DNS:** Verificación de traducción de direcciones IP a domain names y viceversa a través de la terminal de los clientes, mediante el comando "nslookup IP_address|domain_name".
+- **Pruebas de Conexión:** Verificar la conexión de los clientes con los servidores contenerizados, a través de sus domain names. Emplear los siguientes comandos para cada uno de los servicios contenerizados:
 
+- **Servicio DNS:** Verificación de traducción de direcciones IP a domain names y viceversa a través de la terminal de los clientes, mediante el comando "nslookup IP_address|domain_name".
+1. Conexión a la interfaz del servidor DNS contenerizado:
+```shell
+ping ns1.tic2023.com
+```
+2. Conexión a la interfaz del servidor DHCP contenerizado:
+```shell
+ping dhcp.tic2023.com
+```
+3. Conexión a la interfaz del servidor FTP contenerizado:
+```shell
+ping ftp.tic2023.com
+```
+4. Conexión a la interfaz del servidor HTTP página web 1 contenerizado:
+```shell
+ping www.tic2023.com
+```
+5. Conexión a la interfaz del servidor HTTP página web 2 contenerizado:
+   ```shell
+ping web1.tic2023.com
+```
+6. Conexión a la interfaz del servidor HTTP página web 3 contenerizado:
+   ```shell
+ping web2.tic2023.com
+```
+7.  Conexión a la interfaz del servidor VoIP contenerizado:
+   ```shell
+ping voip.tic2023.com
+```
+8  . Conexión a la interfaz del servidor web del servicio de Monitoreo RPI-Monitor:
+   ```shell
+ping monitor.tic2023.com
+```
 - **Servicio FTP:** Prueba de downlink y uplink de ficheros del servidor FTP, a través de la aplicación Firezilla.
 
 - **Servicio Web:** Obtención de una página web del servidor Nginx contenerizado, a través de la aplicación de un navegador web, como puede ser Google Chrome o Firefox.
@@ -107,8 +140,8 @@ ipconfig /all
 [topologia_I.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/12414234/topologia_I.pdf)
 
 
-- **Pruebas de Conexión:**
-Antes de llevar a cabo las pruebas de los otros servicios, se ejecuta una prueba de conexión hacia las direcciones asignadas a estos servidores. Esto se realiza una vez que se ha obtenido una dirección IPv4 del servicio DHCP para cada uno de los clientes Ethernet, como Wlan.
+- **:**
+
 
 - Las pruebas de conexión para cada uno de los clientes se las realizarán mediante un ping desde la terminal de consola de los clientes, hacia las direcciones IP configuradas para cada uno de los servicios DHCP, DNS, FTP, Web y VoIP; de acuerdo con la tabla de direccionamiento de la Tabla XXX.
 
