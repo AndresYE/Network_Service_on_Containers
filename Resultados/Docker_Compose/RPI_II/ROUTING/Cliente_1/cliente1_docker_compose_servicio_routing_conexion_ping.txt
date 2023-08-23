@@ -1,0 +1,60 @@
+Microsoft Windows [Versión 10.0.19045.3324]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\TOSHIBA>ping 192.168.5.1
+
+Haciendo ping a 192.168.5.1 con 32 bytes de datos:
+Respuesta desde 192.168.5.1: bytes=32 tiempo<1m TTL=64
+Respuesta desde 192.168.5.1: bytes=32 tiempo<1m TTL=64
+Respuesta desde 192.168.5.1: bytes=32 tiempo<1m TTL=64
+Respuesta desde 192.168.5.1: bytes=32 tiempo<1m TTL=64
+
+Estadísticas de ping para 192.168.5.1:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 0ms, Máximo = 0ms, Media = 0ms
+
+C:\Users\TOSHIBA>ping 10.0.1.1
+
+Haciendo ping a 10.0.1.1 con 32 bytes de datos:
+Respuesta desde 10.0.1.1: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 10.0.1.1: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 10.0.1.1: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 10.0.1.1: bytes=32 tiempo=1ms TTL=63
+
+Estadísticas de ping para 10.0.1.1:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 1ms, Máximo = 1ms, Media = 1ms
+
+C:\Users\TOSHIBA>ping 10.0.1.2
+
+Haciendo ping a 10.0.1.2 con 32 bytes de datos:
+Respuesta desde 10.0.1.2: bytes=32 tiempo<1m TTL=64
+Respuesta desde 10.0.1.2: bytes=32 tiempo=1ms TTL=64
+Respuesta desde 10.0.1.2: bytes=32 tiempo<1m TTL=64
+Respuesta desde 10.0.1.2: bytes=32 tiempo<1m TTL=64
+
+Estadísticas de ping para 10.0.1.2:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 0ms, Máximo = 1ms, Media = 0ms
+
+C:\Users\TOSHIBA>ping 192.168.2.10
+
+Haciendo ping a 192.168.2.10 con 32 bytes de datos:
+Respuesta desde 192.168.2.10: bytes=32 tiempo=2ms TTL=126
+Respuesta desde 192.168.2.10: bytes=32 tiempo=2ms TTL=126
+Respuesta desde 192.168.2.10: bytes=32 tiempo=2ms TTL=126
+Respuesta desde 192.168.2.10: bytes=32 tiempo=4ms TTL=126
+
+Estadísticas de ping para 192.168.2.10:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 2ms, Máximo = 4ms, Media = 2ms
+
+C:\Users\TOSHIBA>

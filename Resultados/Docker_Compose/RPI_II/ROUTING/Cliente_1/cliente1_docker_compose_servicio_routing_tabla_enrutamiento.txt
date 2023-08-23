@@ -1,0 +1,77 @@
+root@pi:/home/pi# docker ps
+CONTAINER ID   IMAGE                  COMMAND                  CREATED       STATUS              PORTS     NAMES
+265a1d041a78   andresye/dhcpd         "/bin/sh -c '/bin/sh…"   2 hours ago   Up About a minute             dhcp_server_eth2_compose
+391fac0179f1   andresye/dhcpd         "/bin/sh -c '/bin/sh…"   2 hours ago   Up About a minute             dhcp_server_eth1_compose
+5129e96907f5   frrouting/frr:v8.4.0   "/sbin/tini -- /usr/…"   2 hours ago   Up About a minute             routing_server_compose
+root@pi:/home/pi# docker exec -it routing_server_compose sh
+/ # vtysh
+% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.
+
+Hello, this is FRRouting (version 8.4_git).
+Copyright 1996-2005 Kunihiro Ishiguro, et al.
+
+pi# show ip route ospf
+Codes: K - kernel route, C - connected, S - static, R - RIP,
+       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,
+       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,
+       f - OpenFabric,
+       > - selected route, * - FIB route, q - queued, r - rejected, b - backup
+       t - trapped, o - offload failure
+
+O   10.0.1.0/30 [110/1000] is directly connected, eth3, weight 1, 00:01:27
+O>* 192.168.0.0/24 [110/1010] via 10.0.1.1, eth3, weight 1, 00:00:41
+O>* 192.168.2.0/24 [110/2000] via 10.0.1.1, eth3, weight 1, 00:00:41
+O   192.168.5.0/24 [110/1000] is directly connected, eth2, weight 1, 00:00:56
+pi# show ip route
+Codes: K - kernel route, C - connected, S - static, R - RIP,
+       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,
+       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,
+       f - OpenFabric,
+       > - selected route, * - FIB route, q - queued, r - rejected, b - backup
+       t - trapped, o - offload failure
+
+O   10.0.1.0/30 [110/1000] is directly connected, eth3, weight 1, 00:03:05
+C>* 10.0.1.0/30 is directly connected, eth3, 00:03:19
+O>* 192.168.0.0/24 [110/1010] via 10.0.1.1, eth3, weight 1, 00:02:19
+O>* 192.168.2.0/24 [110/2000] via 10.0.1.1, eth3, weight 1, 00:02:19
+O   192.168.5.0/24 [110/1000] is directly connected, eth2, weight 1, 00:00:31
+C>* 192.168.5.0/24 is directly connected, eth2, 00:00:31
+pi# clkear
+% Unknown command: clkear
+pi# clear
+% Command incomplete: clear
+pi# exit
+/ # clear
+/ # vtysh
+% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.
+
+Hello, this is FRRouting (version 8.4_git).
+Copyright 1996-2005 Kunihiro Ishiguro, et al.
+
+pi# show ip route
+Codes: K - kernel route, C - connected, S - static, R - RIP,
+       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,
+       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,
+       f - OpenFabric,
+       > - selected route, * - FIB route, q - queued, r - rejected, b - backup
+       t - trapped, o - offload failure
+
+O   10.0.1.0/30 [110/1000] is directly connected, eth3, weight 1, 00:03:23
+C>* 10.0.1.0/30 is directly connected, eth3, 00:03:37
+O>* 192.168.0.0/24 [110/1010] via 10.0.1.1, eth3, weight 1, 00:02:37
+O>* 192.168.2.0/24 [110/2000] via 10.0.1.1, eth3, weight 1, 00:02:37
+O   192.168.5.0/24 [110/1000] is directly connected, eth2, weight 1, 00:00:49
+C>* 192.168.5.0/24 is directly connected, eth2, 00:00:49
+pi# show ip route ospf
+Codes: K - kernel route, C - connected, S - static, R - RIP,
+       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,
+       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,
+       f - OpenFabric,
+       > - selected route, * - FIB route, q - queued, r - rejected, b - backup
+       t - trapped, o - offload failure
+
+O   10.0.1.0/30 [110/1000] is directly connected, eth3, weight 1, 00:03:26
+O>* 192.168.0.0/24 [110/1010] via 10.0.1.1, eth3, weight 1, 00:02:40
+O>* 192.168.2.0/24 [110/2000] via 10.0.1.1, eth3, weight 1, 00:02:40
+O   192.168.5.0/24 [110/1000] is directly connected, eth2, weight 1, 00:00:52
+pi#

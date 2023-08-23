@@ -1,0 +1,2054 @@
+ Loading app_getcpeid.so.
+  == Registered application 'GetCPEID'
+  == app_getcpeid.so => (Get ADSI CPE ID)
+ Loading app_dictate.so.
+  == Registered application 'Dictate'
+  == app_dictate.so => (Virtual Dictation Machine)
+ Loading app_privacy.so.
+  == Registered application 'PrivacyManager'
+  == app_privacy.so => (Require phone number to be entered, if no CallerID sent)
+ Loading func_dialgroup.so.
+  == Registered custom function 'DIALGROUP'
+  == func_dialgroup.so => (Dialgroup dialplan function)
+ Loading chan_unistim.so.
+  == UNISTIM Listening on 0.0.0.0:5000
+  == Registered channel type 'USTM' (UNISTIM Channel Driver)
+  == Registered RTP glue 'USTM'
+  == chan_unistim.so => (UNISTIM Protocol (USTM))
+ Loading app_zapateller.so.
+  == Registered application 'Zapateller'
+  == app_zapateller.so => (Block Telemarketers with Special Information Tone)
+ Loading app_controlplayback.so.
+  == Registered application 'ControlPlayback'
+  == Manager registered action ControlPlayback
+  == app_controlplayback.so => (Control Playback Application)
+ Loading app_followme.so.
+  == Registered application 'FollowMe'
+  == app_followme.so => (Find-Me/Follow-Me Application)
+ Loading pbx_loopback.so.
+  == pbx_loopback.so => (Loopback Switch)
+ Loading func_uri.so.
+  == Registered custom function 'URIDECODE'
+  == Registered custom function 'URIENCODE'
+  == func_uri.so => (URI encode/decode dialplan functions)
+ Loading func_channel.so.
+  == Registered custom function 'CHANNEL'
+  == Registered custom function 'CHANNELS'
+  == Registered custom function 'MASTER_CHANNEL'
+  == func_channel.so => (Channel information dialplan functions)
+ Loading pbx_ael.so.
+  == Registered application 'AELSub'
+  == Setting global variable 'CONSOLE-AEL' to '"Console/dsp"'
+  == Setting global variable 'IAXINFO-AEL' to 'guest'
+  == Setting global variable 'OUTBOUND-TRUNK' to '"Zap/g2"'
+  == Setting global variable 'OUTBOUND-TRUNKMSD' to '1'
+    -- Including switch 'DUNDi/e164' in context 'ael-dundi-e164-switch'
+    -- Time to scan old dialplan and merge leftovers back into the new: 0.000206 sec
+    -- Time to restore hints and swap in new dialplan: 0.000022 sec
+    -- Time to delete the old dialplan: 0.000028 sec
+    -- Total time merge_contexts_delete: 0.000256 sec
+    -- pbx_ael successfully loaded 3 contexts (enable debug for details).
+  == pbx_ael.so => (Asterisk Extension Language Compiler)
+ Loading res_ari_applications.so.
+  == res_ari_applications.so => (RESTful API module - Stasis application resources)
+ Loading app_stasis.so.
+  == Registered application 'Stasis'
+  == app_stasis.so => (Stasis dialplan application)
+ Loading res_stasis_playback.so.
+  == res_stasis_playback.so => (Stasis application playback support)
+ Loading res_ari_recordings.so.
+  == res_ari_recordings.so => (RESTful API module - Recording resources)
+ Loading res_ari_endpoints.so.
+  == res_ari_endpoints.so => (RESTful API module - Endpoint resources)
+ Loading res_ari_events.so.
+  == WebSocket registered sub-protocol 'ari'
+  == res_ari_events.so => (RESTful API module - WebSocket resource)
+ Loading func_pjsip_contact.so.
+  == Registered custom function 'PJSIP_CONTACT'
+  == func_pjsip_contact.so => (Get information about a PJSIP contact)
+ Loading res_pjsip_endpoint_identifier_anonymous.so.
+  == res_pjsip_endpoint_identifier_anonymous.so => (PJSIP Anonymous endpoint identifier)
+ Loading res_stasis_answer.so.
+  == res_stasis_answer.so => (Stasis application answer support)
+ Loading res_stasis_device_state.so.
+  == res_stasis_device_state.so => (Stasis application device state support)
+ Loading func_pjsip_aor.so.
+  == Registered custom function 'PJSIP_AOR'
+  == func_pjsip_aor.so => (Get information about a PJSIP AOR)
+ Loading res_ari_sounds.so.
+  == res_ari_sounds.so => (RESTful API module - Sound resources)
+ Loading res_ari_channels.so.
+  == res_ari_channels.so => (RESTful API module - Channel resources)
+ Loading res_ari_playbacks.so.
+  == res_ari_playbacks.so => (RESTful API module - Playback control resources)
+ Loading res_ari_asterisk.so.
+  == res_ari_asterisk.so => (RESTful API module - Asterisk resources)
+ Loading res_ari_bridges.so.
+  == res_ari_bridges.so => (RESTful API module - Bridge resources)
+ Loading func_pjsip_endpoint.so.
+  == Registered custom function 'PJSIP_ENDPOINT'
+  == func_pjsip_endpoint.so => (Get information about a PJSIP endpoint)
+ Loading res_ari_device_states.so.
+  == res_ari_device_states.so => (RESTful API module - Device state resources)
+ Loading res_manager_presencestate.so.
+  == Manager registered action PresenceStateList
+  == res_manager_presencestate.so => (Manager Presence State Topic Forwarder)
+ Loading res_manager_devicestate.so.
+  == Manager registered action DeviceStateList
+  == res_manager_devicestate.so => (Manager Device State Topic Forwarder)
+ Loading app_queue.so.
+  == Registered application 'Queue'
+  == Registered application 'AddQueueMember'
+  == Registered application 'RemoveQueueMember'
+  == Registered application 'PauseQueueMember'
+  == Registered application 'UnpauseQueueMember'
+  == Registered application 'QueueLog'
+  == Registered application 'QueueUpdate'
+  == Manager registered action QueueStatus
+  == Manager registered action QueueSummary
+  == Manager registered action QueueAdd
+  == Manager registered action QueueRemove
+  == Manager registered action QueuePause
+  == Manager registered action QueueLog
+  == Manager registered action QueuePenalty
+  == Manager registered action QueueMemberRingInUse
+  == Manager registered action QueueRule
+  == Manager registered action QueueReload
+  == Manager registered action QueueReset
+  == Manager registered action QueueChangePriorityCaller
+  == Registered custom function 'QUEUE_VARIABLES'
+  == Registered custom function 'QUEUE_EXISTS'
+  == Registered custom function 'QUEUE_MEMBER'
+  == Registered custom function 'QUEUE_MEMBER_COUNT'
+  == Registered custom function 'QUEUE_MEMBER_LIST'
+  == Registered custom function 'QUEUE_GET_CHANNEL'
+  == Registered custom function 'QUEUE_WAITING_COUNT'
+  == Registered custom function 'QUEUE_MEMBER_PENALTY'
+  == app_queue.so => (True Call Queueing)
+[Aug 16 16:05:35] WARNING[11]: loader.c:2381 load_modules: Some non-required modules failed to load.
+[Aug 16 16:05:35] ERROR[11]: loader.c:2396 load_modules: res_pjsip_transport_websocket declined to load.
+Asterisk Ready.
+etc folder has files, not doing anything
+Setting max files open to 50000
+Asterisk 16.8.0, Copyright (C) 1999 - 2018, Digium, Inc. and others.
+Created by Mark Spencer <markster@digium.com>
+Asterisk comes with ABSOLUTELY NO WARRANTY; type 'core show warranty' for details.
+This is free software, with components licensed under the GNU General Public
+License version 2 and other licenses; you are welcome to redistribute it under
+certain conditions. Type 'core show license' for details.
+=========================================================================
+XSLT support not found. XML documentation may be incomplete.
+Manager registered action DBGet
+Manager registered action DBPut
+Manager registered action DBDel
+Manager registered action DBDelTree
+PBX UUID: efeb892f-b832-43ff-9633-469ff4c4b6eb
+Registered 'audio' codec 'codec2' at sample rate '8000' with id '1'
+Created cached format with name 'codec2'
+Registered 'audio' codec 'g723' at sample rate '8000' with id '2'
+Created cached format with name 'g723'
+Registered 'audio' codec 'ulaw' at sample rate '8000' with id '3'
+Created cached format with name 'ulaw'
+Registered 'audio' codec 'alaw' at sample rate '8000' with id '4'
+Created cached format with name 'alaw'
+Registered 'audio' codec 'gsm' at sample rate '8000' with id '5'
+Created cached format with name 'gsm'
+Registered 'audio' codec 'g726' at sample rate '8000' with id '6'
+Created cached format with name 'g726'
+Registered 'audio' codec 'g726aal2' at sample rate '8000' with id '7'
+Created cached format with name 'g726aal2'
+Registered 'audio' codec 'adpcm' at sample rate '8000' with id '8'
+Created cached format with name 'adpcm'
+Registered 'audio' codec 'slin' at sample rate '8000' with id '9'
+Created cached format with name 'slin'
+Registered 'audio' codec 'slin' at sample rate '12000' with id '10'
+Created cached format with name 'slin12'
+Registered 'audio' codec 'slin' at sample rate '16000' with id '11'
+Created cached format with name 'slin16'
+Registered 'audio' codec 'slin' at sample rate '24000' with id '12'
+Created cached format with name 'slin24'
+Registered 'audio' codec 'slin' at sample rate '32000' with id '13'
+Created cached format with name 'slin32'
+Registered 'audio' codec 'slin' at sample rate '44100' with id '14'
+Created cached format with name 'slin44'
+Registered 'audio' codec 'slin' at sample rate '48000' with id '15'
+Created cached format with name 'slin48'
+Registered 'audio' codec 'slin' at sample rate '96000' with id '16'
+Created cached format with name 'slin96'
+Registered 'audio' codec 'slin' at sample rate '192000' with id '17'
+Created cached format with name 'slin192'
+Registered 'audio' codec 'lpc10' at sample rate '8000' with id '18'
+Created cached format with name 'lpc10'
+Registered 'audio' codec 'g729' at sample rate '8000' with id '19'
+Created cached format with name 'g729'
+Registered 'audio' codec 'speex' at sample rate '8000' with id '20'
+Created cached format with name 'speex'
+Registered 'audio' codec 'speex' at sample rate '16000' with id '21'
+Created cached format with name 'speex16'
+Registered 'audio' codec 'speex' at sample rate '32000' with id '22'
+Created cached format with name 'speex32'
+Registered 'audio' codec 'ilbc' at sample rate '8000' with id '23'
+Created cached format with name 'ilbc'
+Registered 'audio' codec 'g722' at sample rate '16000' with id '24'
+Created cached format with name 'g722'
+Registered 'audio' codec 'siren7' at sample rate '16000' with id '25'
+Created cached format with name 'siren7'
+Registered 'audio' codec 'siren14' at sample rate '32000' with id '26'
+Created cached format with name 'siren14'
+Registered 'audio' codec 'testlaw' at sample rate '8000' with id '27'
+Created cached format with name 'testlaw'
+Registered 'audio' codec 'g719' at sample rate '48000' with id '28'
+Created cached format with name 'g719'
+Registered 'audio' codec 'opus' at sample rate '48000' with id '29'
+Created cached format with name 'opus'
+Registered 'image' codec 'jpeg' at sample rate '0' with id '30'
+Created cached format with name 'jpeg'
+Registered 'image' codec 'png' at sample rate '0' with id '31'
+Created cached format with name 'png'
+Registered 'video' codec 'h261' at sample rate '1000' with id '32'
+Created cached format with name 'h261'
+Registered 'video' codec 'h263' at sample rate '1000' with id '33'
+Created cached format with name 'h263'
+Registered 'video' codec 'h263p' at sample rate '1000' with id '34'
+Created cached format with name 'h263p'
+Registered 'video' codec 'h264' at sample rate '1000' with id '35'
+Created cached format with name 'h264'
+Registered 'video' codec 'h265' at sample rate '1000' with id '36'
+Created cached format with name 'h265'
+Registered 'video' codec 'mpeg4' at sample rate '1000' with id '37'
+Created cached format with name 'mpeg4'
+Registered 'video' codec 'vp8' at sample rate '1000' with id '38'
+Created cached format with name 'vp8'
+Registered 'video' codec 'vp9' at sample rate '1000' with id '39'
+Created cached format with name 'vp9'
+Registered 'text' codec 'red' at sample rate '0' with id '40'
+Created cached format with name 'red'
+Registered 'text' codec 't140' at sample rate '0' with id '41'
+Created cached format with name 't140'
+Registered 'image' codec 't38' at sample rate '0' with id '42'
+Created cached format with name 't38'
+Registered 'audio' codec 'none' at sample rate '8000' with id '43'
+Created cached format with name 'none'
+Registered 'audio' codec 'silk' at sample rate '8000' with id '44'
+Created cached format with name 'silk8'
+Registered 'audio' codec 'silk' at sample rate '12000' with id '45'
+Created cached format with name 'silk12'
+Registered 'audio' codec 'silk' at sample rate '16000' with id '46'
+Created cached format with name 'silk16'
+Registered 'audio' codec 'silk' at sample rate '24000' with id '47'
+Created cached format with name 'silk24'
+Sorcery registered wizard 'bucket'
+Sorcery registered wizard 'bucket_file'
+  == Message handler 'dialplan' registered.
+  == Registered custom function 'MESSAGE'
+  == Registered custom function 'MESSAGE_DATA'
+  == Registered application 'MessageSend'
+  == Manager registered action MessageSend
+  == Registered channel type 'Surrogate' (Surrogate channel used to pull channel from an application)
+  == Manager registered action BridgeTechnologyList
+  == Manager registered action BridgeTechnologySuspend
+  == Manager registered action BridgeTechnologyUnsuspend
+  == Registered DNS resolver 'system' with priority '2147483647'
+ Asterisk PBX Core Initializing
+  == Registering builtin functions:
+  == Registered custom function 'EXCEPTION'
+  == Registered custom function 'TESTTIME'
+  == Manager registered action ShowDialPlan
+  == Manager registered action ExtensionStateList
+  == Registered application 'Answer'
+  == Registered application 'BackGround'
+  == Registered application 'Busy'
+  == Registered application 'Congestion'
+  == Registered application 'ExecIfTime'
+  == Registered application 'Goto'
+  == Registered application 'GotoIf'
+  == Registered application 'GotoIfTime'
+  == Registered application 'ImportVar'
+  == Registered application 'Hangup'
+  == Registered application 'Incomplete'
+  == Registered application 'NoOp'
+  == Registered application 'Proceeding'
+  == Registered application 'Progress'
+  == Registered application 'RaiseException'
+  == Registered application 'Ringing'
+  == Registered application 'SayAlpha'
+  == Registered application 'SayAlphaCase'
+  == Registered application 'SayDigits'
+  == Registered application 'SayNumber'
+  == Registered application 'SayPhonetic'
+  == Registered application 'SetAMAFlags'
+  == Registered application 'Wait'
+  == Registered application 'WaitDigit'
+  == Registered application 'WaitExten'
+  == Registered application 'Set'
+  == Registered application 'MSet'
+  == Registered channel type 'Local' (Local Proxy Channel Driver)
+  == Manager registered action LocalOptimizeAway
+ Asterisk Dynamic Loader Starting:
+[Aug 16 16:12:01] NOTICE[10]: loader.c:2377 load_modules: 292 modules will be loaded.
+ Loading extconfig.
+  == extconfig => (Configuration)
+ Loading logger.
+  == logger => (Logger)
+ Loading res_sorcery_memory_cache.so.
+  == Sorcery registered wizard 'memory_cache'
+  == Manager registered action SorceryMemoryCacheExpireObject
+  == Manager registered action SorceryMemoryCacheExpire
+  == Manager registered action SorceryMemoryCacheStaleObject
+  == Manager registered action SorceryMemoryCacheStale
+  == Manager registered action SorceryMemoryCachePopulate
+  == res_sorcery_memory_cache.so => (Sorcery Memory Cache Object Wizard)
+ Loading res_sorcery_realtime.so.
+  == Sorcery registered wizard 'realtime'
+  == res_sorcery_realtime.so => (Sorcery Realtime Object Wizard)
+ Loading res_format_attr_opus.so.
+  == Registered format interface for codec 'opus'
+  == res_format_attr_opus.so => (Opus Format Attribute Module)
+ Loading res_config_sqlite3.so.
+  == res_config_sqlite3.so => (SQLite 3 realtime config engine)
+ Loading res_sorcery_memory.so.
+  == Sorcery registered wizard 'memory'
+  == res_sorcery_memory.so => (Sorcery In-Memory Object Wizard)
+ Loading res_sorcery_config.so.
+  == Sorcery registered wizard 'config'
+  == res_sorcery_config.so => (Sorcery Configuration File Object Wizard)
+ Loading res_sorcery_astdb.so.
+  == Sorcery registered wizard 'astdb'
+  == res_sorcery_astdb.so => (Sorcery Astdb Object Wizard)
+ Loading res_pjsip_config_wizard.so.
+  == res_pjsip_config_wizard.so => (PJSIP Config Wizard)
+ Loading res_statsd.so.
+  == res_statsd.so => (StatsD client support)
+ Loading ccss.
+  == Registered application 'CallCompletionRequest'
+  == Registered application 'CallCompletionCancel'
+  == ccss => (Call Completion Supplementary Services)
+ Loading cdr.
+[Aug 16 16:12:02] NOTICE[10]: cdr.c:4526 cdr_toggle_runtime_options: CDR logging disabled.
+  == cdr => (CDR Engine)
+ Loading cel.
+  == cel => (CEL Engine)
+ Loading dnsmgr.
+  == dnsmgr => (DNS Manager)
+ Loading dsp.
+  == dsp => (DSP)
+ Loading enum.
+  == enum => (ENUM Support)
+ Loading features.
+  == Registered custom function 'FEATURE'
+  == Registered custom function 'FEATUREMAP'
+  == Registered application 'Bridge'
+  == Manager registered action Bridge
+  == features => (Call Features)
+ Loading http.
+  == http => (Built-in HTTP Server)
+ Loading indications.
+    -- Registered indication country 'at'
+    -- Registered indication country 'au'
+    -- Registered indication country 'bg'
+    -- Registered indication country 'br'
+    -- Registered indication country 'be'
+    -- Registered indication country 'ch'
+    -- Registered indication country 'cl'
+    -- Registered indication country 'cn'
+    -- Registered indication country 'cz'
+    -- Registered indication country 'de'
+    -- Registered indication country 'dk'
+    -- Registered indication country 'ee'
+    -- Registered indication country 'es'
+    -- Registered indication country 'fi'
+    -- Registered indication country 'fr'
+    -- Registered indication country 'gr'
+    -- Registered indication country 'hu'
+    -- Registered indication country 'il'
+    -- Registered indication country 'in'
+    -- Registered indication country 'it'
+    -- Registered indication country 'lt'
+    -- Registered indication country 'jp'
+    -- Registered indication country 'mx'
+    -- Registered indication country 'my'
+    -- Registered indication country 'nl'
+    -- Registered indication country 'no'
+    -- Registered indication country 'nz'
+    -- Registered indication country 'ph'
+    -- Registered indication country 'pl'
+    -- Registered indication country 'pt'
+    -- Registered indication country 'ru'
+    -- Registered indication country 'se'
+    -- Registered indication country 'sg'
+    -- Registered indication country 'th'
+    -- Registered indication country 'uk'
+    -- Registered indication country 'us'
+    -- Registered indication country 'us-old'
+    -- Registered indication country 'tw'
+    -- Registered indication country 've'
+    -- Registered indication country 'za'
+    -- Setting default indication country to 'us'
+  == indications => (Indication Tone Handling)
+ Loading acl.
+  == acl => (Named ACL system)
+ Loading manager.
+  == Manager registered action Ping
+  == Manager registered action Events
+  == Manager registered action Logoff
+  == Manager registered action Login
+  == Manager registered action Challenge
+  == Manager registered action Hangup
+  == Manager registered action Status
+  == Manager registered action Setvar
+  == Manager registered action Getvar
+  == Manager registered action GetConfig
+  == Manager registered action GetConfigJSON
+  == Manager registered action UpdateConfig
+  == Manager registered action CreateConfig
+  == Manager registered action ListCategories
+  == Manager registered action Redirect
+  == Manager registered action Atxfer
+  == Manager registered action CancelAtxfer
+  == Manager registered action Originate
+  == Manager registered action Command
+  == Manager registered action ExtensionState
+  == Manager registered action PresenceState
+  == Manager registered action AbsoluteTimeout
+  == Manager registered action MailboxStatus
+  == Manager registered action MailboxCount
+  == Manager registered action ListCommands
+  == Manager registered action SendText
+  == Manager registered action UserEvent
+  == Manager registered action WaitEvent
+  == Manager registered action CoreSettings
+  == Manager registered action CoreStatus
+  == Manager registered action Reload
+  == Manager registered action LoggerRotate
+  == Manager registered action CoreShowChannels
+  == Manager registered action ModuleLoad
+  == Manager registered action ModuleCheck
+  == Manager registered action AOCMessage
+  == Manager registered action Filter
+  == Manager registered action BlindTransfer
+  == Registered custom function 'AMI_CLIENT'
+  == manager => (Asterisk Manager Interface)
+ Loading plc.
+  == plc => (PLC)
+ Loading udptl.
+  == udptl => (UDPTL)
+ Loading res_timing_pthread.so.
+  == res_timing_pthread.so => (pthread Timing Interface)
+ Loading res_timing_timerfd.so.
+  == res_timing_timerfd.so => (Timerfd Timing Interface)
+ Loading res_pjproject.so.
+  == res_pjproject.so => (PJPROJECT Log and Utility Support)
+ Loading res_pjsip.so.
+    -- Local IPv4 address determined to be: 192.168.1.1
+    -- Local IPv6 address determined to be: fe80::da3a:ddff:fe2b:27ae
+  == Manager registered action PJSIPShowEndpoints
+  == Manager registered action PJSIPShowEndpoint
+  == Manager registered action PJSIPShowAuths
+  == Manager registered action PJSIPShowAors
+  == 'UDP+IPv4' is not an available SIP transport, disabling resolver support for it
+  == 'TCP+IPv4' is not an available SIP transport, disabling resolver support for it
+  == 'TLS+IPv4' is not an available SIP transport, disabling resolver support for it
+  == 'UDP+IPv6' is not an available SIP transport, disabling resolver support for it
+  == 'TCP+IPv6' is not an available SIP transport, disabling resolver support for it
+  == 'TLS+IPv6' is not an available SIP transport, disabling resolver support for it
+  == Manager registered action PJSIPQualify
+  == Manager registered action PJSIPShowContacts
+  == res_pjsip.so => (Basic SIP resource)
+ Loading res_pjsip_authenticator_digest.so.
+  == res_pjsip_authenticator_digest.so => (PJSIP authentication resource)
+ Loading res_pjsip_endpoint_identifier_ip.so.
+  == res_pjsip_endpoint_identifier_ip.so => (PJSIP IP endpoint identifier)
+ Loading res_pjsip_endpoint_identifier_user.so.
+  == res_pjsip_endpoint_identifier_user.so => (PJSIP username endpoint identifier)
+ Loading res_pjsip_registrar.so.
+  == Manager registered action PJSIPShowRegistrationsInbound
+  == Manager registered action PJSIPShowRegistrationInboundContactStatuses
+  == res_pjsip_registrar.so => (PJSIP Registrar Support)
+ Loading res_phoneprov.so.
+[Aug 16 16:12:02] WARNING[10]: res_phoneprov.c:1232 get_defaults: Unable to find a valid server address or name.
+  == Registered custom function 'PP_EACH_USER'
+  == Registered custom function 'PP_EACH_EXTENSION'
+  == res_phoneprov.so => (HTTP Phone Provisioning)
+ Loading res_rtp_multicast.so.
+  == Registered RTP engine 'multicast'
+  == res_rtp_multicast.so => (Multicast RTP Engine)
+ Loading res_format_attr_siren7.so.
+  == Registered format interface for codec 'siren7'
+  == res_format_attr_siren7.so => (Siren7 Format Attribute Module)
+ Loading res_format_attr_celt.so.
+  == Registered format interface for codec 'celt'
+  == res_format_attr_celt.so => (CELT Format Attribute Module)
+ Loading res_format_attr_ilbc.so.
+  == Registered format interface for codec 'ilbc'
+  == res_format_attr_ilbc.so => (iLBC Format Attribute Module)
+ Loading res_stun_monitor.so.
+  == res_stun_monitor.so => (STUN Network Monitor)
+ Loading res_crypto.so.
+  == res_crypto.so => (Cryptographic Digital Signatures)
+ Loading res_format_attr_vp8.so.
+  == Registered format interface for codec 'vp8'
+  == res_format_attr_vp8.so => (VP8 Format Attribute Module)
+ Loading res_format_attr_g729.so.
+  == Registered format interface for codec 'g729'
+  == res_format_attr_g729.so => (G.729 Format Attribute Module)
+ Loading res_rtp_asterisk.so.
+  == Registered RTP engine 'asterisk'
+  == RTP Allocating from port range 10000 -> 10100
+  == res_rtp_asterisk.so => (Asterisk RTP Stack)
+ Loading res_format_attr_siren14.so.
+  == Registered format interface for codec 'siren14'
+  == res_format_attr_siren14.so => (Siren14 Format Attribute Module)
+ Loading res_format_attr_silk.so.
+  == Registered format interface for codec 'silk'
+  == res_format_attr_silk.so => (SILK Format Attribute Module)
+ Loading func_periodic_hook.so.
+  == Registered custom function 'PERIODIC_HOOK'
+  == func_periodic_hook.so => (Periodic dialplan hooks.)
+ Loading res_monitor.so.
+  == Registered application 'Monitor'
+  == Registered application 'StopMonitor'
+  == Registered application 'ChangeMonitor'
+  == Registered application 'PauseMonitor'
+  == Registered application 'UnpauseMonitor'
+  == Manager registered action Monitor
+  == Manager registered action StopMonitor
+  == Manager registered action ChangeMonitor
+  == Manager registered action PauseMonitor
+  == Manager registered action UnpauseMonitor
+  == res_monitor.so => (Call Monitoring Resource)
+ Loading res_smdi.so.
+[Aug 16 16:12:02] NOTICE[10]: res_smdi.c:1424 load_module: No SMDI interfaces are available to listen on, not starting SMDI listener.
+  == Registered custom function 'SMDI_MSG_RETRIEVE'
+  == Registered custom function 'SMDI_MSG'
+  == res_smdi.so => (Simplified Message Desk Interface (SMDI) Resource)
+ Loading res_http_websocket.so.
+  == WebSocket registered sub-protocol 'echo'
+  == res_http_websocket.so => (HTTP WebSocket Support)
+ Loading res_musiconhold.so.
+  == Registered application 'MusicOnHold'
+  == Registered application 'StartMusicOnHold'
+  == Registered application 'StopMusicOnHold'
+  == res_musiconhold.so => (Music On Hold Resource)
+ Loading res_pjsip_outbound_authenticator_digest.so.
+  == res_pjsip_outbound_authenticator_digest.so => (PJSIP authentication resource)
+ Loading res_pjsip_pubsub.so.
+  == Manager registered action PJSIPShowSubscriptionsInbound
+  == Manager registered action PJSIPShowSubscriptionsOutbound
+  == Manager registered action PJSIPShowResourceLists
+  == res_pjsip_pubsub.so => (PJSIP event resource)
+ Loading res_pjsip_outbound_publish.so.
+  == res_pjsip_outbound_publish.so => (PJSIP Outbound Publish Support)
+ Loading res_pjsip_pidf_body_generator.so.
+  == res_pjsip_pidf_body_generator.so => (PJSIP Extension State PIDF Provider)
+ Loading res_pjsip_dialog_info_body_generator.so.
+  == res_pjsip_dialog_info_body_generator.so => (PJSIP Extension State Dialog Info+XML Provider)
+ Loading res_pjsip_pidf_digium_body_supplement.so.
+  == res_pjsip_pidf_digium_body_supplement.so => (PJSIP PIDF Digium presence supplement)
+ Loading res_pjsip_pidf_eyebeam_body_supplement.so.
+  == res_pjsip_pidf_eyebeam_body_supplement.so => (PJSIP PIDF Eyebeam supplement)
+ Loading res_pjsip_mwi_body_generator.so.
+  == res_pjsip_mwi_body_generator.so => (PJSIP MWI resource)
+ Loading res_pjsip_xpidf_body_generator.so.
+  == res_pjsip_xpidf_body_generator.so => (PJSIP Extension State PIDF Provider)
+ Loading res_pjsip_publish_asterisk.so.
+  == res_pjsip_publish_asterisk.so => (PJSIP Asterisk Event PUBLISH Support)
+ Loading res_pjsip_exten_state.so.
+  == res_pjsip_exten_state.so => (PJSIP Extension State Notifications)
+ Loading res_pjsip_mwi.so.
+  == res_pjsip_mwi.so => (PJSIP MWI resource)
+ Loading chan_sip.so.
+SIP channel loading...
+[Aug 16 16:12:02] WARNING[10]: sip/config_parser.c:817 sip_parse_nat_option: nat=yes is deprecated, use nat=force_rport,comedia instead
+  == SIP Listening on 192.168.0.6:5060
+  == Using SIP CoS mark 4
+[Aug 16 16:12:02] NOTICE[10]: chan_sip.c:31876 build_peer: The 'username' field for sip peers has been deprecated in favor of the term 'defaultuser'
+    -- Message technology 'sip' registered.
+  == Registered channel type 'SIP' (Session Initiation Protocol (SIP))
+  == Registered RTP glue 'SIP'
+  == Registered application 'SIPDtmfMode'
+  == Registered application 'SIPAddHeader'
+  == Registered application 'SIPRemoveHeader'
+  == Registered custom function 'SIP_HEADER'
+  == Registered custom function 'SIP_HEADERS'
+  == Registered custom function 'SIPPEER'
+  == Registered custom function 'CHECKSIPDOMAIN'
+  == Manager registered action SIPpeers
+  == Manager registered action SIPshowpeer
+  == Manager registered action SIPqualifypeer
+  == Manager registered action SIPshowregistry
+  == Manager registered action SIPnotify
+  == Manager registered action SIPpeerstatus
+  == WebSocket registered sub-protocol 'sip'
+  == chan_sip.so => (Session Initiation Protocol (SIP))
+ Loading chan_iax2.so.
+  == Binding IAX2 to address 127.0.1.1:4569
+  == Registered application 'IAX2Provision'
+  == Registered custom function 'IAXPEER'
+  == Registered custom function 'IAXVAR'
+  == Manager registered action IAXpeers
+  == Manager registered action IAXpeerlist
+  == Manager registered action IAXnetstats
+  == Manager registered action IAXregistry
+  == Registered channel type 'IAX2' (Inter Asterisk eXchange Driver (Ver 2))
+  == 10 helper threads started
+  == IAX Ready and Listening
+    -- Loaded provisioning template 'default'
+  == chan_iax2.so => (Inter Asterisk eXchange (Ver 2))
+ Loading chan_mgcp.so.
+  == MGCP Listening on 0.0.0.0:2727
+  == Registered channel type 'MGCP' (Media Gateway Control Protocol (MGCP))
+  == Registered RTP glue 'MGCP'
+  == chan_mgcp.so => (Media Gateway Control Protocol (MGCP))
+ Loading chan_skinny.so.
+[Aug 16 16:12:02] NOTICE[10]: chan_skinny.c:8459 config_load: Configuring skinny from skinny.conf
+  == Skinny listening on 0.0.0.0:2000
+  == Registered channel type 'Skinny' (Skinny Client Control Protocol (Skinny))
+  == Registered RTP glue 'Skinny'
+  == Manager registered action SKINNYdevices
+  == Manager registered action SKINNYshowdevice
+  == Manager registered action SKINNYlines
+  == Manager registered action SKINNYshowline
+  == chan_skinny.so => (Skinny Client Control Protocol (Skinny))
+ Loading chan_rtp.so.
+  == Registered channel type 'MulticastRTP' (Multicast RTP Paging Channel Driver)
+  == Registered channel type 'UnicastRTP' (Unicast RTP Media Channel Driver)
+  == chan_rtp.so => (RTP Media Channel)
+ Loading res_pjsip_session.so.
+  == res_pjsip_session.so => (PJSIP Session resource)
+ Loading chan_pjsip.so.
+  == Registered RTP glue 'PJSIP'
+  == Registered channel type 'PJSIP' (PJSIP Channel Driver)
+  == Registered custom function 'PJSIP_DIAL_CONTACTS'
+  == Registered custom function 'PJSIP_PARSE_URI'
+  == Registered custom function 'PJSIP_MEDIA_OFFER'
+  == Registered custom function 'PJSIP_DTMF_MODE'
+  == Registered custom function 'PJSIP_MOH_PASSTHROUGH'
+  == Registered custom function 'PJSIP_SEND_SESSION_REFRESH'
+  == chan_pjsip.so => (PJSIP Channel Driver)
+ Loading res_pjsip_sdp_rtp.so.
+  == res_pjsip_sdp_rtp.so => (PJSIP SDP RTP/AVP stream handler)
+ Loading res_pjsip_t38.so.
+  == res_pjsip_t38.so => (PJSIP T.38 UDPTL Support)
+ Loading res_speech.so.
+  == res_speech.so => (Generic Speech Recognition API)
+ Loading res_stasis.so.
+  == Message handler 'ari' registered.
+  == res_stasis.so => (Stasis application support)
+ Loading format_g723.so.
+  == Registered file format g723sf, extension(s) g723|g723sf
+  == format_g723.so => (G.723.1 Simple Timestamp File Format)
+ Loading format_h264.so.
+  == Registered file format h264, extension(s) h264
+  == format_h264.so => (Raw H.264 data)
+ Loading res_ari_model.so.
+  == res_ari_model.so => (ARI Model validators)
+ Loading format_pcm.so.
+  == Registered file format pcm, extension(s) pcm|ulaw|ul|mu|ulw
+  == Registered file format alaw, extension(s) alaw|al|alw
+  == Registered file format au, extension(s) au
+  == Registered file format g722, extension(s) g722
+  == format_pcm.so => (Raw/Sun uLaw/ALaw 8KHz (PCM,PCMA,AU), G.722 16Khz)
+ Loading res_adsi.so.
+  == res_adsi.so => (ADSI Resource)
+ Loading format_siren7.so.
+  == Registered file format siren7, extension(s) siren7
+  == format_siren7.so => (ITU G.722.1 (Siren7, licensed from Polycom))
+ Loading format_wav_gsm.so.
+  == Registered file format wav49, extension(s) WAV|wav49
+  == format_wav_gsm.so => (Microsoft WAV format (Proprietary GSM))
+ Loading format_g719.so.
+  == Registered file format g719, extension(s) g719
+  == format_g719.so => (ITU G.719)
+ Loading format_vox.so.
+  == Registered file format vox, extension(s) vox
+  == format_vox.so => (Dialogic VOX (ADPCM) File Format)
+ Loading func_dialplan.so.
+  == Registered custom function 'DIALPLAN_EXISTS'
+  == Registered custom function 'VALID_EXTEN'
+  == func_dialplan.so => (Dialplan Context/Extension/Priority Checking Functions)
+ Loading format_wav.so.
+  == Registered file format wav, extension(s) wav
+  == Registered file format wav16, extension(s) wav16
+  == format_wav.so => (Microsoft WAV/WAV16 format (8kHz/16kHz Signed Linear))
+ Loading res_fax.so.
+  == Registered application 'SendFAX'
+  == Registered application 'ReceiveFAX'
+  == Manager registered action FAXSessions
+  == Manager registered action FAXSession
+  == Manager registered action FAXStats
+  == Registered custom function 'FAXOPT'
+  == res_fax.so => (Generic FAX Applications)
+ Loading format_siren14.so.
+  == Registered file format siren14, extension(s) siren14
+  == format_siren14.so => (ITU G.722.1 Annex C (Siren14, licensed from Polycom))
+ Loading format_ilbc.so.
+  == Registered file format iLBC, extension(s) ilbc
+  == format_ilbc.so => (Raw iLBC data)
+ Loading format_g726.so.
+  == Registered file format g726-40, extension(s) g726-40
+  == Registered file format g726-32, extension(s) g726-32
+  == Registered file format g726-24, extension(s) g726-24
+  == Registered file format g726-16, extension(s) g726-16
+  == format_g726.so => (Raw G.726 (16/24/32/40kbps) data)
+ Loading format_h263.so.
+  == Registered file format h263, extension(s) h263
+  == format_h263.so => (Raw H.263 data)
+ Loading format_g729.so.
+  == Registered file format g729, extension(s) g729
+  == format_g729.so => (Raw G.729 data)
+ Loading res_agi.so.
+  == AGI Command 'answer' registered
+  == AGI Command 'asyncagi break' registered
+  == AGI Command 'channel status' registered
+  == AGI Command 'database del' registered
+  == AGI Command 'database deltree' registered
+  == AGI Command 'database get' registered
+  == AGI Command 'database put' registered
+  == AGI Command 'exec' registered
+  == AGI Command 'get data' registered
+  == AGI Command 'get full variable' registered
+  == AGI Command 'get option' registered
+  == AGI Command 'get variable' registered
+  == AGI Command 'hangup' registered
+  == AGI Command 'noop' registered
+  == AGI Command 'receive char' registered
+  == AGI Command 'receive text' registered
+  == AGI Command 'record file' registered
+  == AGI Command 'say alpha' registered
+  == AGI Command 'say digits' registered
+  == AGI Command 'say number' registered
+  == AGI Command 'say phonetic' registered
+  == AGI Command 'say date' registered
+  == AGI Command 'say time' registered
+  == AGI Command 'say datetime' registered
+  == AGI Command 'send image' registered
+  == AGI Command 'send text' registered
+  == AGI Command 'set autohangup' registered
+  == AGI Command 'set callerid' registered
+  == AGI Command 'set context' registered
+  == AGI Command 'set extension' registered
+  == AGI Command 'set music' registered
+  == AGI Command 'set priority' registered
+  == AGI Command 'set variable' registered
+  == AGI Command 'stream file' registered
+  == AGI Command 'control stream file' registered
+  == AGI Command 'tdd mode' registered
+  == AGI Command 'verbose' registered
+  == AGI Command 'wait for digit' registered
+  == AGI Command 'speech create' registered
+  == AGI Command 'speech set' registered
+  == AGI Command 'speech destroy' registered
+  == AGI Command 'speech load grammar' registered
+  == AGI Command 'speech unload grammar' registered
+  == AGI Command 'speech activate grammar' registered
+  == AGI Command 'speech deactivate grammar' registered
+  == AGI Command 'speech recognize' registered
+  == Registered application 'DeadAGI'
+  == Registered application 'EAGI'
+  == Manager registered action AGI
+  == Registered application 'AGI'
+  == res_agi.so => (Asterisk Gateway Interface (AGI))
+ Loading app_stack.so.
+  == AGI Command 'gosub' registered
+  == Registered application 'StackPop'
+  == Registered application 'Return'
+  == Registered application 'GosubIf'
+  == Registered application 'Gosub'
+  == Registered custom function 'LOCAL'
+  == Registered custom function 'LOCAL_PEEK'
+  == Registered custom function 'STACK_PEEK'
+  == app_stack.so => (Dialplan subroutines (Gosub, Return, etc))
+ Loading format_gsm.so.
+  == Registered file format gsm, extension(s) gsm
+  == format_gsm.so => (Raw GSM data)
+ Loading format_sln.so.
+  == Registered file format sln, extension(s) sln|raw
+  == Registered file format sln12, extension(s) sln12
+  == Registered file format sln16, extension(s) sln16
+  == Registered file format sln24, extension(s) sln24
+  == Registered file format sln32, extension(s) sln32
+  == Registered file format sln44, extension(s) sln44
+  == Registered file format sln48, extension(s) sln48
+  == Registered file format sln96, extension(s) sln96
+  == Registered file format sln192, extension(s) sln192
+  == format_sln.so => (Raw Signed Linear Audio support (SLN) 8khz-192khz)
+ Loading res_ari.so.
+[Aug 16 16:12:02] ERROR[10]: ari/config.c:312 process_config: No configured users for ARI
+  == res_ari.so => (Asterisk RESTful Interface)
+ Loading res_stasis_recording.so.
+  == res_stasis_recording.so => (Stasis application recording support)
+ Loading res_pjsip_nat.so.
+  == res_pjsip_nat.so => (PJSIP NAT Support)
+ Loading res_pjsip_logger.so.
+  == res_pjsip_logger.so => (PJSIP Packet Logger)
+ Loading res_pjsip_dlg_options.so.
+  == res_pjsip_dlg_options.so => (SIP OPTIONS in dialog handler)
+ Loading res_pjsip_send_to_voicemail.so.
+  == res_pjsip_send_to_voicemail.so => (PJSIP REFER Send to Voicemail Support)
+ Loading res_pjsip_refer.so.
+  == res_pjsip_refer.so => (PJSIP Blind and Attended Transfer Support)
+ Loading res_pjsip_rfc3326.so.
+  == res_pjsip_rfc3326.so => (PJSIP RFC3326 Support)
+ Loading res_pjsip_acl.so.
+  == res_pjsip_acl.so => (PJSIP ACL Resource)
+ Loading res_pjsip_outbound_registration.so.
+  == Manager registered action PJSIPUnregister
+  == Manager registered action PJSIPRegister
+  == Manager registered action PJSIPShowRegistrationsOutbound
+  == res_pjsip_outbound_registration.so => (PJSIP Outbound Registration Support)
+ Loading res_pjsip_messaging.so.
+    -- Message technology 'pjsip' registered.
+  == res_pjsip_messaging.so => (PJSIP Messaging Support)
+ Loading res_pjsip_path.so.
+  == res_pjsip_path.so => (PJSIP Path Header Support)
+ Loading res_pjsip_notify.so.
+  == Manager registered action PJSIPNotify
+  == res_pjsip_notify.so => (CLI/AMI PJSIP NOTIFY Support)
+ Loading res_pjsip_dtmf_info.so.
+  == res_pjsip_dtmf_info.so => (PJSIP DTMF INFO Support)
+ Loading res_pjsip_phoneprov_provider.so.
+  == res_pjsip_phoneprov_provider.so => (PJSIP Phoneprov Provider)
+ Loading res_pjsip_empty_info.so.
+  == res_pjsip_empty_info.so => (PJSIP Empty INFO Support)
+ Loading res_pjsip_caller_id.so.
+  == res_pjsip_caller_id.so => (PJSIP Caller ID Support)
+ Loading res_pjsip_history.so.
+  == res_pjsip_history.so => (PJSIP History)
+ Loading res_pjsip_sips_contact.so.
+  == res_pjsip_sips_contact.so => (UAC SIPS Contact support)
+ Loading res_pjsip_header_funcs.so.
+  == Registered custom function 'PJSIP_HEADER'
+  == res_pjsip_header_funcs.so => (PJSIP Header Functions)
+ Loading res_pjsip_diversion.so.
+  == res_pjsip_diversion.so => (PJSIP Add Diversion Header Support)
+ Loading res_pjsip_transport_websocket.so.
+ Loading res_pjsip_one_touch_record_info.so.
+  == res_pjsip_one_touch_record_info.so => (PJSIP INFO One Touch Recording Support)
+ Loading sounds.
+  == sounds => (Sounds Index)
+ Loading app_agent_pool.so.
+  == Manager registered action Agents
+  == Manager registered action AgentLogoff
+  == Registered custom function 'AGENT'
+  == Registered application 'AgentLogin'
+  == Registered application 'AgentRequest'
+  == app_agent_pool.so => (Call center agent pool applications)
+ Loading res_calendar.so.
+  == Registered custom function 'CALENDAR_BUSY'
+  == Registered custom function 'CALENDAR_EVENT'
+  == Registered custom function 'CALENDAR_QUERY'
+  == Registered custom function 'CALENDAR_QUERY_RESULT'
+  == Registered custom function 'CALENDAR_WRITE'
+  == res_calendar.so => (Asterisk Calendar integration)
+ Loading func_jitterbuffer.so.
+  == Registered custom function 'JITTERBUFFER'
+  == func_jitterbuffer.so => (Jitter buffer for read side of channel.)
+ Loading app_confbridge.so.
+[Aug 16 16:12:02] NOTICE[10]: confbridge/conf_config_parser.c:2342 verify_default_profiles: Adding default_menu menu to app_confbridge
+  == Registered channel type 'CBRec' (Conference Bridge Recording Channel)
+  == Registered channel type 'CBAnn' (Conference Bridge Announcing Channel)
+  == Registered application 'ConfBridge'
+  == Registered custom function 'CONFBRIDGE'
+  == Registered custom function 'CONFBRIDGE_INFO'
+  == Manager registered action ConfbridgeList
+  == Manager registered action ConfbridgeListRooms
+  == Manager registered action ConfbridgeMute
+  == Manager registered action ConfbridgeUnmute
+  == Manager registered action ConfbridgeKick
+  == Manager registered action ConfbridgeUnlock
+  == Manager registered action ConfbridgeLock
+  == Manager registered action ConfbridgeStartRecord
+  == Manager registered action ConfbridgeStopRecord
+  == Manager registered action ConfbridgeSetSingleVideoSrc
+  == app_confbridge.so => (Conference Bridge Application)
+ Loading res_mwi_devstate.so.
+  == res_mwi_devstate.so => (MWI Device State Subscriptions)
+ Loading func_devstate.so.
+  == Registered custom function 'DEVICE_STATE'
+  == Registered custom function 'HINT'
+  == func_devstate.so => (Gets or sets a device state in the dialplan)
+ Loading func_presencestate.so.
+  == Registered custom function 'PRESENCE_STATE'
+  == func_presencestate.so => (Gets or sets a presence state in the dialplan)
+ Loading res_parking.so.
+  == Registered application 'Park'
+  == Registered application 'ParkedCall'
+  == Registered application 'ParkAndAnnounce'
+  == Manager registered action Parkinglots
+  == Manager registered action ParkedCalls
+  == Manager registered action Park
+  == Registered custom function 'PARK_GET_CHANNEL'
+  == res_parking.so => (Call Parking Resource)
+ Loading cdr_manager.so.
+  == cdr_manager.so => (Asterisk Manager Interface CDR Backend)
+ Loading func_logic.so.
+  == Registered custom function 'ISNULL'
+  == Registered custom function 'SET'
+  == Registered custom function 'EXISTS'
+  == Registered custom function 'IF'
+  == Registered custom function 'IFTIME'
+  == Registered custom function 'IMPORT'
+  == func_logic.so => (Logical dialplan functions)
+ Loading app_system.so.
+  == Registered application 'TrySystem'
+  == Registered application 'System'
+  == app_system.so => (Generic System() application)
+ Loading func_cdr.so.
+  == Registered custom function 'CDR'
+  == Registered custom function 'CDR_PROP'
+  == func_cdr.so => (Call Detail Record (CDR) dialplan functions)
+ Loading res_format_attr_h263.so.
+  == Registered format interface for codec 'h263'
+  == Registered format interface for codec 'h263p'
+  == res_format_attr_h263.so => (H.263 Format Attribute Module)
+ Loading func_enum.so.
+  == Registered custom function 'ENUMRESULT'
+  == Registered custom function 'ENUMQUERY'
+  == Registered custom function 'ENUMLOOKUP'
+  == Registered custom function 'TXTCIDNAME'
+  == func_enum.so => (ENUM related dialplan functions)
+ Loading res_remb_modifier.so.
+  == res_remb_modifier.so => (REMB Modifier Module)
+ Loading func_sysinfo.so.
+  == Registered custom function 'SYSINFO'
+  == func_sysinfo.so => (System information related functions)
+ Loading pbx_spool.so.
+  == pbx_spool.so => (Outgoing Spool Support)
+ Loading bridge_builtin_interval_features.so.
+  == bridge_builtin_interval_features.so => (Built in bridging interval features)
+ Loading app_mixmonitor.so.
+  == Registered application 'MixMonitor'
+  == Registered application 'StopMixMonitor'
+  == Manager registered action MixMonitorMute
+  == Manager registered action MixMonitor
+  == Manager registered action StopMixMonitor
+  == Registered custom function 'MIXMONITOR'
+  == app_mixmonitor.so => (Mixed Audio Monitoring Application)
+ Loading codec_ilbc.so.
+  == Registered translator 'ilbctolin' from codec ilbc to slin, table cost, 900000, computational cost 1982
+  == Registered translator 'lintoilbc' from codec slin to ilbc, table cost, 600000, computational cost 9466
+  == codec_ilbc.so => (iLBC Coder/Decoder)
+ Loading func_talkdetect.so.
+  == Registered custom function 'TALK_DETECT'
+  == func_talkdetect.so => (Talk detection dialplan function)
+ Loading bridge_builtin_features.so.
+  == bridge_builtin_features.so => (Built in bridging features)
+ Loading app_originate.so.
+  == Registered application 'Originate'
+  == app_originate.so => (Originate call)
+ Loading func_md5.so.
+  == Registered custom function 'MD5'
+  == func_md5.so => (MD5 digest dialplan functions)
+ Loading func_groupcount.so.
+  == Registered custom function 'GROUP_COUNT'
+  == Registered custom function 'GROUP_MATCH_COUNT'
+  == Registered custom function 'GROUP_LIST'
+  == Registered custom function 'GROUP'
+  == func_groupcount.so => (Channel group dialplan functions)
+ Loading bridge_simple.so.
+  == Registered bridge technology simple_bridge
+  == bridge_simple.so => (Simple two channel bridging module)
+ Loading func_extstate.so.
+  == Registered custom function 'EXTENSION_STATE'
+  == func_extstate.so => (Gets an extension's state in the dialplan)
+ Loading app_chanisavail.so.
+  == Registered application 'ChanIsAvail'
+  == app_chanisavail.so => (Check channel availability)
+ Loading app_mp3.so.
+  == Registered application 'MP3Player'
+  == app_mp3.so => (Silly MP3 Application)
+ Loading app_sayunixtime.so.
+  == Registered application 'SayUnixTime'
+  == Registered application 'DateTime'
+  == app_sayunixtime.so => (Say time)
+ Loading app_waituntil.so.
+  == Registered application 'WaitUntil'
+  == app_waituntil.so => (Wait until specified time)
+ Loading app_directed_pickup.so.
+  == Registered application 'Pickup'
+  == Registered application 'PickupChan'
+  == app_directed_pickup.so => (Directed Call Pickup Application)
+ Loading func_sha1.so.
+  == Registered custom function 'SHA1'
+  == func_sha1.so => (SHA-1 computation dialplan function)
+ Loading res_mutestream.so.
+  == Registered custom function 'MUTEAUDIO'
+  == Manager registered action MuteAudio
+  == res_mutestream.so => (Mute audio stream resources)
+ Loading res_ael_share.so.
+  == res_ael_share.so => (share-able code for AEL)
+ Loading bridge_holding.so.
+  == Registered bridge technology holding_bridge
+  == bridge_holding.so => (Holding bridge module)
+ Loading app_forkcdr.so.
+  == Registered application 'ForkCDR'
+  == app_forkcdr.so => (Fork The CDR into 2 separate entities)
+ Loading app_attended_transfer.so.
+  == Registered application 'AttendedTransfer'
+  == app_attended_transfer.so => (Attended transfer to the given extension)
+ Loading app_page.so.
+  == Registered application 'Page'
+  == app_page.so => (Page Multiple Phones)
+ Loading app_alarmreceiver.so.
+  == Registered application 'AlarmReceiver'
+  == app_alarmreceiver.so => (Alarm Receiver for Asterisk)
+ Loading app_playback.so.
+  == Registered application 'Playback'
+  == app_playback.so => (Sound File Playback Application)
+ Loading app_echo.so.
+  == Registered application 'Echo'
+  == app_echo.so => (Simple Echo Application)
+ Loading res_clialiases.so.
+  == Aliased CLI command 'hangup request' to 'channel request hangup'
+  == Aliased CLI command 'originate' to 'channel originate'
+  == Aliased CLI command 'help' to 'core show help'
+  == Aliased CLI command 'pri intense debug span' to 'pri set debug intense span'
+  == Aliased CLI command 'reload' to 'module reload'
+  == Aliased CLI command 'pjsip reload' to 'module reload res_pjsip.so res_pjsip_authenticator_digest.so res_pjsip_endpoint_identifier_ip.so res_pjsip_mwi.so res_pjsip_notify.so res_pjsip_outbound_publish.so res_pjsip_publish_asterisk.so res_pjsip_outbound_registration.so'
+  == res_clialiases.so => (CLI Aliases)
+ Loading app_verbose.so.
+  == Registered application 'Log'
+  == Registered application 'Verbose'
+  == app_verbose.so => (Send verbose output)
+ Loading app_morsecode.so.
+  == Registered application 'Morsecode'
+  == app_morsecode.so => (Morse code)
+ Loading bridge_softmix.so.
+  == Registered bridge technology softmix
+  == bridge_softmix.so => (Multi-party software based channel mixing)
+ Loading chan_oss.so.
+  == Registered channel type 'Console' (OSS Console Channel Driver)
+  == chan_oss.so => (OSS Console Channel Driver)
+ Loading codec_lpc10.so.
+  == Registered translator 'lpc10tolin' from codec lpc10 to slin, table cost, 900000, computational cost 1283
+  == Registered translator 'lintolpc10' from codec slin to lpc10, table cost, 600000, computational cost 1617
+  == codec_lpc10.so => (LPC10 2.4kbps Coder/Decoder)
+ Loading res_realtime.so.
+  == res_realtime.so => (Realtime Data Lookup/Rewrite)
+ Loading app_exec.so.
+  == Registered application 'Exec'
+  == Registered application 'TryExec'
+  == Registered application 'ExecIf'
+  == app_exec.so => (Executes dialplan applications)
+ Loading func_holdintercept.so.
+  == Registered custom function 'HOLD_INTERCEPT'
+  == func_holdintercept.so => (Hold interception dialplan function)
+ Loading app_stream_echo.so.
+  == Registered application 'StreamEcho'
+  == app_stream_echo.so => (Stream Echo Application)
+ Loading func_callcompletion.so.
+  == Registered custom function 'CALLCOMPLETION'
+  == func_callcompletion.so => (Call Control Configuration Function)
+ Loading func_env.so.
+  == Registered custom function 'ENV'
+  == Registered custom function 'STAT'
+  == Registered custom function 'FILE'
+  == Registered custom function 'FILE_COUNT_LINE'
+  == Registered custom function 'FILE_FORMAT'
+  == func_env.so => (Environment/filesystem dialplan functions)
+ Loading codec_resample.so.
+  == Registered translator 'slin 8000khz -> 12000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 8000khz -> 16000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 8000khz -> 24000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 8000khz -> 32000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 8000khz -> 44100khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 8000khz -> 48000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 8000khz -> 96000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 8000khz -> 192000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 12000khz -> 8000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 12000khz -> 16000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 12000khz -> 24000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 12000khz -> 32000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 12000khz -> 44100khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 12000khz -> 48000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 12000khz -> 96000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 12000khz -> 192000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 16000khz -> 8000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 16000khz -> 12000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 16000khz -> 24000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 16000khz -> 32000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 16000khz -> 44100khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 16000khz -> 48000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 16000khz -> 96000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 16000khz -> 192000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 24000khz -> 8000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 24000khz -> 12000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 24000khz -> 16000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 24000khz -> 32000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 24000khz -> 44100khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 24000khz -> 48000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 24000khz -> 96000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 24000khz -> 192000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 32000khz -> 8000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 32000khz -> 12000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 32000khz -> 16000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 32000khz -> 24000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 32000khz -> 44100khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 32000khz -> 48000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 32000khz -> 96000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 32000khz -> 192000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 44100khz -> 8000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 44100khz -> 12000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 44100khz -> 16000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 44100khz -> 24000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 44100khz -> 32000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 44100khz -> 48000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 44100khz -> 96000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 44100khz -> 192000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 48000khz -> 8000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 48000khz -> 12000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 48000khz -> 16000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 48000khz -> 24000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 48000khz -> 32000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 48000khz -> 44100khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 48000khz -> 96000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 48000khz -> 192000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 96000khz -> 8000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 96000khz -> 12000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 96000khz -> 16000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 96000khz -> 24000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 96000khz -> 32000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 96000khz -> 44100khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 96000khz -> 48000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 96000khz -> 192000khz' from codec slin to slin, table cost, 800000, computational cost 999999
+  == Registered translator 'slin 192000khz -> 8000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 192000khz -> 12000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 192000khz -> 16000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 192000khz -> 24000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 192000khz -> 32000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 192000khz -> 44100khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 192000khz -> 48000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == Registered translator 'slin 192000khz -> 96000khz' from codec slin to slin, table cost, 850000, computational cost 999999
+  == codec_resample.so => (SLIN Resampling Codec)
+ Loading func_srv.so.
+  == Registered custom function 'SRVQUERY'
+  == Registered custom function 'SRVRESULT'
+  == func_srv.so => (SRV related dialplan functions)
+ Loading codec_g726.so.
+  == Registered translator 'g726tolin' from codec g726 to slin, table cost, 900000, computational cost 1335
+  == Registered translator 'lintog726' from codec slin to g726, table cost, 600000, computational cost 3544
+  == Registered translator 'g726aal2tolin' from codec g726aal2 to slin, table cost, 900000, computational cost 1226
+  == Registered translator 'lintog726aal2' from codec slin to g726aal2, table cost, 600000, computational cost 3243
+  == codec_g726.so => (ITU G.726-32kbps G726 Transcoder)
+ Loading func_timeout.so.
+  == Registered custom function 'TIMEOUT'
+  == func_timeout.so => (Channel timeout dialplan functions)
+ Loading res_stasis_snoop.so.
+  == res_stasis_snoop.so => (Stasis application snoop support)
+ Loading chan_bridge_media.so.
+  == Registered channel type 'Announcer' (Bridge Media Announcing Channel Driver)
+  == Registered channel type 'Recorder' (Bridge Media Recording Channel Driver)
+  == chan_bridge_media.so => (Bridge Media Channel Driver)
+ Loading app_voicemail.so.
+  == Registered application 'VoiceMail'
+  == Registered application 'VoiceMailMain'
+  == Registered application 'MailboxExists'
+  == Registered application 'VMAuthenticate'
+  == Registered application 'VoiceMailPlayMsg'
+  == Registered application 'VMSayName'
+  == Registered custom function 'MAILBOX_EXISTS'
+  == Registered custom function 'VM_INFO'
+  == Manager registered action VoicemailUsersList
+  == Manager registered action VoicemailUserStatus
+  == Manager registered action VoicemailRefresh
+  == app_voicemail.so => (Comedian Mail (Voicemail System))
+ Loading res_clioriginate.so.
+  == res_clioriginate.so => (Call origination and redirection from the CLI)
+ Loading app_dumpchan.so.
+  == Registered application 'DumpChan'
+  == app_dumpchan.so => (Dump Info About The Calling Channel)
+ Loading app_sms.so.
+  == Registered application 'SMS'
+  == app_sms.so => (SMS/PSTN handler)
+ Loading func_realtime.so.
+  == Registered custom function 'REALTIME'
+  == Registered custom function 'REALTIME_STORE'
+  == Registered custom function 'REALTIME_DESTROY'
+  == Registered custom function 'REALTIME_FIELD'
+  == Registered custom function 'REALTIME_HASH'
+  == func_realtime.so => (Read/Write/Store/Destroy values from a RealTime repository)
+ Loading codec_ulaw.so.
+  == Registered translator 'ulawtolin' from codec ulaw to slin, table cost, 900000, computational cost 110
+  == Registered translator 'lintoulaw' from codec slin to ulaw, table cost, 600000, computational cost 51
+  == Registered translator 'lintotestlaw' from codec slin to testlaw, table cost, 600000, computational cost 81
+  == Registered translator 'testlawtolin' from codec testlaw to slin, table cost, 900000, computational cost 51
+  == codec_ulaw.so => (mu-Law Coder/Decoder)
+ Loading codec_a_mu.so.
+  == Registered translator 'alawtoulaw' from codec alaw to ulaw, table cost, 915000, computational cost 87
+  == Registered translator 'ulawtoalaw' from codec ulaw to alaw, table cost, 915000, computational cost 45
+  == codec_a_mu.so => (A-law and Mulaw direct Coder/Decoder)
+ Loading func_frame_trace.so.
+  == Registered custom function 'FRAME_TRACE'
+  == func_frame_trace.so => (Frame Trace for internal ast_frame debugging.)
+ Loading func_pitchshift.so.
+  == Registered custom function 'PITCH_SHIFT'
+  == func_pitchshift.so => (Audio Effects Dialplan Functions)
+ Loading app_externalivr.so.
+  == Registered application 'ExternalIVR'
+  == app_externalivr.so => (External IVR Interface Application)
+ Loading app_sendtext.so.
+  == Registered application 'SendText'
+  == app_sendtext.so => (Send Text Applications)
+ Loading app_macro.so.
+  == Registered application 'MacroExit'
+  == Registered application 'MacroIf'
+  == Registered application 'MacroExclusive'
+  == Registered application 'Macro'
+  == app_macro.so => (Extension Macros)
+ Loading app_blind_transfer.so.
+  == Registered application 'BlindTransfer'
+  == app_blind_transfer.so => (Blind transfer channel to the given destination)
+ Loading app_readexten.so.
+  == Registered application 'ReadExten'
+  == app_readexten.so => (Read and evaluate extension validity)
+ Loading pbx_config.so.
+    -- Time to scan old dialplan and merge leftovers back into the new: 0.000078 sec
+    -- Time to restore hints and swap in new dialplan: 0.000017 sec
+    -- Time to delete the old dialplan: 0.000037 sec
+    -- Total time merge_contexts_delete: 0.000132 sec
+    -- pbx_config successfully loaded 2 contexts (enable debug for details).
+  == Manager registered action DialplanExtensionAdd
+  == Manager registered action DialplanExtensionRemove
+  == pbx_config.so => (Text Extension Configuration)
+ Loading app_test.so.
+  == Registered application 'TestClient'
+  == Registered application 'TestServer'
+  == app_test.so => (Interface Test Application)
+ Loading app_url.so.
+  == Registered application 'SendURL'
+  == app_url.so => (Send URL Applications)
+ Loading app_image.so.
+  == Registered application 'SendImage'
+  == app_image.so => (Image Transmission Application)
+ Loading app_directory.so.
+  == Registered application 'Directory'
+  == app_directory.so => (Extension Directory)
+ Loading format_mp3.so.
+  == Registered file format mp3, extension(s) mp3
+  == format_mp3.so => (MP3 format [Any rate but 8000hz mono is optimal])
+ Loading func_config.so.
+  == Registered custom function 'AST_CONFIG'
+  == func_config.so => (Asterisk configuration file variable access)
+ Loading bridge_native_rtp.so.
+  == Registered bridge technology native_rtp
+  == bridge_native_rtp.so => (Native RTP bridging module)
+ Loading app_channelredirect.so.
+  == Registered application 'ChannelRedirect'
+  == app_channelredirect.so => (Redirects a given channel to a dialplan target)
+ Loading app_bridgeaddchan.so.
+  == Registered application 'BridgeAdd'
+  == app_bridgeaddchan.so => (Bridge Add Channel Application)
+ Loading app_senddtmf.so.
+  == Manager registered action PlayDTMF
+  == Registered application 'SendDTMF'
+  == app_senddtmf.so => (Send DTMF digits Application)
+ Loading func_version.so.
+  == Registered custom function 'VERSION'
+  == func_version.so => (Get Asterisk Version/Build Info)
+ Loading app_db.so.
+  == Registered application 'DBdeltree'
+  == app_db.so => (Database Access Functions)
+ Loading func_module.so.
+  == Registered custom function 'IFMODULE'
+  == func_module.so => (Checks if Asterisk module is loaded in memory)
+ Loading res_security_log.so.
+    -- Security Logging Enabled
+  == res_security_log.so => (Security Event Logging)
+ Loading app_while.so.
+  == Registered application 'While'
+  == Registered application 'EndWhile'
+  == Registered application 'ExitWhile'
+  == Registered application 'ContinueWhile'
+  == app_while.so => (While Loops and Conditional Execution)
+ Loading res_convert.so.
+  == res_convert.so => (File format conversion CLI command)
+ Loading app_userevent.so.
+  == Registered application 'UserEvent'
+  == app_userevent.so => (Custom User Event Application)
+ Loading app_disa.so.
+  == Registered application 'DISA'
+  == app_disa.so => (DISA (Direct Inward System Access) Application)
+ Loading codec_g722.so.
+  == Registered translator 'g722tolin' from codec g722 to slin, table cost, 960000, computational cost 739
+  == Registered translator 'lintog722' from codec slin to g722, table cost, 825000, computational cost 1080
+  == Registered translator 'g722tolin16' from codec g722 to slin, table cost, 900000, computational cost 1842
+  == Registered translator 'lin16tog722' from codec slin to g722, table cost, 600000, computational cost 2399
+  == codec_g722.so => (ITU G.722-64kbps G722 Transcoder)
+ Loading app_festival.so.
+  == Registered application 'Festival'
+  == app_festival.so => (Simple Festival Interface)
+ Loading app_playtones.so.
+  == Registered application 'PlayTones'
+  == Registered application 'StopPlayTones'
+  == app_playtones.so => (Playtones Application)
+ Loading func_shell.so.
+  == Registered custom function 'SHELL'
+  == func_shell.so => (Collects the output generated by a command executed by the system shell)
+ Loading app_waitforsilence.so.
+  == Registered application 'WaitForSilence'
+  == Registered application 'WaitForNoise'
+  == app_waitforsilence.so => (Wait For Silence/Noise)
+ Loading app_nbscat.so.
+  == Registered application 'NBScat'
+  == app_nbscat.so => (Silly NBS Stream Application)
+ Loading app_minivm.so.
+  == Registered application 'MinivmRecord'
+  == Registered application 'MinivmGreet'
+  == Registered application 'MinivmNotify'
+  == Registered application 'MinivmDelete'
+  == Registered application 'MinivmAccMess'
+  == Registered application 'MinivmMWI'
+  == Registered custom function 'MINIVMACCOUNT'
+  == Registered custom function 'MINIVMCOUNTER'
+  == app_minivm.so => (Mini VoiceMail (A minimal Voicemail e-mail System))
+ Loading func_cut.so.
+  == Registered custom function 'CUT'
+  == Registered custom function 'SORT'
+  == func_cut.so => (Cut out information from a string)
+ Loading func_rand.so.
+  == Registered custom function 'RAND'
+  == func_rand.so => (Random number dialplan function)
+ Loading app_adsiprog.so.
+  == Registered application 'ADSIProg'
+  == app_adsiprog.so => (Asterisk ADSI Programming Application)
+ Loading codec_gsm.so.
+  == Registered translator 'gsmtolin' from codec gsm to slin, table cost, 900000, computational cost 409
+  == Registered translator 'lintogsm' from codec slin to gsm, table cost, 600000, computational cost 1589
+  == codec_gsm.so => (GSM Coder/Decoder)
+ Loading func_math.so.
+  == Registered custom function 'MATH'
+  == Registered custom function 'INC'
+  == Registered custom function 'DEC'
+  == func_math.so => (Mathematical dialplan function)
+ Loading func_sprintf.so.
+  == Registered custom function 'SPRINTF'
+  == func_sprintf.so => (SPRINTF dialplan function)
+ Loading app_record.so.
+  == Registered application 'Record'
+  == app_record.so => (Trivial Record Application)
+ Loading app_waitforring.so.
+  == Registered application 'WaitForRing'
+  == app_waitforring.so => (Waits until first ring after time)
+ Loading app_talkdetect.so.
+  == Registered application 'BackgroundDetect'
+  == app_talkdetect.so => (Playback with Talk Detection)
+ Loading app_chanspy.so.
+  == Registered application 'ChanSpy'
+  == Registered application 'ExtenSpy'
+  == Registered application 'DAHDIScan'
+  == app_chanspy.so => (Listen to the audio of an active channel)
+ Loading func_global.so.
+  == Registered custom function 'GLOBAL'
+  == Registered custom function 'SHARED'
+  == func_global.so => (Variable dialplan functions)
+ Loading app_dial.so.
+  == Registered application 'Dial'
+  == Registered application 'RetryDial'
+  == app_dial.so => (Dialing Application)
+ Loading func_volume.so.
+  == Registered custom function 'VOLUME'
+  == func_volume.so => (Technology independent volume control)
+ Loading res_format_attr_h264.so.
+  == Registered format interface for codec 'h264'
+  == res_format_attr_h264.so => (H.264 Format Attribute Module)
+ Loading func_aes.so.
+  == Registered custom function 'AES_DECRYPT'
+  == Registered custom function 'AES_ENCRYPT'
+  == func_aes.so => (AES dialplan functions)
+ Loading func_sorcery.so.
+  == Registered custom function 'AST_SORCERY'
+  == func_sorcery.so => (Get a field from a sorcery object)
+ Loading app_transfer.so.
+  == Registered application 'Transfer'
+  == app_transfer.so => (Transfers a caller to another extension)
+ Loading codec_adpcm.so.
+  == Registered translator 'adpcmtolin' from codec adpcm to slin, table cost, 900000, computational cost 182
+  == Registered translator 'lintoadpcm' from codec slin to adpcm, table cost, 600000, computational cost 216
+  == codec_adpcm.so => (Adaptive Differential PCM Coder/Decoder)
+ Loading chan_phone.so.
+  == Registered channel type 'Phone' (Standard Linux Telephony API Driver)
+  == chan_phone.so => (Linux Telephony API Support)
+ Loading app_read.so.
+  == Registered application 'Read'
+  == app_read.so => (Read Variable Application)
+ Loading func_base64.so.
+  == Registered custom function 'BASE64_ENCODE'
+  == Registered custom function 'BASE64_DECODE'
+  == func_base64.so => (base64 encode/decode dialplan functions)
+ Loading app_ices.so.
+  == Registered application 'ICES'
+  == app_ices.so => (Encode and Stream via icecast and ices)
+ Loading app_celgenuserevent.so.
+  == Registered application 'CELGenUserEvent'
+  == app_celgenuserevent.so => (Generate an User-Defined CEL event)
+ Loading pbx_realtime.so.
+  == pbx_realtime.so => (Realtime Switch)
+ Loading app_speech_utils.so.
+  == Registered application 'SpeechCreate'
+  == Registered application 'SpeechLoadGrammar'
+  == Registered application 'SpeechUnloadGrammar'
+  == Registered application 'SpeechActivateGrammar'
+  == Registered application 'SpeechDeactivateGrammar'
+  == Registered application 'SpeechStart'
+  == Registered application 'SpeechBackground'
+  == Registered application 'SpeechDestroy'
+  == Registered application 'SpeechProcessingSound'
+  == Registered custom function 'SPEECH'
+  == Registered custom function 'SPEECH_SCORE'
+  == Registered custom function 'SPEECH_TEXT'
+  == Registered custom function 'SPEECH_GRAMMAR'
+  == Registered custom function 'SPEECH_ENGINE'
+  == Registered custom function 'SPEECH_RESULTS_TYPE'
+  == app_speech_utils.so => (Dialplan Speech Applications)
+ Loading codec_alaw.so.
+  == Registered translator 'alawtolin' from codec alaw to slin, table cost, 900000, computational cost 119
+  == Registered translator 'lintoalaw' from codec slin to alaw, table cost, 600000, computational cost 79
+  == codec_alaw.so => (A-law Coder/Decoder)
+ Loading func_blacklist.so.
+  == Registered custom function 'BLACKLIST'
+  == func_blacklist.so => (Look up Caller*ID name/number from blacklist database)
+ Loading func_lock.so.
+  == Registered custom function 'LOCK'
+  == Registered custom function 'TRYLOCK'
+  == Registered custom function 'UNLOCK'
+  == func_lock.so => (Dialplan mutexes)
+ Loading app_authenticate.so.
+  == Registered application 'Authenticate'
+  == app_authenticate.so => (Authentication Application)
+ Loading pbx_dundi.so.
+  == Registered custom function 'DUNDILOOKUP'
+  == Registered custom function 'DUNDIQUERY'
+  == Registered custom function 'DUNDIRESULT'
+  == DUNDi Ready and Listening on 0.0.0.0:4520
+  == pbx_dundi.so => (Distributed Universal Number Discovery (DUNDi))
+ Loading func_callerid.so.
+  == Registered custom function 'CALLERPRES'
+  == Registered custom function 'CALLERID'
+  == Registered custom function 'CONNECTEDLINE'
+  == Registered custom function 'REDIRECTING'
+  == func_callerid.so => (Party ID related dialplan functions (Caller-ID, Connected-line, Redirecting))
+ Loading app_amd.so.
+    -- AMD defaults: initialSilence [2500] greeting [1500] afterGreetingSilence [800] totalAnalysisTime [5000] minimumWordLength [100] betweenWordsSilence [50] maximumNumberOfWords [2] silenceThreshold [256] maximumWordLength [5000]
+  == Registered application 'AMD'
+  == app_amd.so => (Answering Machine Detection Application)
+ Loading app_softhangup.so.
+  == Registered application 'SoftHangup'
+  == app_softhangup.so => (Hangs up the requested channel)
+ Loading func_db.so.
+  == Registered custom function 'DB'
+  == Registered custom function 'DB_EXISTS'
+  == Registered custom function 'DB_DELETE'
+  == Registered custom function 'DB_KEYS'
+  == func_db.so => (Database (astdb) related dialplan functions)
+ Loading app_milliwatt.so.
+  == Registered application 'Milliwatt'
+  == app_milliwatt.so => (Digital Milliwatt (mu-law) Test Application)
+ Loading func_hangupcause.so.
+  == Registered custom function 'HANGUPCAUSE'
+  == Registered custom function 'HANGUPCAUSE_KEYS'
+  == Registered application 'HangupCauseClear'
+  == func_hangupcause.so => (HANGUPCAUSE related functions and applications)
+ Loading app_bridgewait.so.
+  == Registered application 'BridgeWait'
+  == app_bridgewait.so => (Place the channel into a holding bridge application)
+ Loading func_strings.so.
+  == Registered custom function 'FIELDQTY'
+  == Registered custom function 'FIELDNUM'
+  == Registered custom function 'FILTER'
+  == Registered custom function 'REPLACE'
+  == Registered custom function 'STRREPLACE'
+  == Registered custom function 'LISTFILTER'
+  == Registered custom function 'REGEX'
+  == Registered custom function 'ARRAY'
+  == Registered custom function 'QUOTE'
+  == Registered custom function 'CSV_QUOTE'
+  == Registered custom function 'LEN'
+  == Registered custom function 'STRFTIME'
+  == Registered custom function 'STRPTIME'
+  == Registered custom function 'EVAL'
+  == Registered custom function 'KEYPADHASH'
+  == Registered custom function 'HASHKEYS'
+  == Registered custom function 'HASH'
+  == Registered application 'ClearHash'
+  == Registered custom function 'TOUPPER'
+  == Registered custom function 'TOLOWER'
+  == Registered custom function 'SHIFT'
+  == Registered custom function 'POP'
+  == Registered custom function 'PUSH'
+  == Registered custom function 'UNSHIFT'
+  == Registered custom function 'PASSTHRU'
+  == func_strings.so => (String handling dialplan functions)
+ Loading res_limit.so.
+  == res_limit.so => (Resource limits)
+ Loading func_vmcount.so.
+  == Registered custom function 'VMCOUNT'
+  == func_vmcount.so => (Indicator for whether a voice mailbox has messages in a given folder.)
+ Loading app_cdr.so.
+  == Registered application 'NoCDR'
+  == Registered application 'ResetCDR'
+  == app_cdr.so => (Tell Asterisk to not maintain a CDR for the current call)
+ Loading func_iconv.so.
+  == Registered custom function 'ICONV'
+  == func_iconv.so => (Charset conversions)
+ Loading app_getcpeid.so.
+  == Registered application 'GetCPEID'
+  == app_getcpeid.so => (Get ADSI CPE ID)
+ Loading app_dictate.so.
+  == Registered application 'Dictate'
+  == app_dictate.so => (Virtual Dictation Machine)
+ Loading app_privacy.so.
+  == Registered application 'PrivacyManager'
+  == app_privacy.so => (Require phone number to be entered, if no CallerID sent)
+ Loading func_dialgroup.so.
+  == Registered custom function 'DIALGROUP'
+  == func_dialgroup.so => (Dialgroup dialplan function)
+ Loading chan_unistim.so.
+  == UNISTIM Listening on 0.0.0.0:5000
+  == Registered channel type 'USTM' (UNISTIM Channel Driver)
+  == Registered RTP glue 'USTM'
+  == chan_unistim.so => (UNISTIM Protocol (USTM))
+ Loading app_zapateller.so.
+  == Registered application 'Zapateller'
+  == app_zapateller.so => (Block Telemarketers with Special Information Tone)
+ Loading app_controlplayback.so.
+  == Registered application 'ControlPlayback'
+  == Manager registered action ControlPlayback
+  == app_controlplayback.so => (Control Playback Application)
+ Loading app_followme.so.
+  == Registered application 'FollowMe'
+  == app_followme.so => (Find-Me/Follow-Me Application)
+ Loading pbx_loopback.so.
+  == pbx_loopback.so => (Loopback Switch)
+ Loading func_uri.so.
+  == Registered custom function 'URIDECODE'
+  == Registered custom function 'URIENCODE'
+  == func_uri.so => (URI encode/decode dialplan functions)
+ Loading func_channel.so.
+  == Registered custom function 'CHANNEL'
+  == Registered custom function 'CHANNELS'
+  == Registered custom function 'MASTER_CHANNEL'
+  == func_channel.so => (Channel information dialplan functions)
+ Loading pbx_ael.so.
+  == Registered application 'AELSub'
+  == Setting global variable 'CONSOLE-AEL' to '"Console/dsp"'
+  == Setting global variable 'IAXINFO-AEL' to 'guest'
+  == Setting global variable 'OUTBOUND-TRUNK' to '"Zap/g2"'
+  == Setting global variable 'OUTBOUND-TRUNKMSD' to '1'
+    -- Including switch 'DUNDi/e164' in context 'ael-dundi-e164-switch'
+    -- Time to scan old dialplan and merge leftovers back into the new: 0.000113 sec
+    -- Time to restore hints and swap in new dialplan: 0.000020 sec
+    -- Time to delete the old dialplan: 0.000026 sec
+    -- Total time merge_contexts_delete: 0.000159 sec
+    -- pbx_ael successfully loaded 3 contexts (enable debug for details).
+  == pbx_ael.so => (Asterisk Extension Language Compiler)
+ Loading res_ari_applications.so.
+  == res_ari_applications.so => (RESTful API module - Stasis application resources)
+ Loading app_stasis.so.
+  == Registered application 'Stasis'
+  == app_stasis.so => (Stasis dialplan application)
+ Loading res_stasis_playback.so.
+  == res_stasis_playback.so => (Stasis application playback support)
+ Loading res_ari_recordings.so.
+  == res_ari_recordings.so => (RESTful API module - Recording resources)
+ Loading res_ari_endpoints.so.
+  == res_ari_endpoints.so => (RESTful API module - Endpoint resources)
+ Loading res_ari_events.so.
+  == WebSocket registered sub-protocol 'ari'
+  == res_ari_events.so => (RESTful API module - WebSocket resource)
+ Loading func_pjsip_contact.so.
+  == Registered custom function 'PJSIP_CONTACT'
+  == func_pjsip_contact.so => (Get information about a PJSIP contact)
+ Loading res_pjsip_endpoint_identifier_anonymous.so.
+  == res_pjsip_endpoint_identifier_anonymous.so => (PJSIP Anonymous endpoint identifier)
+ Loading res_stasis_answer.so.
+  == res_stasis_answer.so => (Stasis application answer support)
+ Loading res_stasis_device_state.so.
+  == res_stasis_device_state.so => (Stasis application device state support)
+ Loading func_pjsip_aor.so.
+  == Registered custom function 'PJSIP_AOR'
+  == func_pjsip_aor.so => (Get information about a PJSIP AOR)
+ Loading res_ari_sounds.so.
+  == res_ari_sounds.so => (RESTful API module - Sound resources)
+ Loading res_ari_channels.so.
+  == res_ari_channels.so => (RESTful API module - Channel resources)
+ Loading res_ari_playbacks.so.
+  == res_ari_playbacks.so => (RESTful API module - Playback control resources)
+ Loading res_ari_asterisk.so.
+  == res_ari_asterisk.so => (RESTful API module - Asterisk resources)
+ Loading res_ari_bridges.so.
+  == res_ari_bridges.so => (RESTful API module - Bridge resources)
+ Loading func_pjsip_endpoint.so.
+  == Registered custom function 'PJSIP_ENDPOINT'
+  == func_pjsip_endpoint.so => (Get information about a PJSIP endpoint)
+ Loading res_ari_device_states.so.
+  == res_ari_device_states.so => (RESTful API module - Device state resources)
+ Loading res_manager_presencestate.so.
+  == Manager registered action PresenceStateList
+  == res_manager_presencestate.so => (Manager Presence State Topic Forwarder)
+ Loading res_manager_devicestate.so.
+  == Manager registered action DeviceStateList
+  == res_manager_devicestate.so => (Manager Device State Topic Forwarder)
+ Loading app_queue.so.
+  == Registered application 'Queue'
+  == Registered application 'AddQueueMember'
+  == Registered application 'RemoveQueueMember'
+  == Registered application 'PauseQueueMember'
+  == Registered application 'UnpauseQueueMember'
+  == Registered application 'QueueLog'
+  == Registered application 'QueueUpdate'
+  == Manager registered action QueueStatus
+  == Manager registered action QueueSummary
+  == Manager registered action QueueAdd
+  == Manager registered action QueueRemove
+  == Manager registered action QueuePause
+  == Manager registered action QueueLog
+  == Manager registered action QueuePenalty
+  == Manager registered action QueueMemberRingInUse
+  == Manager registered action QueueRule
+  == Manager registered action QueueReload
+  == Manager registered action QueueReset
+  == Manager registered action QueueChangePriorityCaller
+  == Registered custom function 'QUEUE_VARIABLES'
+  == Registered custom function 'QUEUE_EXISTS'
+  == Registered custom function 'QUEUE_MEMBER'
+  == Registered custom function 'QUEUE_MEMBER_COUNT'
+  == Registered custom function 'QUEUE_MEMBER_LIST'
+  == Registered custom function 'QUEUE_GET_CHANNEL'
+  == Registered custom function 'QUEUE_WAITING_COUNT'
+  == Registered custom function 'QUEUE_MEMBER_PENALTY'
+  == app_queue.so => (True Call Queueing)
+[Aug 16 16:12:02] WARNING[10]: loader.c:2381 load_modules: Some non-required modules failed to load.
+[Aug 16 16:12:02] ERROR[10]: loader.c:2396 load_modules: res_pjsip_transport_websocket declined to load.
+Asterisk Ready.
+    -- Registered SIP '2001' at 192.168.5.10:5060
+[Aug 16 17:03:21] NOTICE[50]: chan_sip.c:24909 handle_response_peerpoke: Peer '2001' is now Reachable. (58ms / 2000ms)
+    -- Registered SIP '2002' at 192.168.2.10:5060
+[Aug 16 17:03:32] NOTICE[50]: chan_sip.c:24909 handle_response_peerpoke: Peer '2002' is now Reachable. (41ms / 2000ms)
+  == Using SIP RTP CoS mark 5
+    -- Executing [2001@usuarios:1] Dial("SIP/2002-00000000", "SIP/2001,20,Trt") in new stack
+  == Using SIP RTP CoS mark 5
+    -- Called SIP/2001
+    -- SIP/2001-00000001 is ringing
+    -- SIP/2001-00000001 answered SIP/2002-00000000
+    -- Channel SIP/2001-00000001 joined 'simple_bridge' basic-bridge <e5a3351a-ebe3-474f-b172-10c98c12c89e>
+    -- Channel SIP/2002-00000000 joined 'simple_bridge' basic-bridge <e5a3351a-ebe3-474f-b172-10c98c12c89e>
+    -- Channel SIP/2002-00000000 left 'simple_bridge' basic-bridge <e5a3351a-ebe3-474f-b172-10c98c12c89e>
+  == Spawn extension (usuarios, 2001, 1) exited non-zero on 'SIP/2002-00000000'
+    -- Channel SIP/2001-00000001 left 'simple_bridge' basic-bridge <e5a3351a-ebe3-474f-b172-10c98c12c89e>
+  == Using SIP RTP CoS mark 5
+    -- Executing [2002@usuarios:1] Dial("SIP/2001-00000002", "SIP/2002,20,Trt") in new stack
+  == Using SIP RTP CoS mark 5
+    -- Called SIP/2002
+    -- SIP/2002-00000003 is ringing
+    -- Nobody picked up in 20000 ms
+    -- Executing [2002@usuarios:2] Playback("SIP/2001-00000002", "Hello-world") in new stack
+[Aug 16 17:11:37] WARNING[90][C-00000006]: file.c:787 ast_openstream_full: File Hello-world does not exist in any format
+[Aug 16 17:11:37] WARNING[90][C-00000006]: file.c:1260 ast_streamfile: Unable to open Hello-world (format (ulaw)): No such file or directory
+[Aug 16 17:11:37] WARNING[90][C-00000006]: app_playback.c:497 playback_exec: Playback failed on SIP/2001-00000002 for Hello-world
+    -- Executing [2002@usuarios:3] Hangup("SIP/2001-00000002", "") in new stack
+  == Spawn extension (usuarios, 2002, 3) exited non-zero on 'SIP/2001-00000002'
+  == Using SIP RTP CoS mark 5
+    -- Executing [2002@usuarios:1] Dial("SIP/2001-00000004", "SIP/2002,20,Trt") in new stack
+  == Using SIP RTP CoS mark 5
+    -- Called SIP/2002
+    -- SIP/2002-00000005 is ringing
+    -- SIP/2002-00000005 answered SIP/2001-00000004
+    -- Channel SIP/2002-00000005 joined 'simple_bridge' basic-bridge <a60c8828-a5f1-4210-954b-f60219aa4833>
+    -- Channel SIP/2001-00000004 joined 'simple_bridge' basic-bridge <a60c8828-a5f1-4210-954b-f60219aa4833>
+    -- Channel SIP/2001-00000004 left 'simple_bridge' basic-bridge <a60c8828-a5f1-4210-954b-f60219aa4833>
+    -- Channel SIP/2002-00000005 left 'simple_bridge' basic-bridge <a60c8828-a5f1-4210-954b-f60219aa4833>
+  == Spawn extension (usuarios, 2002, 1) exited non-zero on 'SIP/2001-00000004'
+  == Using SIP RTP CoS mark 5
+    -- Executing [2001@usuarios:1] Dial("SIP/2002-00000006", "SIP/2001,20,Trt") in new stack
+  == Using SIP RTP CoS mark 5
+    -- Called SIP/2001
+    -- SIP/2001-00000007 is ringing
+    -- SIP/2001-00000007 answered SIP/2002-00000006
+    -- Channel SIP/2001-00000007 joined 'simple_bridge' basic-bridge <fd9823a4-4de5-4cc1-801b-268750b35ce4>
+    -- Channel SIP/2002-00000006 joined 'simple_bridge' basic-bridge <fd9823a4-4de5-4cc1-801b-268750b35ce4>
+    -- Channel SIP/2002-00000006 left 'simple_bridge' basic-bridge <fd9823a4-4de5-4cc1-801b-268750b35ce4>
+    -- Channel SIP/2001-00000007 left 'simple_bridge' basic-bridge <fd9823a4-4de5-4cc1-801b-268750b35ce4>
+  == Spawn extension (usuarios, 2001, 1) exited non-zero on 'SIP/2002-00000006'
+  == Using SIP RTP CoS mark 5
+    -- Executing [2002@usuarios:1] Dial("SIP/2001-00000008", "SIP/2002,20,Trt") in new stack
+  == Using SIP RTP CoS mark 5
+    -- Called SIP/2002
+    -- SIP/2002-00000009 is ringing
+    -- SIP/2002-00000009 answered SIP/2001-00000008
+    -- Channel SIP/2002-00000009 joined 'simple_bridge' basic-bridge <4018f3e6-9896-4d67-ba9e-9681b745c726>
+    -- Channel SIP/2001-00000008 joined 'simple_bridge' basic-bridge <4018f3e6-9896-4d67-ba9e-9681b745c726>
+    -- Channel SIP/2001-00000008 left 'simple_bridge' basic-bridge <4018f3e6-9896-4d67-ba9e-9681b745c726>
+    -- Channel SIP/2002-00000009 left 'simple_bridge' basic-bridge <4018f3e6-9896-4d67-ba9e-9681b745c726>
+  == Spawn extension (usuarios, 2002, 1) exited non-zero on 'SIP/2001-00000008'
+  == Using SIP RTP CoS mark 5
+    -- Executing [2001@usuarios:1] Dial("SIP/2002-0000000a", "SIP/2001,20,Trt") in new stack
+  == Using SIP RTP CoS mark 5
+    -- Called SIP/2001
+    -- SIP/2001-0000000b is ringing
+    -- SIP/2001-0000000b answered SIP/2002-0000000a
+    -- Channel SIP/2001-0000000b joined 'simple_bridge' basic-bridge <c0f184c6-436e-4d7d-8b43-06ac28b693b1>
+    -- Channel SIP/2002-0000000a joined 'simple_bridge' basic-bridge <c0f184c6-436e-4d7d-8b43-06ac28b693b1>
+    -- Channel SIP/2002-0000000a left 'simple_bridge' basic-bridge <c0f184c6-436e-4d7d-8b43-06ac28b693b1>
+    -- Channel SIP/2001-0000000b left 'simple_bridge' basic-bridge <c0f184c6-436e-4d7d-8b43-06ac28b693b1>
+  == Spawn extension (usuarios, 2001, 1) exited non-zero on 'SIP/2002-0000000a'
+  == Using SIP RTP CoS mark 5
+    -- Executing [2002@usuarios:1] Dial("SIP/2001-0000000c", "SIP/2002,20,Trt") in new stack
+  == Using SIP RTP CoS mark 5
+    -- Called SIP/2002
+    -- SIP/2002-0000000d is ringing
+    -- SIP/2002-0000000d answered SIP/2001-0000000c
+    -- Channel SIP/2002-0000000d joined 'simple_bridge' basic-bridge <a073f49c-323c-4cbc-abb8-973abd58e01d>
+    -- Channel SIP/2001-0000000c joined 'simple_bridge' basic-bridge <a073f49c-323c-4cbc-abb8-973abd58e01d>
+    -- Channel SIP/2001-0000000c left 'simple_bridge' basic-bridge <a073f49c-323c-4cbc-abb8-973abd58e01d>
+  == Spawn extension (usuarios, 2002, 1) exited non-zero on 'SIP/2001-0000000c'
+    -- Channel SIP/2002-0000000d left 'simple_bridge' basic-bridge <a073f49c-323c-4cbc-abb8-973abd58e01d>
+[Aug 16 17:20:57] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:20:57] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:20:57] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:21:01] NOTICE[50]: chan_sip.c:30449 sip_poke_noanswer: Peer '2001' is now UNREACHABLE!  Last qualify: 10
+[Aug 16 17:21:11] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:21:11] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:21:11] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:21:25] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:21:25] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:21:25] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:21:39] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:21:39] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:21:39] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:21:53] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:21:53] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:21:53] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:22:07] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:22:07] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:22:07] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:22:21] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:22:21] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:22:21] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:22:35] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:22:35] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:22:35] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:22:49] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:22:49] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:22:49] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:22:49] NOTICE[50]: chan_sip.c:30449 sip_poke_noanswer: Peer '2002' is now UNREACHABLE!  Last qualify: 47
+[Aug 16 17:23:03] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:23:03] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:23:03] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:23:17] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:23:17] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:23:17] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:23:31] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:23:31] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:23:31] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:23:45] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:23:45] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:23:45] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:23:59] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:23:59] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:23:59] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:24:13] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:24:13] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:24:13] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:24:27] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:24:27] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:24:27] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:24:41] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:24:41] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:24:41] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:24:55] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:24:55] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:24:55] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:25:09] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:25:09] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:25:09] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:25:23] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:25:23] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:25:23] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:25:37] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:25:37] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:25:37] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:25:51] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:25:51] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:25:51] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:26:05] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:26:05] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:26:05] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:26:19] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:26:19] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:26:19] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:26:33] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:26:33] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:26:33] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:26:47] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:26:47] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:26:47] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:27:01] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:27:01] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:27:01] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:27:15] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:27:15] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:27:15] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:27:29] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:27:29] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:27:29] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:27:43] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:27:43] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:27:43] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:27:57] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:27:57] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:27:57] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:28:11] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:28:11] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:28:11] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:28:25] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:28:25] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:28:25] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:28:39] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:28:39] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:28:39] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:28:53] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:28:53] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:28:53] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:29:07] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:29:07] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:29:07] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:29:21] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:29:21] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:29:21] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:29:35] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:29:35] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:29:35] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:29:49] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:29:49] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:29:49] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:30:03] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:30:03] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:30:03] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:30:17] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:30:17] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:30:17] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:30:31] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:30:31] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:30:31] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:30:45] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:30:45] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:30:45] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:30:59] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:30:59] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:30:59] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:31:13] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:31:13] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:31:13] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:31:27] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:31:27] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:31:27] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:31:41] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:31:41] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:31:41] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:31:55] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:31:55] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:31:55] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:32:09] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:32:09] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:32:09] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:32:23] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:32:23] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:32:23] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:32:37] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:32:37] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:32:37] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:32:51] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:32:51] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:32:51] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:33:05] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:33:05] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:33:05] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:33:19] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:33:19] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:33:19] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:33:33] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:33:33] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:33:33] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:33:47] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:33:47] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:33:47] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:34:01] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:34:01] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:34:01] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:34:15] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:34:15] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:34:15] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:34:29] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:34:29] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:34:29] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:34:43] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:34:43] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:34:43] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:34:57] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:34:57] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:34:57] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:35:11] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:35:11] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:35:11] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:35:25] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:35:25] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:35:25] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:35:39] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:35:39] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:35:39] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:35:53] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:35:53] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:35:53] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:36:07] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:36:07] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:36:07] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:36:21] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:36:21] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:36:21] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:36:35] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:36:35] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:36:35] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:36:49] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:36:49] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:36:49] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:37:03] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:37:03] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:37:03] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:37:17] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:37:17] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:37:17] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:37:31] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:37:31] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:37:31] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:37:45] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:37:45] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:37:45] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:37:59] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:37:59] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:37:59] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:38:13] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:38:13] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:38:13] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:38:27] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:38:27] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:38:27] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:38:41] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:38:41] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:38:41] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:38:55] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:38:55] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:38:55] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:39:09] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:39:09] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:39:09] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:39:23] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:39:23] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:39:23] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:39:37] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:39:37] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:39:37] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:39:51] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:39:51] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:39:51] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:40:05] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:40:05] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:40:05] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+    -- Registered SIP '2002' at 192.168.0.10:5060
+[Aug 16 17:40:11] NOTICE[50]: chan_sip.c:24909 handle_response_peerpoke: Peer '2002' is now Reachable. (30ms / 2000ms)
+[Aug 16 17:40:19] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:40:19] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:40:19] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:40:33] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:40:33] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:40:33] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:40:47] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:40:47] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:40:47] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:41:01] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:41:01] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:41:01] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:41:15] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:41:15] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:41:15] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:41:29] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:41:29] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:41:29] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:41:43] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:41:43] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:41:43] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:41:57] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:41:57] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:41:57] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:42:11] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:42:11] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:42:11] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:42:25] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:42:25] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:42:25] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:42:39] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:42:39] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:42:39] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:42:53] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:42:53] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:42:53] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:43:07] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:43:07] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:43:07] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:43:21] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:43:21] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:43:21] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:43:35] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:43:35] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:43:35] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:43:49] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:43:49] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:43:49] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:44:03] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:44:03] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:44:03] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:44:17] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:44:17] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:44:17] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:44:31] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:44:31] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:44:31] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:44:45] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:44:45] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:44:45] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:44:59] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:44:59] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:44:59] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:45:13] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:45:13] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:45:13] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:45:27] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:45:27] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:45:27] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:45:41] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:45:41] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:45:41] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:45:55] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:45:55] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:45:55] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:46:09] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:46:09] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:46:09] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:46:23] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:46:23] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:46:23] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:46:37] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:46:37] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:46:37] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:46:51] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:46:51] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:46:51] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:47:05] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:47:05] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:47:05] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:47:19] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:47:19] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:47:19] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:47:33] WARNING[50]: acl.c:1028 ast_ouraddrfor: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:47:33] WARNING[50]: chan_sip.c:3839 __sip_xmit: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:47:33] ERROR[50]: chan_sip.c:4328 __sip_reliable_xmit: Serious Network Trouble; __sip_xmit returns error for pkt data
+root@pi:/home/pi/Resultados_Compose#

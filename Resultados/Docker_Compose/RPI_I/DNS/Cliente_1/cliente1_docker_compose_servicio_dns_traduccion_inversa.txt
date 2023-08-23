@@ -1,0 +1,52 @@
+Microsoft Windows [Versión 10.0.19045.3324]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\TOSHIBA>nslookup 192.168.0.2
+Servidor:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+Nombre:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+
+C:\Users\TOSHIBA>nslookup 192.168.0.3
+Servidor:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+Nombre:  dhcp.TIC2023.com
+Address:  192.168.0.3
+
+
+C:\Users\TOSHIBA>nslookup 192.168.0.4
+Servidor:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+Nombre:  ftp.TIC2023.com
+Address:  192.168.0.4
+
+
+C:\Users\TOSHIBA>nslookup 192.168.0.5
+Servidor:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+Nombre:  www.TIC2023.com
+Address:  192.168.0.5
+
+
+C:\Users\TOSHIBA>nslookup 192.168.0.6
+Servidor:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+Nombre:  voip.TIC2023.com
+Address:  192.168.0.6
+
+
+C:\Users\TOSHIBA>nslookup 192.168.0.7
+Servidor:  ns1.TIC2023.com
+Address:  192.168.0.2
+
+Nombre:  monitor.TIC2023.com
+Address:  192.168.0.7
+
+
+C:\Users\TOSHIBA>

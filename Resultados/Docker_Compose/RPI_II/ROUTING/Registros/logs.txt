@@ -1,0 +1,34 @@
+root@pi:/home/pi/Resultados_Compose# docker cp routing_server_compose:/etc/frr/ /home/pi/Resultados_Compose/Prueba_4
+Successfully copied 12.3kB to /home/pi/Resultados_Compose/Prueba_4
+root@pi:/home/pi/Resultados_Compose# docker logs routing_server_compose
+2023/08/16 16:04:52 WATCHFRR: [T83RR-8SM5G] watchfrr 8.4_git starting: vty@0
+2023/08/16 16:04:52 WATCHFRR: [ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed
+2023/08/16 16:04:52 WATCHFRR: [ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed
+2023/08/16 16:04:52 WATCHFRR: [ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed
+2023/08/16 16:04:52 WATCHFRR: [YFT0P-5Q5YX] Forked background command [pid 12]: /usr/lib/frr/watchfrr.sh restart all
+/usr/lib/frr/frrcommon.sh: line 211: kill: `': not a pid or valid job spec
+/usr/lib/frr/frrcommon.sh: line 211: kill: `': not a pid or valid job spec
+Cannot stop zebra: pid file not found
+2023/08/16 16:04:52 ZEBRA: [NNACN-54BDA][EC 4043309110] Disabling MPLS support (no kernel support)
+/etc/frr/frr.conf does not exist; skipping config apply
+2023/08/16 16:04:52 WATCHFRR: [QDG3Y-BY5TN] zebra state -> up : connect succeeded
+2023/08/16 16:04:52 WATCHFRR: [QDG3Y-BY5TN] ospfd state -> up : connect succeeded
+2023/08/16 16:04:52 WATCHFRR: [QDG3Y-BY5TN] staticd state -> up : connect succeeded
+2023/08/16 16:04:52 WATCHFRR: [KWE5Q-QNGFC] all daemons up, doing startup-complete notify
+2023/08/16 16:12:20 WATCHFRR: [ZG9QC-QRCJZ] failed to mkdir "/var/tmp/frr/watchfrr.11": File exists
+2023/08/16 16:12:20 WATCHFRR: [M1DC0-ZDNYJ] crashlog and per-thread log buffering unavailable!
+2023/08/16 16:12:20 WATCHFRR: [T83RR-8SM5G] watchfrr 8.4_git starting: vty@0
+2023/08/16 16:12:20 WATCHFRR: [ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed
+2023/08/16 16:12:20 WATCHFRR: [ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed
+2023/08/16 16:12:20 WATCHFRR: [ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed
+2023/08/16 16:12:20 WATCHFRR: [YFT0P-5Q5YX] Forked background command [pid 12]: /usr/lib/frr/watchfrr.sh restart all
+/usr/lib/frr/frrcommon.sh: line 211: kill: (28) - No such process
+/usr/lib/frr/frrcommon.sh: line 211: kill: (31) - No such process
+Cannot stop zebra: pid 23 not running
+2023/08/16 16:12:27 ZEBRA: [NNACN-54BDA][EC 4043309110] Disabling MPLS support (no kernel support)
+/etc/frr/frr.conf does not exist; skipping config apply
+2023/08/16 16:12:29 WATCHFRR: [QDG3Y-BY5TN] zebra state -> up : connect succeeded
+2023/08/16 16:12:29 WATCHFRR: [QDG3Y-BY5TN] ospfd state -> up : connect succeeded
+2023/08/16 16:12:29 WATCHFRR: [QDG3Y-BY5TN] staticd state -> up : connect succeeded
+2023/08/16 16:12:29 WATCHFRR: [KWE5Q-QNGFC] all daemons up, doing startup-complete notify
+root@pi:/home/pi/Resultados_Compose#

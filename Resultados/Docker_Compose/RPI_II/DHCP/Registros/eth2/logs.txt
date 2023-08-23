@@ -1,0 +1,1 @@
+docker logs dhcp_server_eth2_compose

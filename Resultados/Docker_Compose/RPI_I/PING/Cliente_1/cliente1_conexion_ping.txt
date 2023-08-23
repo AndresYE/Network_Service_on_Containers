@@ -1,0 +1,116 @@
+Microsoft Windows [Versión 10.0.19045.3324]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\TOSHIBA>ping ns1.tic2023.com
+
+Haciendo ping a ns1.TIC2023.com [192.168.0.2] con 32 bytes de datos:
+Respuesta desde 192.168.0.2: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.2: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.2: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.2: bytes=32 tiempo=1ms TTL=63
+
+Estadísticas de ping para 192.168.0.2:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 1ms, Máximo = 1ms, Media = 1ms
+
+C:\Users\TOSHIBA>ping dhcp.tic2023.com
+
+Haciendo ping a dhcp.TIC2023.com [192.168.0.3] con 32 bytes de datos:
+Respuesta desde 192.168.0.3: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.3: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.3: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.3: bytes=32 tiempo=1ms TTL=63
+
+Estadísticas de ping para 192.168.0.3:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 1ms, Máximo = 1ms, Media = 1ms
+
+C:\Users\TOSHIBA>ping ftp.tic2023.com
+
+Haciendo ping a ftp.TIC2023.com [192.168.0.4] con 32 bytes de datos:
+Respuesta desde 192.168.0.4: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.4: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.4: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.4: bytes=32 tiempo=1ms TTL=63
+
+Estadísticas de ping para 192.168.0.4:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 1ms, Máximo = 1ms, Media = 1ms
+
+C:\Users\TOSHIBA>ping www.tic2023.com
+
+Haciendo ping a www.TIC2023.com [192.168.0.5] con 32 bytes de datos:
+Respuesta desde 192.168.0.5: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.5: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.5: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.5: bytes=32 tiempo=1ms TTL=63
+
+Estadísticas de ping para 192.168.0.5:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 1ms, Máximo = 1ms, Media = 1ms
+
+C:\Users\TOSHIBA>ping web1.tic2023.com
+
+Haciendo ping a www.TIC2023.com [192.168.0.5] con 32 bytes de datos:
+Respuesta desde 192.168.0.5: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.5: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.5: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.5: bytes=32 tiempo=1ms TTL=63
+
+Estadísticas de ping para 192.168.0.5:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 1ms, Máximo = 1ms, Media = 1ms
+
+C:\Users\TOSHIBA>ping web2.tic2023.com
+
+Haciendo ping a www.TIC2023.com [192.168.0.5] con 32 bytes de datos:
+Respuesta desde 192.168.0.5: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.5: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.5: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.5: bytes=32 tiempo=1ms TTL=63
+
+Estadísticas de ping para 192.168.0.5:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 1ms, Máximo = 1ms, Media = 1ms
+
+C:\Users\TOSHIBA>ping voip.tic2023.com
+
+Haciendo ping a voip.TIC2023.com [192.168.0.6] con 32 bytes de datos:
+Respuesta desde 192.168.0.6: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.6: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.6: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.6: bytes=32 tiempo=1ms TTL=63
+
+Estadísticas de ping para 192.168.0.6:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 1ms, Máximo = 1ms, Media = 1ms
+
+C:\Users\TOSHIBA>ping monitor.tic2023.com
+
+Haciendo ping a monitor.TIC2023.com [192.168.0.7] con 32 bytes de datos:
+Respuesta desde 192.168.0.7: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.7: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.7: bytes=32 tiempo=1ms TTL=63
+Respuesta desde 192.168.0.7: bytes=32 tiempo=1ms TTL=63
+
+Estadísticas de ping para 192.168.0.7:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 1ms, Máximo = 1ms, Media = 1ms
+
+C:\Users\TOSHIBA>

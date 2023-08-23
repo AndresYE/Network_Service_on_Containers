@@ -1,0 +1,125 @@
+Microsoft Windows [Versión 10.0.19045.3324]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Andres>ipconfig /all
+
+Configuración IP de Windows
+
+   Nombre de host. . . . . . . . . : DESKTOP-LUBQVII
+   Sufijo DNS principal  . . . . . :
+   Tipo de nodo. . . . . . . . . . : híbrido
+   Enrutamiento IP habilitado. . . : no
+   Proxy WINS habilitado . . . . . : no
+
+Adaptador de Ethernet Ethernet 2:
+
+   Sufijo DNS específico para la conexión. . :
+   Descripción . . . . . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter
+   Dirección física. . . . . . . . . . . . . : 0A-00-27-00-00-11
+   DHCP habilitado . . . . . . . . . . . . . : no
+   Configuración automática habilitada . . . : sí
+   Vínculo: dirección IPv6 local. . . : fe80::6bcd:70da:2851:295f%17(Preferido)
+   Dirección IPv4. . . . . . . . . . . . . . : 192.168.56.1(Preferido)
+   Máscara de subred . . . . . . . . . . . . : 255.255.255.0
+   Puerta de enlace predeterminada . . . . . :
+   IAID DHCPv6 . . . . . . . . . . . . . . . : 973733927
+   DUID de cliente DHCPv6. . . . . . . . . . : 00-01-00-01-2A-9C-78-DA-3C-97-0E-CC-19-4F
+   Servidores DNS. . . . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                       fec0:0:0:ffff::2%1
+                                       fec0:0:0:ffff::3%1
+   NetBIOS sobre TCP/IP. . . . . . . . . . . : habilitado
+
+Adaptador de LAN inalámbrica Conexión de área local* 1:
+
+   Estado de los medios. . . . . . . . . . . : medios desconectados
+   Sufijo DNS específico para la conexión. . :
+   Descripción . . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Dirección física. . . . . . . . . . . . . : 12-F0-2F-28-52-A7
+   DHCP habilitado . . . . . . . . . . . . . : sí
+   Configuración automática habilitada . . . : sí
+
+Adaptador de LAN inalámbrica Conexión de área local* 2:
+
+   Estado de los medios. . . . . . . . . . . : medios desconectados
+   Sufijo DNS específico para la conexión. . :
+   Descripción . . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   Dirección física. . . . . . . . . . . . . : 22-F0-2F-28-52-A7
+   DHCP habilitado . . . . . . . . . . . . . : sí
+   Configuración automática habilitada . . . : sí
+
+Adaptador de LAN inalámbrica Conexión de área local* 11:
+
+   Estado de los medios. . . . . . . . . . . : medios desconectados
+   Sufijo DNS específico para la conexión. . :
+   Descripción . . . . . . . . . . . . . . . : Microsoft Hosted Network Virtual Adapter
+   Dirección física. . . . . . . . . . . . . : 42-F0-2F-28-52-A7
+   DHCP habilitado . . . . . . . . . . . . . : sí
+   Configuración automática habilitada . . . : sí
+
+Adaptador de Ethernet VMware Network Adapter VMnet1:
+
+   Sufijo DNS específico para la conexión. . :
+   Descripción . . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet1
+   Dirección física. . . . . . . . . . . . . : 00-50-56-C0-00-01
+   DHCP habilitado . . . . . . . . . . . . . : no
+   Configuración automática habilitada . . . : sí
+   Vínculo: dirección IPv6 local. . . : fe80::899f:acee:3a67:f942%10(Preferido)
+   Dirección IPv4. . . . . . . . . . . . . . : 192.168.199.1(Preferido)
+   Máscara de subred . . . . . . . . . . . . : 255.255.255.0
+   Puerta de enlace predeterminada . . . . . :
+   IAID DHCPv6 . . . . . . . . . . . . . . . : 1140871254
+   DUID de cliente DHCPv6. . . . . . . . . . : 00-01-00-01-2A-9C-78-DA-3C-97-0E-CC-19-4F
+   Servidores DNS. . . . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                       fec0:0:0:ffff::2%1
+                                       fec0:0:0:ffff::3%1
+   NetBIOS sobre TCP/IP. . . . . . . . . . . : habilitado
+
+Adaptador de Ethernet Ethernet:
+
+   Sufijo DNS específico para la conexión. . :
+   Descripción . . . . . . . . . . . . . . . : Qualcomm Atheros AR8172/8176/8178 PCI-E Fast Ethernet Controller (NDIS 6.30)
+   Dirección física. . . . . . . . . . . . . : 3C-97-0E-CC-19-4F
+   DHCP habilitado . . . . . . . . . . . . . : sí
+   Configuración automática habilitada . . . : sí
+   Vínculo: dirección IPv6 local. . . : fe80::e6d4:c770:a488:e461%20(Preferido)
+   Dirección IPv4. . . . . . . . . . . . . . : 192.168.2.10(Preferido)
+   Máscara de subred . . . . . . . . . . . . : 255.255.255.0
+   Concesión obtenida. . . . . . . . . . . . : miércoles, 16 de agosto de 2023 11:14:20
+   La concesión expira . . . . . . . . . . . : miércoles, 16 de agosto de 2023 11:17:19
+   Puerta de enlace predeterminada . . . . . : 192.168.2.1
+   Servidor DHCP . . . . . . . . . . . . . . : 192.168.2.1
+   IAID DHCPv6 . . . . . . . . . . . . . . . : 305960718
+   DUID de cliente DHCPv6. . . . . . . . . . : 00-01-00-01-2A-9C-78-DA-3C-97-0E-CC-19-4F
+   Servidores DNS. . . . . . . . . . . . . . : 192.168.0.2
+                                       1.1.1.1
+                                       8.8.8.8
+   NetBIOS sobre TCP/IP. . . . . . . . . . . : habilitado
+
+Adaptador de Ethernet VMware Network Adapter VMnet8:
+
+   Sufijo DNS específico para la conexión. . :
+   Descripción . . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet8
+   Dirección física. . . . . . . . . . . . . : 00-50-56-C0-00-08
+   DHCP habilitado . . . . . . . . . . . . . : no
+   Configuración automática habilitada . . . : sí
+   Vínculo: dirección IPv6 local. . . : fe80::d2e8:2069:53af:36ad%3(Preferido)
+   Dirección IPv4. . . . . . . . . . . . . . : 192.168.152.1(Preferido)
+   Máscara de subred . . . . . . . . . . . . : 255.255.255.0
+   Puerta de enlace predeterminada . . . . . :
+   IAID DHCPv6 . . . . . . . . . . . . . . . : 1174425686
+   DUID de cliente DHCPv6. . . . . . . . . . : 00-01-00-01-2A-9C-78-DA-3C-97-0E-CC-19-4F
+   Servidores DNS. . . . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                       fec0:0:0:ffff::2%1
+                                       fec0:0:0:ffff::3%1
+   NetBIOS sobre TCP/IP. . . . . . . . . . . : habilitado
+
+Adaptador de LAN inalámbrica Wi-Fi:
+
+   Estado de los medios. . . . . . . . . . . : medios desconectados
+   Sufijo DNS específico para la conexión. . : local
+   Descripción . . . . . . . . . . . . . . . : Qualcomm Atheros AR956x Wireless Network Adapter
+   Dirección física. . . . . . . . . . . . . : 40-F0-2F-28-52-A7
+   DHCP habilitado . . . . . . . . . . . . . : sí
+   Configuración automática habilitada . . . : sí
+
+C:\Users\Andres>

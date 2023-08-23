@@ -1,0 +1,20 @@
+# The format of this file is documented in the dhcpd.leases(5) manual page.
+# This lease file was written by isc-dhcp-4.4.1
+
+# authoring-byte-order entry is generated, DO NOT DELETE
+authoring-byte-order little-endian;
+
+server-duid "\000\001\000\001,o\260N\330:\335+'\256";
+
+lease 192.168.0.10 {
+  starts 3 2023/08/16 17:40:10;
+  ends 3 2023/08/16 17:42:10;
+  cltt 3 2023/08/16 17:40:10;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 40:f0:2f:28:52:a7;
+  uid "\001@\360/(R\247";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}

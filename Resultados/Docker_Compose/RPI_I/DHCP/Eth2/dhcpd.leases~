@@ -1,0 +1,728 @@
+# The format of this file is documented in the dhcpd.leases(5) manual page.
+# This lease file was written by isc-dhcp-4.4.1
+
+# authoring-byte-order entry is generated, DO NOT DELETE
+authoring-byte-order little-endian;
+
+server-duid "\000\001\000\001,o\261\320\000\340Lh8\022";
+
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:13:02;
+  ends 3 2023/08/16 16:15:02;
+  cltt 3 2023/08/16 16:13:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:14:01;
+  ends 3 2023/08/16 16:16:01;
+  cltt 3 2023/08/16 16:14:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:15:01;
+  ends 3 2023/08/16 16:17:01;
+  cltt 3 2023/08/16 16:15:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:16:01;
+  ends 3 2023/08/16 16:18:01;
+  cltt 3 2023/08/16 16:16:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:17:01;
+  ends 3 2023/08/16 16:19:01;
+  cltt 3 2023/08/16 16:17:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:18:01;
+  ends 3 2023/08/16 16:20:01;
+  cltt 3 2023/08/16 16:18:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:19:01;
+  ends 3 2023/08/16 16:21:01;
+  cltt 3 2023/08/16 16:19:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:20:01;
+  ends 3 2023/08/16 16:22:01;
+  cltt 3 2023/08/16 16:20:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:21:02;
+  ends 3 2023/08/16 16:23:02;
+  cltt 3 2023/08/16 16:21:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:22:02;
+  ends 3 2023/08/16 16:24:02;
+  cltt 3 2023/08/16 16:22:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:23:01;
+  ends 3 2023/08/16 16:25:01;
+  cltt 3 2023/08/16 16:23:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:24:01;
+  ends 3 2023/08/16 16:26:01;
+  cltt 3 2023/08/16 16:24:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:25:01;
+  ends 3 2023/08/16 16:27:01;
+  cltt 3 2023/08/16 16:25:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:26:01;
+  ends 3 2023/08/16 16:28:01;
+  cltt 3 2023/08/16 16:26:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:27:01;
+  ends 3 2023/08/16 16:29:01;
+  cltt 3 2023/08/16 16:27:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:28:02;
+  ends 3 2023/08/16 16:30:02;
+  cltt 3 2023/08/16 16:28:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:29:02;
+  ends 3 2023/08/16 16:31:02;
+  cltt 3 2023/08/16 16:29:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:30:01;
+  ends 3 2023/08/16 16:32:01;
+  cltt 3 2023/08/16 16:30:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:31:01;
+  ends 3 2023/08/16 16:33:01;
+  cltt 3 2023/08/16 16:31:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:32:01;
+  ends 3 2023/08/16 16:34:01;
+  cltt 3 2023/08/16 16:32:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:33:01;
+  ends 3 2023/08/16 16:35:01;
+  cltt 3 2023/08/16 16:33:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:34:01;
+  ends 3 2023/08/16 16:36:01;
+  cltt 3 2023/08/16 16:34:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:35:01;
+  ends 3 2023/08/16 16:37:01;
+  cltt 3 2023/08/16 16:35:01;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:36:02;
+  ends 3 2023/08/16 16:38:02;
+  cltt 3 2023/08/16 16:36:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:37:02;
+  ends 3 2023/08/16 16:39:02;
+  cltt 3 2023/08/16 16:37:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:38:02;
+  ends 3 2023/08/16 16:40:02;
+  cltt 3 2023/08/16 16:38:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:39:02;
+  ends 3 2023/08/16 16:41:02;
+  cltt 3 2023/08/16 16:39:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:40:02;
+  ends 3 2023/08/16 16:42:02;
+  cltt 3 2023/08/16 16:40:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:41:02;
+  ends 3 2023/08/16 16:43:02;
+  cltt 3 2023/08/16 16:41:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:42:02;
+  ends 3 2023/08/16 16:44:02;
+  cltt 3 2023/08/16 16:42:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:43:03;
+  ends 3 2023/08/16 16:45:03;
+  cltt 3 2023/08/16 16:43:03;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:44:02;
+  ends 3 2023/08/16 16:46:02;
+  cltt 3 2023/08/16 16:44:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:45:02;
+  ends 3 2023/08/16 16:47:02;
+  cltt 3 2023/08/16 16:45:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:46:02;
+  ends 3 2023/08/16 16:48:02;
+  cltt 3 2023/08/16 16:46:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:47:02;
+  ends 3 2023/08/16 16:49:02;
+  cltt 3 2023/08/16 16:47:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:48:02;
+  ends 3 2023/08/16 16:50:02;
+  cltt 3 2023/08/16 16:48:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:49:02;
+  ends 3 2023/08/16 16:51:02;
+  cltt 3 2023/08/16 16:49:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:50:02;
+  ends 3 2023/08/16 16:52:02;
+  cltt 3 2023/08/16 16:50:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:51:03;
+  ends 3 2023/08/16 16:53:03;
+  cltt 3 2023/08/16 16:51:03;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:52:03;
+  ends 3 2023/08/16 16:54:03;
+  cltt 3 2023/08/16 16:52:03;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:53:02;
+  ends 3 2023/08/16 16:55:02;
+  cltt 3 2023/08/16 16:53:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:54:02;
+  ends 3 2023/08/16 16:56:02;
+  cltt 3 2023/08/16 16:54:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:55:02;
+  ends 3 2023/08/16 16:57:02;
+  cltt 3 2023/08/16 16:55:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:56:02;
+  ends 3 2023/08/16 16:58:02;
+  cltt 3 2023/08/16 16:56:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:57:02;
+  ends 3 2023/08/16 16:59:02;
+  cltt 3 2023/08/16 16:57:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:58:02;
+  ends 3 2023/08/16 17:00:02;
+  cltt 3 2023/08/16 16:58:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 16:59:02;
+  ends 3 2023/08/16 17:01:02;
+  cltt 3 2023/08/16 16:59:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 17:00:03;
+  ends 3 2023/08/16 17:02:03;
+  cltt 3 2023/08/16 17:00:03;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 17:01:02;
+  ends 3 2023/08/16 17:03:02;
+  cltt 3 2023/08/16 17:01:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 17:02:02;
+  ends 3 2023/08/16 17:04:02;
+  cltt 3 2023/08/16 17:02:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 17:03:02;
+  ends 3 2023/08/16 17:05:02;
+  cltt 3 2023/08/16 17:03:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 17:04:02;
+  ends 3 2023/08/16 17:06:02;
+  cltt 3 2023/08/16 17:04:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 17:05:02;
+  ends 3 2023/08/16 17:07:02;
+  cltt 3 2023/08/16 17:05:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 17:06:02;
+  ends 3 2023/08/16 17:08:02;
+  cltt 3 2023/08/16 17:06:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 17:07:02;
+  ends 3 2023/08/16 17:09:02;
+  cltt 3 2023/08/16 17:07:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 17:08:03;
+  ends 3 2023/08/16 17:10:03;
+  cltt 3 2023/08/16 17:08:03;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 17:09:02;
+  ends 3 2023/08/16 17:11:02;
+  cltt 3 2023/08/16 17:09:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 17:10:02;
+  ends 3 2023/08/16 17:12:02;
+  cltt 3 2023/08/16 17:10:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 17:11:02;
+  ends 3 2023/08/16 17:13:02;
+  cltt 3 2023/08/16 17:11:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}
+lease 192.168.2.10 {
+  starts 3 2023/08/16 17:12:02;
+  ends 3 2023/08/16 17:14:02;
+  cltt 3 2023/08/16 17:12:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 3c:97:0e:cc:19:4f;
+  uid "\001<\227\016\314\031O";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "DESKTOP-LUBQVII";
+}

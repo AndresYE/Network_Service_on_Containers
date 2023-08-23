@@ -1,0 +1,15 @@
+Microsoft Windows [Versión 10.0.19045.3324]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Andres>tracert 192.168.5.10
+
+Traza a la dirección DESKTOP-EE99I73 [192.168.5.10]
+sobre un máximo de 30 saltos:
+
+  1     *        *        *     Tiempo de espera agotado para esta solicitud.
+  2     1 ms    <1 ms     1 ms  10.0.1.2
+  3     2 ms     2 ms     2 ms  DESKTOP-EE99I73 [192.168.5.10]
+
+Traza completa.
+
+C:\Users\Andres>

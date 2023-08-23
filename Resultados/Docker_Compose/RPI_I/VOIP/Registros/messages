@@ -1,0 +1,377 @@
+[Aug 16 16:05:33] Asterisk 16.8.0 built by root @ buildkitsandbox on a armv7l running Linux on 2020-02-17 21:08:40 UTC
+[Aug 16 16:05:34] NOTICE[11] loader.c: 292 modules will be loaded.
+[Aug 16 16:05:34] NOTICE[11] cdr.c: CDR logging disabled.
+[Aug 16 16:05:34] WARNING[11] res_phoneprov.c: Unable to find a valid server address or name.
+[Aug 16 16:05:34] NOTICE[11] res_smdi.c: No SMDI interfaces are available to listen on, not starting SMDI listener.
+[Aug 16 16:05:34] WARNING[11] sip/config_parser.c: nat=yes is deprecated, use nat=force_rport,comedia instead
+[Aug 16 16:05:34] NOTICE[11] chan_sip.c: The 'username' field for sip peers has been deprecated in favor of the term 'defaultuser'
+[Aug 16 16:05:34] NOTICE[11] chan_skinny.c: Configuring skinny from skinny.conf
+[Aug 16 16:05:34] ERROR[11] ari/config.c: No configured users for ARI
+[Aug 16 16:05:34] NOTICE[11] confbridge/conf_config_parser.c: Adding default_menu menu to app_confbridge
+[Aug 16 16:05:35] WARNING[11] loader.c: Some non-required modules failed to load.
+[Aug 16 16:05:35] ERROR[11] loader.c: res_pjsip_transport_websocket declined to load.
+[Aug 16 16:12:01] Asterisk 16.8.0 built by root @ buildkitsandbox on a armv7l running Linux on 2020-02-17 21:08:40 UTC
+[Aug 16 16:12:01] NOTICE[10] loader.c: 292 modules will be loaded.
+[Aug 16 16:12:02] NOTICE[10] cdr.c: CDR logging disabled.
+[Aug 16 16:12:02] WARNING[10] res_phoneprov.c: Unable to find a valid server address or name.
+[Aug 16 16:12:02] NOTICE[10] res_smdi.c: No SMDI interfaces are available to listen on, not starting SMDI listener.
+[Aug 16 16:12:02] WARNING[10] sip/config_parser.c: nat=yes is deprecated, use nat=force_rport,comedia instead
+[Aug 16 16:12:02] NOTICE[10] chan_sip.c: The 'username' field for sip peers has been deprecated in favor of the term 'defaultuser'
+[Aug 16 16:12:02] NOTICE[10] chan_skinny.c: Configuring skinny from skinny.conf
+[Aug 16 16:12:02] ERROR[10] ari/config.c: No configured users for ARI
+[Aug 16 16:12:02] NOTICE[10] confbridge/conf_config_parser.c: Adding default_menu menu to app_confbridge
+[Aug 16 16:12:02] WARNING[10] loader.c: Some non-required modules failed to load.
+[Aug 16 16:12:02] ERROR[10] loader.c: res_pjsip_transport_websocket declined to load.
+[Aug 16 17:03:21] NOTICE[50] chan_sip.c: Peer '2001' is now Reachable. (58ms / 2000ms)
+[Aug 16 17:03:32] NOTICE[50] chan_sip.c: Peer '2002' is now Reachable. (41ms / 2000ms)
+[Aug 16 17:11:37] WARNING[90][C-00000006] file.c: File Hello-world does not exist in any format
+[Aug 16 17:11:37] WARNING[90][C-00000006] file.c: Unable to open Hello-world (format (ulaw)): No such file or directory
+[Aug 16 17:11:37] WARNING[90][C-00000006] app_playback.c: Playback failed on SIP/2001-00000002 for Hello-world
+[Aug 16 17:20:57] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:20:57] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:20:57] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:21:01] NOTICE[50] chan_sip.c: Peer '2001' is now UNREACHABLE!  Last qualify: 10
+[Aug 16 17:21:11] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:21:11] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:21:11] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:21:25] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:21:25] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:21:25] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:21:39] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:21:39] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:21:39] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:21:53] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:21:53] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:21:53] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:22:07] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:22:07] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:22:07] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:22:21] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:22:21] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:22:21] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:22:35] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:22:35] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:22:35] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:22:49] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:22:49] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:22:49] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:22:49] NOTICE[50] chan_sip.c: Peer '2002' is now UNREACHABLE!  Last qualify: 47
+[Aug 16 17:23:03] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:23:03] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:23:03] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:23:17] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:23:17] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:23:17] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:23:31] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:23:31] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:23:31] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:23:45] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:23:45] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:23:45] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:23:59] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:23:59] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:23:59] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:24:13] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:24:13] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:24:13] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:24:27] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:24:27] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:24:27] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:24:41] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:24:41] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:24:41] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:24:55] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:24:55] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:24:55] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:25:09] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:25:09] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:25:09] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:25:23] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:25:23] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:25:23] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:25:37] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:25:37] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:25:37] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:25:51] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:25:51] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:25:51] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:26:05] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:26:05] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:26:05] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:26:19] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:26:19] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:26:19] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:26:33] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:26:33] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:26:33] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:26:47] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:26:47] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:26:47] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:27:01] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:27:01] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:27:01] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:27:15] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:27:15] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:27:15] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:27:29] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:27:29] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:27:29] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:27:43] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:27:43] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:27:43] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:27:57] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:27:57] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:27:57] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:28:11] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:28:11] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:28:11] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:28:25] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:28:25] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:28:25] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:28:39] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:28:39] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:28:39] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:28:53] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:28:53] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:28:53] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:29:07] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:29:07] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:29:07] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:29:21] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:29:21] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:29:21] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:29:35] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:29:35] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:29:35] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:29:49] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:29:49] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:29:49] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:30:03] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:30:03] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:30:03] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:30:17] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:30:17] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:30:17] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:30:31] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:30:31] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:30:31] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:30:45] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:30:45] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:30:45] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:30:59] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:30:59] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:30:59] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:31:13] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:31:13] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:31:13] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:31:27] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:31:27] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:31:27] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:31:41] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:31:41] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:31:41] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:31:55] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:31:55] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:31:55] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:32:09] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:32:09] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:32:09] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:32:23] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:32:23] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:32:23] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:32:37] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:32:37] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:32:37] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:32:51] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:32:51] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:32:51] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:33:05] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:33:05] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:33:05] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:33:19] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:33:19] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:33:19] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:33:33] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:33:33] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:33:33] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:33:47] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:33:47] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:33:47] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:34:01] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:34:01] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:34:01] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:34:15] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:34:15] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:34:15] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:34:29] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:34:29] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:34:29] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:34:43] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:34:43] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:34:43] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:34:57] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:34:57] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:34:57] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:35:11] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:35:11] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:35:11] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:35:25] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:35:25] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:35:25] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:35:39] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:35:39] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:35:39] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:35:53] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:35:53] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:35:53] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:36:07] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:36:07] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:36:07] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:36:21] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:36:21] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:36:21] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:36:35] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:36:35] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:36:35] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:36:49] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:36:49] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:36:49] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:37:03] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:37:03] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:37:03] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:37:17] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:37:17] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:37:17] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:37:31] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:37:31] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:37:31] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:37:45] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:37:45] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:37:45] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:37:59] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:37:59] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:37:59] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:38:13] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:38:13] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:38:13] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:38:27] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:38:27] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:38:27] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:38:41] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:38:41] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:38:41] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:38:55] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:38:55] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:38:55] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:39:09] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:39:09] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:39:09] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:39:23] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:39:23] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:39:23] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:39:37] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:39:37] WARNING[50] chan_sip.c: sip_xmit of 0xf5203b48 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:39:37] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:39:51] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:39:51] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:39:51] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:40:05] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:40:05] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:40:05] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:40:11] NOTICE[50] chan_sip.c: Peer '2002' is now Reachable. (30ms / 2000ms)
+[Aug 16 17:40:19] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:40:19] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:40:19] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:40:33] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:40:33] WARNING[50] chan_sip.c: sip_xmit of 0xf5202a80 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:40:33] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:40:47] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:40:47] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:40:47] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:41:01] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:41:01] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:41:01] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:41:15] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:41:15] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:41:15] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:41:29] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:41:29] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:41:29] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:41:43] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:41:43] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:41:43] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:41:57] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:41:57] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:41:57] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:42:11] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:42:11] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:42:11] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:42:25] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:42:25] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:42:25] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:42:39] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:42:39] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:42:39] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:42:53] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:42:53] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:42:53] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:43:07] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:43:07] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:43:07] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:43:21] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:43:21] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:43:21] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:43:35] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:43:35] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:43:35] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:43:49] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:43:49] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:43:49] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:44:03] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:44:03] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:44:03] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:44:17] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:44:17] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:44:17] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:44:31] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:44:31] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:44:31] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:44:45] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:44:45] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:44:45] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:44:59] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:44:59] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:44:59] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:45:13] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:45:13] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:45:13] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:45:27] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:45:27] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:45:27] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:45:41] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:45:41] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:45:41] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:45:55] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:45:55] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:45:55] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:46:09] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:46:09] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:46:09] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:46:23] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:46:23] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:46:23] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:46:37] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:46:37] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:46:37] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:46:51] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:46:51] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:46:51] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:47:05] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:47:05] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:47:05] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:47:19] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:47:19] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:47:19] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
+[Aug 16 17:47:33] WARNING[50] acl.c: Cannot connect to 192.168.5.10: Network is unreachable
+[Aug 16 17:47:33] WARNING[50] chan_sip.c: sip_xmit of 0xf5203610 (len 570) to 192.168.5.10:5060 returned -2: Network is unreachable
+[Aug 16 17:47:33] ERROR[50] chan_sip.c: Serious Network Trouble; __sip_xmit returns error for pkt data
