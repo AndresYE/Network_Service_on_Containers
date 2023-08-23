@@ -81,9 +81,11 @@ La topología para la implementación Individual se muestra en la figura a conti
 Para esta primera fase, se implementa cada uno de los servicios de red de manera individual medainte el diseño de un fichero Dockerfile y Docker CLI. Los cuales se encuentran entran en el apartada [Ficheros Dockerfile](https://github.com/AndresYE/Network_Service_on_Containers/files/12414235/topologia_II.pdf).
 
 ### Pruebas de Funcionamiento
-Para las pruebas de funcionamiento se intenta obtener el recurso que cada servicio proporciona. Esto es peude se ser medainte una aplicación o software especifico para la mayoria de los servicios.
+Para las pruebas de funcionamiento se intenta obtener el recurso que cada servicio proporciona. Esto puede ser medainte una aplicación o software específico para la mayoráa de los servicios.
 
-- **Servicio DHCP:** Verificación de direccionamiento dinámico a través de la terminal de los clientes, mediante el comando "ipconfig /all" para mostrar todas las configuraciones de red del cliente.
+- **Servicio DHCP:** Verificar el direccionamiento dinámico obtenido a través de la terminal de los clientes, mediante el comando "ipconfig /all" para mostrar todas las configuraciones de red del cliente. Mediante los pasos siguientes:
+  1. Conectar el equipo del cliente mediante un cable Ethernet de 1metro de longitud, a cada uno de los puertos que estan dispustos para el servicio DHCP, estos son: "eth1" y "eth2"
+  2.  Conectar el equipo del cliente mediante conexión WiFi al Access Point configurado en el equipo RPI-I, tomando en cuenta el SSID de la red configurados y la contraseña de acceso a la red. Este procedimiento se lo realiza a 1metro de  distancia entre cliente y el equipo puertos que estan dispustos para el servicio DHCP, estos son: "eth1" y "eth2"
 
 - **Servicio DNS:** Verificación de traducción de direcciones IP a domain names y viceversa a través de la terminal de los clientes, mediante el comando "nslookup IP_address|domain_name".
 
