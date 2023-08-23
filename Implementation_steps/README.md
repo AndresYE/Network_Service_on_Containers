@@ -81,12 +81,20 @@ La topología para la implementación Individual se muestra en la figura a conti
 Para esta primera fase, se implementa cada uno de los servicios de red de manera individual medainte el diseño de un fichero Dockerfile y Docker CLI. Los cuales se encuentran entran en el apartada [Ficheros Dockerfile](https://github.com/AndresYE/Network_Service_on_Containers/files/12414235/topologia_II.pdf).
 
 ### Pruebas de Funcionamiento
-Para las pruebas de funcionamiento se intenta obtener el recurso que cada servicio proporciona. Esto puede ser medainte una aplicación o software específico para la mayoráa de los servicios.
+Para las pruebas de funcionamiento se intenta obtener el recurso que cada servicio proporciona. Esto puede ser medainte una aplicación o software específico para la mayoría de los servicios.
 
-- **Servicio DHCP:** Verificar el direccionamiento dinámico obtenido a través de la terminal de los clientes, mediante el comando "ipconfig /all" para mostrar todas las configuraciones de red del cliente. Mediante los pasos siguientes:
+- **Servicio DHCP:** Verificar el direccionamiento dinámico obtenido mediante los siguientes pasos: 
+Esto para mostrar todas las configuraciones de red del cliente. Mediante los 
   1. Conectar el equipo del cliente mediante un cable Ethernet de 1metro de longitud, a cada uno de los puertos que estan dispustos para el servicio DHCP, estos son: "eth1" y "eth2"
-  2.  Conectar el equipo del cliente mediante conexión WiFi al Access Point configurado en el equipo RPI-I, tomando en cuenta el SSID de la red configurados y la contraseña de acceso a la red. Este procedimiento se lo realiza a 1 metro de  distancia entre el cliente y el equipo host RPI-I.
-
+  2. Verificar la información de red obtenida mediante el comando:
+ ```shell
+ipconfig /all
+```
+  3.  Conectar el equipo del cliente mediante conexión WiFi al Access Point configurado en el equipo RPI-I, tomando en cuenta el SSID de la red configurados y la contraseña de acceso a la red. Este procedimiento se lo realiza a 1 metro de  distancia entre el cliente y el equipo host RPI-I.
+  4.  Verificar la información de red obtenida mediante el comando:
+ ```shell
+ipconfig /all
+```
 - **Servicio DNS:** Verificación de traducción de direcciones IP a domain names y viceversa a través de la terminal de los clientes, mediante el comando "nslookup IP_address|domain_name".
 
 - **Servicio FTP:** Prueba de downlink y uplink de ficheros del servidor FTP, a través de la aplicación Firezilla.
