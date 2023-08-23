@@ -74,24 +74,19 @@ El Procedemientos se describen en [Configuración de Servicios Interferentes](ht
 **NOTA: Una vez desactivado el servicio DHCPCD se perdera la conexión obtenida de la red local conecta mediante Wlan y cualquier conexión que proporcione direccionamiento mediante DHCP, por lo que se debe configurar previamente la interfaz "eth0" en el archivo "/etc/network/interfaces" para perder el acceso al dispositivo.**
 
 # Implementación Individual
-### Topología
-
-
-La topología para implementación Individual y Conjunto mediante Docker CLI:
-
-Para esta primera fase, se implementará cada uno de los servicios de red de manera individual, mediante una imagen diseñada con un fichero Dockerfile, 
+## Topología
+La topología para la implementación Individual y Conjunto mediante Docker CLI:
 [Prototipo_I.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/12414233/Prototipo_I.pdf)
 
-[topologia_I.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/12414234/topologia_I.pdf)
+Para esta primera fase, se implementa cada uno de los servicios de red de manera individual medainte el diseño de un fichero Dockerfile y Docker CLI.
+
+
 
 [topologia_II.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/12414235/topologia_II.pdf)
 
 
+
 # Pruebas Individuales
-
-Las pruebas se las realiza considerando la topología de la Figura XXX y las herramientas descritas en la Tabla XXX. Donde cada uno de los clientes analizará el tráfico mediante la herramienta de software Wireshark. Además, en cada uno de los clientes se verificará el servicio red obtenido mediante una aplicación respectiva. A continuación, se describe el procedimiento para las pruebas.
-
-
 
 ## Pruebas de Funcionamiento
 
@@ -108,6 +103,8 @@ Para las pruebas de funcionamiento de cada uno de los servicios contenerizados s
 - **Servidor VoIP:** Pruebas de llamadas VoIP, a través de la aplicación móvil Liphone/Sip para realizar las llamadas de VoIP, donde se verificará la conexión al servidor y entre las extensiones configuradas.
 
 ## Pruebas de Performance
+[topologia_I.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/12414234/topologia_I.pdf)
+
 
 - **Pruebas de Conexión:**
 Antes de llevar a cabo las pruebas de los otros servicios, se ejecuta una prueba de conexión hacia las direcciones asignadas a estos servidores. Esto se realiza una vez que se ha obtenido una dirección IPv4 del servicio DHCP para cada uno de los clientes Ethernet, como Wlan.
