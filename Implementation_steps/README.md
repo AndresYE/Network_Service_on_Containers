@@ -115,27 +115,51 @@ ping ftp.tic2023.com
 ping www.tic2023.com
 ```
 5. Conexión a la interfaz del servidor HTTP página web 2 contenerizado:
-   ```shell
+```shell
 ping web1.tic2023.com
 ```
 6. Conexión a la interfaz del servidor HTTP página web 3 contenerizado:
-   ```shell
+```shell
 ping web2.tic2023.com
 ```
 7.  Conexión a la interfaz del servidor VoIP contenerizado:
-   ```shell
+```shell
 ping voip.tic2023.com
 ```
 8  . Conexión a la interfaz del servidor web del servicio de Monitoreo RPI-Monitor:
-   ```shell
+```shell
 ping monitor.tic2023.com
 ```
-- **Servicio FTP:** Prueba de downlink y uplink de ficheros del servidor FTP, a través de la aplicación Firezilla.
+- **Servicio FTP:** Prueba de Downlink del fichero del servidor FTP contenerizado, a través de la aplicación Firezilla.
+1. Ingresar mediante las credenciales creadas en el archivo Dockerfile, estas son:
+-- **Dirección IP | Nombre de Dominio del servidor:** 192.168.0.4 | ftp.tic2023.com
+-- **Usuario:** admin
+-- **Contraseña:** admin 
+2. Descargar el fichero "Admin.txt" al almacenamiento local.
+3. Cerrar sesión FTP.
+4. Repetir los pasos 1 al 3.
+**NOTA:** Realizar más de una prueba de transferencia FTP, para verificar el servicio.
 
 - **Servicio Web:** Obtención de una página web del servidor Nginx contenerizado, a través de la aplicación de un navegador web, como puede ser Google Chrome o Firefox.
+1. Ingresar mediante el navegador web a la dirección del servidor web por defecto "www.tic2023.com".
+2. Ingresar mediante el navegador web a la dirección del primer servidor web virtual "web1.tic2023.com".
+3. Ingresar mediante el navegador web a la dirección del primer servidor web virtual "web2.tic2023.com".
 
-- **Servidor VoIP:** Pruebas de llamadas VoIP, a través de la aplicación móvil Liphone/Sip para realizar las llamadas de VoIP, donde se verificará la conexión al servidor y entre las extensiones configuradas.
-
+- **Servidor VoIP:** Pruebas de llamadas VoIP, a través de la aplicación de escritorio Liphone para realizar las llamadas de VoIP entre dos clientes VoIP/SIP.
+1. Descargar la aplicación de escritorio de la página oficial de Liphone [Aplicación de Escritorio Windows](https://www.linphone.org/)
+2. Ingresar a la aplicación.
+3. Seleccionar configurar cuenta SIP.
+4. Agrear infomación de las 2 cuentas Sip configuradas:
+**Cliente 1:**
+--**Usuario:** 2001
+--**Dirección SIP:** voip.tic2023.com
+--**Contraseña:** TIC2023
+--**Tipo de Trasporte:** UDP
+**Cliente 2:**
+--**Usuario:** 2002
+--**Dirección SIP:** voip.tic2023.com
+--**Contraseña:** TIC2023
+--**Tipo de Trasporte:** UDP
 ## Pruebas de Performance
 [topologia_I.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/12414234/topologia_I.pdf)
 
