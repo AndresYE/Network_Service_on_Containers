@@ -240,16 +240,27 @@ Mediante la herramienta Wireshark ejecutada en cada uno de los clientes, monitor
 
 | Servicio    | Instrucción de filtrado  | Descripción                                       |
 |-------------|--------------------------|---------------------------------------------------|
-| DHCP        |  
-```shell
-dhcp 
-```                    | Filtrado de todo el tráfico dhcp.                 |
-| DNS         | dns                      | Filtrado de todo el tráfico dns.                  |
-| FTP         | ftp                      | Filtrado de todo el tráfico ftp.                  |
-| HTTP        | http                     | Filtrado de todo el tráfico http.                 |
+| DHCP        |          `dhcp `         | Filtrado de todo el tráfico dhcp.                 |
+| DNS         |           `dns`          | Filtrado de todo el todo el tráfico dns.          |
+| DNS         | dns.qry.name == "2.0.168.192.in-addr.arpa" || dns.qry.name == "3.0.168.192.in-addr.arpa" || dns.qry.name == "4.0.168.192.in-addr.arpa" || dns.qry.name == "5.0.168.192.in-addr.arpa" || dns.qry.name == "6.0.168.192.in-addr.arpa" || dns.qry.name == "7.0.168.192.in-addr.arpa" || dns.qry.name == "ns1.tic2023.com" || dns.qry.name == "dhcp.tic2023.com" || dns.qry.name == "ftp.tic2023.com" 	|| dns.qry.name == "www.tic2023.com" || dns.qry.name == "web1.tic2023.com" || dns.qry.name == "web2.tic2023.com" || dns.qry.name == "voip.tic2023.com" || dns.qry.name == "monitor.tic2023.com" | Filtrado de tráfico dns generado.          |
+| FTP         |           `ftp`          | Filtrado de todo el tráfico ftp.                  |
+| HTTP        |          `http`          | Filtrado de todo el tráfico http.                 |
+5. Obtener información del tráfico SIP y RTP del servicio de VoIP, empleando la herramienta "Telephony" para obtener información de las llamadas VoIP realizadas mediante la opción "VoIP calls" e información RTP de las llamadas mediante la opción "RTP>RTP Secuency". A través de estas opciones se obtiene la siguiente información:
+-**VoIP calls:**
+- **Dirección IP de Origen**: La dirección IP desde la cual se origina la llamada.
+- **Extensiones SIP**: Las extensiones SIP del remitente y el destinatario de la llamada.
+- **Protocolo Empleado**: El protocolo utilizado para la llamada SIP.
+- **Duración de la Llamada**: El tiempo que duró la llamada.
+- **Cantidad de Paquetes Enviados**: La cantidad de paquetes de datos enviados durante la llamada.
+- **Estado de la Llamada**: El estado de la llamada (por ejemplo, ompletada, fallida, etc.).
+- **Mensajes SIP**: Los mensajes SIP intercambiados con el servidor VoIP.
 
-Adicionalmente, el an\'{a}lisis del tr\'{a}fico SIP proporciona una visi\'{o}n detallada de las llamadas efectuadas entre los clientes SIP. Esta informaci\'{o}n incluye aspectos como la direcci\'{o}n IP de origen de la llamada, las extensiones SIP del remitente y el destinatario, el protocolo empleado, la duraci\'{o}n de la llamada, la cantidad de paquetes enviados, el estado de la llamada y los mensajes SIP intercambiados con el servidor VoIP.
-Tambi\'{e}n, con el an\'{a}lisis del tr\'{a}fico RTP se obtiene informaci\'{o}n adicional del QoS del servicio de VoIP
+-**RTP Secuency:**
+- **Dirección IP de Origen**: La dirección IP desde la cual ssale la llamada.
+- **Pérdidas de Paquete**: La cantidad de paquetes de audio perdidos durante la transmisión.
+- **Retardos**: El tiempo de retardo experimentado durante la transmisión de audio.
+- **Jitter**: La variabilidad en el retardo de la transmisión.
+
 - **Pruebas de uso de recursos:** En el lado del host de los servidores, se emplearán las herramientas de monitoreo de recursos mediante Htop, docker stats y nmap, para monitorear los parámetros anteriormente descritos respectivamente.
 
 Los resultados de las pruebas de cada uno de los servicios se analizan en el Capítulo III.
