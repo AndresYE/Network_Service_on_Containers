@@ -1,0 +1,116 @@
+Microsoft Windows [Versión 10.0.22621.2134]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Stephania Yazán>ping ns1.tic2023.com
+
+Haciendo ping a ns1.TIC2023.com [192.168.0.2] con 32 bytes de datos:
+Respuesta desde 192.168.0.2: bytes=32 tiempo=2ms TTL=64
+Respuesta desde 192.168.0.2: bytes=32 tiempo=6ms TTL=64
+Respuesta desde 192.168.0.2: bytes=32 tiempo=6ms TTL=64
+Respuesta desde 192.168.0.2: bytes=32 tiempo=5ms TTL=64
+
+Estadísticas de ping para 192.168.0.2:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 2ms, Máximo = 6ms, Media = 4ms
+
+C:\Users\Stephania Yazán>ping dhcp.tic2023.com
+
+Haciendo ping a dhcp.TIC2023.com [192.168.0.3] con 32 bytes de datos:
+Respuesta desde 192.168.0.3: bytes=32 tiempo=337ms TTL=64
+Respuesta desde 192.168.0.3: bytes=32 tiempo=43ms TTL=64
+Respuesta desde 192.168.0.3: bytes=32 tiempo=3ms TTL=64
+Respuesta desde 192.168.0.3: bytes=32 tiempo=8ms TTL=64
+
+Estadísticas de ping para 192.168.0.3:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 3ms, Máximo = 337ms, Media = 97ms
+
+C:\Users\Stephania Yazán>ping ftp.tic2023.com
+
+Haciendo ping a ftp.TIC2023.com [192.168.0.4] con 32 bytes de datos:
+Respuesta desde 192.168.0.4: bytes=32 tiempo=3ms TTL=64
+Respuesta desde 192.168.0.4: bytes=32 tiempo=3ms TTL=64
+Respuesta desde 192.168.0.4: bytes=32 tiempo=5ms TTL=64
+Respuesta desde 192.168.0.4: bytes=32 tiempo=2ms TTL=64
+
+Estadísticas de ping para 192.168.0.4:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 2ms, Máximo = 5ms, Media = 3ms
+
+C:\Users\Stephania Yazán>ping www.tic2023.com
+
+Haciendo ping a www.TIC2023.com [192.168.0.5] con 32 bytes de datos:
+Respuesta desde 192.168.0.5: bytes=32 tiempo=502ms TTL=64
+Respuesta desde 192.168.0.5: bytes=32 tiempo=5ms TTL=64
+Respuesta desde 192.168.0.5: bytes=32 tiempo=6ms TTL=64
+Respuesta desde 192.168.0.5: bytes=32 tiempo=5ms TTL=64
+
+Estadísticas de ping para 192.168.0.5:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 5ms, Máximo = 502ms, Media = 129ms
+
+C:\Users\Stephania Yazán>ping web1.tic2023.com
+
+Haciendo ping a www.TIC2023.com [192.168.0.5] con 32 bytes de datos:
+Respuesta desde 192.168.0.5: bytes=32 tiempo=317ms TTL=64
+Respuesta desde 192.168.0.5: bytes=32 tiempo=8ms TTL=64
+Respuesta desde 192.168.0.5: bytes=32 tiempo=131ms TTL=64
+Respuesta desde 192.168.0.5: bytes=32 tiempo=233ms TTL=64
+
+Estadísticas de ping para 192.168.0.5:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 8ms, Máximo = 317ms, Media = 172ms
+
+C:\Users\Stephania Yazán>ping web2.tic2023.com
+
+Haciendo ping a www.TIC2023.com [192.168.0.5] con 32 bytes de datos:
+Respuesta desde 192.168.0.5: bytes=32 tiempo=181ms TTL=64
+Respuesta desde 192.168.0.5: bytes=32 tiempo=1206ms TTL=64
+Respuesta desde 192.168.0.5: bytes=32 tiempo=2ms TTL=64
+Respuesta desde 192.168.0.5: bytes=32 tiempo=1921ms TTL=64
+
+Estadísticas de ping para 192.168.0.5:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 2ms, Máximo = 1921ms, Media = 827ms
+
+C:\Users\Stephania Yazán>ping voip.tic2023.com
+
+Haciendo ping a voip.TIC2023.com [192.168.0.6] con 32 bytes de datos:
+Respuesta desde 192.168.0.6: bytes=32 tiempo=839ms TTL=64
+Respuesta desde 192.168.0.6: bytes=32 tiempo=606ms TTL=64
+Respuesta desde 192.168.0.6: bytes=32 tiempo=1028ms TTL=64
+Respuesta desde 192.168.0.6: bytes=32 tiempo=2ms TTL=64
+
+Estadísticas de ping para 192.168.0.6:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 2ms, Máximo = 1028ms, Media = 618ms
+
+C:\Users\Stephania Yazán>ping monitor.tic2023.com
+
+Haciendo ping a monitor.TIC2023.com [192.168.0.7] con 32 bytes de datos:
+Respuesta desde 192.168.0.7: bytes=32 tiempo=3ms TTL=64
+Respuesta desde 192.168.0.7: bytes=32 tiempo=4ms TTL=64
+Respuesta desde 192.168.0.7: bytes=32 tiempo=6ms TTL=64
+Respuesta desde 192.168.0.7: bytes=32 tiempo=5ms TTL=64
+
+Estadísticas de ping para 192.168.0.7:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 3ms, Máximo = 6ms, Media = 4ms
+
+C:\Users\Stephania Yazán>

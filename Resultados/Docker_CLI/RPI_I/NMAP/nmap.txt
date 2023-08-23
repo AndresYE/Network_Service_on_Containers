@@ -1,0 +1,82 @@
+root@pi:/home/pi#
+nmap 192.168.0.1
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-08-10 21:57 -05
+Nmap scan report for 192.168.0.1
+Host is up (0.000050s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+2000/tcp open  cisco-sccp
+
+Nmap done: 1 IP address (1 host up) scanned in 16.82 seconds
+root@pi:/home/pi# nmap 192.168.0.2
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-08-10 21:57 -05
+Nmap scan report for 192.168.0.2
+Host is up (0.000034s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+53/tcp   open  domain
+80/tcp   open  http
+2000/tcp open  cisco-sccp
+
+Nmap done: 1 IP address (1 host up) scanned in 16.73 seconds
+root@pi:/home/pi# nmap 192.168.0.3
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-08-10 21:57 -05
+Nmap scan report for 192.168.0.3
+Host is up (0.000060s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+2000/tcp open  cisco-sccp
+
+Nmap done: 1 IP address (1 host up) scanned in 16.78 seconds
+root@pi:/home/pi# nmap 192.168.0.4
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-08-10 21:58 -05
+Nmap scan report for 192.168.0.4
+Host is up (0.000065s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+80/tcp   open  http
+2000/tcp open  cisco-sccp
+
+Nmap done: 1 IP address (1 host up) scanned in 16.78 seconds
+root@pi:/home/pi# nmap 192.168.0.5
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-08-10 21:58 -05
+Nmap scan report for 192.168.0.5
+Host is up (0.000035s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+2000/tcp open  cisco-sccp
+
+Nmap done: 1 IP address (1 host up) scanned in 16.79 seconds
+root@pi:/home/pi# nmap 192.168.0.6
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-08-10 21:58 -05
+Nmap scan report for 192.168.0.6
+Host is up (0.000034s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+2000/tcp open  cisco-sccp
+
+Nmap done: 1 IP address (1 host up) scanned in 16.80 seconds
+root@pi:/home/pi# nmap 192.168.0.7
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-08-10 21:59 -05
+Nmap scan report for 192.168.0.7
+Host is up (0.000033s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+2000/tcp open  cisco-sccp
+8888/tcp open  sun-answerbook
+
+Nmap done: 1 IP address (1 host up) scanned in 16.77 seconds
+root@pi:/home/pi#
