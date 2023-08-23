@@ -96,8 +96,6 @@ ipconfig /all
 ipconfig /all
 ```
 - **Pruebas de Conexión:** Verificar la conexión de los clientes con los servidores contenerizados, a través de sus domain names. Emplear los siguientes comandos para cada uno de los servicios contenerizados:
-
-- **Servicio DNS:** Verificación de traducción de direcciones IP a domain names y viceversa a través de la terminal de los clientes, mediante el comando "nslookup IP_address|domain_name".
 1. Conexión a la interfaz del servidor DNS contenerizado:
 ```shell
 ping ns1.tic2023.com
@@ -130,6 +128,67 @@ ping voip.tic2023.com
 ```shell
 ping monitor.tic2023.com
 ```
+
+- **Servicio DNS:** Verificación de traducción de direcciones IP a domain names y viceversa.
+1. Verificar la traducción de domain names a direcciones IP:
+--Traducir de domain names a direcciones IP asociado al servidor DNS contenerizado:
+```shell
+nslookup ns1.tic2023.com
+```
+--Traducir de domain names a direcciones IP asociado al servidor DHCP contenerizado:
+```shell
+nslookup dhcp.tic2023.com
+```
+--Traducir de domain names a direcciones IP asociado al servidor FTP contenerizado:
+```shell
+nslookup ftp.tic2023.com
+```
+--Traducir de domain names a direcciones IP asociado al servidor HTTP página web 1 contenerizado:
+```shell
+nslookup www.tic2023.com
+```
+--Traducir de domain names a direcciones IP asociado al servidor HTTP página web 2 contenerizado:
+```shell
+nslookup web1.tic2023.com
+```
+--Traducir de domain names a direcciones IP asociado al servidor HTTP página web 3 contenerizado:
+```shell
+nslookup web2.tic2023.com
+```
+--Traducir de domain names a direcciones IP asociado al servidor VoIP contenerizado:
+```shell
+nslookup voip.tic2023.com
+```
+--Traducir de domain names a direcciones IP asociado alservicio de Monitoreo RPI-Monitor:
+```shell
+nslookup monitor.tic2023.com
+```
+1. Verificar la traducción de direcciones IP a domain names:
+--Traducir de direcciones IP a domain names asociado al servidor DNS contenerizado:
+```shell
+nslookup 192.168.0.2
+```
+--Traducir de direcciones IP a domain names asociado al servidor DHCP contenerizado:
+```shell
+nslookup 192.168.0.3
+```
+--Traducir de direcciones IP a domain names asociado al servidor FTP contenerizado:
+```shell
+nslookup 192.168.0.4
+```
+--Traducir de direcciones IP a domain names asociado al servidor HTTP contenerizado:
+```shell
+nslookup 192.168.0.5
+```
+--Traducir de direcciones IP a domain names asociado al servidor VoIP contenerizado:
+```shell
+nslookup 192.168.0.6
+```
+--Traducir de direcciones IP a domain names asociado al servicio de Monitoreo RPI-Monitor:
+```shell
+nslookup 192.168.0.7
+```
+
 - **Servicio FTP:** Prueba de Downlink del fichero del servidor FTP contenerizado, a través de la aplicación Firezilla.
 1. Ingresar mediante las credenciales creadas en el archivo Dockerfile, estas son:
 -- **Dirección IP | Nombre de Dominio del servidor:** 192.168.0.4 | ftp.tic2023.com
@@ -152,20 +211,17 @@ ping monitor.tic2023.com
 4. Agrear infomación de las 2 cuentas Sip configuradas:
 **Cliente 1:**
 --**Usuario:** 2001
---**Dirección SIP:** voip.tic2023.com
+--**Dirección  Servidor SIP:** voip.tic2023.com
 --**Contraseña:** TIC2023
 --**Tipo de Trasporte:** UDP
 **Cliente 2:**
 --**Usuario:** 2002
---**Dirección SIP:** voip.tic2023.com
+--**Dirección Servidor SIP:** voip.tic2023.com
 --**Contraseña:** TIC2023
 --**Tipo de Trasporte:** UDP
+
 ## Pruebas de Performance
 [topologia_I.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/12414234/topologia_I.pdf)
-
-
-- **:**
-
 
 - Las pruebas de conexión para cada uno de los clientes se las realizarán mediante un ping desde la terminal de consola de los clientes, hacia las direcciones IP configuradas para cada uno de los servicios DHCP, DNS, FTP, Web y VoIP; de acuerdo con la tabla de direccionamiento de la Tabla XXX.
 
