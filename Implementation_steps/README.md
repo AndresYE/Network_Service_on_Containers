@@ -15,7 +15,7 @@ En el presente apartado se describe el procedimiento para la implementación de 
 **NOTA:  Esta configuración aplica unicamente para la placa Raspberry Pi RPI-I, donde se realiza el despligue de los servicios contenerizados.**
 
 - **Direccionamiento:** El direccionamiento empleado sera de tipo estático y dinámico, el cual se configura mediante el fichero "/etc/network/interfaces". Las direcciones IP estáticas, que son asociadas a las interfaces virtuales previamentes configuradas, son las que se emplean para los servicios contenerizados. Por otro lado, el direccionamiento IP dinámico empleado para conectarse a la red local, se emplea para la configuración del equipo.
-El direccionamiento IPv4 para la placa Raspberry Pi RPI I se presenta en la siguiente Tabla a continuación:
+El direccionamiento IPv4 para la placa Raspberry Pi RPI I se presenta en la siguiente tabla:
 
 | Servicios de Red                | Interfaz | Dirección IPv4/Máscara | Dirección de Gateway |
 |---------------------------------|----------|------------------------|-----------------------|
@@ -30,7 +30,7 @@ El direccionamiento IPv4 para la placa Raspberry Pi RPI I se presenta en la sigu
 | SSH \| Routing \| DHCP III       | Eth2     | 192.168.2.1/24         | 192.168.2.1           |
 | SSH \| Routing                   | Eth3     | 10.0.1.1/30            | N/A                   |
 
-PEl direccionamiento IPv4 para la placa Raspberry PI III se presenta en la siguiente Tabla a continuación:
+El direccionamiento IPv4 para la placa Raspberry Pi RPI II se presenta en la siguiente tabla:
 | Servicios de Red        | Interfaz | Dirección IPv4/Máscara | Dirección de Gateway |
 |-------------------------|----------|------------------------|-----------------------|
 | SSH                     | Eth0     | (Cliente DHCP)         | (Cliente DHCP)        |
