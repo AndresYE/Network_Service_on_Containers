@@ -219,13 +219,20 @@ nslookup 192.168.0.7
   -**Dirección Servidor SIP:** voip.tic2023.com
   -**Contraseña:** TIC2023
   -**Tipo de Trasporte:** UDP
+5. Verificar la conexión de la extension al servidor Voip.
+6. Realizar una llamada entre la la extensión del cliente 1 "2001" a la extensión del cliente 2 "2002".
+7. Terminar la llamada
+8. Realizar una llamada entre la la extensión del cliente 2 "2002" a la extensión del cliente 1 "2001".
+9. Terminar la llamada
+10. Repetir los pasos 6 al 9.
+**NOTA:** Realizar más de una prueba de llamadas VoIP, para verificar el servicio.
 
 ## Pruebas de Performance
 [topologia_I.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/12414234/topologia_I.pdf)
-
-- Las pruebas de conexión para cada uno de los clientes se las realizarán mediante un ping desde la terminal de consola de los clientes, hacia las direcciones IP configuradas para cada uno de los servicios DHCP, DNS, FTP, Web y VoIP; de acuerdo con la tabla de direccionamiento de la Tabla XXX.
-
-- **Pruebas de tráfico:** Mediante la herramienta Wireshark se realizará la captura de tráfico de los distintos servicios en la interfaz física conectada. Después, se realizará un filtrado para cada uno de los servicios, mediante la opción de filter de Wireshark. Las instrucciones empleadas para el filtrado de cada uno de los servicios se describen en la Tabla a continuación:
+- **Pruebas de Conexión:** Verificar la el retardo de la conexión entre los clientes con los servidores contenerizados, a través de sus domain names.
+- 
+  **Pruebas de tráfico:** Mediante la herramienta Wireshark ejecutada en cada uno de los servicios
+  se realiza la captura de tráfico de los distintos servicios en la interfaz física conectada. Después, se realizará un filtrado para cada uno de los servicios, mediante la opción de filter de Wireshark. Las instrucciones empleadas para el filtrado de cada uno de los servicios se describen en la Tabla a continuación:
 
 | Servicio    | Instrucción de filtrado  | Descripción                                       |
 |-------------|--------------------------|---------------------------------------------------|
