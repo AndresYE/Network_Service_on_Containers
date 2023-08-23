@@ -65,13 +65,13 @@ ENV DNS_PORT 53
 # Creación de carpeta "/var/lib/bind" para el almacenamiento de las zonas DNS.
 RUN mkdir /var/lib/bind
 # Copiar archivo de Zonas Directas a la ruta del contenedor "/var/lib/bind".
-COPY TIC2023.com.db /etc/bind/
+COPY ./TIC2023.com.db /var/lib/bind/
 # Copiar archivo de Zonas Inversas a la ruta del contenedor "/var/lib/bind".
-COPY 0.168.192.rev /etc/bind/
+COPY ./0.168.192.rev /var/lib/bind/
 # Cambio a propietario root de carpeta "/var/lib/bind".
 RUN chown -R root:root /var/lib/bind
 # Cambio de permisos de carpeta "/var/lib/bind".
-RUN chmod 0700 /var/lib/bind
+RUN chmod 0755 /var/lib/bind
 
 # Creación de carpeta de registros "/var/log/bind" para el almacenamiento de los registros Bind.
 RUN mkdir /var/log/bind
@@ -87,14 +87,14 @@ RUN mkdir /var/cache/bind
 # Cambio de permisos de carpeta "/var/cache/bind".
 RUN chown -R root:root /var/cache/bind
 # Cambio a propietario root de carpeta "/var/cache/bind".
-RUN chmod -R 0700 /var/cache/bind
+RUN chmod -R 0755 /var/cache/bind
 
 # Copiar archivo de configuracipon bind "named.conf" a la ruta del contenedor "/etc/bind/".
-COPY named.conf /etc/bind/
+COPY ./named.conf /etc/bind/
 # Cambio a propietario root de archivo de carpeta "/etc/bind/".
 RUN chown -R root:root /etc/bind/
 # Cambio de permisos de carpeta "/var/lib/bind".
-RUN chmod -R 0700 /etc/bind/
+RUN chmod -R 0755 /etc/bind/
 ################################################################################################
 ################################### Directorio de Trabajo ######################################
 ################################################################################################
@@ -117,7 +117,7 @@ EXPOSE 53/tcp 53/udp
         #-6: DNS con direccionamiento IPv6.
         #-c: Archivo de configuración DNS alternativo (named.conf).
         #-d: Modo Depuración.
-        #-f: Ejcutar named como Proceso de Primer plano (Foreground) (Background Default).
+        #-f: Ejecutar named como Proceso de Primer plano (Foreground) (Background Default).
         #-g: Forzar ejecución en primer plano.
         #-p: Puerto UDP DNS (53/udp Default).
     # Opiciones adicionales:
@@ -126,4 +126,4 @@ EXPOSE 53/tcp 53/udp
         #-s: Estadisticas de uso de memoria en stdout.
         #-t: encerrar directorio mediante chroot.
         #-u:  Colocar UID para completar procesos privilegiados.
-ENTRYPOINT /usr/sbin/named -$DNS_MOD  -c $DNS_CONF_FILE -f -p $DNS_PORT
+ENTRYPOINT /usr/sbin/named -$DNS_MOD -c $DNS_CONF_FILE -f -p $DNS_PORT

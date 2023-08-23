@@ -59,8 +59,6 @@ ENV MAX_LEASE_TIME=3600
 ENV DEFAULT_LEASE_TIME=120
 
 #################### Variables de Entorno para Direccionamiento DHCPv4 #########################
-# Variable de entorno para Dirección IPv4 para Interfaz de escucha de peticiones DHCP.
-ENV IPV4_IFDHCP=allow
 # Variable de entorno para establecer subred IPv4.
 ENV IPV4_SUBNET=192.168.0.0
 # Variable de entorno para establecer mascara de red IPv4.
@@ -77,8 +75,6 @@ ENV IPV4_GATEWAY=192.168.0.1
 ENV IPV4_GATEWAY_MASK 255.255.255.0
 
 #################### Variables de Entorno para Direccionamiento DHCPv6 #########################
-# Variable de entorno para Dirección IPv6 para Interfaz de escucha de peticiones DHCP.
-ENV IPV6_IFDHCP=allow
 # Variable de entorno para establecer subred y mascara IPv6.
 ENV IPV6_SUBNET=2001:db8:0:1::/64
 # Variable de entorno para establecer dirección IPv6  mínima de asigación.
@@ -129,13 +125,13 @@ ENV DHCP_GROUP root
 ################################################################################################
 ############################### Archivos de configuración DHCPD ################################
 ## Copiar archivo de configuración DHCPv4 a carpeta "/etc/dhcp/".
-COPY dhcpd.env.conf  ./etc/dhcp/
+COPY dhcpd.env.conf  /etc/dhcp/
 ## Copiar archivo de configuración DHCPv6 a carpeta "/etc/dhcp/".
-COPY dhcpd6.env.conf ./etc/dhcp/
+COPY dhcpd6.env.conf /etc/dhcp/
 # Creación de archivo de arrendamientos DHCP "dhcpd.leases".
-RUN touch ./var/lib/dhcp/dhcpd.leases
+RUN touch /var/lib/dhcp/dhcpd.leases
 # Cambio a propietario root de archivo de arrendamientos DHCP "dhcpd.leases".
-RUN chown -R root:root ./var/lib/dhcp/dhcpd.leases
+RUN chown -R root:root /var/lib/dhcp/dhcpd.leases
 #################### Archivo .sh para configuración de servicio DHCP #################### 
 # Copiar archivo .sh para la ejecución del servicio DHCP.
 COPY run-dhcpd.sh ./usr/sbin/

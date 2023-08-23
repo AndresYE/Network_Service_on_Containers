@@ -42,3 +42,5 @@ $TTL	604800
 5      IN      PTR    www.TIC2023.com.
 ;Reverse lookup del Servidor VoIP 
 6      IN      PTR    voip.TIC2023.com.
+;Reverse lookup del Servidor RPI-Monitor
+7	   IN      PTR    monitor.TIC2023.com.

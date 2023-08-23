@@ -50,3 +50,5 @@ web1.TIC2023.com.    IN      CNAME   www.TIC2023.com.
 web2.TIC2023.com.    IN      CNAME   www.TIC2023.com. 
 ;Asignar dirección IPv4 a un nombre de dominio para el Servidor VoIP 
 voip.TIC2023.com.     IN      A       192.168.0.6
+;Asignar dirección IPv4 a un nombre de dominio para el Servidor RPI-Monitor
+monitor.TIC2023.com.     IN      A       192.168.0.7
