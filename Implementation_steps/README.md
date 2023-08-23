@@ -96,104 +96,104 @@ ipconfig /all
 ipconfig /all
 ```
 - **Pruebas de Conexión:** Verificar la conexión de los clientes con los servidores contenerizados, a través de sus domain names. Emplear los siguientes comandos para cada uno de los servicios contenerizados:
-1. Conexión a la interfaz del servidor DNS contenerizado:
+  -Conexión a la interfaz del servidor DNS contenerizado:
 ```shell
 ping ns1.tic2023.com
 ```
-2. Conexión a la interfaz del servidor DHCP contenerizado:
+  -Conexión a la interfaz del servidor DHCP contenerizado:
 ```shell
 ping dhcp.tic2023.com
 ```
-3. Conexión a la interfaz del servidor FTP contenerizado:
+  -Conexión a la interfaz del servidor FTP contenerizado:
 ```shell
 ping ftp.tic2023.com
 ```
-4. Conexión a la interfaz del servidor HTTP página web 1 contenerizado:
+  -Conexión a la interfaz del servidor HTTP página web 1 contenerizado:
 ```shell
 ping www.tic2023.com
 ```
-5. Conexión a la interfaz del servidor HTTP página web 2 contenerizado:
+  -Conexión a la interfaz del servidor HTTP página web 2 contenerizado:
 ```shell
 ping web1.tic2023.com
 ```
-6. Conexión a la interfaz del servidor HTTP página web 3 contenerizado:
+  -Conexión a la interfaz del servidor HTTP página web 3 contenerizado:
 ```shell
 ping web2.tic2023.com
 ```
-7.  Conexión a la interfaz del servidor VoIP contenerizado:
+  -Conexión a la interfaz del servidor VoIP contenerizado:
 ```shell
 ping voip.tic2023.com
 ```
-8  . Conexión a la interfaz del servidor web del servicio de Monitoreo RPI-Monitor:
+  -Conexión a la interfaz del servidor web del servicio de Monitoreo RPI-Monitor:
 ```shell
 ping monitor.tic2023.com
 ```
 
 - **Servicio DNS:** Verificación de traducción de direcciones IP a domain names y viceversa.
 1. Verificar la traducción de domain names a direcciones IP:
---Traducir de domain names a direcciones IP asociado al servidor DNS contenerizado:
+  -Traducir de domain names a direcciones IP asociado al servidor DNS contenerizado:
 ```shell
 nslookup ns1.tic2023.com
 ```
---Traducir de domain names a direcciones IP asociado al servidor DHCP contenerizado:
+  -Traducir de domain names a direcciones IP asociado al servidor DHCP contenerizado:
 ```shell
 nslookup dhcp.tic2023.com
 ```
---Traducir de domain names a direcciones IP asociado al servidor FTP contenerizado:
+  -Traducir de domain names a direcciones IP asociado al servidor FTP contenerizado:
 ```shell
 nslookup ftp.tic2023.com
 ```
---Traducir de domain names a direcciones IP asociado al servidor HTTP página web 1 contenerizado:
+  -Traducir de domain names a direcciones IP asociado al servidor HTTP página web 1 contenerizado:
 ```shell
 nslookup www.tic2023.com
 ```
---Traducir de domain names a direcciones IP asociado al servidor HTTP página web 2 contenerizado:
+  -Traducir de domain names a direcciones IP asociado al servidor HTTP página web 2 contenerizado:
 ```shell
 nslookup web1.tic2023.com
 ```
---Traducir de domain names a direcciones IP asociado al servidor HTTP página web 3 contenerizado:
+  -Traducir de domain names a direcciones IP asociado al servidor HTTP página web 3 contenerizado:
 ```shell
 nslookup web2.tic2023.com
 ```
---Traducir de domain names a direcciones IP asociado al servidor VoIP contenerizado:
+  -Traducir de domain names a direcciones IP asociado al servidor VoIP contenerizado:
 ```shell
 nslookup voip.tic2023.com
 ```
---Traducir de domain names a direcciones IP asociado alservicio de Monitoreo RPI-Monitor:
+  -Traducir de domain names a direcciones IP asociado alservicio de Monitoreo RPI-Monitor:
 ```shell
 nslookup monitor.tic2023.com
 ```
 1. Verificar la traducción de direcciones IP a domain names:
---Traducir de direcciones IP a domain names asociado al servidor DNS contenerizado:
+  -Traducir de direcciones IP a domain names asociado al servidor DNS contenerizado:
 ```shell
 nslookup 192.168.0.2
 ```
---Traducir de direcciones IP a domain names asociado al servidor DHCP contenerizado:
+  -Traducir de direcciones IP a domain names asociado al servidor DHCP contenerizado:
 ```shell
 nslookup 192.168.0.3
 ```
---Traducir de direcciones IP a domain names asociado al servidor FTP contenerizado:
+  -Traducir de direcciones IP a domain names asociado al servidor FTP contenerizado:
 ```shell
 nslookup 192.168.0.4
 ```
---Traducir de direcciones IP a domain names asociado al servidor HTTP contenerizado:
+  -Traducir de direcciones IP a domain names asociado al servidor HTTP contenerizado:
 ```shell
 nslookup 192.168.0.5
 ```
---Traducir de direcciones IP a domain names asociado al servidor VoIP contenerizado:
+  -Traducir de direcciones IP a domain names asociado al servidor VoIP contenerizado:
 ```shell
 nslookup 192.168.0.6
 ```
---Traducir de direcciones IP a domain names asociado al servicio de Monitoreo RPI-Monitor:
+  -Traducir de direcciones IP a domain names asociado al servicio de Monitoreo RPI-Monitor:
 ```shell
 nslookup 192.168.0.7
 ```
 
 - **Servicio FTP:** Prueba de Downlink del fichero del servidor FTP contenerizado, a través de la aplicación Firezilla.
 1. Ingresar mediante las credenciales creadas en el archivo Dockerfile, estas son:
--- **Dirección IP | Nombre de Dominio del servidor:** 192.168.0.4 | ftp.tic2023.com
--- **Usuario:** admin
--- **Contraseña:** admin 
+  - **Dirección IP | Nombre de Dominio del servidor:** 192.168.0.4 | ftp.tic2023.com
+  - **Usuario:** admin
+  - **Contraseña:** admin 
 2. Descargar el fichero "Admin.txt" al almacenamiento local.
 3. Cerrar sesión FTP.
 4. Repetir los pasos 1 al 3.
@@ -210,15 +210,15 @@ nslookup 192.168.0.7
 3. Seleccionar configurar cuenta SIP.
 4. Agrear infomación de las 2 cuentas Sip configuradas:
 **Cliente 1:**
---**Usuario:** 2001
---**Dirección  Servidor SIP:** voip.tic2023.com
---**Contraseña:** TIC2023
---**Tipo de Trasporte:** UDP
+  -**Usuario:** 2001
+  -**Dirección  Servidor SIP:** voip.tic2023.com
+  -**Contraseña:** TIC2023
+  -**Tipo de Trasporte:** UDP
 **Cliente 2:**
---**Usuario:** 2002
---**Dirección Servidor SIP:** voip.tic2023.com
---**Contraseña:** TIC2023
---**Tipo de Trasporte:** UDP
+  -**Usuario:** 2002
+  -**Dirección Servidor SIP:** voip.tic2023.com
+  -**Contraseña:** TIC2023
+  -**Tipo de Trasporte:** UDP
 
 ## Pruebas de Performance
 [topologia_I.pdf](https://github.com/AndresYE/Network_Service_on_Containers/files/12414234/topologia_I.pdf)
