@@ -1,2 +1,0 @@
-2023/08/11 02:23:35 [error] 8#8: *1 directory index of "/usr/share/nginx/html/" is forbidden, client: 192.168.0.10, server: localhost, request: "GET / HTTP/1.0"
-2023/08/11 02:24:25 [error] 7#7: *2 directory index of "/usr/share/nginx/html/" is forbidden, client: 192.168.0.10, server: localhost, request: "GET / HTTP/1.0"
