@@ -120,10 +120,19 @@ docker ps
 docker volume ls
 ```
 ### Subir Imagenes a Registro Docker Hub
-1. Iniciar sesión en Docker Hub mediante los comandos:
+1. Iniciar sesión en Docker Hub con usuario y contraseña previamente creados, mediante los comandos:
 ```shell
-docker volume ls
+docker login -u user_name
 ```
+Donde:
+- **user_name:** Es el nombre de usuario de Docker Hub.
+2. Subir las imagenes de contenedores creadas mediante los comandos:
+```shell
+docker push  repository[:tag]
+```
+Donde:
+- ** repository:** Es el nombre del repositorio y la etiquete de la imagen.
+
 
 
 **NOTA: Se debe crear una cuenta en Docker Hub previamente y solicitar un Token para poder iniciar sesión y subir imagenes de contenedores docker.
