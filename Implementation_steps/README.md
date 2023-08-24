@@ -88,7 +88,7 @@ El Procedemientos se describen en [Configuración de Servicios Interferentes](ht
 La topología para la implementación Individual se muestra en la figura a continuación, donde se muesestra la distribución lógica de los contenedores en la placa Raspberry PI.
 ![Prototipo_I](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/72c7de45-2a90-4b13-aaa2-cec7a261c3de)
 
-Para esta primera fase, se implementa cada uno de los servicios de red de manera individual medainte el diseño de un fichero Dockerfile y Docker CLI. Los cuales se encuentran entran en el apartada [Ficheros Dockerfile](https://github.com/AndresYE/Network_Service_on_Containers/files/12414235/topologia_II.pdf).
+Para esta primera fase, se implementa cada uno de los servicios de red de manera individual mediante el diseño de un fichero Dockerfile y el depligue usando Docker CLI. Los archivos Dockerfile y los comandos para cada uno de los servicios se encuentran entran en el siguiente apartado [Ficheros Dockerfile](https://github.com/AndresYE/Network_Service_on_Containers/files/12414235/topologia_II.pdf).
 
 # Implementación Conjunta mediante Docker CLI
 ## Topología
