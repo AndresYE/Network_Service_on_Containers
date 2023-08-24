@@ -94,8 +94,40 @@ Para esta primera fase, se implementa cada uno de los servicios de red de manera
 ## Topología
 La topología para la implementación mediante Docker CLI se muestra en la figura a continuación, donde se muesestra la conexión de los clientes 1, 2 y 3 a la placa Raspberry PI - RPI-I.
 ![Topologia_I](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/9cf04412-7687-46f9-a52b-30fe38c5b038)
+## Implementación
+### Construcción de Imagenes Docker
+1. Como primer paso de la implementación se emplea el software WinSCP, el cual usa para la transferencia de los ficheros Dockerfile mediante conexión SSH.
+2. Crear un directorio "Docker" en la ruta "/home/pi/"".
+3. Colocar los ficheros Dockerfile y dependencias en un directorio con el nombre del servicio.
+4. Iniciar conexión SSH empleando el software Putty.
+5. Ingresar a cada uno de los directorios de cada uno de los servicios y ejecutar los comandos "docker build" respectivos para contruir las imagenes de los contenedores a partir de los ficheros Dockerfile y sus dependencias asociadas.
+6. Verificar las imagenes creadas mediante el comando.
+```shell
+docker images
+```
+o
+```shell
+docker image ls
+```
+### Desplegar Conenedores de Imagenes Docker
+1. Ingresar a cada uno de los directorios de cada uno de los servicios y ejecutar los comandos "docker run" respectivos para instancias las imagenes creadas y ejecutar los contenedores.
+2. Verificar los contenedores en ejecución mediante el comando:
+```shell
+docker ps
+```
+3. Verificar los volumes de contenedores en ejecución mediante el comando:
+```shell
+docker volume ls
+```
+### Subir Imagenes a Registro Docker Hub
+1. Iniciar sesión en Docker Hub mediante los comandos:
+```shell
+docker volume ls
+```
 
-### Pruebas de Funcionamiento
+
+**NOTA: Se debe crear una cuenta en Docker Hub previamente y solicitar un Token para poder iniciar sesión y subir imagenes de contenedores docker.
+## Pruebas de Funcionamiento
 Para las pruebas de funcionamiento se intenta obtener el recurso que cada servicio proporciona. Esto puede ser medainte una aplicación o software específico para la mayoría de los servicios.
 
 - **Servicio DHCP:** Verificar el direccionamiento dinámico obtenido mediante los siguientes pasos: 
