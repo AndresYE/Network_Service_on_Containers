@@ -6,23 +6,18 @@
 4. Iniciar conexión SSH empleando el software Putty.
 5. Ingresar a cada uno de los directorios de cada uno de los servicios y ejecutar los comandos "docker build" respectivos para contruir las imagenes de los contenedores a partir de los ficheros Dockerfile y sus dependencias asociadas.
 -**DHCP:**
-   **DHCP-WLAN0**
-![dhcp_wlan0_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/54e14e15-272b-40ef-8d5d-bc146ddd5c34)
-
-   **DHCP-Eth1**
-![dhcp_eth1_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/ea1c6615-6803-46f9-ba13-94e522827dff)
-
-   **DHCP-Eth2**
-![dhcp_eth2_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/25900730-edc7-4503-be90-7a975f803054)
+![dhcp_docker_imagen](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/a5a89eef-0786-430b-93af-cc41feb267d7)
 
 -**DNS:**
-![dns_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/9892d919-1178-4d27-92e3-cb02be183664)
+![dns_docker_imagen](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/d1e77bdd-d27e-47e0-bab3-049b9e0767a1)
 
 -**FTP:**
-![ftp_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/54eab014-65e8-404c-b1ed-9f3d360ec2a5)
+![ftp_docker_imagen](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/6c1c44c4-6084-4b69-9584-cca52ab870bc)
+
 
 -**HTTP:**
-![http_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/a9044c56-ac3d-4ea6-964e-2620b77b9062)
+![http_docker_imagen](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/9bf7480b-ec4a-4056-87cf-4003fb28a7c3)
+
 
 7. Descargar las imagenes de los contenedores asociados a los servicios de Rputing y VoIP, mediante el comando.
 ```shell
@@ -52,16 +47,100 @@ o
 ```shell
 docker image ls
 ```
+![docker_images](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/90b5bbeb-090d-4b44-9c98-25eedc1e40e1)
+
 ## Desplegar Conenedores de Imagenes Docker
-1. Ingresar a cada uno de los directorios de cada uno de los servicios y ejecutar los comandos "docker run" respectivos para instancias las imagenes creadas y ejecutar los contenedores.
-2. Verificar los contenedores en ejecución mediante el comando:
+1. Ingresar a cada uno de los directorios de cada uno de los servicios y ejecutar los comandos "docker create volume" y "docker run" respectivos para crear los volumesnes de los contenedores e instancias las imagenes creadas y ejecutar los contenedores.
+  -**DHCP:**
+   **DHCP-WLAN0**
+![dhcp_wlan0_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/c9708e30-d396-4d3d-a227-a0e8a6dd858b)
+
+
+   **DHCP-Eth1**
+![dhcp_eth1_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/671c4d50-bf5d-4f70-a9d8-a93b0a08e89d)
+
+
+   **DHCP-Eth2**
+![dhcp_eth2_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/04b697bf-9e36-4cd5-8f24-d1159c47744a)
+
+
+-**DNS:**
+![dns_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/91c0d2b7-bbad-4113-93d2-e1458f4de13a)
+
+
+-**FTP:**
+![ftp_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/12050772-30b7-4061-827a-c49d280e9514)
+
+-**HTTP:**
+![http_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/951f2f77-5e91-4e64-a46a-22c6332169df)
+
+-**VoIP:**
+![voip_docker_run_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/17b07e40-7761-47e4-b22f-2d85757ea3d4)
+
+-**Routing:**
+![routing_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/0299fbc6-8f86-488e-aef0-98bdb8e11912)
+
+2. Configurar los conentedores para VoIP y Routing, mediante el comando:
+```shell
+docker exec -it conainer_name sh
+```
+Donde:
+-**conainer_name:** Es el nombre del contenedor.
+-**VoIP:** Copiamos los archivos de configuración al directorio asociado al contenedor "voip_server" (Bind Mount).
+Y reiniciamos el servicio mediante el comando:
+```shell
+docker restart voip_server
+```
+![voip_docker_run_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/a8597f00-eb73-4436-8c2e-eb825d9cd824)
+
+-**Routing:** Configuramos el direccionamiento para las interfaces "eth1" y "eth2".
+Ingresamos a la terminal VTY de FRR, mediante el comando:
+```shell
+vtysh
+```
+Verificamos las configuraciones de direccionamiento mediante el comando:
+```shell
+show interface brief
+```
+![routing_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/0c5af8d2-e83b-4955-98c9-9eb5e4403763)
+Ingresaos al modo privilegiado de configuraciones mediante el comando:
+```shell
+configuration terminal
+```
+Configuramos las direcciones IPv4 asociadas a cada una de las interfaces, mediante los comandos:
+```shell
+interface interface_name
+ip address IP_address/mask
+no shutdown
+```
+Donde:
+**interface_name:** Es el nombre de la interfaz asociada.
+**IP_address:** Dirección IPv4.
+**mask:** Mascara de Subred.
+
+Salimos del modo privilegiado y verificamos las configuraciones de interfaz.
+![routing_configuration_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/16459ce5-343e-467b-8bec-ade5ccde3430)
+Guardamos las configuraciones mediante el comando
+```shell
+write
+```
+Mostramos las configuraciones guardadas en el archivo "zebra.conf" y "staticd.conf".
+![routing_configuration_5](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/e0ebb505-b032-4ea7-9984-0ec05e77caf7)
+
+
+**NOTA: Ejecutar los servicios de DHCP "eth1" y "eth2", despues de ejecutar el contenedor para el servicio de Routing. Esto para evitar conflicto de direccionamiento de los contenedores DHCP.**
+3. Verificar los contenedores en ejecución mediante el comando:
 ```shell
 docker ps
 ```
-3. Verificar los volumes de contenedores en ejecución mediante el comando:
+![docker_ps_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/08da0952-2329-4d75-bfbb-7021f12a3006)
+
+4. Verificar los volumes de contenedores en ejecución mediante el comando:
 ```shell
 docker volume ls
 ```
+![docker_volume](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/75d13069-a0c7-4084-a2c1-ef54e747ffd5)
+
 ## Subir Imagenes a Registro Docker Hub
 1. Iniciar sesión en Docker Hub con usuario y contraseña previamente creados, mediante los comandos:
 ```shell
