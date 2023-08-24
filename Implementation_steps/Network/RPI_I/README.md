@@ -21,6 +21,10 @@ iface wlan0:2 inet static
     address 192.168.1.3
     netmask 255.255.255.0
 ```
+
+![address_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/97b0654a-d413-433b-8428-cf0119585c1f)
+
+
 # Repite estos pasos para wlan0:3 hasta wlan0:7
 Asegúrate de configurar direcciones IP únicas para cada interfaz virtual.
 
@@ -31,18 +35,12 @@ Reinicia el servicio de red para aplicar los cambios:
 sudo service networking restart
 ```
 
-Configura la interfaz de puente en /etc/network/interfaces para permitir que los dispositivos conectados al punto de acceso obtengan direcciones IP a través de eth0. Agrega estas líneas al archivo:
-
+Verifcar las interfaces mediante el comando:
 ```shell
-auto br0
-iface br0 inet dhcp
-    bridge_ports eth0 wlan0
+sudo ip -a
 ```
-Guarda y cierra el archivo.
 
-Reinicia tu Raspberry Pi para aplicar todas las configuraciones:
+![usbadapter_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/aa26d654-5b94-4731-be54-779748661d10)
 
-```shell
-Copy code
-sudo reboot
-```
+![usbadapter_configuration_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/97e75b24-032d-41aa-927b-874f836d5ec0)
+
