@@ -1,10 +1,23 @@
 # Implementación
 ## Construcción de Imagenes Docker
 1. Como primer paso de la implementación se emplea el software WinSCP, el cual usa para la transferencia de los ficheros Dockerfile mediante conexión SSH.
-2. Crear un directorio "Docker" en la ruta "/home/pi/"".
-3. Colocar los ficheros Dockerfile y dependencias en un directorio con el nombre del servicio.
-4. Iniciar conexión SSH empleando el software Putty.
-5. Ingresar a cada uno de los directorios de cada uno de los servicios y ejecutar los comandos "docker build" respectivos para contruir las imagenes de los contenedores a partir de los ficheros Dockerfile y sus dependencias asociadas.
+
+![docker_files_put_device_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/df82cec0-33c6-45ee-8677-d1a93178ca29)
+
+![docker_files_put_device_4](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/c296214f-4e8a-4e32-9d92-8e4c17f70e77)
+
+
+3. Crear un directorio "Docker" en la ruta "/home/pi/".
+4. Colocar los ficheros Dockerfile y dependencias en un directorio con el nombre del servicio.
+
+![docker_files_put_device_5](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/a47b4f68-04ad-4bd6-9433-13e5ba63a9ff)
+  
+6. Iniciar conexión SSH empleando el software Putty.
+7. Realizar un listado del directorio "/home/pi/Docker"
+
+![docker_files_put_device_6](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/c9cfff97-1e80-4d6f-a017-4878db5d888a)
+
+9. Ingresar a cada uno de los directorios de cada uno de los servicios y ejecutar los comandos "docker build" respectivos para contruir las imagenes de los contenedores a partir de los ficheros Dockerfile y sus dependencias asociadas.
 - **DHCP:**
 
 ![dhcp_docker_imagen](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/a5a89eef-0786-430b-93af-cc41feb267d7)
