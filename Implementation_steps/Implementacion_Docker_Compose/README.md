@@ -62,14 +62,22 @@ configuration terminal
 ```
 Configuramos las direcciones IPv4 asociadas a cada una de las interfaces, mediante los comandos:
 ```shell
-interface interface_name
-ip address IP_address/mask
+interface eth1
+ip address 192.168.1.1/24
 no shutdown
+exit
+
+interface eth2
+ip address 192.168.2.1/24
+no shutdown
+exit
+
+
+interface eth3
+ip address 10.0.1.1/30 
+no shutdown
+exit
 ```
-Donde:
-**interface_name:** Es el nombre de la interfaz asociada.
-**IP_address:** Dirección IPv4.
-**mask:** Mascara de Subred.
 
 Salimos del modo privilegiado y verificamos las configuraciones de interfaz.
 
