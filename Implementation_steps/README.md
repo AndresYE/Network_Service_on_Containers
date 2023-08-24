@@ -60,6 +60,7 @@ El direccionamiento IPv4 para la placa Raspberry Pi RPI II se presenta en la sig
 El procedimiento realizado se muestra en [Intalación y Configuración de Hostap](https://github.com/AndresYE/Network_Service_on_Containers/blob/6b12f1d63b81de2bce23cdd342b0e84be72f3497/Implementation_steps/Hostapd/README.md).
 
 ## **Servicios interferentes:** 
+### **HOSTAPD**
 - Configuración y detención de servicios asociados a los servicios contenerizados que pueden generar interferencia, como son: DHCPCD, DNSMASQ y HTTPD. Esto se lo realiza para evitar interferencia de los servicios contenerizados con los servicios del host. Para ello, se emplea  los comandos de la tabla a continuación, para detener, deshabilitar y verificar cada uno de los servicios interferentes. En la tabla que se muestra a continuación, se describen algunos de los comandos se emplean para este proceso.
 
 | Comando                                | Descripción                                           |
@@ -70,9 +71,14 @@ El procedimiento realizado se muestra en [Intalación y Configuración de Hostap
 | systemctl stop service_name           | Detiene la ejecución del servicio.                    |
 | systemctl disable service_name        | Deshabilita la ejecución del servicio al inicio.      |
 
-El Procedemientos se describen en [Configuración de Servicios Interferentes](https://github.com/AndresYE/Network_Service_on_Containers/blob/c830396d7b75f31b365c386a5a2d68b509f10a54/Implementation_steps/Configuracion_Servicios_Interferentes/README.md).
+El Procedemientos se describen en [Configuración de Servicios Interferentes](https://github.com/AndresYE/Network_Service_on_Containers/blob/c830396d7b75f31b365c386a5a2d68b509f10a54/Implementation_steps/Configuracion_Servicios_Interferentes/README.md). El procedimiento realizado se muestra en [Intalación y Configuración de Hostap](https://github.com/AndresYE/Network_Service_on_Containers/blob/6b12f1d63b81de2bce23cdd342b0e84be72f3497/Implementation_steps/Hostapd/README.md).
 
 **NOTA: Una vez desactivado el servicio DHCPCD se perdera la conexión obtenida de la red local conecta mediante Wlan y cualquier conexión que proporcione direccionamiento mediante DHCP, por lo que se debe configurar previamente la interfaz "eth0" en el archivo "/etc/network/interfaces" para perder el acceso al dispositivo.**
+## **Instalación y Configuración de software de Monitoreo**
+### **NMAP**
+### **HTOP**
+### **RPI-MONITOR**
+- Instalación y configuración del software de monitoreo de placas Raspberry Pi RPI-MONITOR. Para ello, se debe instalar el paquete de instalación Hostap siguiendo la guía dada en [Installation RPI-MONITOR](https://xavierberger.github.io/RPi-Monitor-docs/11_installation.html). El procedimiento realizado se muestra en [Intalación y Configuración de RPI-MONITOR]().
 
 # Implementación Individual
 ## Topología
