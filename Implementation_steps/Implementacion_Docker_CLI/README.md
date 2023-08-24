@@ -186,4 +186,4 @@ Donde:
 ![dockerhub_http_server](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/b08e1fb5-1c15-48bb-97f8-5af76ec6b6f6)
 
 
-**NOTA: Se debe crear una cuenta en Docker Hub previamente y solicitar un Token para poder iniciar sesión y subir imagenes de contenedores docker.
+**NOTA: Se debe crear una cuenta en Docker Hub previamente y solicitar un Token para poder iniciar sesión y subir imagenes de contenedores docker.**
