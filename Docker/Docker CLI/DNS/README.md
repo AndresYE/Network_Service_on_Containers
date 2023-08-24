@@ -10,18 +10,12 @@ A continuación se muestran los archivos principales utilizados en el servicio B
 
 | Archivo        | Descripción                                           |
 | -------------- | ----------------------------------------------------- |
-| named.conf     | Archivo de configuración principal del servidor Bind9. |
-| named.conf.options   | Archivo de opciones de configuración global del servidor Bind9. |
-| named.conf.local  | Archivo de configuración de zonas locales para el servidor Bind9. |
-| named.conf.default-zones | Archivo de configuración de las zonas predeterminadas del servidor Bind9. |
-| named.conf.log | Archivo de configuración de registros de log del servidor Bind9. |
-| named.conf.options.local | Archivo de configuración de opciones locales adicionales del servidor Bind9. |
-| named.conf.default | Archivo de configuración predeterminada del servidor Bind9. |
-| named.conf.local.template | Plantilla de archivo de configuración de zonas locales para el servidor Bind9. |
-| named.conf.options.template | Plantilla de archivo de opciones de configuración global del servidor Bind9. |
-| named.conf.named-cache.template | Plantilla de archivo de configuración de caché del servidor Bind9. |
-| named.conf.recursion-template | Plantilla de archivo de configuración de recursión del servidor Bind9. |
-| named.conf.logging-template | Plantilla de archivo de configuración de registros de log del servidor Bind9. |
+| named.conf                  | Archivo de configuración principal del servidor DNS BIND9. Contiene la configuración global, zonas y opciones de funcionamiento del servidor DNS. |
+| /var/log/bind/named.log     | Archivo de registro que almacena eventos, mensajes y registros de actividad generados por el servidor DNS BIND9. Es útil para el diagnóstico y seguimiento del funcionamiento del servidor. |
+| /TIC2023.com.db             | Archivo de zona de resolución directa (forward lookup zone) para el dominio "TIC2023.com". Contiene registros de recursos que mapean nombres de host a direcciones IP en la zona "TIC2023.com". |
+| /0.168.192.rev              | Archivo de zona de resolución inversa (reverse lookup zone) para la red 192.168.0.0. Contiene registros de recursos que mapean direcciones IP a nombres de host en la red 192.168.0.0. |
+| /var/cache/bind             | Directorio utilizado por BIND9 para almacenar en caché registros DNS. Este directorio ayuda a acelerar las consultas DNS al guardar temporalmente los resultados de consultas previas. |
+
 
 # Docker Bind
 
@@ -40,5 +34,5 @@ docker volume create dns_logs_volumen
 ```
 2. **Ejecuta el contenedor**:
 ```shell
-docker run -dit -v dns_logs_volumen:/var/log/bind/ --net=host --name dns_server andresye/bind
+docker run -dit --restart=always --net=host -v dns_logs_volumen:/var/log/bind/ --name dns_server andresye/bind
 ```
