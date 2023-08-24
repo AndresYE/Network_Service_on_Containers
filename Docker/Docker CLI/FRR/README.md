@@ -8,28 +8,16 @@ FRRouting, también conocido como FRR, es un conjunto de protocolos de enrutamie
 
 A continuación se muestra una tabla que describe los archivos principales utilizados en FRRouting:
 
-| Archivo       | Descripción                                           |
-|---------------|-------------------------------------------------------|
-| frr.conf      | Archivo de configuración principal de FRRouting        |
-| daemons       | Archivo que especifica los módulos y protocolos a cargar por FRRouting |
-| vtysh.conf    | Archivo de configuración para el shell de administración de FRRouting (vtysh) |
-| zebra.conf    | Archivo de configuración para el daemon Zebra          |
-| ospfd.conf    | Archivo de configuración para el daemon OSPF           |
-| bgpd.conf     | Archivo de configuración para el daemon BGP            |
-| isisd.conf    | Archivo de configuración para el daemon IS-IS          |
-| ripd.conf     | Archivo de configuración para el daemon RIP            |
-| eigrpd.conf   | Archivo de configuración para el daemon EIGRP          |
-| pimd.conf     | Archivo de configuración para el daemon PIM            |
-| nfsv3.conf    | Archivo de configuración para el daemon NFSv3          |
-| nfsv4.conf    | Archivo de configuración para el daemon NFSv4          |
-| ripngd.conf   | Archivo de configuración para el daemon RIPng          |
-| vrrpd.conf    | Archivo de configuración para el daemon VRRP           |
-| ldpd.conf     | Archivo de configuración para el daemon LDP            |
-| pbrd.conf     | Archivo de configuración para el daemon PBR            |
-| ospf6d.conf   | Archivo de configuración para el daemon OSPFv3         |
-| bgpvpn.conf   | Archivo de configuración para el daemon BGP VPN        |
-| lldpd.conf    | Archivo de configuración para el daemon LLDP           |
-| ptpd.conf     | Archivo de configuración para el daemon PTP            |
+| Archivo                | Descripción                                           |
+| -----------------------| ----------------------------------------------------- |
+| daemons                | Archivo de configuración que define qué demonios (procesos) de FRRouting se ejecutarán y qué no. Permite habilitar o deshabilitar protocolos de enrutamiento como OSPF, BGP, RIP, entre otros. |
+| ospfd.conf             | Archivo de configuración específico para el demonio OSPF (Open Shortest Path First) en FRRouting. Contiene ajustes y parámetros de configuración para el protocolo OSPF. |
+| ospfd.conf.sav         | Archivo de respaldo (backup) del archivo de configuración de OSPF. Usualmente se crea cuando se realiza una modificación en la configuración original. |
+| staticd.conf           | Archivo de configuración específico para el demonio Staticd en FRRouting. Staticd se utiliza para configurar rutas estáticas. Este archivo contiene rutas estáticas definidas por el usuario. |
+| staticd.conf.sav       | Archivo de respaldo (backup) del archivo de configuración de Staticd. Similar a ospfd.conf.sav, se crea cuando se realiza una modificación en la configuración original. |
+| zebra.conf             | Archivo de configuración específico para el demonio Zebra en FRRouting. Zebra es responsable de la administración de rutas en el sistema operativo. Este archivo contiene ajustes y parámetros para la administración de rutas. |
+| zebra.conf.sav         | Archivo de respaldo (backup) del archivo de configuración de Zebra. Al igual que otros archivos .sav, se crea al modificar la configuración original de Zebra. |
+
 
 # Docker Routing
 
