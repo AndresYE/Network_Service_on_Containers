@@ -75,10 +75,10 @@ El Procedemientos se describen en [Configuración de Servicios Interferentes](ht
 
 **NOTA: Una vez desactivado el servicio DHCPCD se perdera la conexión obtenida de la red local conecta mediante Wlan y cualquier conexión que proporcione direccionamiento mediante DHCP, por lo que se debe configurar previamente la interfaz "eth0" en el archivo "/etc/network/interfaces" para perder el acceso al dispositivo.**
 ## **Instalación y Configuración de software de Monitoreo**
-### **NMAP**
 ### **HTOP**
+- Instalación y configuración del software de monitoreo para sistemas Linux HTOP. Para ello, se debe instalar el paquete de instalación Hostap siguiendo la guía dada en [Installation HTOP](). El procedimiento realizado se muestra en [Intalación y Configuración de HTOP]().
 ### **RPI-MONITOR**
-- Instalación y configuración del software de monitoreo de placas Raspberry Pi RPI-MONITOR. Para ello, se debe instalar el paquete de instalación Hostap siguiendo la guía dada en [Installation RPI-MONITOR Oficial](https://xavierberger.github.io/RPi-Monitor-docs/11_installation.html) o en la guia [Installation RPI-MONITOR](https://rivas.cloud/2022/11/20/instalar-rpi-monitor-en-nuestra-raspberry/). El procedimiento realizado se muestra en [Intalación y Configuración de RPI-MONITOR]().
+- Instalación y configuración del software de monitoreo de placas Raspberry Pi RPI-MONITOR. Para ello, se debe instalar el paquete de instalación Rpi-Monitor siguiendo la guía dada en [Installation RPI-MONITOR Oficial](https://xavierberger.github.io/RPi-Monitor-docs/11_installation.html) o en la guia [Installation RPI-MONITOR](https://rivas.cloud/2022/11/20/instalar-rpi-monitor-en-nuestra-raspberry/). El procedimiento realizado se muestra en [Intalación y Configuración de RPI-MONITOR](https://github.com/AndresYE/Network_Service_on_Containers/tree/99552922048f066ddbb6ae2e3b1d7c43ad541d77/Implementation_steps/Rpi-Monitor).
 
 # Implementación Individual
 ## Topología
