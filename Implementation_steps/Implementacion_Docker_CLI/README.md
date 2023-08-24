@@ -51,33 +51,29 @@ docker image ls
 
 ## Desplegar Conenedores de Imagenes Docker
 1. Ingresar a cada uno de los directorios de cada uno de los servicios y ejecutar los comandos "docker create volume" y "docker run" respectivos para crear los volumesnes de los contenedores e instancias las imagenes creadas y ejecutar los contenedores.
-  -**DHCP:**
-   **DHCP-WLAN0**
+- **DHCP:**
+- **DHCP-WLAN0**
 ![dhcp_wlan0_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/c9708e30-d396-4d3d-a227-a0e8a6dd858b)
 
-
-   **DHCP-Eth1**
+- **DHCP-Eth1**
 ![dhcp_eth1_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/671c4d50-bf5d-4f70-a9d8-a93b0a08e89d)
 
-
-   **DHCP-Eth2**
+- **DHCP-Eth2**
 ![dhcp_eth2_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/04b697bf-9e36-4cd5-8f24-d1159c47744a)
 
-
--**DNS:**
+- **DNS:**
 ![dns_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/91c0d2b7-bbad-4113-93d2-e1458f4de13a)
 
-
--**FTP:**
+- **FTP:**
 ![ftp_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/12050772-30b7-4061-827a-c49d280e9514)
 
--**HTTP:**
+- **HTTP:**
 ![http_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/951f2f77-5e91-4e64-a46a-22c6332169df)
 
--**VoIP:**
+- **VoIP:**
 ![voip_docker_run_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/17b07e40-7761-47e4-b22f-2d85757ea3d4)
 
--**Routing:**
+- **Routing:**
 ![routing_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/0299fbc6-8f86-488e-aef0-98bdb8e11912)
 
 2. Configurar los conentedores para VoIP y Routing, mediante el comando:
@@ -86,14 +82,14 @@ docker exec -it conainer_name sh
 ```
 Donde:
 -**conainer_name:** Es el nombre del contenedor.
--**VoIP:** Copiamos los archivos de configuración al directorio asociado al contenedor "voip_server" (Bind Mount).
+- **VoIP:** Copiamos los archivos de configuración al directorio asociado al contenedor "voip_server" (Bind Mount).
 Y reiniciamos el servicio mediante el comando:
 ```shell
 docker restart voip_server
 ```
 ![voip_docker_run_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/a8597f00-eb73-4436-8c2e-eb825d9cd824)
 
--**Routing:** Configuramos el direccionamiento para las interfaces "eth1" y "eth2".
+- **Routing:** Configuramos el direccionamiento para las interfaces "eth1" y "eth2".
 Ingresamos a la terminal VTY de FRR, mediante el comando:
 ```shell
 vtysh
@@ -154,16 +150,16 @@ docker push  repository[:tag]
 ```
 Donde:
 - ** repository:** Es el nombre del repositorio y la etiquete de la imagen.
--**DHCP:**
+- **DHCP:**
 ![dockerhub_dhcp_server](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/3dcf330b-d141-4c40-8e99-c14dacbcf2a6)
 
--**DNS:**
+- **DNS:**
 ![dockerhub_dns_server](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/c5a11b92-6f43-4314-ba61-e3320df8a593)
 
--**FTP:**
+- **FTP:**
 ![dockerhub_ftp_server](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/79b55bcd-c782-4685-9292-104e56e8e3eb)
 
--**HTTP:**
+- **HTTP:**
 ![dockerhub_http_server](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/b08e1fb5-1c15-48bb-97f8-5af76ec6b6f6)
 
 
