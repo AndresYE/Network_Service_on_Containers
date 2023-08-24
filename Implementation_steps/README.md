@@ -318,8 +318,7 @@ La topología para implementación Conjunta mediante Docker Compose se muestra e
 ![topologia_II](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/293e3022-0146-44be-b389-1f2c1cfd9780)
 
 Para esta fase, se implementan los servicios de red mediante el diseño de un fichero "YAML" y ejecutados mediante Docker Compose para cada una de las dos placas Raspberry Pi. Los ficheros se encuentran en el apartado de [Docker Compose](https://github.com/AndresYE/Network_Service_on_Containers/tree/33579aed3de68574530db912394c112d29c42c1b/Docker/Docker%20Compose) para la placa Raspberry Pi I [Archivo YAML RAPI I](https://github.com/AndresYE/Network_Service_on_Containers/tree/2370223085448122eaf9eafcdb2d4bace25d4175/Docker/Docker%20Compose/RPI%20I) y para la placa Raspberry Pi II[Archivo YAML RAPI II](https://github.com/AndresYE/Network_Service_on_Containers/tree/2370223085448122eaf9eafcdb2d4bace25d4175/Docker/Docker%20Compose/RPI%20II), junto con los archivos asociados para el despligue. 
-
-https://github.com/AndresYE/Network_Service_on_Containers/tree/3531dd8c8e5e8a069560789e5d73efb856296afc/Implementation_steps/Implementacion_Docker_Compose
+El procedimiento realizado para la placa RPI-I y RPI-II se muestra en [Implementación Conjunta Docker Compose](https://github.com/AndresYE/Network_Service_on_Containers/tree/3531dd8c8e5e8a069560789e5d73efb856296afc/Implementation_steps/Implementacion_Docker_Compose)
 
 ### Pruebas de Funcionamiento
 Para las pruebas de funcionamiento se emplea los mismos procedimientos que en la prueba anterior. Sin embargo, para las pruebas de conexión se agrega una prueba para la conexión extremo a extremo entre el cliente 1 y el cliente 2. También se realiza el trazado de la ruta entre clientes. Por otro lado, para las pruebas de enrutamiento se revisa las tablas de enrutamiento generadas por los contenedores de Routing.
