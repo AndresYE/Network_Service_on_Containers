@@ -40,8 +40,7 @@ El direccionamiento IPv4 para la placa Raspberry Pi RPI II se presenta en la sig
 | SSH \| Routing \| DHCP II | Eth2     | 192.168.2.1/24         | 192.168.2.1           |
 | SSH \| Routing           | Eth3     | 10.0.1.2/30            | N/A                   |
 
-El procedimiento realizado para la placa RPI-I se muestra en [Configuración Network RPI-I]
-(https://github.com/AndresYE/Network_Service_on_Containers/tree/52dfc6fd513b5b0d6714aa753f5546fbbe14b475/Implementation_steps/Network/RPI_I) y para la placa RPI-I se muestra en [Configuración Network RPI-II](https://github.com/AndresYE/Network_Service_on_Containers/tree/52dfc6fd513b5b0d6714aa753f5546fbbe14b475/Implementation_steps/Network/RPI_II).
+El procedimiento realizado para la placa RPI-I se muestra en [Configuración Network RPI-I](https://github.com/AndresYE/Network_Service_on_Containers/tree/52dfc6fd513b5b0d6714aa753f5546fbbe14b475/Implementation_steps/Network/RPI_I) y para la placa RPI-I se muestra en [Configuración Network RPI-II](https://github.com/AndresYE/Network_Service_on_Containers/tree/52dfc6fd513b5b0d6714aa753f5546fbbe14b475/Implementation_steps/Network/RPI_II).
 
 ## **Instalación y Configuración de Servicios asociados:** 
 ### **HOSTAPD**
