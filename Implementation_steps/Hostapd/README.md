@@ -59,5 +59,5 @@ sudo service hostapd restart
 sudo service hostapd enable 
 ```
 ![hostapd_configuration_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/d09bf112-e397-4b5a-be13-688dadf17418)
-
-6. **Paso 6**: Verifica que la configuración se haya aplicado correctamente. Puedes revisar los registros o logs del servicio para obtener información adicional sobre el estado de la conexión y cualquier posible error. 
+ 
+ **NOTA: El servicio de HOSTAPD se activara correctamente una vez se haya configurado la dirección IP a la interfaz asociada.
