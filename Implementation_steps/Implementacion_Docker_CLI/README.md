@@ -154,5 +154,17 @@ docker push  repository[:tag]
 ```
 Donde:
 - ** repository:** Es el nombre del repositorio y la etiquete de la imagen.
+-**DHCP:**
+![dockerhub_dhcp_server](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/3dcf330b-d141-4c40-8e99-c14dacbcf2a6)
+
+-**DNS:**
+![dockerhub_dns_server](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/c5a11b92-6f43-4314-ba61-e3320df8a593)
+
+-**FTP:**
+![dockerhub_ftp_server](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/79b55bcd-c782-4685-9292-104e56e8e3eb)
+
+-**HTTP:**
+![dockerhub_http_server](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/b08e1fb5-1c15-48bb-97f8-5af76ec6b6f6)
+
 
 **NOTA: Se debe crear una cuenta en Docker Hub previamente y solicitar un Token para poder iniciar sesión y subir imagenes de contenedores docker.
