@@ -112,6 +112,7 @@ show interface brief
 ```
 
 ![routing_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/0c5af8d2-e83b-4955-98c9-9eb5e4403763)
+
 Ingresaos al modo privilegiado de configuraciones mediante el comando:
 ```shell
 configuration terminal
@@ -130,6 +131,7 @@ Donde:
 Salimos del modo privilegiado y verificamos las configuraciones de interfaz.
 
 ![routing_configuration_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/16459ce5-343e-467b-8bec-ade5ccde3430)
+
 Guardamos las configuraciones mediante el comando
 ```shell
 write
