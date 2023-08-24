@@ -99,6 +99,7 @@ exit
 Guardamos las configuraciones mediante el comando
 ```shell
 write
+```
 Verificamos las configuraciones de enrutamiento mediante el comando:
 ```shell
 show ip route
