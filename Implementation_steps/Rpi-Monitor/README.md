@@ -22,6 +22,10 @@ sudo wget http://goo.gl/vewCLL -O /etc/apt/sources.list.d/rpimonitor.list
 sudo apt-get update
 sudo apt-get install -y rpimonitor
 ```
+![rpimonitor_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/416d3604-4faf-455e-9bbd-964ad5c0237b)
+
+![rpimonitor_configuration_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/6b438018-923b-4830-8b9b-59cebff6a180)
+
 3. **Configuración de RPi-Monitor:**
 Edita el archivo de configuración de RPi-Monitor:
 
