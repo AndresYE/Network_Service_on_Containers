@@ -5,19 +5,17 @@
 3. Colocar los ficheros Dockerfile y dependencias en un directorio con el nombre del servicio.
 4. Iniciar conexión SSH empleando el software Putty.
 5. Ingresar a cada uno de los directorios de cada uno de los servicios y ejecutar los comandos "docker build" respectivos para contruir las imagenes de los contenedores a partir de los ficheros Dockerfile y sus dependencias asociadas.
--**DHCP:**
+- **DHCP:**
 ![dhcp_docker_imagen](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/a5a89eef-0786-430b-93af-cc41feb267d7)
 
--**DNS:**
+- **DNS:**
 ![dns_docker_imagen](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/d1e77bdd-d27e-47e0-bab3-049b9e0767a1)
 
--**FTP:**
+- **FTP:**
 ![ftp_docker_imagen](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/6c1c44c4-6084-4b69-9584-cca52ab870bc)
 
-
--**HTTP:**
+- **HTTP:**
 ![http_docker_imagen](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/9bf7480b-ec4a-4056-87cf-4003fb28a7c3)
-
 
 7. Descargar las imagenes de los contenedores asociados a los servicios de Rputing y VoIP, mediante el comando.
 ```shell
