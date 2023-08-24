@@ -23,6 +23,8 @@ A continuación se muestran los archivos principales utilizados en el sistema As
 | logger.conf           | Archivo de configuración para la configuración de registro y almacenamiento de registros en Asterisk. |
 | sip_additional.conf   | Archivo generado automáticamente que contiene configuraciones SIP adicionales en Asterisk. |
 | iax_additional.conf   | Archivo generado automáticamente que contiene configuraciones IAX adicionales en Asterisk. |
+| messages             | Archivo de registro de mensajes generales de Asterisk. Contiene información detallada sobre las actividades y eventos del sistema Asterisk, incluyendo registros de llamadas, eventos de extensión, notificaciones de estado y más. |
+| queue_log            | Archivo de registro de cola (queue) de Asterisk. Registra eventos relacionados con la gestión de colas de llamadas en Asterisk, incluyendo la entrada y salida de llamadas en colas específicas, tiempos de espera, agentes y más. Es esencial para el monitoreo y la gestión de colas de llamadas en Asterisk. |
 
 # Docker VoIP
 
@@ -38,5 +40,5 @@ docker volume create voip_logs_volumen
 
 2. **Ejecuta el contenedor**:
 ```shell
-docker run -dit --net host -v ~/asteriskconfig:/etc/asterisk -v voip_logs_volumen:/var/log/asterisk/ -v "$(pwd)"/extensions.conf:/etc/asterisk/extensions.conf -v "$(pwd)"/sip.conf:/etc/asterisk/sip.conf --name voip_server christoofar/asterisk
+docker run --restart=always -dit --net host -v ./asterisk/:/etc/asterisk/ -v voip_logs_volumen:/var/log/asterisk/ --name voip_server christoofar/asterisk 
 ```
