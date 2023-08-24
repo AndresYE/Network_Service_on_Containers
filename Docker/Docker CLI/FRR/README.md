@@ -46,5 +46,5 @@ docker volume create routing_config_volumen
 
 2. **Ejecuta el contenedor**:
 ```shell
-docker run --privileged -v routing_config_volumen:/etc/frr/ -dit --net host  --name routing_server frrouting/frr:v8.4.0
+docker run --restart=always --privileged=true -dit --net host -v routing_config_volumen:/etc/frr/ --name routing_server frrouting/frr:v8.4.0
 ```
