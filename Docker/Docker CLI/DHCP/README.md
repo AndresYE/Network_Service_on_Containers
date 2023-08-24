@@ -12,10 +12,10 @@ A continuación se muestran los archivos principales utilizados en el servicio D
 | -------------- | ----------------------------------------------------- |
 | dhcpd.conf     | Archivo de configuración principal del servidor DHCP.  |
 | dhcpd.leases   | Archivo que registra los arrendamientos de direcciones IP realizados por el servidor DHCP. |
-| dhcpd.lease~   | Copia de respaldo del archivo que registra los arrendamientos de direcciones IP realizados por el servidor DHCP. (Nota: Este archivo no debe modificarse manualmente y se utiliza para recuperación en caso de fallos) |
+| dhcpd.lease~   | Copia de respaldo del archivo que registra los arrendamientos de direcciones IP realizados por el servidor DHCP. |
 | dhcpd6.conf    | Archivo de configuración principal para DHCPv6 (Protocolo de Configuración Dinámica de Host versión 6). |
 | dhcpd6.leases  | Archivo que registra los arrendamientos de direcciones IPv6 realizados por el servidor DHCPv6. |
-| dhcpd6.lease~  | Copia de respaldo del archivo que registra los arrendamientos de direcciones IPv6 realizados por el servidor DHCPv6. (Nota: Este archivo no debe modificarse manualmente y se utiliza para recuperación en caso de fallos) |
+| dhcpd6.lease~  | Copia de respaldo del archivo que registra los arrendamientos de direcciones IPv6 realizados por el servidor DHCPv6.  |
 
 ## Instrucciones de Uso
 
