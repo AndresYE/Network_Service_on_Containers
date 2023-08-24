@@ -95,6 +95,7 @@ Para esta primera fase, se implementa cada uno de los servicios de red de manera
 La topología para la implementación mediante Docker CLI se muestra en la figura a continuación, donde se muesestra la conexión de los clientes 1, 2 y 3 a la placa Raspberry PI - RPI-I.
 ![Topologia_I](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/9cf04412-7687-46f9-a52b-30fe38c5b038)
 
+El procedimiento realizado se muestra en [Implementación Docker CLI](https://github.com/AndresYE/Network_Service_on_Containers/tree/5e599b045373ef6ae4a66fd9853b2af0836ef169/Implementation_steps/Implementacion_Docker_CLI)
 ## Pruebas de Funcionamiento
 Para las pruebas de funcionamiento se intenta obtener el recurso que cada servicio proporciona. Esto puede ser medainte una aplicación o software específico para la mayoría de los servicios.
 
