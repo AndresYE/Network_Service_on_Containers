@@ -1,6 +1,6 @@
 ## Network Service on Containers
 
-Este proyecto de titulación se centra en la integración de contenedores Docker en Raspberry Pi, aprovechando la flexibilidad y la portabilidad de los contenedores para implementar y gestionar servicios de red clave. Se proporcionarán instrucciones detalladas sobre cómo configurar y utilizar este entorno, junto con una descripción general de los componentes principales y sus interacciones.
+Este repositorio se proporciona instrucciones detalladas sobre cómo configurar y utilizar este entorno, junto con una descripción general de los componentes principales y sus interacciones.
 El siguiente Repositorio se encuentra distribuido de la siguiente manera:
 1. **[Archivos Docker](https://github.com/AndresYE/Network_Service_on_Containers/tree/bdf2b9bf9a4e1b843713dc97265ea49001e1605f/Docker)**
 2. **[Pasos de Implementación](https://github.com/AndresYE/Network_Service_on_Containers/tree/88f24bab9eebf5c311d679582bc033bc3f73e254/Implementation_steps)**
