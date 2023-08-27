@@ -5,7 +5,7 @@
 Para instalar hostapd en Debian, sigue estos pasos:
 
 1. Abrir una terminal mediante Putty.
-3. Actualizar la lista de paquetes disponibles en los repositorios:
+2. Actualizar la lista de paquetes disponibles en los repositorios:
 
 ```shell
 sudo apt-get update
