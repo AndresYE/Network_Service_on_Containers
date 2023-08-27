@@ -14,12 +14,9 @@
   </kbd>
 </p>
 <div align="center">
-  <img src=![Instalacion_Raspberrry_Os_Paso_1 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/9ccede86-05fb-42ce-92ce-af2b3963f33balt="Descripción de la imagen" style="border: 1px solid #555">
+  <img src=https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/9ccede86-05fb-42ce-92ce-af2b3963f33balt style="border: 1px solid #555">
 </div>
 
-
-
-![Instalacion_Raspberrry_Os_Paso_1 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/9ccede86-05fb-42ce-92ce-af2b3963f33b)
 
 
    - Descarga e instala Raspberry Pi Imager en tu computadora según el sistema operativo que estés utilizando.
