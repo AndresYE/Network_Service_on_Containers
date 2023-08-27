@@ -1,7 +1,5 @@
 # Configuración de tu Raspberry Pi - Guía Personalizada
 
-¡Hola! Aquí te guiaré a través de los pasos para configurar tu Raspberry Pi.
-
 ## Paso 1: Descargar Raspberry Pi Imager
 
 1.1. Ve al sitio web oficial de Raspberry Pi Imager haciendo clic en este enlace: [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
