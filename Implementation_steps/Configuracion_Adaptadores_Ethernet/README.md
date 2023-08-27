@@ -16,11 +16,7 @@ ifcofing -a
 
 ## Paso 3: Configurar Archivo
 
-3. Crea un archivo de reglas udev en el directorio `/etc/udev/rules.d/` utilizando un nombre descriptivo, como `99-usb-ethernet.rules`:
-
-   sudo nano /etc/udev/rules.d/99-usb-ethernet.rules
-
-   Escribe la siguiente regla udev para asociar la dirección MAC de los adaptadores USB-Ethernet con un nombre de interfaz específico:
+3. Escribe la siguiente regla udev para asociar la dirección MAC de los adaptadores USB-Ethernet con un nombre de interfaz específico en el fichero `/etc/udev/rules.d/99-usb-ethernet.rules`:
 
 ```shell
 SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="MAC_ADDRESS", NAME="INTERFACE_NAME"
