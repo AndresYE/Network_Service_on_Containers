@@ -57,14 +57,10 @@ Instala Docker Engine, que es el corazón de Docker. Asegúrate de que Docker se
 ```shell
 sudo apt update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo reboot
 ```
 
 ![Instalacion_Docker_Paso_5 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/0eca1c0f-03a3-4c9a-b695-74ebb64671a6)
-
-
-```shell
-sudo reboot
-```
 
 ![Instalacion_Docker_Paso_5 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/17c393a9-3b03-4dd8-bc7d-8e51cc5f335b)
 
