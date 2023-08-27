@@ -12,7 +12,6 @@ sudo apt upgrade -y
 sudo reboot
 ```
 
-
 ## Paso 2: Desinstalar paquetes Interferentes
 
 Es recomendable desinstalar cualquier paquete previamente instalado que pueda generar conflictos con Docker.
@@ -20,7 +19,7 @@ Es recomendable desinstalar cualquier paquete previamente instalado que pueda ge
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
 ```
 
-![Instalacion_Docker_Paso_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/8946e855-7606-4a3f-8304-ed417f1f39e7)
+![2Instalacion_Docker_Paso_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/7b0f80da-1c26-4dc0-9987-04842280dc39)
 
 ## Paso 3: Actualizar el índice de paquetes e Instalar dependencias
 
@@ -30,7 +29,7 @@ sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg
 ```
 
-![Instalacion_Docker_Paso_3](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/8d0afbc2-3a38-47e6-a47e-6f42ad3a70f6)
+![Instalacion_Docker_Paso_3](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/e6e7d131-365a-4ed0-a6c5-4763a66b3bce)
 
 ## Paso 4: Agregar el repositorio de Docker
 
@@ -41,7 +40,6 @@ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o 
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 ```
 
-![Instalacion_Docker_Paso_4 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/24962b0c-035e-4734-a283-5d3baff05cb5)
 
 ```shell
 echo \
@@ -50,7 +48,8 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
-![Instalacion_Docker_Paso_4](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/cd64ed81-3367-4ce4-a341-103863fd4066)
+![Instalacion_Docker_Paso_4](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/413955dd-7930-42a6-b335-fe3e410ec940)
+
 
 ## Paso 5: Instalar Docker Engine
 
@@ -59,12 +58,16 @@ Instala Docker Engine, que es el corazón de Docker. Asegúrate de que Docker se
 sudo apt update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
-![Instalacion_Docker_Paso_5 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/2feaeb4b-3d77-4497-8a1c-c1e7e66dea79)
+
+![Instalacion_Docker_Paso_5 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/0eca1c0f-03a3-4c9a-b695-74ebb64671a6)
+
 
 ```shell
 sudo reboot
 ```
-![Instalacion_Docker_Paso_5 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/0cdc3eed-0d5c-4e72-a1f3-24d317034e74)
+
+![Instalacion_Docker_Paso_5 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/17c393a9-3b03-4dd8-bc7d-8e51cc5f335b)
+
 
 ## Paso 6: Verificar la instalación de Docker
 
@@ -72,7 +75,9 @@ Para confirmar que Docker se ha instalado correctamente, puedes verificar su ver
 ```shell
 sudo docker --version
 ```
-![Instalacion_Docker_Paso_6](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/732c14be-bf3b-4100-90a6-6247dc387036)
+
+![Instalacion_Docker_Paso_6](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/25c53f7e-6a3c-48e0-85b6-ed8268a4ff74)
+
 
 
 ## Paso 7: Desplegar un contenedor
@@ -82,7 +87,7 @@ Para asegurarte de que Docker funciona correctamente, puedes probar desplegando 
 sudo docker run hello-world
 ```
 
-![Instalacion_Docker_Paso_7](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/ad6c8c5e-c1b0-473e-b2d3-28dbffae6e44)
+![Instalacion_Docker_Paso_7](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/eab8d970-0ef4-49c1-b95e-4602515b3beb)
 
 
 ## Paso 8: Verificar la instalación de Docker Compose
@@ -91,6 +96,7 @@ Si planeas usar Docker Compose, puedes verificar su instalación y versión.
 ```shell
 sudo docker compose version
 ```
-![Instalacion_Docker_Paso_8](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/dc605502-bcd9-469e-9490-3d90b8be905d)
+
+![Instalacion_Docker_Paso_8](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/92a3c070-37fe-419b-afb4-a601de12d428)
 
 
