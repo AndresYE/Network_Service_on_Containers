@@ -2,17 +2,23 @@
 
 ## Instalación
 
-Puedes instalar `htop` en sistemas Debian utilizando el gestor de paquetes `apt`. Abre una terminal y ejecuta los siguientes comandos:
+1. Abrir una terminal mediante Putty.
+2. Actualizar la lista de paquetes disponibles en los repositorios:
 
 ```shell
-sudo apt update
-sudo apt install htop
+sudo apt-get update
 ```
-Una vez que se complete la instalación, htop estará listo para usar.
 
-Uso
-Una vez instalado htop, simplemente ejecútalo desde la línea de comandos para obtener una vista detallada del rendimiento de tu sistema:
+3. Instalar el paquete hostapd en tu sistema:
 
 ```shell
-htop
+sudo apt-get install htop
 ```
+
+4. Ingresar a HTOP:
+
+```shell
+sudo htop
+```
+
+
