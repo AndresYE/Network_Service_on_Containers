@@ -3,8 +3,6 @@
 
 ## Paso 1: Actualizar el sistema
 
-Asegúrate de que tu sistema esté actualizado ejecutando los siguientes comandos en una terminal:
-
 1.1. Abre una terminal y ejecuta los siguientes comandos para asegurarte de que el sistema esté actualizado y luego reinicia el sistema.
 ```shell
 sudo apt update
