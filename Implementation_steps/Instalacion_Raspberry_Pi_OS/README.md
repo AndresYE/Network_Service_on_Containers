@@ -1,5 +1,9 @@
-1. **Descargar Raspberry Pi Imager**
-   - Ir al sitio web oficial de Raspberry Pi Imager: [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
+# Instrucciones para Configurar una Raspberry Pi
+
+## Paso 1: Descargar Raspberry Pi Imager
+
+1.1. Ve al sitio web oficial de Raspberry Pi Imager haciendo clic en este enlace: [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
+
 <p align="center">
   <kbd>
     <img src="https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/558435cf-7e1c-4a9d-8bdd-8d3a77584d24" alt="Descargar Raspberry Pi Imager - Paso 1">
