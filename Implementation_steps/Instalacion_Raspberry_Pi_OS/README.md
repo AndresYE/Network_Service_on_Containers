@@ -68,6 +68,7 @@
     <img src="https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/dc45ca19-c1d4-467c-bcb1-f7fc413e64c3" alt="Seleccionar la tarjeta SD - Paso 5.2">
   </kbd>
 </p>
+
 ## Paso 6: Configurar la conexión a Internet (opcional)
 
 6.1. Si deseas configurar la conexión a Internet desde el primer arranque, selecciona la opción "Opciones Avanzadas" y configura los detalles de la red Wifi o SSH, según tus necesidades.
