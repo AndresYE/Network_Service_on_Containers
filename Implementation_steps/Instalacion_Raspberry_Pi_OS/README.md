@@ -110,4 +110,10 @@
   - Verificar la version del sistema operativo instalado mediante el comando:
 ```shell
 cat /etc/os-release
+```
+<p align="center">
+  <kbd>
+    <img src="https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/e8958fb9-3493-43a2-8454-0ea7c4280c9c" alt="Verificar la versión del sistema operativo - Paso 9.1">
+  </kbd>
+</p>
 
