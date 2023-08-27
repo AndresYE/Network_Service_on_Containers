@@ -3,18 +3,11 @@
 
    - Ir al sitio web oficial de Raspberry Pi Imager: [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
    
-<p align="center">
-  <kbd>
-    <img src="https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/9ccede86-05fb-42ce-92ce-af2b3963f33balt" alt="Descripción de la imagen">
-  </kbd>
-</p>
+![Instalacion_Raspberrry_Os_Paso_1 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/558435cf-7e1c-4a9d-8bdd-8d3a77584d24)
 
    - Descarga e instala Raspberry Pi Imager en tu computadora según el sistema operativo que estés utilizando.
-<p align="center">
-  <kbd>
-    <img src="https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/c0fa1782-3077-4239-80a4-b68b74cafe81" alt="Descripción de la imagen">
-  </kbd>
-</p>
+
+![Instalacion_Raspberrry_Os_Paso_1 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/e17c57a1-1155-4ac8-bc12-ea394cde1ef5)
 
 2. **Insertar la tarjeta microSD**
 
@@ -23,34 +16,21 @@
 3. **Abrir Raspberry Pi Imager**
 
    - Abre Raspberry Pi Imager en tu computadora.
-
-<p align="center">
-  <kbd>
-    <img src="https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/cbe37cc0-16d1-4b8d-ae2a-a0ff113f1313" alt="Instalacion_Raspberrry_Os_Paso_3">
-  </kbd>
-</p>
+![Instalacion_Raspberrry_Os_Paso_3](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/7e318b39-83ef-43a7-b923-27850ed84dc0)
 
 4. **Seleccionar el sistema operativo**
-
    - En Raspberry Pi Imager, haz clic en "Choose OS".
 ![Instalacion_Raspberrry_Os_Paso_4 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/5254d660-09fc-49a3-ab51-bd84d59e555f)
-
-
 
    - Selecciona "Raspberry Pi OS (32-bit)".
 ![Instalacion_Raspberrry_Os_Paso_4 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/bc112555-8e39-4719-bb05-21e45d5985a6)
 
-
 5. **Seleccionar la tarjeta SD**
-
    - Haz clic en "Choose SD Card" y selecciona la tarjeta microSD que insertaste.
 ![Instalacion_Raspberrry_Os_Paso_5 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/97818b8c-2b67-4200-b023-2e6eff9ca681)
 ![Instalacion_Raspberrry_Os_Paso_5 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/dc45ca19-c1d4-467c-bcb1-f7fc413e64c3)
 
-
-
 6. **Configurar la conexión a Internet (opcional)**
-
    - Si deseas configurar la conexión a Internet desde el primer arranque, selecciona la opción "Opciones Avanzadas" y configure los parámetros de arranque para la configuración de la red Wifi, conexión SSH, etc.
 ![Instalacion_Raspberrry_Os_Paso_6 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/150d1848-ce8c-425d-9765-2144ed03f2cd)
 ![Instalacion_Raspberrry_Os_Paso_6 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/a828d752-ef06-4753-b8cf-806d696d3836)
@@ -63,7 +43,6 @@
 ![Instalacion_Raspberrry_Os_Paso_7 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/5dad41f6-c5f6-46b9-a1c8-6f1390234fac)
 
 8. **Ingreso mediante SSH**
-
  - Encienda la Raspberry Pi e ingrese mediante conexión SSH a la dirección de la red local a través del software Putty.
 ![Instalacion_Raspberrry_Os_Paso_8 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/75fbe464-441e-418d-9ee1-f099266ce398)
 ![Instalacion_Raspberrry_Os_Paso_8 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/21358b5e-abba-4537-8032-bb2789c5b710)
