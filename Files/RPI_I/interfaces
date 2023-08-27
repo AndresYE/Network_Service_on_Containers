@@ -1,0 +1,83 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+# Include files from /etc/network/interfaces.d:
+source /etc/network/interfaces.d/*
+# Activar automaticamente interfaz WLAN0 al inicio de sesión del host
+auto wlan0
+# Habilitar configuración de red manual wlan0
+iface wlan0 inet manual
+    # Habilitar detección automatica de dispositivos en WLAN0
+    allow-hotplug wlan0
+# Configurar direccionamiento estático para interfaz WLAN0
+iface wlan0 inet static
+    # Dirección IPv4 estática
+    address 192.168.0.1
+    # Máscara de subered 
+    netmask 255.255.255.0
+    # Dirección de broadcast
+    broadcast 192.168.0.255
+# Configurar direccionamiento para interfaz virtuales WLAN0
+# WLAN0:1
+auto wlan0:1
+# Habilitar configuración de red estática wlan0:1
+iface wlan0:1 inet static
+    # Dirección IPv4 estática
+    address 192.168.0.2
+    # Máscara de subered
+    netmask 255.255.255.0
+    # Dirección de broadcast
+    broadcast 192.168.0.255
+# WLAN0:2
+auto wlan0:2
+# Habilitar configuración de red estática wlan0:2
+iface wlan0:2 inet static
+    # Dirección IPv4 estática
+    address 192.168.0.3
+    # Máscara de subered
+    netmask 255.255.255.0
+    # Dirección de broadcast
+    broadcast 192.168.0.255
+# WLAN0:3
+auto wlan0:3
+# Habilitar configuración de red estática wlan0:3
+iface wlan0:3 inet static
+    # Dirección IPv4 estática
+    address 192.168.0.4
+    # Máscara de subered
+    netmask 255.255.255.0
+    # Dirección de broadcast
+    broadcast 192.168.0.255
+# WLAN0:4
+auto wlan0:4
+# Habilitar configuración de red estática wlan0:4
+iface wlan0:4 inet static
+    # Dirección IPv4 estática
+    address 192.168.0.5
+    # Máscara de subered
+    netmask 255.255.255.0
+    # Dirección de broadcast
+    broadcast 192.168.0.255
+# WLAN0:5
+auto wlan0:5
+# Habilitar configuración de red estática wlan0:5
+iface wlan0:5 inet static
+    # Dirección IPv4 estática
+    address 192.168.0.6
+    # Máscara de subered
+    netmask 255.255.255.0
+    # Dirección de broadcast
+    broadcast 192.168.0.255
+# WLAN0:6
+auto wlan0:6
+# Habilitar configuración de red estática wlan0:6
+iface wlan0:6 inet static
+    # Dirección IPv4 estática
+    address 192.168.0.7
+    # Máscara de subered
+    netmask 255.255.255.0
+    # Dirección de broadcast
+    broadcast 192.168.0.255
+# ETH0
+auto eth0
+# Habilitar configuración de red dinámica mediante DHCP
+iface eth0 inet dhcp
+

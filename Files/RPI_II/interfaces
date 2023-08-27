@@ -1,0 +1,8 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+# Include files from /etc/network/interfaces.d:
+source /etc/network/interfaces.d/*
+
+# ETH0
+auto eth0
+# Habilitar configuración de red dinámica mediante DHCP
+iface eth0 inet dhcp
