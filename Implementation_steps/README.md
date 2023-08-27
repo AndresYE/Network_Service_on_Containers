@@ -111,96 +111,41 @@ ipconfig /all
 ipconfig /all
 ```
 - **Pruebas de Conexión:** Verificar la conexión de los clientes con los servidores contenerizados, a través de sus domain names. Emplear los siguientes comandos para cada uno de los servicios contenerizados:
-  -Conexión a la interfaz del servidor DNS contenerizado:
+  
 ```shell
 ping ns1.tic2023.com
-```
-  -Conexión a la interfaz del servidor DHCP contenerizado:
-```shell
 ping dhcp.tic2023.com
-```
-  -Conexión a la interfaz del servidor FTP contenerizado:
-```shell
 ping ftp.tic2023.com
-```
-  -Conexión a la interfaz del servidor HTTP página web 1 contenerizado:
-```shell
 ping www.tic2023.com
-```
-  -Conexión a la interfaz del servidor HTTP página web 2 contenerizado:
-```shell
 ping web1.tic2023.com
-```
-  -Conexión a la interfaz del servidor HTTP página web 3 contenerizado:
-```shell
 ping web2.tic2023.com
-```
-  -Conexión a la interfaz del servidor VoIP contenerizado:
-```shell
 ping voip.tic2023.com
-```
-  -Conexión a la interfaz del servidor web del servicio de Monitoreo RPI-Monitor:
-```shell
 ping monitor.tic2023.com
 ```
 
 - **Servicio DNS:** Verificación de traducción de direcciones IP a domain names y viceversa.
 1. Verificar la traducción de domain names a direcciones IP:
-  -Traducir de domain names a direcciones IP asociado al servidor DNS contenerizado:
+   
 ```shell
 nslookup ns1.tic2023.com
-```
-  -Traducir de domain names a direcciones IP asociado al servidor DHCP contenerizado:
-```shell
 nslookup dhcp.tic2023.com
-```
-  -Traducir de domain names a direcciones IP asociado al servidor FTP contenerizado:
-```shell
 nslookup ftp.tic2023.com
-```
-  -Traducir de domain names a direcciones IP asociado al servidor HTTP página web 1 contenerizado:
-```shell
 nslookup www.tic2023.com
-```
-  -Traducir de domain names a direcciones IP asociado al servidor HTTP página web 2 contenerizado:
-```shell
 nslookup web1.tic2023.com
-```
-  -Traducir de domain names a direcciones IP asociado al servidor HTTP página web 3 contenerizado:
-```shell
 nslookup web2.tic2023.com
-```
-  -Traducir de domain names a direcciones IP asociado al servidor VoIP contenerizado:
-```shell
 nslookup voip.tic2023.com
-```
-  -Traducir de domain names a direcciones IP asociado alservicio de Monitoreo RPI-Monitor:
-```shell
 nslookup monitor.tic2023.com
 ```
+
 2. Verificar la traducción de direcciones IP a domain names:
   -Traducir de direcciones IP a domain names asociado al servidor DNS contenerizado:
+   
 ```shell
 nslookup 192.168.0.2
-```
-  -Traducir de direcciones IP a domain names asociado al servidor DHCP contenerizado:
-```shell
 nslookup 192.168.0.3
-```
-  -Traducir de direcciones IP a domain names asociado al servidor FTP contenerizado:
-```shell
 nslookup 192.168.0.4
-```
-  -Traducir de direcciones IP a domain names asociado al servidor HTTP contenerizado:
-```shell
 nslookup 192.168.0.5
-```
-  -Traducir de direcciones IP a domain names asociado al servidor VoIP contenerizado:
-```shell
 nslookup 192.168.0.6
-```
-  -Traducir de direcciones IP a domain names asociado al servicio de Monitoreo RPI-Monitor:
-```shell
 nslookup 192.168.0.7
 ```
 
