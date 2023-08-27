@@ -2,7 +2,7 @@
 1. **Descargar Raspberry Pi Imager**
 
    - Ir al sitio web oficial de Raspberry Pi Imager: [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
-   ![Instalacion_Raspberrry_Os_Paso_1 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/819711dd-a462-48f8-9750-d8ce787fa228)
+   ![Instalacion_Raspberrry_Os_Paso_1 1](./819711dd-a462-48f8-9750-d8ce787fa228)
 ![Instalacion_Raspberrry_Os_Paso_1 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/9ccede86-05fb-42ce-92ce-af2b3963f33b)
 
 
