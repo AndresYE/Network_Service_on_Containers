@@ -87,7 +87,7 @@ Para asegurarte de que Docker funciona correctamente, puedes probar desplegando 
 sudo docker run hello-world
 ```
 
-![Instalacion_Docker_Paso_7](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/eab8d970-0ef4-49c1-b95e-4602515b3beb)
+![Instalacion_Docker_Paso_7](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/8ad681c2-2b3b-49a0-a5d4-8a825867129d)
 
 
 ## Paso 8: Verificar la instalación de Docker Compose
