@@ -94,28 +94,19 @@ Para esta primera fase, se implementa cada uno de los servicios de red de manera
 La topología para la implementación mediante Docker CLI se muestra en la siguiente figura, donde se muestra la conexión de los clientes 1, 2 y 3 a la placa Raspberry PI - RPI-I.
 ![Topologia_I]()
 
-
 El procedimiento realizado se muestra en [Implementación Docker CLI]()
 ## Pruebas de Funcionamiento
 
-Una vez realizada la implementación y antes de realizar las pruebas de funcionamiento, se debe iniciar la captura de Wiresharkj en cada uno de los clientes, monitorear el tráfico de red capturado durante todo el proceso de las pruebas:
+Una vez realizada la implementación y antes de realizar las pruebas de funcionamiento, se debe iniciar la captura de Wireshark en cada uno de los clientes. Esto para monitorear el tráfico de red capturado durante todo el proceso de las pruebas:
 
-conectar el equipo del cliente mediante un cable Ethernet de 1metro de longitud, a cada uno de los puertos que estan dispustos para el servicio DHCP, dispuestos en la Topología I estos son: "eth1" y "eth2"
-
-Captura de trádico de servicios contenerizados mediante la herramienta Wireshark e
-  1. 
-  3.  Conectar el equipo del cliente mediante conexión WiFi al Access Point configurado en el equipo RPI-I, tomando en cuenta el SSID de la red configurados y la contraseña de acceso a la red. Este procedimiento se lo realiza a 1 metro de  distancia entre el cliente y el equipo host RPI-I.
 1. Ejecutar Wireshark en cada uno de los clientes.
+Captura de trádico de servicios contenerizados mediante la herramienta Wireshark.
 2. Seleccionar la interfaz de captura de tráfico conectadas a las interfaces del servidor "eth1", "eth2" y "wlan0" respectivas.
-3. Una vez finalizada las pruebas de funcionamiento, finalizar la captura del tráfico.
+3. Conectar el equipo del cliente mediante un cable Ethernet de 1metro de longitud, a cada uno de los puertos que estan dispustos para el servicio DHCP, dispuestos en la Topología I estos son: "eth1" y "eth2"
+4. Conectar el equipo del cliente mediante conexión WiFi al Access Point configurado en el equipo RPI-I, tomando en cuenta el SSID de la red configurados y la contraseña de acceso a la red. Este procedimiento se lo realiza a 1 metro de  distancia entre el cliente y el equipo host RPI-I.
 
+**NOTA: Una vez finalizada las pruebas de funcionamiento, finalizar la captura del tráfico.**
 
-Captura de trádico de servicios contenerizados mediante la herramienta Wireshark ejecutada en cada uno de los clientes, monitorear el tráfico de red capturado durante todo el proceso de las pruebas:
-  1. Conectar el equipo del cliente mediante un cable Ethernet de 1metro de longitud, a cada uno de los puertos que estan dispustos para el servicio DHCP, estos son: "eth1" y "eth2"
-  3.  Conectar el equipo del cliente mediante conexión WiFi al Access Point configurado en el equipo RPI-I, tomando en cuenta el SSID de la red configurados y la contraseña de acceso a la red. Este procedimiento se lo realiza a 1 metro de  distancia entre el cliente y el equipo host RPI-I.
-1. Ejecutar Wireshark en cada uno de los clientes.
-2. Seleccionar la interfaz de captura de tráfico conectadas a las interfaces del servidor "eth1", "eth2" y "wlan0" respectivas.
-3. Una vez finalizada las pruebas de funcionamiento, finalizar la captura del tráfico.
 
 ### Servicio DHCP
 
@@ -214,6 +205,8 @@ Obtener una página web del servidor Nginx contenerizado, a través de la aplica
 
 **NOTA:** Realizar más de una prueba de llamadas VoIP, para verificar el servicio.
 
+## Pruebas de Rendimiento
+
 ### Análisis de tráfico
 1. Filtrar la información de red obtenida por cada uno de los clientes, mediante el servicio relacionado. Esto se realiza mediante la opcion de "filter" de Wireshark, se emplea los siguientes comandos de filtrado para obtener información de cada uno de los servicios DHCP, DNS, FTP y HTTP.
 
@@ -296,14 +289,23 @@ docker stats
 **NOTA: Emplear el periodo de 24horas, el cual permite visualizar el rango de 24 horas con muestras de 1segundo a 10segundos.**  
 
 # Implementación Conjunta mediante Docker Compose
-## Topología
+
 La topología para implementación Conjunta mediante Docker Compose se muestra en la siguiente figura, donde se muestra la conexión de los clientes 1 y 2 a las placas Raspberry PI RPI-I y RPI-II.
 
 Para esta fase, se implementan los servicios de red mediante el diseño de un fichero "YAML" y ejecutados mediante Docker Compose para cada una de las dos placas Raspberry Pi. Los ficheros se encuentran en el apartado de [Docker Compose]() para la placa Raspberry Pi I [Archivo YAML RAPI I]() y para la placa Raspberry Pi II[Archivo YAML RAPI II](), junto con los archivos asociados para el despligue. 
 El procedimiento realizado para la placa RPI-I y RPI-II se muestra en [Implementación Conjunta Docker Compose]()
 
 ## Pruebas de Funcionamiento
-Para las pruebas de funcionamiento se emplea los mismos procedimientos que en la prueba anterior. Sin embargo, para las pruebas de conexión se agrega una prueba para la conexión extremo a extremo entre el cliente 1 y el cliente 2. También se realiza el trazado de la ruta entre clientes. Por otro lado, para las pruebas de enrutamiento se revisa las tablas de enrutamiento generadas por los contenedores de Routing.
+
+Una vez realizada la implementación y antes de realizar las pruebas de funcionamiento, se debe iniciar la captura de Wireshark en cada uno de los clientes. Esto para monitorear el tráfico de red capturado durante todo el proceso de las pruebas:
+
+1. Ejecutar Wireshark en cada uno de los clientes.
+Captura de trádico de servicios contenerizados mediante la herramienta Wireshark.
+2. Seleccionar la interfaz de captura de tráfico conectadas a las interfaces del servidor "eth1", "eth2" y "wlan0" respectivas.
+3. Conectar el equipo del cliente mediante un cable Ethernet de 1 metro de longitud, a cada uno de los puertos que estan dispustos para el servicio DHCP, dispuestos en la Topología I estos son: "eth1" y "eth2"
+4. Conectar las placas RPI-I y RPI-II mediante el cable Ethernet de 2 metros de longitud, entre los puerto "eth3".  
+
+Para las pruebas de funcionamiento se emplea los mismos procedimientos que en la prueba anterior. Sin embargo, para las pruebas de conexión se agrega una prueba de extremo a extremo entre el cliente 1 y el cliente 2. También se realiza el trazado de la ruta entre clientes. Por otro lado, para las pruebas de enrutamiento se revisa las tablas de enrutamiento generadas por los contenedores de Routing.
 
 ### Pruebas de Conexión
 
