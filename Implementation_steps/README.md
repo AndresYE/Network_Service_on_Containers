@@ -205,10 +205,13 @@ Mediante la herramienta Wireshark ejecutada en cada uno de los clientes, monitor
 | DNS         | `dns`                                       | Filtrado de todo el todo el tráfico dns.          |
 | FTP         | `ftp`                                       | Filtrado de todo el tráfico ftp.                  |
 | HTTP        | `http`                                      | Filtrado de todo el tráfico http.                 |
+
 -**NOTA: Para filtrar el tráfico específico generado por las pruebas emplear el siguiente comando.***
+
 ```shell
 dns.qry.name == "2.0.168.192.in-addr.arpa" || dns.qry.name == "3.0.168.192.in-addr.arpa" || dns.qry.name == "4.0.168.192.in-addr.arpa" || dns.qry.name == "5.0.168.192.in-addr.arpa" || dns.qry.name == "6.0.168.192.in-addr.arpa" || dns.qry.name == "7.0.168.192.in-addr.arpa" || dns.qry.name == "ns1.tic2023.com" || dns.qry.name == "dhcp.tic2023.com" || dns.qry.name == "ftp.tic2023.com" || dns.qry.name == "www.tic2023.com" || dns.qry.name == "web1.tic2023.com" || dns.qry.name == "web2.tic2023.com" || dns.qry.name == "voip.tic2023.com" || dns.qry.name == "monitor.tic2023.com"
 ```
+
 5. Obtener información del tráfico SIP y RTP del servicio de VoIP, empleando la herramienta "Telephony" para obtener información de las llamadas VoIP realizadas mediante la opción "VoIP calls" e información RTP de las llamadas mediante la opción "RTP>RTP Secuency". A través de estas opciones se obtiene la siguiente información:
 -**VoIP calls:**
 - **Dirección IP de Origen**: La dirección IP desde la cual se origina la llamada.
@@ -243,8 +246,8 @@ htop
 | DNS         |          `named`         | Filtrado de todos los procesos de bind.           |
 | FTP         |          `vsftpd`        | Filtrado de todos los procesos de vsftpd.         |
 | HTTP        |          `nginx`         | Filtrado de todos los procesos de nginx.          |
-| VoIP        |          `Asterisk`      | Filtrado de todos los procesos de asterisk.       |
-| Routing     |          `Frr`           | Filtrado de todos los procesos de Frrouting.      |
+| VoIP        |          `asterisk`      | Filtrado de todos los procesos de asterisk.       |
+| Routing     |          `frr`           | Filtrado de todos los procesos de Frrouting.      |
 3. Revisa la variación de las estadísticas de uso de los procesos.
 
 - **docker stats**
