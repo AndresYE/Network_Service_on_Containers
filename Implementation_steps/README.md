@@ -83,21 +83,39 @@ El Procedimientos realizado se describen en [Configuración de Servicios Interfe
 - Instalación y configuración del software de monitoreo de placas Raspberry Pi RPI-MONITOR. Para ello, se debe instalar el paquete de instalación Rpi-Monitor siguiendo la guía dada en [Installation RPI-MONITOR Oficial](https://xavierberger.github.io/RPi-Monitor-docs/11_installation.html) o en la guia [Installation RPI-MONITOR](https://rivas.cloud/2022/11/20/instalar-rpi-monitor-en-nuestra-raspberry/). El procedimiento realizado se muestra en [Intalación y Configuración de RPI-MONITOR]().
 
 # Implementación Individual
-## Topología
+
 La topología para la implementación Individual se muestra en la siguiente figura, donde se muestra la distribución lógica de los contenedores en la placa Raspberry PI.
 ![Prototipo_I]()
 
 Para esta primera fase, se implementa cada uno de los servicios de red de manera individual mediante el diseño de un fichero Dockerfile y el depligue usando Docker CLI. Los archivos Dockerfile y los comandos para cada uno de los servicios se encuentran entran en el siguiente apartado [Ficheros Dockerfile]().
 
 # Implementación Conjunta mediante Docker CLI
-## Topología
+
 La topología para la implementación mediante Docker CLI se muestra en la siguiente figura, donde se muestra la conexión de los clientes 1, 2 y 3 a la placa Raspberry PI - RPI-I.
 ![Topologia_I]()
+
 
 El procedimiento realizado se muestra en [Implementación Docker CLI]()
 ## Pruebas de Funcionamiento
 
-Para las pruebas de funcionamiento se intenta obtener el recurso que cada servicio proporciona. Esto puede ser mediante una aplicación o software específico para la mayoría de los servicios.
+Una vez realizada la implementación y antes de realizar las pruebas de funcionamiento, se debe iniciar la captura de Wiresharkj en cada uno de los clientes, monitorear el tráfico de red capturado durante todo el proceso de las pruebas:
+
+conectar el equipo del cliente mediante un cable Ethernet de 1metro de longitud, a cada uno de los puertos que estan dispustos para el servicio DHCP, dispuestos en la Topología I estos son: "eth1" y "eth2"
+
+Captura de trádico de servicios contenerizados mediante la herramienta Wireshark e
+  1. 
+  3.  Conectar el equipo del cliente mediante conexión WiFi al Access Point configurado en el equipo RPI-I, tomando en cuenta el SSID de la red configurados y la contraseña de acceso a la red. Este procedimiento se lo realiza a 1 metro de  distancia entre el cliente y el equipo host RPI-I.
+1. Ejecutar Wireshark en cada uno de los clientes.
+2. Seleccionar la interfaz de captura de tráfico conectadas a las interfaces del servidor "eth1", "eth2" y "wlan0" respectivas.
+3. Una vez finalizada las pruebas de funcionamiento, finalizar la captura del tráfico.
+
+
+Captura de trádico de servicios contenerizados mediante la herramienta Wireshark ejecutada en cada uno de los clientes, monitorear el tráfico de red capturado durante todo el proceso de las pruebas:
+  1. Conectar el equipo del cliente mediante un cable Ethernet de 1metro de longitud, a cada uno de los puertos que estan dispustos para el servicio DHCP, estos son: "eth1" y "eth2"
+  3.  Conectar el equipo del cliente mediante conexión WiFi al Access Point configurado en el equipo RPI-I, tomando en cuenta el SSID de la red configurados y la contraseña de acceso a la red. Este procedimiento se lo realiza a 1 metro de  distancia entre el cliente y el equipo host RPI-I.
+1. Ejecutar Wireshark en cada uno de los clientes.
+2. Seleccionar la interfaz de captura de tráfico conectadas a las interfaces del servidor "eth1", "eth2" y "wlan0" respectivas.
+3. Una vez finalizada las pruebas de funcionamiento, finalizar la captura del tráfico.
 
 ### Servicio DHCP
 
