@@ -4,7 +4,7 @@
 
 ![docker_files_put_device_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/df82cec0-33c6-45ee-8677-d1a93178ca29)
 
-![docker_files_put_device_4](./113482367/c296214f-4e8a-4e32-9d92-8e4c17f70e77)
+![docker_files_put_device_4](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/c296214f-4e8a-4e32-9d92-8e4c17f70e77)
 
 
 3. Crear un directorio "Docker" en la ruta "/home/pi/".
