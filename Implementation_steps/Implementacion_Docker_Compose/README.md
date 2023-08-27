@@ -9,8 +9,6 @@ docker rm conatiner_name
 Donde:
 -*container_name: *Nombre del contenedor.
 
-
-
 3.  Emplear el software WinSCP, para la transferencia de los ficheros YAML mediante conexión SSH a la placa RPI-I.
 4. Crear un directorio "Docker_Compose" en la ruta "/home/pi/".
 5. Colocar los ficheros YAML y dependencias en un directorio principal de Docker_Compose.
@@ -123,6 +121,7 @@ docker ps
 ```shell
 docker volume ls
 ```
+
 ## Despligue de Solución Multicontenedor RPI-II
 
 1. Como primer paso de la implementación se emplea el software WinSCP, para la transferencia de los ficheros YAML mediante conexión SSH a la placa RPI-II.
@@ -135,7 +134,6 @@ docker volume ls
 ```shell
 docker compose routing_server_compose up
 ```
-
 
 7. Verificar las imagenes creadas mediante el comando.
 
