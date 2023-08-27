@@ -1,7 +1,5 @@
 # Instalación de HTOP en Debian
 
-A continuación, se detallan los pasos para instalar `htop`, una herramienta de monitoreo del sistema en tiempo real, en sistemas Debian.
-
 ## Instalación
 
 Puedes instalar `htop` en sistemas Debian utilizando el gestor de paquetes `apt`. Abre una terminal y ejecuta los siguientes comandos:
