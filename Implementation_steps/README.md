@@ -96,7 +96,7 @@ La topología para la implementación mediante Docker CLI se muestra en la figur
 
 El procedimiento realizado se muestra en [Implementación Docker CLI](https://github.com/AndresYE/Network_Service_on_Containers/tree/5e599b045373ef6ae4a66fd9853b2af0836ef169/Implementation_steps/Implementacion_Docker_CLI)
 ## Pruebas de Funcionamiento
-Para las pruebas de funcionamiento se intenta obtener el recurso que cada servicio proporciona. Esto puede ser medainte una aplicación o software específico para la mayoría de los servicios.
+Para las pruebas de funcionamiento se intenta obtener el recurso que cada servicio proporciona. Esto puede ser medinte una aplicación o software específico para la mayoría de los servicios.
 
 - **Servicio DHCP:** Verificar el direccionamiento dinámico obtenido mediante los siguientes pasos: 
 Esto para mostrar todas las configuraciones de red del cliente. Mediante los 
@@ -256,7 +256,7 @@ Mediante la herramienta Wireshark ejecutada en cada uno de los clientes, monitor
 |-------------|--------------------------|---------------------------------------------------|
 | DHCP        |          `dhcp `         | Filtrado de todo el tráfico dhcp.                 |
 | DNS         |           `dns`          | Filtrado de todo el todo el tráfico dns.          |
-| DNS         | `dns.qry.name == "2.0.168.192.in-addr.arpa" || dns.qry.name == "3.0.168.192.in-addr.arpa" || dns.qry.name == "4.0.168.192.in-addr.arpa" || dns.qry.name == "5.0.168.192.in-addr.arpa" || dns.qry.name == "6.0.168.192.in-addr.arpa" || dns.qry.name == "7.0.168.192.in-addr.arpa" || dns.qry.name == "ns1.tic2023.com" || dns.qry.name == "dhcp.tic2023.com" || dns.qry.name == "ftp.tic2023.com" 	|| dns.qry.name == "www.tic2023.com" || dns.qry.name == "web1.tic2023.com" || dns.qry.name == "web2.tic2023.com" || dns.qry.name == "voip.tic2023.com" || dns.qry.name == "monitor.tic2023.com"` | Filtrado de tráfico dns generado.          |
+| DNS         | ` dns.qry.name == "2.0.168.192.in-addr.arpa" || dns.qry.name == "3.0.168.192.in-addr.arpa" || dns.qry.name == "4.0.168.192.in-addr.arpa" || dns.qry.name == "5.0.168.192.in-addr.arpa" || dns.qry.name == "6.0.168.192.in-addr.arpa" || dns.qry.name == "7.0.168.192.in-addr.arpa" || dns.qry.name == "ns1.tic2023.com" || dns.qry.name == "dhcp.tic2023.com" || dns.qry.name == "ftp.tic2023.com" 	|| dns.qry.name == "www.tic2023.com" || dns.qry.name == "web1.tic2023.com" || dns.qry.name == "web2.tic2023.com" || dns.qry.name == "voip.tic2023.com" || dns.qry.name == "monitor.tic2023.com" ` | Filtrado de tráfico dns generado.          |
 | FTP         |           `ftp`          | Filtrado de todo el tráfico ftp.                  |
 | HTTP        |          `http`          | Filtrado de todo el tráfico http.                 |
 5. Obtener información del tráfico SIP y RTP del servicio de VoIP, empleando la herramienta "Telephony" para obtener información de las llamadas VoIP realizadas mediante la opción "VoIP calls" e información RTP de las llamadas mediante la opción "RTP>RTP Secuency". A través de estas opciones se obtiene la siguiente información:
