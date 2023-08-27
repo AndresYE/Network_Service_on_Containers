@@ -15,11 +15,6 @@
     <img src="https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/c0fa1782-3077-4239-80a4-b68b74cafe81" alt="Descripción de la imagen">
   </kbd>
 </p>
-<p align="center">
-  <kbd>
-    <img src="" alt="Descripción de la imagen">
-  </kbd>
-</p>
 
 2. **Insertar la tarjeta microSD**
 
@@ -28,23 +23,25 @@
 3. **Abrir Raspberry Pi Imager**
 
    - Abre Raspberry Pi Imager en tu computadora.
-     ![Instalacion_Raspberrry_Os_Paso_3](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/25b4402c-f509-41f3-84d8-13a7295b264d)
+
 <p align="center">
   <kbd>
-    <img src="" alt="Descripción de la imagen">
+    <img src="https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/cbe37cc0-16d1-4b8d-ae2a-a0ff113f1313" alt="Instalacion_Raspberrry_Os_Paso_3">
   </kbd>
 </p>
+
 4. **Seleccionar el sistema operativo**
 
    - En Raspberry Pi Imager, haz clic en "Choose OS".
-     ![Instalacion_Raspberrry_Os_Paso_4 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/69b3f1f8-4323-49d4-b63f-440c0d6df755)
+
+
 <p align="center">
   <kbd>
     <img src="" alt="Descripción de la imagen">
   </kbd>
 </p>
    - Selecciona "Raspberry Pi OS (32-bit)".
-     ![Instalacion_Raspberrry_Os_Paso_4 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/1a00092e-2a53-4a54-992b-57dedbc405bb)
+
 <p align="center">
   <kbd>
     <img src="" alt="Descripción de la imagen">
@@ -53,8 +50,8 @@
 5. **Seleccionar la tarjeta SD**
 
    - Haz clic en "Choose SD Card" y selecciona la tarjeta microSD que insertaste.
-     ![Instalacion_Raspberrry_Os_Paso_5 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/51eac6c7-f0b0-424c-8617-b19dd070f1e0)
-     ![Instalacion_Raspberrry_Os_Paso_5 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/3c03ab3e-2dbc-43cd-b9a3-439487ac8292)
+
+
 <p align="center">
   <kbd>
     <img src="" alt="Descripción de la imagen">
@@ -63,10 +60,7 @@
 6. **Configurar la conexión a Internet (opcional)**
 
    - Si deseas configurar la conexión a Internet desde el primer arranque, selecciona la opción "Opciones Avanzadas" y configure los parámetros de arranque para la configuración de la red Wifi, conexión SSH, etc.
-     ![Instalacion_Raspberrry_Os_Paso_6 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/246aba4a-61a0-4e0d-bc15-94c300f85f29)
-     ![Instalacion_Raspberrry_Os_Paso_6 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/b8360e27-4a74-4ca9-81c8-f9739fe680aa)
-     ![Instalacion_Raspberrry_Os_Paso_6 3](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/4225fcf3-ddaf-4ce5-8411-078c54063815)
-     ![Instalacion_Raspberrry_Os_Paso_6 4](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/d289ddfe-0e05-4b47-87a7-efd4d314928d)
+
 <p align="center">
   <kbd>
     <img src="" alt="Descripción de la imagen">
@@ -74,8 +68,7 @@
 </p>
 7. **Escribir la imagen en la tarjeta SD**
 - Haz clic en "Write" para escribir la imagen de Raspberry Pi OS en la tarjeta microSD. Esto tomará unos minutos.
-     ![Instalacion_Raspberrry_Os_Paso_7 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/bcf71c9f-8255-459e-b25d-a43b7754469f)
-     ![Instalacion_Raspberrry_Os_Paso_7 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/67ac5657-0297-4700-884e-f444fd3c4176)
+
 <p align="center">
   <kbd>
     <img src="" alt="Descripción de la imagen">
@@ -85,11 +78,7 @@
 8. **Ingreso mediante SSH**
 
  - Encienda la Raspberry Pi e ingrese mediante conexión SSH a la dirección de la red local a través del software Putty.
-![Instalacion_Raspberrry_Os_Paso_8 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/5786b354-4571-475a-be8e-354f5f1c9fa1)
 
-![Instalacion_Raspberrry_Os_Paso_8 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/39de3e99-d7d0-48f7-8a4b-dbba5802179b)
-
-![Instalacion_Raspberrry_Os_Paso_8 3](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/d93b449e-2600-4cc6-9bc8-46472e703cea)
 <p align="center">
   <kbd>
     <img src="" alt="Descripción de la imagen">
@@ -101,7 +90,7 @@
 ```shell
 cat /etc/os-release
 ```
-![Instalacion_Raspberrry_Os_Paso_9 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/288c5577-0eef-4687-ba10-c85cb4648302)
+
 <p align="center">
   <kbd>
     <img src="" alt="Descripción de la imagen">
