@@ -33,66 +33,47 @@
 4. **Seleccionar el sistema operativo**
 
    - En Raspberry Pi Imager, haz clic en "Choose OS".
+![Instalacion_Raspberrry_Os_Paso_4 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/5254d660-09fc-49a3-ab51-bd84d59e555f)
 
 
-<p align="center">
-  <kbd>
-    <img src="" alt="Descripción de la imagen">
-  </kbd>
-</p>
+
    - Selecciona "Raspberry Pi OS (32-bit)".
+![Instalacion_Raspberrry_Os_Paso_4 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/bc112555-8e39-4719-bb05-21e45d5985a6)
 
-<p align="center">
-  <kbd>
-    <img src="" alt="Descripción de la imagen">
-  </kbd>
-</p>
+
 5. **Seleccionar la tarjeta SD**
 
    - Haz clic en "Choose SD Card" y selecciona la tarjeta microSD que insertaste.
+![Instalacion_Raspberrry_Os_Paso_5 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/97818b8c-2b67-4200-b023-2e6eff9ca681)
+![Instalacion_Raspberrry_Os_Paso_5 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/dc45ca19-c1d4-467c-bcb1-f7fc413e64c3)
 
 
-<p align="center">
-  <kbd>
-    <img src="" alt="Descripción de la imagen">
-  </kbd>
-</p>
+
 6. **Configurar la conexión a Internet (opcional)**
 
    - Si deseas configurar la conexión a Internet desde el primer arranque, selecciona la opción "Opciones Avanzadas" y configure los parámetros de arranque para la configuración de la red Wifi, conexión SSH, etc.
+![Instalacion_Raspberrry_Os_Paso_6 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/150d1848-ce8c-425d-9765-2144ed03f2cd)
+![Instalacion_Raspberrry_Os_Paso_6 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/a828d752-ef06-4753-b8cf-806d696d3836)
+![Instalacion_Raspberrry_Os_Paso_6 3](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/0bdaf173-33fc-48b0-bf61-bd8f03b8a61d)
+![Instalacion_Raspberrry_Os_Paso_6 4](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/6fb666af-99fa-46fe-b41d-fc05ac4272c2)
 
-<p align="center">
-  <kbd>
-    <img src="" alt="Descripción de la imagen">
-  </kbd>
-</p>
 7. **Escribir la imagen en la tarjeta SD**
 - Haz clic en "Write" para escribir la imagen de Raspberry Pi OS en la tarjeta microSD. Esto tomará unos minutos.
-
-<p align="center">
-  <kbd>
-    <img src="" alt="Descripción de la imagen">
-  </kbd>
-</p>
+![Instalacion_Raspberrry_Os_Paso_7 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/801f8e26-c683-486e-b0b8-c4a1b884fd0b)
+![Instalacion_Raspberrry_Os_Paso_7 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/5dad41f6-c5f6-46b9-a1c8-6f1390234fac)
 
 8. **Ingreso mediante SSH**
 
  - Encienda la Raspberry Pi e ingrese mediante conexión SSH a la dirección de la red local a través del software Putty.
+![Instalacion_Raspberrry_Os_Paso_8 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/75fbe464-441e-418d-9ee1-f099266ce398)
+![Instalacion_Raspberrry_Os_Paso_8 2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/21358b5e-abba-4537-8032-bb2789c5b710)
+![Instalacion_Raspberrry_Os_Paso_8 3](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/4d1327e9-b322-4136-bb15-b0c848256093)
 
-<p align="center">
-  <kbd>
-    <img src="" alt="Descripción de la imagen">
-  </kbd>
-</p>
+
 9. **Verificar la version del sistema operativo**
   - Verificar la version del sistema operativo instalado mediante el comando:
 
 ```shell
 cat /etc/os-release
 ```
-
-<p align="center">
-  <kbd>
-    <img src="" alt="Descripción de la imagen">
-  </kbd>
-</p>
+![Instalacion_Raspberrry_Os_Paso_9 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/e8958fb9-3493-43a2-8454-0ea7c4280c9c)
