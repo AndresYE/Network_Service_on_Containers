@@ -2,17 +2,7 @@
 1. **Descargar Raspberry Pi Imager**
 
    - Ir al sitio web oficial de Raspberry Pi Imager: [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
-<p align="center">
-  <kbd>
-    <img src="ruta/a/tu/imagen.png">
-  </kbd>
-</p>
 
-<p align="center">
-  <kbd>
-    <img src=>
-  </kbd>
-</p>
 <div align="center">
   <img src=https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/9ccede86-05fb-42ce-92ce-af2b3963f33balt style="border: 1px solid #555">
 </div>
