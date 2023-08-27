@@ -19,26 +19,26 @@ En el presente apartado se describe el procedimiento para la implementación de 
 - **Direccionamiento:** El direccionamiento empleado sera de tipo estático y dinámico, el cual se configura mediante el fichero "/etc/network/interfaces". Las direcciones IP estáticas, que son asociadas a las interfaces virtuales previamentes configuradas, son las que se emplean para los servicios contenerizados. Por otro lado, el direccionamiento IP dinámico empleado para conectarse a la red local, se emplea para la configuración del equipo.
 El direccionamiento IPv4 para la placa Raspberry Pi RPI I se presenta en la siguiente tabla:
 
-| Servicios de Red                | Interfaz | Dirección IPv4/Máscara | Dirección de Gateway |
-|---------------------------------|----------|------------------------|-----------------------|
-| SSH \| Hostap \| DHFP I         | Wlan0    | 192.168.0.1/24         | N/A                   |
-| SSH \| DNS                       | Wlan0:1  | 192.168.0.2/24         | N/A                   |
-| SSH \| FTP                       | Wlan0:3  | 192.168.0.4/24         | N/A                   |
-| SSH \| HTTP                      | Wlan0:4  | 192.168.0.5/24         | N/A                   |
-| SSH \| VoIP                      | Wlan0:5  | 192.168.0.6/24         | N/A                   |
-| SSH \| Rpi-Monitor               | Wlan0:6  | 192.168.0.7/24         | N/A                   |
-| SSH                             | Eth0     | (Cliente DHCP)         | (Cliente DHCP)        |
-| SSH \| Routing \| DHCP II        | Eth1     | 192.168.1.1/24         | 192.168.1.1           |
-| SSH \| Routing \| DHCP III       | Eth2     | 192.168.2.1/24         | 192.168.2.1           |
-| SSH \| Routing                   | Eth3     | 10.0.1.1/30            | N/A                   |
+| Servicios de Red                | Interfaz | Dirección IPv4/Máscara |
+|---------------------------------|----------|------------------------|
+| SSH \| Hostap \| DHFP I         | Wlan0    | 192.168.0.1/24          |
+| SSH \| DNS                       | Wlan0:1  | 192.168.0.2/24         | 
+| SSH \| FTP                       | Wlan0:3  | 192.168.0.4/24         |
+| SSH \| HTTP                      | Wlan0:4  | 192.168.0.5/24         | 
+| SSH \| VoIP                      | Wlan0:5  | 192.168.0.6/24         | 
+| SSH \| Rpi-Monitor               | Wlan0:6  | 192.168.0.7/24         |
+| SSH                             | Eth0     | (Cliente DHCP)         | 
+| SSH \| Routing \| DHCP II        | Eth1     | 192.168.1.1/24         | 
+| SSH \| Routing \| DHCP III       | Eth2     | 192.168.2.1/24         | 
+| SSH \| Routing                   | Eth3     | 10.0.1.1/30            | 
 
 El direccionamiento IPv4 para la placa Raspberry Pi RPI II se presenta en la siguiente tabla:
-| Servicios de Red        | Interfaz | Dirección IPv4/Máscara | Dirección de Gateway |
-|-------------------------|----------|------------------------|-----------------------|
-| SSH                     | Eth0     | (Cliente DHCP)         | (Cliente DHCP)        |
-| SSH \| Routing \| DHCP I | Eth1     | 192.168.1.1/24         | 192.168.1.1           |
-| SSH \| Routing \| DHCP II | Eth2     | 192.168.2.1/24         | 192.168.2.1           |
-| SSH \| Routing           | Eth3     | 10.0.1.2/30            | N/A                   |
+| Servicios de Red        | Interfaz | Dirección IPv4/Máscara |
+|-------------------------|----------|------------------------|
+| SSH                     | Eth0     | (Cliente DHCP)         | 
+| SSH \| Routing \| DHCP I | Eth1     | 192.168.1.1/24         |
+| SSH \| Routing \| DHCP II | Eth2     | 192.168.2.1/24         | 
+| SSH \| Routing           | Eth3     | 10.0.1.2/30            | 
 
 El procedimiento realizado para la placa RPI-I se muestra en [Configuración Network RPI-I](https://github.com/AndresYE/Network_Service_on_Containers/tree/52dfc6fd513b5b0d6714aa753f5546fbbe14b475/Implementation_steps/Network/RPI_I) y para la placa RPI-I se muestra en [Configuración Network RPI-II](https://github.com/AndresYE/Network_Service_on_Containers/tree/52dfc6fd513b5b0d6714aa753f5546fbbe14b475/Implementation_steps/Network/RPI_II).
 
