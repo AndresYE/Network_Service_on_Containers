@@ -15,6 +15,7 @@ Sigue estos pasos para configurar tus adaptadores USB-Ethernet:
 ```shell
 ifcofing -a
 ```
+
 ### Paso 3: Configurar Archivo
 
 3. Crea un archivo de reglas udev en el directorio `/etc/udev/rules.d/` utilizando un nombre descriptivo, como `99-usb-ethernet.rules`:
@@ -44,6 +45,7 @@ Luego reinicia el dispositivo:
 ```shell
 sudo reboot
 ```
+
 ### Paso 5: Verificar Configuración
 
 5. Desconecta físicamente el adaptador USB-Ethernet de tu computadora y luego vuélvelo a conectar. Luego, verifica que el nombre de la interfaz permanezca estático:
