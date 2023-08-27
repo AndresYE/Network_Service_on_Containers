@@ -96,26 +96,20 @@ La topología para la implementación mediante Docker CLI se muestra en la sigui
 
 El procedimiento realizado se muestra en [Implementación Docker CLI]()
 ## Pruebas de Funcionamiento
+
 Para las pruebas de funcionamiento se intenta obtener el recurso que cada servicio proporciona. Esto puede ser mediante una aplicación o software específico para la mayoría de los servicios.
 
-- **Servicio DHCP:** Verificar el direccionamiento dinámico obtenido mediante los siguientes pasos: 
-Esto para mostrar todas las configuraciones de red del cliente. Mediante los 
-  1. Conectar el equipo del cliente mediante un cable Ethernet de 1metro de longitud, a cada uno de los puertos que estan dispustos para el servicio DHCP, estos son: "eth1" y "eth2"
-  2. Verificar la información de red obtenida mediante el comando:
-  
- ```shell
-ipconfig /all
-```
+### Servicio DHCP
 
-  3.  Conectar el equipo del cliente mediante conexión WiFi al Access Point configurado en el equipo RPI-I, tomando en cuenta el SSID de la red configurados y la contraseña de acceso a la red. Este procedimiento se lo realiza a 1 metro de  distancia entre el cliente y el equipo host RPI-I.
-  
-  5.  Verificar la información de red obtenida mediante el comando:
+Verificar la información de red obtenida mediante el comando:
 
  ```shell
 ipconfig /all
 ```
 
-- **Pruebas de Conexión:** Verificar la conexión de los clientes con los servidores contenerizados, a través de sus domain names. Emplear los siguientes comandos para cada uno de los servicios contenerizados:
+### Pruebas de Conexión
+
+Verificar la conexión de los clientes con las direcciones IP asociadas a los servidores contenerizados, mediante el comando "ping".
   
 ```shell
 ping ns1.tic2023.com
@@ -128,8 +122,9 @@ ping voip.tic2023.com
 ping monitor.tic2023.com
 ```
 
-- **Servicio DNS:** Verificación de traducción de direcciones IP a domain names y viceversa.
-1. Verificar la traducción de domain names a direcciones IP:
+### Servicio DNS
+
+1. Verificar la traducción de direcciones IP a domain names y viceversa, mediante el comando "nslookup".
    
 ```shell
 nslookup ns1.tic2023.com
@@ -142,9 +137,8 @@ nslookup voip.tic2023.com
 nslookup monitor.tic2023.com
 ```
 
-2. Verificar la traducción de direcciones IP a domain names:
-  -Traducir de direcciones IP a domain names asociado al servidor DNS contenerizado:
-   
+2. Verificar la traducción de direcciones IP a domain names, mediante el comando "nslookup".
+
 ```shell
 nslookup 192.168.0.2
 nslookup 192.168.0.3
@@ -154,7 +148,9 @@ nslookup 192.168.0.6
 nslookup 192.168.0.7
 ```
 
-- **Servicio FTP:** Prueba de Downlink del fichero del servidor FTP contenerizado, a través de la aplicación Firezilla.
+### Servicio FTP
+Prueba de Downlink del fichero del servidor FTP contenerizado, a través de la aplicación Firezilla.
+
 1. Ingresar mediante las credenciales creadas en el archivo Dockerfile, estas son:
   - **Dirección IP | Nombre de Dominio del servidor:** 192.168.0.4 | ftp.tic2023.com
   - **Usuario:** admin
@@ -162,42 +158,46 @@ nslookup 192.168.0.7
 2. Descargar el fichero "Admin.txt" al almacenamiento local.
 3. Cerrar sesión FTP.
 4. Repetir los pasos 1 al 3.
+
 **NOTA:** Realizar más de una prueba de transferencia FTP, para verificar el servicio.
 
-- **Servicio Web:** Obtención de una página web del servidor Nginx contenerizado, a través de la aplicación de un navegador web, como puede ser Google Chrome o Firefox.
+### Servicio Web
+Obtener una página web del servidor Nginx contenerizado, a través de la aplicación de un navegador web, como puede ser Google Chrome o Firefox.
+
 1. Ingresar mediante el navegador web a la dirección del servidor web por defecto "www.tic2023.com".
 2. Ingresar mediante el navegador web a la dirección del primer servidor web virtual "web1.tic2023.com".
-3. Ingresar mediante el navegador web a la dirección del primer servidor web virtual "web2.tic2023.com".
+3. Ingresar mediante el navegador web a la dirección del segundo servidor web virtual "web2.tic2023.com".
 
 - **Servidor VoIP:** Pruebas de llamadas VoIP, a través de la aplicación de escritorio Liphone para realizar las llamadas de VoIP entre dos clientes VoIP/SIP.
+  
 1. Descargar la aplicación de escritorio de la página oficial de Liphone [Aplicación de Escritorio Windows](https://www.linphone.org/)
 2. Ingresar a la aplicación.
 3. Seleccionar configurar cuenta SIP.
-4. Agrear infomación de las 2 cuentas Sip configuradas:
+4. Agregar información de las 2 cuentas Sip configuradas:
+
 **Cliente 1:**
-  -**Usuario:** 2001
-  -**Dirección  Servidor SIP:** voip.tic2023.com
-  -**Contraseña:** TIC2023
-  -**Tipo de Trasporte:** UDP
+  - **Usuario:** 2001
+  - **Dirección  Servidor SIP:** voip.tic2023.com
+  - **Contraseña:** TIC2023
+  - **Tipo de Trasporte:** UDP
+
 **Cliente 2:**
-  -**Usuario:** 2002
-  -**Dirección Servidor SIP:** voip.tic2023.com
-  -**Contraseña:** TIC2023
-  -**Tipo de Trasporte:** UDP
-5. Verificar la conexión de la extension al servidor Voip.
-6. Realizar una llamada entre la la extensión del cliente 1 "2001" a la extensión del cliente 2 "2002".
-7. Terminar la llamada
-8. Realizar una llamada entre la la extensión del cliente 2 "2002" a la extensión del cliente 1 "2001".
-9. Terminar la llamada
-10. Repetir los pasos 6 al 9.
+  - **Usuario:** 2002
+  - **Dirección Servidor SIP:** voip.tic2023.com
+  - **Contraseña:** TIC2023
+  - **Tipo de Trasporte:** UDP
+  
+6. Verificar la conexión de la extension al servidor Voip.
+7. Realizar una llamada entre la la extensión del cliente 1 "2001" a la extensión del cliente 2 "2002".
+8. Terminar la llamada
+9. Realizar una llamada entre la la extensión del cliente 2 "2002" a la extensión del cliente 1 "2001".
+10. Terminar la llamada
+11. Repetir los pasos 6 al 9, 3 veces.
+
 **NOTA:** Realizar más de una prueba de llamadas VoIP, para verificar el servicio.
 
-  **Análisis de tráfico:** Captura de trádico de servicios contenerizados mediante Wireshark.
-Mediante la herramienta Wireshark ejecutada en cada uno de los clientes, monitorear el tráfico de red capturado durante todo el proceso de las pruebas:
-1. Ejecutar Wireshark en cada uno de los clientes.
-2. Seleccionar la interfaz de captura de tráfico conectadas a las interfaces del servidor "eth1", "eth2" y "wlan0" respectivas.
-3. Una vez finalizada las pruebas de funcionamiento, finalizar la captura del tráfico.
-4. Filtrar la información de red obtenida por cada uno de los clientes, mediante el servicio relacionado. Esto se realiza mediante la opcion de "filter" de Wireshark, se emplea los siguientes comandos de filtrado para obtener información de cada uno de los servicios.
+### Análisis de tráfico
+1. Filtrar la información de red obtenida por cada uno de los clientes, mediante el servicio relacionado. Esto se realiza mediante la opcion de "filter" de Wireshark, se emplea los siguientes comandos de filtrado para obtener información de cada uno de los servicios DHCP, DNS, FTP y HTTP.
 
 | Servicio    | Instrucción de filtrado                     | Descripción                                       |
 |-------------|---------------------------------------------|---------------------------------------------------|
@@ -212,34 +212,42 @@ Mediante la herramienta Wireshark ejecutada en cada uno de los clientes, monitor
 dns.qry.name == "2.0.168.192.in-addr.arpa" || dns.qry.name == "3.0.168.192.in-addr.arpa" || dns.qry.name == "4.0.168.192.in-addr.arpa" || dns.qry.name == "5.0.168.192.in-addr.arpa" || dns.qry.name == "6.0.168.192.in-addr.arpa" || dns.qry.name == "7.0.168.192.in-addr.arpa" || dns.qry.name == "ns1.tic2023.com" || dns.qry.name == "dhcp.tic2023.com" || dns.qry.name == "ftp.tic2023.com" || dns.qry.name == "www.tic2023.com" || dns.qry.name == "web1.tic2023.com" || dns.qry.name == "web2.tic2023.com" || dns.qry.name == "voip.tic2023.com" || dns.qry.name == "monitor.tic2023.com"
 ```
 
-5. Obtener información del tráfico SIP y RTP del servicio de VoIP, empleando la herramienta "Telephony" para obtener información de las llamadas VoIP realizadas mediante la opción "VoIP calls" e información RTP de las llamadas mediante la opción "RTP>RTP Secuency". A través de estas opciones se obtiene la siguiente información:
+2. Obtener información del tráfico SIP y RTP del servicio de VoIP, empleando la herramienta "Telephony" para obtener información de las llamadas VoIP realizadas mediante la opción "VoIP calls" e información RTP de las llamadas mediante la opción "RTP>RTP Secuency". A través de estas opciones se obtiene la siguiente información:
+   
 -**VoIP calls:**
-- **Dirección IP de Origen**: La dirección IP desde la cual se origina la llamada.
-- **Extensiones SIP**: Las extensiones SIP del remitente y el destinatario de la llamada.
-- **Protocolo Empleado**: El protocolo utilizado para la llamada SIP.
-- **Duración de la Llamada**: El tiempo que duró la llamada.
-- **Cantidad de Paquetes Enviados**: La cantidad de paquetes de datos enviados durante la llamada.
-- **Estado de la Llamada**: El estado de la llamada (por ejemplo, ompletada, fallida, etc.).
-- **Mensajes SIP**: Los mensajes SIP intercambiados con el servidor VoIP.
+- **Dirección IP de Origen:** La dirección IP desde la cual se origina la llamada.
+- **Extensiones SIP:** Las extensiones SIP del remitente y el destinatario de la llamada.
+- **Protocolo Empleado:** El protocolo utilizado para la llamada SIP.
+- **Duración de la Llamada:** El tiempo que duró la llamada.
+- **Cantidad de Paquetes Enviados:** La cantidad de paquetes de datos enviados durante la llamada.
+- **Estado de la Llamada:** El estado de la llamada (por ejemplo, completada, fallida, etc.).
+- **Mensajes SIP:** Los mensajes SIP intercambiados con el servidor VoIP.
 
 -**RTP Secuency:**
-- **Dirección IP de Origen**: La dirección IP desde la cual ssale la llamada.
+- **Dirección IP de Origen**: La dirección IP de origen de la llamada.
 - **Pérdidas de Paquete**: La cantidad de paquetes de audio perdidos durante la transmisión.
 - **Retardos**: El tiempo de retardo experimentado durante la transmisión de audio.
 - **Jitter**: La variabilidad en el retardo de la transmisión.
 
-- **Analisis de uso de recursos:** Obtención de datos de uso de recursos de CPU, memoria, tráfico y almacenamiento.
-- Emplear las herramientas de monitoreo de recursos mediante Htop, docker stats y RPI-Monitor, para monitorear los parámetros de CPU, memoria y almacenamiento.
+### Analisis de uso de recursos:
+
+Obtener datos de uso de recursos de CPU, memoria, tráfico y almacenamiento, mediante las herramientas de monitoreo de recursos Htop, docker stats y RPI-Monitor.
 1. Conectar via SSH al cliente 3 (monitor) con el servidor RPI-I, mediante 2 terminales a través de la aplicación "Putty".
 2. Logearse como super usuario "sudo".
 3. Ejecutar las aplicaciones "HTOP" y "docker stats"
-**NOTA: El analisis mediante HTOP y Docker Stats debe ser permanente para obtener los datos de los servicios al momento de ejcutarse las pruebas.**
-- **HTOP**
+   
+**NOTA: El análisis mediante HTOP y Docker Stats debe ser permanente para obtener los datos de los servicios al momento de ejcutarse las pruebas. Esto debido a que los datos obtenidos en las pruebas no pueden ser exportados.**
+
+#### HTOP
+  
 1. Abrir en una terminal SSH la aplicación HTOP mediante el comando:
+
 ```shell
 htop
 ```
+
 2.Aplicar el filtrado de los procesos respectivos para cada uno de los servicios contenerizados, mediante la opción de "filter" de la aplicación. Los procesos de filtrados asociados se muestran a continuación.
+
 | Servicio    | Instrucción de filtrado  | Descripción                                       |
 |-------------|--------------------------|---------------------------------------------------|
 | DHCP        |          `dhcpd`         | Filtrado de todos los procesos de dhcpd.          |
@@ -248,57 +256,67 @@ htop
 | HTTP        |          `nginx`         | Filtrado de todos los procesos de nginx.          |
 | VoIP        |          `asterisk`      | Filtrado de todos los procesos de asterisk.       |
 | Routing     |          `frr`           | Filtrado de todos los procesos de Frrouting.      |
-3. Revisa la variación de las estadísticas de uso de los procesos.
 
-- **docker stats**
+3. Revisar la variación de las estadísticas de uso de los procesos.
+
+#### Docker Stats
+
 1. Abrir en una terminal SSH la aplicación Docker Stats mediante el comando:
+
 ```shell
 docker stats
 ```
 2. Revisar la variación de las estadísticas de uso de los contenedores.
 
-- **RPI-Monitor** 
-1. Ingresar a la dirección "monitor.tic2023.com" a través de un navegar web.
+#### RPI-Monitor
+
+1. Ingresar a la dirección "monitor.tic2023.com:8888" a través de un navegar web.
 2. Ingresar a las estadísticas de uso seleccionando la pestaña "Stadistics" de la pagina web.
 3. Seleccionar el recurso del host a analizar: Load CPU Average, Memory Usage y Temperature.
 4. Seleccionar el periodo de tiempo de análisis.
 
-**NOTA: Emplear el periodo de 24horas dado que permite visualizar el rango de 24 horas con muestras de 1segundo a 10segundos.**  
+**NOTA: Emplear el periodo de 24horas, el cual permite visualizar el rango de 24 horas con muestras de 1segundo a 10segundos.**  
 
 # Implementación Conjunta mediante Docker Compose
 ## Topología
-La topología para implementación Conjunta mediante Docker Compose se muestra en la figura a continuación, donde se muestra la conexión de los clientes 1 y 2 a las placas Raspberry PI  RPI-I y RPI-II.
-![topologia_II](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/293e3022-0146-44be-b389-1f2c1cfd9780)
+La topología para implementación Conjunta mediante Docker Compose se muestra en la siguiente figura, donde se muestra la conexión de los clientes 1 y 2 a las placas Raspberry PI RPI-I y RPI-II.
 
-Para esta fase, se implementan los servicios de red mediante el diseño de un fichero "YAML" y ejecutados mediante Docker Compose para cada una de las dos placas Raspberry Pi. Los ficheros se encuentran en el apartado de [Docker Compose](https://github.com/AndresYE/Network_Service_on_Containers/tree/33579aed3de68574530db912394c112d29c42c1b/Docker/Docker%20Compose) para la placa Raspberry Pi I [Archivo YAML RAPI I](https://github.com/AndresYE/Network_Service_on_Containers/tree/2370223085448122eaf9eafcdb2d4bace25d4175/Docker/Docker%20Compose/RPI%20I) y para la placa Raspberry Pi II[Archivo YAML RAPI II](https://github.com/AndresYE/Network_Service_on_Containers/tree/2370223085448122eaf9eafcdb2d4bace25d4175/Docker/Docker%20Compose/RPI%20II), junto con los archivos asociados para el despligue. 
-El procedimiento realizado para la placa RPI-I y RPI-II se muestra en [Implementación Conjunta Docker Compose](https://github.com/AndresYE/Network_Service_on_Containers/tree/3531dd8c8e5e8a069560789e5d73efb856296afc/Implementation_steps/Implementacion_Docker_Compose)
+Para esta fase, se implementan los servicios de red mediante el diseño de un fichero "YAML" y ejecutados mediante Docker Compose para cada una de las dos placas Raspberry Pi. Los ficheros se encuentran en el apartado de [Docker Compose]() para la placa Raspberry Pi I [Archivo YAML RAPI I]() y para la placa Raspberry Pi II[Archivo YAML RAPI II](), junto con los archivos asociados para el despligue. 
+El procedimiento realizado para la placa RPI-I y RPI-II se muestra en [Implementación Conjunta Docker Compose]()
 
-### Pruebas de Funcionamiento
+## Pruebas de Funcionamiento
 Para las pruebas de funcionamiento se emplea los mismos procedimientos que en la prueba anterior. Sin embargo, para las pruebas de conexión se agrega una prueba para la conexión extremo a extremo entre el cliente 1 y el cliente 2. También se realiza el trazado de la ruta entre clientes. Por otro lado, para las pruebas de enrutamiento se revisa las tablas de enrutamiento generadas por los contenedores de Routing.
 
-- **Pruebas de Conexión:** Verificar la conexión entre los clientes mediante la dirección IPv4 obtenida del direccionamiento DHCP.
-1. **Conexión desde el Cliente 1 al Cliente 2**
+### Pruebas de Conexión
+
+1. Verificar la conexión entre los clientes mediante "ping" a la dirección IPv4 obtenida del direccionamiento DHCP.
+   
+- **Conexión desde el Cliente 1 al Cliente 2**
 ```shell
 ping ip_address_cliente_2
 ```
 
-2. **Conexión desde el Cliente 2 al Cliente 1**
+- **Conexión desde el Cliente 2 al Cliente 1**
 ```shell
 ping ip_address_cliente_1
 ```
+2. Verificar el trazado de la ruta seguida por los clientes en la red.
 
-3. **Trazado de la ruta desde el Cliente 1 al Cliente 2**
+- **Trazado de la ruta desde el Cliente 1 al Cliente 2**
 ```shell
 tracert ip_address_cliente_2
 ```
 
-4. **Trazado de la ruta desde el Cliente 2 al Cliente 1**
+- **Trazado de la ruta desde el Cliente 2 al Cliente 1**
 ```shell
 tracert ip_address_cliente_1
 ```
 
-- **Pruebas de Enrutamiento:** Verificar el enrutamiento entre los equipos RPI I y RPI II.
-1. Ingresar al router contenerizado en el equipo RPI I mediante el comando:
+### Pruebas de Enrutamiento
+
+Verificar el enrutamiento entre los equipos RPI I y RPI II.
+
+1. Ingresar al router contenerizado mediante el comando:
 ```shell
 docker exec -it routing_server_compose sh
 ```
