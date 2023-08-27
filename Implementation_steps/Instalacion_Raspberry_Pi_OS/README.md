@@ -10,7 +10,7 @@
 
 <p align="center">
   <kbd>
-    <img src="![Instalacion_Raspberrry_Os_Paso_1 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/9ccede86-05fb-42ce-92ce-af2b3963f33b)">
+    <img src=![Instalacion_Raspberrry_Os_Paso_1 1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/9ccede86-05fb-42ce-92ce-af2b3963f33b)>
   </kbd>
 </p>
 
