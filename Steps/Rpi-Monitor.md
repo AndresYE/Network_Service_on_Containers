@@ -43,7 +43,7 @@ Configurar el archivo "data.conf", para configurar los archivos de configuració
 ```shell
 sudo nano /etc/rpimonitor/data.conf
 ```
-Agregamos los archivos de configuración para el monitoreo de CPU, Memoria, Temperatura, UPtime y service. Además agregar archivos personalizados para las interfaces "eth1", "eth2" y "eth3", basadas en las configuraciones de "eth0" y "wlna0", que tambíen se agregan.
+Agregamos los archivos de configuración para el monitoreo de CPU, Memoria, Temperatura, UPtime y service. Además agregar archivos personalizados para las interfaces "eth1", "eth2" y "eth3", basadas en las configuraciones de "network.conf", que se encuentran en el directorio "/etc/rpimonitor/template/".
 
 #### Paso 5: Reinicia el servicio
 Reiniciar el servicio de RPi-Monitor para aplicar la configuración:
