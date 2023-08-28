@@ -18,7 +18,7 @@ ifcofing -a
 ![rpi_I_preconfiguracion_informacion_interfaces_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/1bf135a2-8623-4d0c-8117-c065b8b70b97)
 
 ## Paso 3: Configurar Archivo
-Escribe la siguiente regla udev para asociar la dirección MAC de los adaptadores USB-Ethernet con un nombre de interfaz específico en el fichero `/etc/udev/rules.d/99-usb-ethernet.rules`:
+Escribe la siguiente regla udev para asociar la dirección MAC de los adaptadores USB-Ethernet con un nombre de interfaz específico en el fichero `/etc/udev/rules.d/99-com.rules`:
 
 ```shell
 SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="MAC_ADDRESS", NAME="INTERFACE_NAME"
