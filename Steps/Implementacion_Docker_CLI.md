@@ -217,6 +217,8 @@ Verificar los contenedores en ejecución mediante el comando:
 docker ps
 ```
 
+![Paso 3 - docker_cli_docker_ps](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/d51f49f6-9919-4664-a244-44e0d6842f73)
+
 ### Paso 4: Listar Volumes Docker
 Verificar los volumes de contenedores en ejecución mediante el comando:
 
@@ -224,6 +226,7 @@ Verificar los volumes de contenedores en ejecución mediante el comando:
 docker volume ls
 ```
 
+![Paso 4 - docker_cli_docker_volume](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/6614979a-8534-4d56-9a5f-263ab9d59744)
 
 ## Subir Imagenes a Registro Docker Hub
 ### Paso 1: Iniciar Sesión Docker
@@ -232,6 +235,8 @@ Iniciar sesión en Docker Hub con usuario y contraseña previamente creados, med
 ```shell
 docker login -u user_name
 ```
+
+![Paso 1 1 - docker_cli_dockerhub_login](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/24b6338a-f7ce-4561-aa8e-0964031e1d55)
 
 Donde:
 - **user_name:** Es el nombre de usuario de Docker Hub.
@@ -246,17 +251,18 @@ Donde:
 - ** repository:** Es el nombre del repositorio y la etiquete de la imagen.
 - **DHCP:**
 
-
+![Paso 1 2 - docker_cli_dockerhub_dhcp_server_push](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/4f7b4aea-84fe-4a56-b7bf-490d86de0370)
 
 - **DNS:**
 
-  
+![Paso 1 3 - docker_cli_dockerhub_dns_server_push](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/f47ed96b-351b-4991-b698-82c5416dbfd7)
 
 - **FTP:**
-  
 
+![Paso 1 4 - docker_cli_dockerhub_ftp_server_push](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/5cb5141e-ff29-4695-a914-523f7eca3ff4)
 
 - **HTTP:**
-  
+
+![Paso 1 5 - docker_cli_dockerhub_http_server_push](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/0890eaad-4c9d-44fa-b152-76f43e52f3af)
 
 **NOTA: Se debe crear una cuenta en Docker Hub previamente y solicitar un Token para poder iniciar sesión y subir imagenes de contenedores docker.**
