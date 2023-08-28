@@ -82,6 +82,9 @@ o
 docker image ls
 ```
 
+![Paso 8 - docker_cli_docker_images](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/d97259cf-953a-44b1-bae9-c69906ea6133)
+
+
 ## Desplegar Conenedores Docker
 
 ### Paso 1: Crear Instancias de Imágenes Docker
@@ -89,34 +92,43 @@ Ingresar a cada uno de los directorios de cada uno de los servicios y ejecutar l
    
 - **DHCP:**
 - **DHCP-WLAN0**
+  
+![Paso 1 1 - docker_cli_dhcp_wlan0_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/c51005c9-f3a6-418f-a1b1-c1a12e469808)
 
 
 - **DHCP-Eth1**
 
+![Paso 1 2 - docker_cli_dhcp_eth1_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/b3a8499a-e83d-4f15-9a62-a77b6c8d2841)
 
 
 - **DHCP-Eth2**
 
+![Paso 1 3 - docker_cli_dhcp_eth2_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/ffc5a015-c9ca-4da3-bbce-174f0451a420)
 
 
 - **DNS:**
 
+![Paso 1 4 - docker_cli_dns_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/23734d10-ad34-478b-bacc-6d0fe3c4a258)
 
 
 - **FTP:**
 
+![Paso 1 5 - docker_cli_ftp_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/1510919d-42d4-4736-85d7-16620089cbd2)
 
 
 - **HTTP:**
 
+![Paso 1 6 - docker_cli_http_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/eee35a98-1838-4f3e-95ab-d6220da54391)
 
 
 - **VoIP:**
 
+![Paso 1 7 - docker_cli_voip_docker_run_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/176710e3-0e16-43ac-9f96-ebfb7dd6b78f)
 
 
 - **Routing:**
 
+![Paso 1 8 - docker_cli_routing_docker_run](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/84c299f2-4d7d-46cc-9f36-822627f81865)
 
 
 
@@ -128,6 +140,8 @@ Y reiniciamos el servicio mediante el comando:
 ```shell
 docker restart voip_server
 ```
+
+![Paso 2 1 - docker_cli_voip_docker_configuracion](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/d82b7a3e-9758-4b52-ae2c-cc60a6479ac9)
 
 
 #### Routing:
@@ -151,6 +165,8 @@ vtysh
 ```shell
 show interface brief
 ```
+
+![Paso 2 2 1 - docker_cli_routing_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/89d0d416-848e-4d39-9051-21e7cf66965f)
 
 5. Ingresaos al modo privilegiado de configuraciones mediante el comando:
 
