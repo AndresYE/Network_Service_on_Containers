@@ -1,9 +1,7 @@
 
 # Procedimiento para Deshabilitar y Verificar Servicios Interferentes
 
-Este procedimiento te guiará a través de los pasos para verificar y deshabilitar servicios interferentes en tu sistema.
-
-1. **Verificar Servicios Instalados**
+## Verificar Servicios Instalados
 
 Ejecuta el siguiente comando para listar los servicios que están escuchando en puertos de red:
 
