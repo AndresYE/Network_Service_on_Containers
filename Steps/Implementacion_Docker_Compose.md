@@ -1,7 +1,8 @@
 # Implementación Docker Compose
 
 ## Despligue de Solución Multicontenedor RPI-I
-1. Eliminar los contenedores creados mediante Docker CLI, mediante el comando.
+### Paso 1: Eliminar Conentenedores Previos
+Eliminar los contenedores creados mediante Docker CLI, mediante el comando.
 
 ```shell
 docker rm conatiner_name
@@ -10,12 +11,18 @@ Donde:
 
 - **container_name:** Nombre del contenedor.
 
-2. Emplear el software WinSCP, para la transferencia de los ficheros YAML mediante conexión SSH a la placa RPI-I.
-3. Crear un directorio "Docker_Compose" en la ruta "/home/pi/".
-4. Colocar los ficheros YAML y dependencias en un directorio principal de Docker_Compose.
-5. Iniciar conexión SSH empleando el software Putty.
-6. Realizar un listado del directorio "/home/pi/Docker_Compose"
-7. Ingresar al directorio "/home/pi/Docker_Compose" y ejecutar el comando desplegar los servicios medainte Docker Compose:
+### Paso 2: 
+Emplear el software WinSCP, para la transferencia de los ficheros YAML mediante conexión SSH a la placa RPI-I.
+### Paso 3:
+Crear un directorio "Docker_Compose" en la ruta "/home/pi/".
+### Paso 4:
+Colocar los ficheros YAML y dependencias en un directorio principal de Docker_Compose.
+### Paso 5:
+Iniciar conexión SSH empleando el software Putty.
+### Paso 6:
+Realizar un listado del directorio "/home/pi/Docker_Compose"
+### Paso 7:
+Ingresar al directorio "/home/pi/Docker_Compose" y ejecutar el comando desplegar los servicios medainte Docker Compose:
 
 ```shell
 docker compose up
