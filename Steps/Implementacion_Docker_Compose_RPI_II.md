@@ -153,4 +153,5 @@ docker ps
 ```shell
 docker volume ls
 ```
-![Paso 12 - docker_compose_ls](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/5b41152b-65af-4971-8e88-b19a83ea4b45)
+
+![Paso 12 - docker_compose_ls](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/bbc3b95e-a8e6-4a2b-9466-464252e3630c)
