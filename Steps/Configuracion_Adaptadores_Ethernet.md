@@ -13,9 +13,10 @@ Obtén la dirección MAC del adaptador USB-Ethernet. Ejecuta el siguiente comand
 ```shell
 ifcofing -a
 ```
-![rpi_I_preconfiguracion_informacion_interfaces_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/7f3428bc-0266-4475-b0ef-95a875110f2c)
+![rpi_I_preconfiguracion_usbadapter_informacion_interfaces_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/cfd5ced6-7b2f-4449-86d8-b3422bba40a6)
 
-![rpi_I_preconfiguracion_informacion_interfaces_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/1bf135a2-8623-4d0c-8117-c065b8b70b97)
+![rpi_I_preconfiguracion_usbadapter_informacion_interfaces_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/ebb5cff3-3e77-46fe-aa1b-20138e78cd76)
+
 
 ## Paso 3: Configurar Archivo
 Escribe la siguiente regla udev para asociar la dirección MAC de los adaptadores USB-Ethernet con un nombre de interfaz específico en el fichero `/etc/udev/rules.d/99-com.rules`:
@@ -29,7 +30,7 @@ Donde:
 
 Guarda el archivo y ciérralo.
 
-![rpi_I_preconfiguracion_usbadapter_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/91b92bfe-bfb5-4849-a0e3-858dfa121043)
+![rpi_I_preconfiguracion_usbadapter_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/c8e9e726-c4df-496d-91c4-2d76d28a82ab)
 
 ## Paso 4: Aplicar Configuraciones
 
@@ -43,6 +44,9 @@ Luego reinicia el dispositivo:
 ```shell
 sudo reboot
 ```
+
+![rpi_I_preconfiguracion_usbadapter_configuration_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/d6dd60fe-8fb0-427c-a170-0d05a4be5e83)
+
 
 ## Paso 5: Verificar Configuración
 
