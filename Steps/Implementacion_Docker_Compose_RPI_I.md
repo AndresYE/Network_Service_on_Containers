@@ -58,6 +58,11 @@ docker restart voip_server_compose
 
 
 #### Routing
+Ingresar al contenedor mediante el comando:
+```shell
+docker exec -it routing_server_compose sh
+```
+
 1. Configuramos el direccionamiento y enrutamiento para las interfaces "eth1", "eth2" y "eth3".
 2. Habilitamos la opción ospf en el archivo de configuración "/etc/frr/daemons"
 
