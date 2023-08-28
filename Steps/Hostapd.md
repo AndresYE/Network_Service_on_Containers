@@ -15,7 +15,8 @@ service hostapd status
 
 ## Configuración de Hostap
 
-### Paso 1: Abre el archivo de configuración de Hostap. Puedes encontrarlo en la ruta `/etc/hostapd/hostapd.conf`.
+### Paso 1: Abrir el archivo de configuración de Hostap. 
+Abrir el archivo de configuración de Hostap. Puedes encontrarlo en la ruta `/etc/hostapd/hostapd.conf`.
 
 ### Paso 2: Edita el archivo de configuración
 Aquí puedes especificar el nombre de la red (SSID), el tipo de seguridad, la contraseña, el canal, entre otras opciones. A continuación, se describe la configuración implementada.
