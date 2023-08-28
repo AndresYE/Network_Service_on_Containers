@@ -166,7 +166,8 @@ vtysh
 show interface brief
 ```
 
-![Paso 2 2 1 - docker_cli_routing_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/89d0d416-848e-4d39-9051-21e7cf66965f)
+![Paso 2 2 1 - docker_cli_routing_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/3e965109-633c-4b67-a9e7-526e4340e39f)
+
 
 5. Ingresaos al modo privilegiado de configuraciones mediante el comando:
 
@@ -187,7 +188,12 @@ Donde:
 **IP_address:** Dirección IPv4.
 **mask:** Mascara de Subred.
 
+![Paso 2 2 2 - docker_cli_routing_configuration_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/5e10f0b6-2ca4-425c-9df7-c03f221701ad)
+
+
 7. Salimos del modo privilegiado y verificamos las configuraciones de interfaz.
+
+![Paso 2 2 3 - docker_cli_routing_configuration_4](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/5999e41d-9b62-47aa-82f8-4d02982a34c0)
 
 
 8. Guardamos las configuraciones mediante el comando
@@ -196,9 +202,11 @@ Donde:
 write
 ```
 
-9. Mostramos las configuraciones guardadas en el archivo "zebra.conf" y "staticd.conf".
-
-
+9. Mostramos las configuraciones guardadas mediante el comando.
+```shell
+show running-configuration
+```
+![Paso 2 2 4 - docker_cli_routing_configuration_5](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/7f8ee17e-03c4-41a6-b964-36dcc5c40a5a)
 
 **NOTA: Ejecutar los servicios de DHCP "eth1" y "eth2", despues de ejecutar el contenedor para el servicio de Routing. Esto para evitar conflicto de direccionamiento de los contenedores DHCP.**
 
