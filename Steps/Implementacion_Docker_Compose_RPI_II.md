@@ -31,45 +31,6 @@ docker compose routing_server_compose up
 
 ![Paso 7 2 - rpi_II_docker_compose_docker_compose_up](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/2074028e-3d66-4ddb-a4fe-ad505edfd38a)
 
-### Paso 8: Listar imagenes Docker
-creadas mediante el comando.
-
-```shell
-docker images
-```
-o
-```shell
-docker image ls
-```
-
-### Paso 9:  Configurar los conentedores para VoIP y Routing, mediante el comando:
-
-```shell
-docker exec -it conainer_name sh
-```
-
-Donde:
--**conainer_name:** Es el nombre del contenedor.
-- **VoIP:** Copiamos los archivos de configuración al directorio asociado al contenedor "voip_server" (Bind Mount).
-Y reiniciamos el servicio mediante el comando:
-
-```shell
-docker restart voip_server
-```
-
-- **Routing:** Configuramos el direccionamiento y enrutamiento para las interfaces "eth1", "eth2" y "eth3".
-Habilitamos la opción ospf en el archivo de configuración "/etc/frr/daemons"
-
-```shell
-vi /etc/frr/daemons
-opsfd=yes
-```
-
-Reiniciamos el contenedor mediante el comando:
-
-```shell
-docker restart routing_server_compose
-```
 
 ### Paso 8: Listar Imágenes Docker
 Verificar las imagenes creadas mediante el comando.
@@ -93,6 +54,10 @@ docker restart voip_server_compose
 ```
 
 #### Routing
+```shell
+docker exec -it conainer_name sh
+```
+
 1. Configuramos el direccionamiento y enrutamiento para las interfaces "eth1", "eth2" y "eth3".
 2. Habilitamos la opción ospf en el archivo de configuración "/etc/frr/daemons"
 
