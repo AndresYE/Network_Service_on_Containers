@@ -59,3 +59,5 @@ sudo systemctl restart rpimonitor
 ```
 #### Paso 5: Acceder al panel web de RPi-Monitor
 Abrir un navegador web y accede a la dirección IP de tu Raspberry Pi seguida del puerto 8888. Por ejemplo, "http://192.168.0.7:8888". 
+
+![preconfiguracion_rpimonitor_interfaz](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/6eddc7d6-e5a7-4c4a-960b-104a7e07c747)
