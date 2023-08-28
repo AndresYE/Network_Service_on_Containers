@@ -10,12 +10,12 @@ Descripción de archivos de configuración empleados para la configuración de l
 | 99-com.rules     | Archivo de reglas personalizadas para udev.     |
 | rpimonitor daemon.conf | Archivo de configuración del daemon de RPi-Monitor. |
 | data.conf        | Archivo de configuración de datos.              |
-| template         | Archivo de plantilla.                           |
-| cpu.conf         | Archivo de configuración de la CPU.             |
-| eth0.conf        | Archivo de configuración de la interfaz eth0.   |
-| eth1.conf        | Archivo de configuración de la interfaz eth1.   |
-| eth2.conf        | Archivo de configuración de la interfaz eth2.   |
-| eth3.conf        | Archivo de configuración de la interfaz eth3.   |
-| memory.conf      | Archivo de configuración de la memoria.         |
-| services.conf    | Archivo de configuración de servicios.          |
-| wlan0.conf       | Archivo de configuración de la interfaz wlan0.  |
+| template         | Directorio de archivos de configuración de RPI-Monitor.                           |
+| cpu.conf         | Archivo de configuración de CPU para RPI-Monitor.             |
+| eth0.conf        | Archivo de configuración de la interfaz eth0 para RPI-Monitor. |
+| eth1.conf        | Archivo de configuración de la interfaz eth1 para RPI-Monitor.   |
+| eth2.conf        | Archivo de configuración de la interfaz eth2 para RPI-Monitor.   |
+| eth3.conf        | Archivo de configuración de la interfaz eth3 para RPI-Monitor.   |
+| memory.conf      | Archivo de configuración de la memoria para RPI-Monitor.         |
+| services.conf    | Archivo de configuración de servicios para RPI-Monitor.          |
+| wlan0.conf       | Archivo de configuración de la interfaz wlan0 para RPI-Monitor.  |
