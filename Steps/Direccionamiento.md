@@ -7,47 +7,60 @@ En este tutorial, aprenderás cómo configurar interfaces virtuales en una Raspb
 ```shell
 sudo nano /etc/network/interfaces
 ```
-### Paso 1: Abrir el archivo de configuración de interfaces.
+### Paso 2: Habilitar automaticamente interfaz WLAN0 en inicio de sesión
+```shell
+auto wlan0
+```
+### Paso 3: Habilitar configuraración para red en modo manual
+```shell
+iface wlan0 inet manual
+```
+### Paso 4: Habilitar detección automatica de dispositivos en WLAN0
+```shell
+allow-hotplug wlan0
+```
+### Paso 5: Configurar direccionamiento estático para interfaz WLAN0
+```shell
+iface wlan0 inet static
+address 192.168.0.1
+netmask 255.255.255.0
+broadcast 192.168.0.255
+```
 
 ## Configuración de Interfaces Virtuales
 
-### Paso 1: Abre el archivo de configuración de interfaces:
+### Paso 1: Abre el archivo de configuración de interfaces
+
 ```shell
 sudo nano /etc/network/interfaces
 ```
-Agrega las siguientes líneas para configurar las interfaces virtuales wlan0:1 hasta wlan0:7. Puedes ajustar los números de interfaz según tus necesidades:
+
+### Paso 2: Habilitar automaticamente interfaz virtual WLAN0:1 en inicio de sesión
 
 ```shell
 auto wlan0:1
+```
+
+### Paso 3: Configurar direccionamiento estático para interfaz virtual WLAN0:1
+
+```shell
 iface wlan0:1 inet static
-    address 192.168.1.2
-    netmask 255.255.255.0
-
-auto wlan0:2
-iface wlan0:2 inet static
-    address 192.168.1.3
-    netmask 255.255.255.0
+address 192.168.0.2
+netmask 255.255.255.0
+broadcast 192.168.0.255
 ```
 
-![address_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/97b0654a-d413-433b-8428-cf0119585c1f)
+### Paso 4: Repite estos pasos para wlan0:2 hasta wlan0:6
 
+### Paso 5: Reinicia el servicio de red
 
-# Repite estos pasos para wlan0:3 hasta wlan0:7
-Asegúrate de configurar direcciones IP únicas para cada interfaz virtual.
-
-Guarda y cierra el archivo.
-
-Reinicia el servicio de red para aplicar los cambios:
 ```shell
-sudo service networking restart
+sudo systemctl restart networking 
 ```
 
-Verifcar las interfaces mediante el comando:
+### Paso 6: Verifcar las interfaces mediante el comando:
 ```shell
-sudo ip -a
+sudo ifconfig -a
 ```
 
-![usbadapter_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/aa26d654-5b94-4731-be54-779748661d10)
-
-![usbadapter_configuration_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/97e75b24-032d-41aa-927b-874f836d5ec0)
 
