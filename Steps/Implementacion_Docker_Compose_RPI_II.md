@@ -43,19 +43,12 @@ o
 docker image ls
 ```
 
-### Paso 9: Configurar los conentedores para VoIP y Routing.
-
-#### VoIP
-Copiamos los archivos de configuración al directorio asociado al contenedor "voip_server" (Bind Mount).
-Y reiniciamos el servicio mediante el comando:
-
-```shell
-docker restart voip_server_compose
-```
+### Paso 9: Configurar el conentedor para Routing.
 
 #### Routing
+Ingresar al contenedor mediante el comando:
 ```shell
-docker exec -it conainer_name sh
+docker exec -it routing_server_compose sh
 ```
 
 1. Configuramos el direccionamiento y enrutamiento para las interfaces "eth1", "eth2" y "eth3".
