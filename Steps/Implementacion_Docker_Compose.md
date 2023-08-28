@@ -1,6 +1,6 @@
 # Implementación Docker Compose
 
-## Despligue de Solución Multicontenedor RPI-I
+## Despligue de Solución Multicontenedor para RPI-I
 ### Paso 1: Eliminar Conentenedores Previos
 Eliminar los contenedores creados mediante Docker CLI, mediante el comando.
 
@@ -8,27 +8,27 @@ Eliminar los contenedores creados mediante Docker CLI, mediante el comando.
 docker rm conatiner_name
 ```
 Donde:
-
 - **container_name:** Nombre del contenedor.
 
-### Paso 2: 
+### Paso 2: Abrir WinSCP
 Emplear el software WinSCP, para la transferencia de los ficheros YAML mediante conexión SSH a la placa RPI-I.
-### Paso 3:
+### Paso 3: Crear un Directorio "Docker_Compose"
 Crear un directorio "Docker_Compose" en la ruta "/home/pi/".
-### Paso 4:
+### Paso 4: Colocar los Ficheros YAML en el Directorio
 Colocar los ficheros YAML y dependencias en un directorio principal de Docker_Compose.
-### Paso 5:
+### Paso 5: Iniciar Conexión SSH
 Iniciar conexión SSH empleando el software Putty.
-### Paso 6:
+### Paso 6: Listar Directorio Docker
 Realizar un listado del directorio "/home/pi/Docker_Compose"
-### Paso 7:
+### Paso 7: Desplegar Contenedores Mediante Docker Compose
 Ingresar al directorio "/home/pi/Docker_Compose" y ejecutar el comando desplegar los servicios medainte Docker Compose:
 
 ```shell
 docker compose up
 ```
 
-8. Verificar las imagenes creadas mediante el comando.
+### Paso 8: Listar Imágenes Docker
+Verificar las imagenes creadas mediante el comando.
 
 ```shell
 docker images
@@ -38,47 +38,49 @@ o
 docker image ls
 ```
 
-9. Configurar los conentedores para VoIP y Routing.
+### Paso 9: Configurar los conentedores para VoIP y Routing.
 
-- **VoIP:** Copiamos los archivos de configuración al directorio asociado al contenedor "voip_server" (Bind Mount).
+#### VoIP
+Copiamos los archivos de configuración al directorio asociado al contenedor "voip_server" (Bind Mount).
 Y reiniciamos el servicio mediante el comando:
 
 ```shell
-docker restart voip_server
+docker restart voip_server_compose
 ```
 
-- **Routing:** Configuramos el direccionamiento y enrutamiento para las interfaces "eth1", "eth2" y "eth3".
-Habilitamos la opción ospf en el archivo de configuración "/etc/frr/daemons"
+#### Routing
+1. Configuramos el direccionamiento y enrutamiento para las interfaces "eth1", "eth2" y "eth3".
+2. Habilitamos la opción ospf en el archivo de configuración "/etc/frr/daemons"
 
 ```shell
 vi /etc/frr/daemons
-opsfd=yes
+	opsfd=yes
 ```
-Reiniciamos el contenedor mediante el comando:
+3. Reiniciamos el contenedor mediante el comando:
 
 ```shell
 docker restart routing_server_compose
 ```
 
-Ingresamos a la terminal VTY de FRR, mediante el comando:
+4. Ingresamos a la terminal VTY de FRR, mediante el comando:
 
 ```shell
 vtysh
 ```
 
-Verificamos las configuraciones de direccionamiento mediante el comando:
+5. Verificamos las configuraciones de direccionamiento mediante el comando:
 
 ```shell
 show interface brief
 ```
 
-Ingresar al modo privilegiado de configuraciones mediante el comando:
+6. Ingresar al modo privilegiado de configuraciones mediante el comando:
 
 ```shell
 configuration terminal
 ```
 
-Configuramos las direcciones IPv4 asociadas a cada una de las interfaces, mediante los comandos:
+7. Configuramos las direcciones IPv4 asociadas a cada una de las interfaces, mediante los comandos:
 
 ```shell
 interface eth1
@@ -95,15 +97,15 @@ no shutdown
 exit
 ```
 
-Salimos del modo privilegiado y verificamos las configuraciones de interfaz.
+8. Salimos del modo privilegiado y verificamos las configuraciones de interfaz.
 
-Guardamos las configuraciones mediante el comando:
+9. Guardamos las configuraciones mediante el comando:
 
 ```shell
 write
 ```
 
-Configurarmos el enrutamiento OSPF mediante los comandos:
+10. Configurarmos el enrutamiento OSPF mediante los comandos:
 
 ```shell
 configure terminal
@@ -116,26 +118,33 @@ exit
 exit
 ```
 
-Guardamos las configuraciones mediante el comando:
+11. Guardamos las configuraciones mediante el comando:
 
 ```shell
 write
 ```
 
-Verificamos las configuraciones de enrutamiento mediante el comando:
+12. Verificamos las configuraciones de enrutamiento mediante el comando:
 
 ```shell
 show ip route
 ```
 
 **NOTA: Los servicios de DHCP "eth1" y "eth2", despues de ejecutar el contenedor para el servicio de Routing. Esto para evitar conflicto de direccionamiento de los contenedores DHCP.**
-10. Verificar los contenedores en ejecución mediante el comando:
+### Paso 10: Listar Desplieges Docker Compose
+Verificar los despligues Docker Compose en ejecución mediante el comando:
+
+```shell
+docker compose ls
+```
+
+### Paso 11: Listar Contenedores Docker
+Verificar los contenedores en ejecución mediante el comando:
 
 ```shell
 docker ps
 ```
-
-11. Verificar los volumes de contenedores en ejecución mediante el comando:
+### Paso 12:  Verificar los volumes de contenedores en ejecución mediante el comando:
 
 ```shell
 docker volume ls
@@ -143,17 +152,27 @@ docker volume ls
 
 ## Despligue de Solución Multicontenedor RPI-II
 
-1. Como primer paso de la implementación se emplea el software WinSCP, para la transferencia de los ficheros YAML mediante conexión SSH a la placa RPI-II.
-   
-2. Crear un directorio "Docker_Compose" en la ruta "/home/pi/".
-   
-3. Colocar los ficheros YAML y dependencias en un directorio principal de Docker_Compose.
-   
-4. Iniciar conexión SSH empleando el software Putty.
-   
-5. Realizar un listado del directorio "/home/pi/Docker_Compose"
-    
-6. Ingresar al directorio "/home/pi/Docker_Compose" y ejecutar el comando para desplegar los servicios medainte Docker Compose:
+### Paso 1: Eliminar Conentenedores Previos
+Eliminar los contenedores creados mediante Docker CLI, mediante el comando.
+
+```shell
+docker rm conatiner_name
+```
+Donde:
+- **container_name:** Nombre del contenedor.
+
+### Paso 2: Abrir WinSCP
+Emplear el software WinSCP, para la transferencia de los ficheros YAML mediante conexión SSH a la placa RPI-I.
+### Paso 3: Crear un Directorio "Docker_Compose"
+Crear un directorio "Docker_Compose" en la ruta "/home/pi/".
+### Paso 4: Colocar los Ficheros YAML en el Directorio
+Colocar los ficheros YAML y dependencias en un directorio principal de Docker_Compose.
+### Paso 5: Iniciar Conexión SSH
+Iniciar conexión SSH empleando el software Putty.
+### Paso 6: Listar Directorio Docker
+Realizar un listado del directorio "/home/pi/Docker_Compose"
+### Paso 7: Desplegar Contenedores Mediante Docker Compose
+Ingresar al directorio "/home/pi/Docker_Compose" y ejecutar el comando desplegar los servicios medainte Docker Compose:
    
 ```shell
 docker compose routing_server_compose up
@@ -198,24 +217,60 @@ Reiniciamos el contenedor mediante el comando:
 docker restart routing_server_compose
 ```
 
-Ingresamos a la terminal VTY de FRR, mediante el comando:
+### Paso 8: Listar Imágenes Docker
+Verificar las imagenes creadas mediante el comando.
+
+```shell
+docker images
+```
+o
+```shell
+docker image ls
+```
+
+### Paso 9: Configurar los conentedores para VoIP y Routing.
+
+#### VoIP
+Copiamos los archivos de configuración al directorio asociado al contenedor "voip_server" (Bind Mount).
+Y reiniciamos el servicio mediante el comando:
+
+```shell
+docker restart voip_server_compose
+```
+
+#### Routing
+1. Configuramos el direccionamiento y enrutamiento para las interfaces "eth1", "eth2" y "eth3".
+2. Habilitamos la opción ospf en el archivo de configuración "/etc/frr/daemons"
+
+```shell
+vi /etc/frr/daemons
+	opsfd=yes
+```
+3. Reiniciamos el contenedor mediante el comando:
+
+```shell
+docker restart routing_server_compose
+```
+
+4. Ingresamos a la terminal VTY de FRR, mediante el comando:
 
 ```shell
 vtysh
 ```
 
-Verificamos las configuraciones de direccionamiento mediante el comando:
+5. Verificamos las configuraciones de direccionamiento mediante el comando:
 
 ```shell
 show interface brief
 ```
-Ingresar al modo privilegiado de configuraciones mediante el comando:
+
+6. Ingresar al modo privilegiado de configuraciones mediante el comando:
 
 ```shell
 configuration terminal
 ```
 
-Configuramos las direcciones IPv4 asociadas a cada una de las interfaces, mediante los comandos:
+7. Configuramos las direcciones IPv4 asociadas a cada una de las interfaces, mediante los comandos:
 
 ```shell
 interface eth1
@@ -232,15 +287,15 @@ no shutdown
 exit
 ```
 
-Salimos del modo privilegiado y verificamos las configuraciones de interfaz.
+8. Salimos del modo privilegiado y verificamos las configuraciones de interfaz.
 
-Guardamos las configuraciones mediante el comando
+9. Guardamos las configuraciones mediante el comando:
 
 ```shell
 write
 ```
 
-Configurarmos el enrutamiento OSPF mediante los comandos:
+10. Configurarmos el enrutamiento OSPF mediante los comandos:
 
 ```shell
 configure terminal
@@ -251,31 +306,34 @@ router ospf
 exit
 ```
 
-Guardamos las configuraciones mediante el comando
+1. Guardamos las configuraciones mediante el comando:
 
 ```shell
 write
 ```
 
-Verificamos las configuraciones de enrutamiento mediante el comando:
+12. Verificamos las configuraciones de enrutamiento mediante el comando:
 
 ```shell
 show ip route
 ```
 
-Mostramos las configuraciones guardadas en el archivo "zebra.conf" y "staticd.conf".
-
 **NOTA: Los servicios de DHCP "eth1" y "eth2", despues de ejecutar el contenedor para el servicio de Routing. Esto para evitar conflicto de direccionamiento de los contenedores DHCP.**
+### Paso 10: Listar Desplieges Docker Compose
+Verificar los despligues Docker Compose en ejecución mediante el comando:
 
-9. Verificar los contenedores en ejecución mediante el comando:
+```shell
+docker compose ls
+```
+
+### Paso 11: Listar Contenedores Docker
+Verificar los contenedores en ejecución mediante el comando:
 
 ```shell
 docker ps
 ```
-
-10. Verificar los volumes de contenedores en ejecución mediante el comando:
+### Paso 12:  Verificar los volumes de contenedores en ejecución mediante el comando:
 
 ```shell
 docker volume ls
 ```
-
