@@ -54,8 +54,7 @@ Y reiniciamos el servicio mediante el comando:
 docker restart voip_server_compose
 ```
 
-![Paso 9 1 - docker_compose_servicio_servicio_voip_copy_voip_files](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/cae608d2-8968-4d61-abda-eb8ffa924c25)
-
+![Paso 9 1 - docker_compose_servicio_servicio_voip_copy_voip_files](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/a09b2523-07a2-4dd1-b42c-3600724d3f65)
 
 #### Routing
 Ingresar al contenedor mediante el comando:
