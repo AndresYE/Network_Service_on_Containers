@@ -10,6 +10,9 @@ docker rm conatiner_name
 Donde:
 - **container_name:** Nombre del contenedor.
 
+![Paso 1 - rpi_I_docker_compose_docker_rm_services](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/31f19dc3-28d5-4394-9a97-cf1853c29a56)
+
+
 ### Paso 2: Abrir WinSCP
 Emplear el software WinSCP, para la transferencia de los ficheros YAML mediante conexión SSH a la placa RPI-I.
 ### Paso 3: Crear un Directorio "Docker_Compose"
@@ -26,6 +29,9 @@ Ingresar al directorio "/home/pi/Docker_Compose" y ejecutar el comando desplegar
 ```shell
 docker compose up
 ```
+
+![Paso 7 - rpi_I_docker_compose_docker_compose_up](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/c0de5903-2ba5-44ab-899f-deea0550b410)
+
 
 ### Paso 8: Listar Imágenes Docker
 Verificar las imagenes creadas mediante el comando.
@@ -47,6 +53,9 @@ Y reiniciamos el servicio mediante el comando:
 ```shell
 docker restart voip_server_compose
 ```
+
+![Paso 9 1 - docker_compose_servicio_servicio_voip_copy_voip_files](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/cae608d2-8968-4d61-abda-eb8ffa924c25)
+
 
 #### Routing
 1. Configuramos el direccionamiento y enrutamiento para las interfaces "eth1", "eth2" y "eth3".
@@ -99,6 +108,8 @@ exit
 
 8. Salimos del modo privilegiado y verificamos las configuraciones de interfaz.
 
+![Paso 9 2 8 - docker_compose_servicio_routing_direccionamiento_estatico_0](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/79abc3bf-d12a-4909-9e17-635858100286)
+
 9. Guardamos las configuraciones mediante el comando:
 
 ```shell
@@ -130,6 +141,9 @@ write
 show ip route
 ```
 
+![Paso 9 2 13 - docker_compose_servicio_routing_running_config](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/91a9405f-76ab-4bc7-97bd-e9d7cc57b369)
+
+
 **NOTA: Los servicios de DHCP "eth1" y "eth2", despues de ejecutar el contenedor para el servicio de Routing. Esto para evitar conflicto de direccionamiento de los contenedores DHCP.**
 ### Paso 10: Listar Desplieges Docker Compose
 Verificar los despligues Docker Compose en ejecución mediante el comando:
@@ -150,3 +164,4 @@ docker ps
 docker volume ls
 ```
 
+![Paso 12 - docker_compose_ls](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/faa4559c-58d9-48ef-8e2d-678eb108f3ab)
