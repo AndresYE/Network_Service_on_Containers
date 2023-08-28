@@ -1,10 +1,17 @@
 # Configuración de Interfaces Virtuales y Punto de Acceso en Raspberry Pi
 
 En este tutorial, aprenderás cómo configurar interfaces virtuales en una Raspberry Pi utilizando el archivo de configuración `/etc/network/interfaces`. Además, configuraremos `wlan0` como un punto de acceso (AP) y `eth0` como cliente DHCP.
+## Configuración de Interfaz WLAN 0
+### Paso 1: Abrir el archivo de configuración de interfaces.
+
+```shell
+sudo nano /etc/network/interfaces
+```
+### Paso 1: Abrir el archivo de configuración de interfaces.
 
 ## Configuración de Interfaces Virtuales
 
-1. Abre el archivo de configuración de interfaces:
+### Paso 1: Abre el archivo de configuración de interfaces:
 ```shell
 sudo nano /etc/network/interfaces
 ```
