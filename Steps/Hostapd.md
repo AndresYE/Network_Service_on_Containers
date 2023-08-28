@@ -1,35 +1,24 @@
 # Instalación y Configuración de Hostapd
-
-## Instalación
-
-Para instalar hostapd en Debian, sigue estos pasos:
-
-1. Abrir una terminal mediante Putty.
-2. Actualizar la lista de paquetes disponibles en los repositorios:
+## Instalación Hostap
+### Paso 1: Abrir una terminal mediante Putty.
+### Paso 2: Actualizar la lista de paquetes disponibles en los repositorios:
 
 ```shell
 sudo apt-get update
 ```
 
-3. Instalar el paquete hostapd en tu sistema:
-
-```shell
-sudo apt-get install hostapd
-```
-
-4. Verificar la instalación del paquete hostapd:
+### Paso 3: Verificar la instalación del paquete hostapd:
 
 ```shell
 service hostapd status
 ```
 
-
-
 ## Configuración de Hostap
 
-1. **Paso 1**: Abre el archivo de configuración de Hostap. Puedes encontrarlo en la ruta `/etc/hostapd/hostapd.conf`.
+### Paso 1: Abre el archivo de configuración de Hostap. Puedes encontrarlo en la ruta `/etc/hostapd/hostapd.conf`.
 
-2. **Paso 2**: Edita el archivo de configuración según tus necesidades. Aquí puedes especificar el nombre de la red (SSID), el tipo de seguridad, la contraseña, el canal, entre otras opciones. A continuación, se describe la configuración implementada.
+### Paso 2: Edita el archivo de configuración
+Aquí puedes especificar el nombre de la red (SSID), el tipo de seguridad, la contraseña, el canal, entre otras opciones. A continuación, se describe la configuración implementada.
 
 ```shell
 interface=wlan0
@@ -46,21 +35,22 @@ wpa_pairwise=CCMP
 rsn_pairwise=CCMP
 ```
 
-
-
-3. **Paso 3**: Desenmascarar servicio Hostap, para poder habilitar servicio.
+### Paso 3: Desenmascarar servicio Hostap
+Desenmascarar servicio Hostap, para poder habilitar servicio.
 
 ```shell
 sudo systemctl unmask hostapd
 ```
 
-4. **Paso 4**: Reinicia el servicio de Hostapd para aplicar los cambios realizados en la configuración. Puedes hacerlo ejecutando el siguiente comando en la terminal:
+### Paso 4: Reinicia el servicio de Hostapd 
+ Reinicia el servicio de Hostapd  para aplicar los cambios realizados en la configuración. Puedes hacerlo ejecutando el siguiente comando en la terminal:
 
 ```shell
 sudo service hostapd restart
 ```
 
-5. **Paso 5**: Hbailitamos el servicio para que se ejecute al inicio de la sesión del host.
+### Paso 5: Habilitar el servicio Hostapd 
+Habilitar el servicio para que se ejecute al inicio de la sesión del host.
    
 ```shell
 sudo service hostapd enable 
