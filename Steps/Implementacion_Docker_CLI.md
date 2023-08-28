@@ -82,7 +82,7 @@ o
 docker image ls
 ```
 
-![Paso 8 - docker_cli_docker_images](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/d97259cf-953a-44b1-bae9-c69906ea6133)
+![Paso 8 - docker_cli_docker_images](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/57500b9c-7c8d-4a4f-be3b-c0210260628b)
 
 
 ## Desplegar Conenedores Docker
