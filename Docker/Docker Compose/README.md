@@ -1,5 +1,7 @@
-## Implementación Docker Compose
+# Características de Servicios y Contenedores
 A continuación se muestra una tabla con los servicios, las etiquetas de imagen, los nombres de contenedor y los nombres de los volúmenes con nombre correspondientes para la implemetación mediante Docker Compose para RPI I y RPI II:
+## Implementación Docker Compose para RPI I
+
 | Servicio   | Nombre de etiqueta de imagen  | Nombre de contenedor        | Nombre de volumen                              |
 |------------|------------------------------|-----------------------------|-------------------------------------------------|
 | DHCP I     | andresye/dhcpd               | dhcp_server_wlan0_compose   | dhcp_wlan0_leasess_volumen_compose <br> dhcp_wlan0_logs_volumen_compose       |
@@ -11,7 +13,7 @@ A continuación se muestra una tabla con los servicios, las etiquetas de imagen,
 | VoIP       | christoofar/asterisk         | voip_server_compose         | voip_logs_volumen_compose                       |
 | Routing    | frrouting/frr:v7.5.1         | routing_server_compose      | routing_config_volumen_compose                  |
 
-
+## Implementación Docker Compose para RPI II
 | Servicio | Nombre de etiqueta de imagen | Nombre de contenedor | Nombre de volumen              |
 |----------|------------------------------|---------------------|---------------------------------------|
 | DHCP I   | andresye/dhcpd               | dhcp_server_eth1_compose    | dhcp_eth1_leasess_volumen <br>dhcp_eth1_logs_volumen_compose        |
