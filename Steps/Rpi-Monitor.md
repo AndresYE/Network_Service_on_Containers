@@ -1,8 +1,6 @@
 # Instalación y Configuración de RPi-Monitor en Raspberry Pi
 
-## Pasos de instalación
-
-Sigue estos pasos para instalar RPi-Monitor en tu Raspberry Pi:
+## Instalación
 
 #### Paso 1: Preparación de la Raspberry Pi
 Actualizar la lista de paquetes disponibles en los repositorios:
@@ -20,14 +18,24 @@ sudo wget http://goo.gl/vewCLL -O /etc/apt/sources.list.d/rpimonitor.list
 sudo apt-get update
 sudo apt-get install -y rpimonitor
 ```
-
+## Configuración
 #### Paso 3: Configuración de RPi-Monitor
-Editar el archivo de configuración de RPi-Monitor:
+Editar el archivo de configuración de RPi-Monitor, para configurar:
+- Delay: Retardo entre KPIs.
+- TimeOut: Tiempo de espera en segundos.
+- Default Interval: Intervalo de muestreo en segundos.
+- Dirección IPv4 de escucha de peticiones.
 
 ```shell
 sudo nano /etc/rpimonitor/daemon.conf
 ```
-Ajustar las configuraciones según tus necesidades.
+
+```shell
+daemon.delay=1
+daemon.timeout=2
+daemon.defaultinterval=0.1
+daemon.addr=192.168.0.7
+```
 
 #### Paso 4: Reinicia el servicio
 Reiniciar el servicio de RPi-Monitor para aplicar la configuración:
