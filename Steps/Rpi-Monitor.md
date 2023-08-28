@@ -25,6 +25,7 @@ Editar el archivo de configuración de RPi-Monitor, para configurar:
 - TimeOut: Tiempo de espera en segundos.
 - Default Interval: Intervalo de muestreo en segundos.
 - Dirección IPv4 de escucha de peticiones.
+- Puerto de Escucha.
 
 ```shell
 sudo nano /etc/rpimonitor/daemon.conf
@@ -35,13 +36,20 @@ daemon.delay=1
 daemon.timeout=2
 daemon.defaultinterval=0.1
 daemon.addr=192.168.0.7
+daemon.port=8888
 ```
+#### Paso 4: Agregar Complementos de Monitoreo
+Configurar el archivo "data.conf", para configurar los archivos de configuración de monitoreo adicionales.
+```shell
+sudo nano /etc/rpimonitor/data.conf
+```
+Agregamos los archivos de configuración para el monitoreo de CPU, Memoria, Temperatura, UPtime y service. Además agregar archivos personalizados para las interfaces "eth1", "eth2" y "eth3", basadas en las configuraciones de "eth0" y "wlna0", que tambíen se agregan.
 
-#### Paso 4: Reinicia el servicio
+#### Paso 5: Reinicia el servicio
 Reiniciar el servicio de RPi-Monitor para aplicar la configuración:
 
 ```shell
-sudo service rpimonitor restart
+sudo systemctl restart rpimonitor 
 ```
-#### Paso 5: Accede al panel web de RPi-Monitor
-Abrir un navegador web y accede a la dirección IP de tu Raspberry Pi seguida del puerto 8888. Por ejemplo, http://<tu_direccion_ip>:8888. Deberías ver el panel de control de RPi-Monitor.
+#### Paso 5: Acceder al panel web de RPi-Monitor
+Abrir un navegador web y accede a la dirección IP de tu Raspberry Pi seguida del puerto 8888. Por ejemplo, http://monitor.tic2023.com:8888. 
