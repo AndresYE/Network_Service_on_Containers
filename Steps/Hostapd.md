@@ -13,6 +13,9 @@ sudo apt-get update
 service hostapd status
 ```
 
+![Paso 3 - rpi_1_preconfiguracion_hostapd_instalacion_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/0e52074d-0577-4978-b985-d87c32640961)
+
+
 ## Configuración de Hostap
 
 ### Paso 1: Abrir el archivo de configuración de Hostap. 
@@ -36,6 +39,9 @@ wpa_pairwise=CCMP
 rsn_pairwise=CCMP
 ```
 
+![Paso 2 - rpi_1_preconfiguracion_hostapd_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/642869e5-c08a-4130-a058-240a3f06aa33)
+
+
 ### Paso 3: Desenmascarar servicio Hostap
 Desenmascarar servicio Hostap, para poder habilitar servicio.
 
@@ -56,5 +62,8 @@ Habilitar el servicio para que se ejecute al inicio de la sesión del host.
 ```shell
 sudo service hostapd enable 
 ```
+
+![Paso 4 - rpi_1_preconfiguracion_hostapd_configuracion_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/3647e61b-0ad0-45e1-979d-daacad4d9853)
+
 
 **NOTA: El servicio de HOSTAPD se activara correctamente una vez se haya configurado la dirección IP a la interfaz asociada.**
