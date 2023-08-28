@@ -18,6 +18,12 @@ sudo wget http://goo.gl/vewCLL -O /etc/apt/sources.list.d/rpimonitor.list
 sudo apt-get update
 sudo apt-get install -y rpimonitor
 ```
+
+![preconfiguracion_rpimonitor_instalacion_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/dab019af-5d93-4344-95fb-f4fe5575eb6a)
+
+![preconfiguracion_rpimonitor_instalacion_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/fc5dd350-13c4-4491-b089-8fb14a0792fe)
+
+
 ## Configuración
 #### Paso 3: Configuración de RPi-Monitor
 Editar el archivo de configuración de RPi-Monitor, para configurar:
@@ -52,4 +58,4 @@ Reiniciar el servicio de RPi-Monitor para aplicar la configuración:
 sudo systemctl restart rpimonitor 
 ```
 #### Paso 5: Acceder al panel web de RPi-Monitor
-Abrir un navegador web y accede a la dirección IP de tu Raspberry Pi seguida del puerto 8888. Por ejemplo, http://monitor.tic2023.com:8888. 
+Abrir un navegador web y accede a la dirección IP de tu Raspberry Pi seguida del puerto 8888. Por ejemplo, "http://192.158.0.7:8888". 
