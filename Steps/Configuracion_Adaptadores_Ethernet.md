@@ -13,9 +13,14 @@ Obtén la dirección MAC del adaptador USB-Ethernet. Ejecuta el siguiente comand
 ```shell
 ifcofing -a
 ```
+### RPI-I
 ![rpi_I_preconfiguracion_usbadapter_informacion_interfaces_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/cfd5ced6-7b2f-4449-86d8-b3422bba40a6)
 
 ![rpi_I_preconfiguracion_usbadapter_informacion_interfaces_2](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/ebb5cff3-3e77-46fe-aa1b-20138e78cd76)
+
+### RPI-II
+
+![rpi_II_preconfiguracion_informacion_interfaces_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/440df320-a5b6-44e6-a665-001f0ce2a6dc)
 
 
 ## Paso 3: Configurar Archivo
@@ -29,8 +34,13 @@ Donde:
 - `INTERFACE_NAME`: Nombre que deseas asignar a la interfaz.
 
 Guarda el archivo y ciérralo.
-
+### RPI-I
 ![rpi_I_preconfiguracion_usbadapter_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/c8e9e726-c4df-496d-91c4-2d76d28a82ab)
+
+### RPI-II
+
+![rpi_II_preconfiguracion_usbadapter_configuration_1](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/097e2184-7415-48a0-ac43-2c771441ffed)
+
 
 ## Paso 4: Aplicar Configuraciones
 
