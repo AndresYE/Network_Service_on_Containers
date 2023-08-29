@@ -2,9 +2,9 @@
 
 En este repositorio se proporciona instrucciones detalladas sobre cómo configurar y utilizar este entorno, junto con una descripción general de los componentes principales y sus interacciones.
 El siguiente Repositorio se encuentra distribuido de la siguiente manera:
-1. **[Archivos Docker]()**
-2. **[Pasos de Implementación]()**
-3. **[Resultados]()**
+1. **[Archivos Docker](./tree/main/Docker)**
+2. **[Pasos de Implementación](./tree/main/Steps)**
+3. **[Resultados](./tree/main/Resultados)**
 4. **[Archivos de Configuración](./tree/main/Files)**
 
 ## Recursos adicionales
