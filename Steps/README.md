@@ -7,16 +7,16 @@ En el presente apartado se describe el procedimiento para la implementación de 
 - Como primer paso se instalará el sistema operativo Raspberry OS en la placa de desarrollo Raspberry Pi 4B, en base a los pasos descritos en [Raspberry Pi Documentation](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system). La configuración se realizará para un sistema operativo basado en Debian 11 Bullseye arquitectura ARM de 32bits sin interfaz gráfica "RASPBERRY PI OS LITE (32-BIT)". Además, se configurará la red Wifi local y SSH, para realizar las configuraciones de manera remota. El procedimiento realizado se muestra en [Instalación de Raspberry OS](https://github.com/AndresYE/Network_Service_on_Containers/blob/main/Steps/Instalacion_Raspberry_Pi_OS.md)
 
 ## **Instalación Docker y Docker Compose:** 
-- Como segundo paso se instala el paquete de software Docker y sus herramientas asociadas, como Docker Compose. Para lo cual, se toma en cuenta la arquitectura y distribución de Raspberry OS dentro de la página de "Plataformas Soportadas" de Docker en [Docker Installation](https://docs.docker.com/engine/install/). Luego, se procede a la instalación de Docker para la distribución Debian 11 Bullseye descrita en [Docker Installation for Debian](https://docs.docker.com/engine/install/debian/). Posterior a ello, se instala el complemento para el despliegue multicontenedor sobre Docker Compose, como se describe en [Docker Compose Installation](https://docs.docker.com/compose/install/linux/). El procedimiento realizado se muestra en [Instalación de Docker para Debian](https://github.com/AndresYE/Network_Service_on_Containers/blob/main/Steps/Instalacion_Docker.md).
+- Como segundo paso se instala el paquete de software Docker y sus herramientas asociadas, como Docker Compose. Para lo cual, se toma en cuenta la arquitectura y distribución de Raspberry OS dentro de la página de "Plataformas Soportadas" de Docker en [Instalación Docker](https://docs.docker.com/engine/install/). Luego, se procede a la instalación de Docker para la distribución Debian 11 Bullseye descrita en [Docker Instalación Docker para Debian](https://docs.docker.com/engine/install/debian/). Posterior a ello, se instala el complemento para el despliegue multicontenedor sobre Docker Compose, como se describe en [Instalación Docker Compose](https://docs.docker.com/compose/install/linux/). El procedimiento realizado se muestra en [Instalación de Docker para Debian](https://github.com/AndresYE/Network_Service_on_Containers/blob/main/Steps/Instalacion_Docker.md).
 
 ## **Configuración de Interfaces de Red y Direccionamiento:**
-- **Adaptadores USB-Ethernet:** Para agregar las interfaces de red (adaptadores USB-Ehternet) a la placa Raspberry Pi y asociar las interfaces  a un nombre especifico de interfaz mediante la MAC, se emplea la solución descrita en [Asociación de Nombre de Interfaz de red a adaptador USB-Ethernet](https://unix.stackexchange.com/questions/388300/udev-does-not-rename-usb-ethernet-device). Donde se describe la configuración mediante el fichero del sistema: "/etc/udev/rules.d/99-com.rules". El procedimiento realizado se muestra en [Configuración de Adaptadores Ethernet](https://github.com/AndresYE/Network_Service_on_Containers/blob/main/Steps/Configuracion_Adaptadores_Ethernet.md), donde se adjunta los archivos de configuración para las dos placas Rasperry Pi.
+- **Adaptadores USB-Ethernet:** Para agregar las interfaces de red (adaptadores USB-Ethernet) a la placa Raspberry Pi y asociar las interfaces  a un nombre especifico de interfaz mediante la MAC, se emplea la solución descrita en [Asociación de Nombre de Interfaz de red a adaptador USB-Ethernet](https://unix.stackexchange.com/questions/388300/udev-does-not-rename-usb-ethernet-device). Donde se describe la configuración mediante el fichero del sistema: "/etc/udev/rules.d/99-com.rules". El procedimiento realizado se muestra en [Configuración de Adaptadores Ethernet](https://github.com/AndresYE/Network_Service_on_Containers/blob/main/Steps/Configuracion_Adaptadores_Ethernet.md), donde se adjunta los archivos de configuración para las dos placas Raspberry Pi.
 
-- **Interfaces de Red Virtuales:** Para implementar interfaces virtuales se configuran mediante "alias" de la interfaz "wlan0", mediante el fichero "/etc/network/interfaces", de acuerdo a la solucion presentada en [Interfaces Virtuales](https://forums.raspberrypi.com/viewtopic.php?t=154471).
+- **Interfaces de Red Virtuales:** Para implementar interfaces virtuales se configuran mediante "alias" de la interfaz "wlan0", mediante el fichero "/etc/network/interfaces", de acuerdo a la solución presentada en [Interfaces Virtuales](https://forums.raspberrypi.com/viewtopic.php?t=154471).
 
-**NOTA:  Esta configuración aplica unicamente para la placa Raspberry Pi RPI-I, donde se realiza el despligue de los servicios contenerizados.**
+**NOTA:  Esta configuración aplica unicamente para la placa Raspberry Pi RPI-I, donde se realiza el despliegue de los servicios contenerizados.**
 
-- **Direccionamiento:** El direccionamiento empleado sera de tipo estático y dinámico, el cual se configura mediante el fichero "/etc/network/interfaces". Las direcciones IP estáticas, que son asociadas a las interfaces virtuales previamentes configuradas, son las que se emplean para los servicios contenerizados. Por otro lado, el direccionamiento IP dinámico empleado para conectarse a la red local, se emplea para la configuración del equipo.
+- **Direccionamiento:** El direccionamiento empleado será de tipo estático y dinámico, el cual se configura mediante el fichero "/etc/network/interfaces". Las direcciones IP estáticas, que son asociadas a las interfaces virtuales previamente configuradas, son las que se emplean para los servicios contenerizados. Por otro lado, el direccionamiento IP dinámico empleado para conectarse a la red local, se emplea para la configuración del equipo.
 El direccionamiento IPv4 para la placa Raspberry Pi RPI I se presenta en la siguiente tabla:
 
 | Servicios de Red                | Interfaz | Dirección IPv4/Máscara |
@@ -44,7 +44,7 @@ El procedimiento realizado para la placa RPI-I  y para la placa RPI-I se muestra
 
 ## **Instalación y Configuración de Servicios asociados:** 
 ### **HOSTAPD**
-- Instalación y configuración del driver de red Hostap para configurar un Access point en la placa Raspberry Pi. Para ello, se debe instalar el paquete de instalación Hostap siguiendo parte de la guía dada en [Hostap Installation](https://raspberrypi-guide.github.io/networking/create-wireless-access-point). Para la configuración se emplearán las especificaciones en la tabla descrita a continuación:
+- Instalación y configuración del driver de red Hostap para configurar un Access point en la placa Raspberry Pi. Para ello, se debe instalar el paquete de instalación Hostap siguiendo parte de la guía dada en [Instalación Hostap](https://raspberrypi-guide.github.io/networking/create-wireless-access-point). Para la configuración se emplearán las especificaciones en la tabla descrita a continuación:
 
 | Parámetro                                    | Descripción        |
 |----------------------------------------------|--------------------|
@@ -60,13 +60,13 @@ El procedimiento realizado para la placa RPI-I  y para la placa RPI-I se muestra
 | Cifrado entre access point y dispositivos    | CCMP               |
 | Cifrado entre dispositivos                   | CCMP               |
 
-El procedimiento realizado se muestra en [Intalación y Configuración de Hostap](https://github.com/AndresYE/Network_Service_on_Containers/blob/main/Steps/Hostapd.md).
+El procedimiento realizado se muestra en [Instalación y Configuración de Hostap](https://github.com/AndresYE/Network_Service_on_Containers/blob/main/Steps/Hostapd.md).
 
 ## **Instalación y Configuración de software de Monitoreo**
 ### **HTOP**
-- Instalación y configuración del software de monitoreo para sistemas Linux HTOP. Para ello, se debe instalar el paquete de instalación Hostap siguiendo la guía dada en [Installation HTOP](). El procedimiento realizado se muestra en [Intalación y Configuración de HTOP](https://github.com/AndresYE/Network_Service_on_Containers/blob/main/Steps/HTOP.md).
+- Instalación y configuración del software de monitoreo para sistemas Linux HTOP. Para ello, se debe instalar el paquete de instalación Hostap siguiendo la guía dada en [Instalación HTOP](). El procedimiento realizado se muestra en [Instalación y Configuración de HTOP](https://github.com/AndresYE/Network_Service_on_Containers/blob/main/Steps/HTOP.md).
 ### **RPI-MONITOR**
-- Instalación y configuración del software de monitoreo de placas Raspberry Pi RPI-MONITOR. Para ello, se debe instalar el paquete de instalación Rpi-Monitor siguiendo la guía dada en [Installation RPI-MONITOR Oficial](https://xavierberger.github.io/RPi-Monitor-docs/11_installation.html) o en la guia [Installation RPI-MONITOR](https://rivas.cloud/2022/11/20/instalar-rpi-monitor-en-nuestra-raspberry/). El procedimiento realizado se muestra en [Intalación y Configuración de RPI-MONITOR](https://github.com/AndresYE/Network_Service_on_Containers/blob/main/Steps/Rpi-Monitor.md).
+- Instalación y configuración del software de monitoreo de placas Raspberry Pi RPI-MONITOR. Para ello, se debe instalar el paquete de instalación Rpi-Monitor siguiendo la guía dada en [Instalación RPI-MONITOR Oficial](https://xavierberger.github.io/RPi-Monitor-docs/11_installation.html) o en la guía [Instalación RPI-MONITOR](https://rivas.cloud/2022/11/20/instalar-rpi-monitor-en-nuestra-raspberry/). El procedimiento realizado se muestra en [Instalación y Configuración de RPI-MONITOR](https://github.com/AndresYE/Network_Service_on_Containers/blob/main/Steps/Rpi-Monitor.md).
 
 ## **Servicios interferentes:** 
 - Configuración y detención de servicios asociados a los servicios contenerizados que pueden generar interferencia, como son: DHCPCD, DNSMASQ y HTTPD. Esto se lo realiza para evitar interferencia de los servicios contenerizados con los servicios del host. Para ello, se emplea  los comandos de la tabla a continuación, para detener, deshabilitar y verificar cada uno de los servicios interferentes. En la tabla que se muestra a continuación, se describen algunos de los comandos se emplean para este proceso.
@@ -81,7 +81,7 @@ El procedimiento realizado se muestra en [Intalación y Configuración de Hostap
 
 El Procedimientos realizado se describen en [Configuración de Servicios Interferentes](https://github.com/AndresYE/Network_Service_on_Containers/blob/main/Steps/Configuracion_Servicios_Interferentes.md). 
 
-**NOTA: Una vez desactivado el servicio DHCPCD se perdera la conexión obtenida de la red local conecta mediante Wlan y cualquier conexión que proporcione direccionamiento mediante DHCP, por lo que se debe configurar previamente la interfaz "eth0" en el archivo "/etc/network/interfaces" para perder el acceso al dispositivo.**
+**NOTA: Una vez desactivado el servicio DHCPCD se perderá la conexión obtenida de la red local conecta mediante Wlan y cualquier conexión que proporcione direccionamiento mediante DHCP, por lo que se debe configurar previamente la interfaz "eth0" en el archivo "/etc/network/interfaces" para perder el acceso al dispositivo.**
 
 # Implementación Individual
 
@@ -90,7 +90,7 @@ La topología para la implementación Individual se muestra en la siguiente figu
 ![Prototipo_I](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/15c8e671-6d8f-49fc-9e2c-8c5e85983492)
 
 
-Para esta primera fase, se implementa cada uno de los servicios de red de manera individual mediante el diseño de un fichero Dockerfile y el depligue usando Docker CLI. Los archivos Dockerfile y los comandos para cada uno de los servicios se encuentran entran en el siguiente apartado [Ficheros Dockerfile](https://github.com/AndresYE/Network_Service_on_Containers/tree/main/Docker/Docker%20CLI).
+Para esta primera fase, se implementa cada uno de los servicios de red de manera individual mediante el diseño de un fichero Dockerfile y el depliegue usando Docker CLI. Los archivos Dockerfile y los comandos para cada uno de los servicios se encuentran entran en el siguiente apartado [Ficheros Dockerfile](https://github.com/AndresYE/Network_Service_on_Containers/tree/main/Docker/Docker%20CLI).
 
 # Implementación Conjunta mediante Docker CLI
 
@@ -105,9 +105,9 @@ El procedimiento realizado se muestra en [Implementación Docker CLI](https://gi
 Una vez realizada la implementación y antes de realizar las pruebas de funcionamiento, se debe iniciar la captura de Wireshark en cada uno de los clientes. Esto para monitorear el tráfico de red capturado durante todo el proceso de las pruebas:
 
 1. Ejecutar Wireshark en cada uno de los clientes.
-Captura de trádico de servicios contenerizados mediante la herramienta Wireshark.
+Captura de tráfico de servicios contenerizados mediante la herramienta Wireshark.
 2. Seleccionar la interfaz de captura de tráfico conectadas a las interfaces del servidor "eth1", "eth2" y "wlan0" respectivas.
-3. Conectar el equipo del cliente mediante un cable Ethernet de 1metro de longitud, a cada uno de los puertos que estan dispustos para el servicio DHCP, dispuestos en la Topología I estos son: "eth1" y "eth2"
+3. Conectar el equipo del cliente mediante un cable Ethernet de 1metro de longitud, a cada uno de los puertos que están dispuestos para el servicio DHCP, dispuestos en la Topología I estos son: "eth1" y "eth2"
 4. Conectar el equipo del cliente mediante conexión WiFi al Access Point configurado en el equipo RPI-I, tomando en cuenta el SSID de la red configurados y la contraseña de acceso a la red. Este procedimiento se lo realiza a 1 metro de  distancia entre el cliente y el equipo host RPI-I.
 
 **NOTA: Una vez finalizada las pruebas de funcionamiento, finalizar la captura del tráfico.**
@@ -201,8 +201,8 @@ Obtener una página web del servidor Nginx contenerizado, a través de la aplica
   - **Contraseña:** TIC2023
   - **Tipo de Trasporte:** UDP
   
-6. Verificar la conexión de la extension al servidor Voip.
-7. Realizar una llamada entre la la extensión del cliente 1 "2001" a la extensión del cliente 2 "2002".
+6. Verificar la conexión de la extensión al servidor Voip.
+7. Realizar una llamada entre la extensión del cliente 1 "2001" a la extensión del cliente 2 "2002".
 8. Terminar la llamada
 9. Realizar una llamada entre la la extensión del cliente 2 "2002" a la extensión del cliente 1 "2001".
 10. Terminar la llamada
@@ -213,7 +213,7 @@ Obtener una página web del servidor Nginx contenerizado, a través de la aplica
 ## Pruebas de Rendimiento
 
 ### Análisis de tráfico
-1. Filtrar la información de red obtenida por cada uno de los clientes, mediante el servicio relacionado. Esto se realiza mediante la opcion de "filter" de Wireshark, se emplea los siguientes comandos de filtrado para obtener información de cada uno de los servicios DHCP, DNS, FTP y HTTP.
+1. Filtrar la información de red obtenida por cada uno de los clientes, mediante el servicio relacionado. Esto se realiza mediante la opción de "filter" de Wireshark, se emplea los siguientes comandos de filtrado para obtener información de cada uno de los servicios DHCP, DNS, FTP y HTTP.
 
 | Servicio    | Instrucción de filtrado                     | Descripción                                       |
 |-------------|---------------------------------------------|---------------------------------------------------|
@@ -245,14 +245,14 @@ dns.qry.name == "2.0.168.192.in-addr.arpa" || dns.qry.name == "3.0.168.192.in-ad
 - **Retardos**: El tiempo de retardo experimentado durante la transmisión de audio.
 - **Jitter**: La variabilidad en el retardo de la transmisión.
 
-### Analisis de uso de recursos:
+### Análisis de uso de recursos:
 
 Obtener datos de uso de recursos de CPU, memoria, tráfico y almacenamiento, mediante las herramientas de monitoreo de recursos Htop, docker stats y RPI-Monitor.
-1. Conectar via SSH al cliente 3 (monitor) con el servidor RPI-I, mediante 2 terminales a través de la aplicación "Putty".
-2. Logearse como super usuario "sudo".
+1. Conectar vía SSH al cliente 3 (monitor) con el servidor RPI-I, mediante 2 terminales a través de la aplicación "Putty".
+2. Iniciar sesión como super usuario "sudo".
 3. Ejecutar las aplicaciones "HTOP" y "docker stats"
    
-**NOTA: El análisis mediante HTOP y Docker Stats debe ser permanente para obtener los datos de los servicios al momento de ejcutarse las pruebas. Esto debido a que los datos obtenidos en las pruebas no pueden ser exportados.**
+**NOTA: El análisis mediante HTOP y Docker Stats debe ser permanente para obtener los datos de los servicios al momento de ejecutarse las pruebas. Esto debido a que los datos obtenidos en las pruebas no pueden ser exportados.**
 
 #### HTOP
   
@@ -300,7 +300,7 @@ La topología para implementación Conjunta mediante Docker Compose se muestra e
 ![topologia_II](https://github.com/AndresYE/Network_Service_on_Containers/assets/113482367/6bc74fe0-dc4f-45a3-baff-5da842ec05ea)
 
 
-Para esta fase, se implementan los servicios de red mediante el diseño de un fichero "YAML" y ejecutados mediante Docker Compose para cada una de las dos placas Raspberry Pi. Los ficheros se encuentran en el apartado de [Docker Compose]() para la placa Raspberry Pi I [Archivo YAML RAPI I]() y para la placa Raspberry Pi II[Archivo YAML RAPI II](), junto con los archivos asociados para el despligue. 
+Para esta fase, se implementan los servicios de red mediante el diseño de un fichero "YAML" y ejecutados mediante Docker Compose para cada una de las dos placas Raspberry Pi. Los ficheros se encuentran en el apartado de [Docker Compose]() para la placa Raspberry Pi I [Archivo YAML RAPI I]() y para la placa Raspberry Pi II[Archivo YAML RAPI II](), junto con los archivos asociados para el despliegue. 
 El procedimiento realizado para la placa RPI-I y RPI-II se muestra en [Implementación Conjunta Docker Compose RPI-I](https://github.com/AndresYE/Network_Service_on_Containers/blob/main/Steps/Implementacion_Docker_Compose_RPI_I.md) y [Implementación Conjunta Docker Compose RPI-II](https://github.com/AndresYE/Network_Service_on_Containers/blob/main/Steps/Implementacion_Docker_Compose_RPI_II.md) respectivamente.
 
 ## Pruebas de Funcionamiento
@@ -308,9 +308,9 @@ El procedimiento realizado para la placa RPI-I y RPI-II se muestra en [Implement
 Una vez realizada la implementación y antes de realizar las pruebas de funcionamiento, se debe iniciar la captura de Wireshark en cada uno de los clientes. Esto para monitorear el tráfico de red capturado durante todo el proceso de las pruebas:
 
 1. Ejecutar Wireshark en cada uno de los clientes.
-Captura de trádico de servicios contenerizados mediante la herramienta Wireshark.
+Captura de tráfico de servicios contenerizados mediante la herramienta Wireshark.
 2. Seleccionar la interfaz de captura de tráfico conectadas a las interfaces del servidor "eth1", "eth2" y "wlan0" respectivas.
-3. Conectar el equipo del cliente mediante un cable Ethernet de 1 metro de longitud, a cada uno de los puertos que estan dispustos para el servicio DHCP, dispuestos en la Topología I estos son: "eth1" y "eth2"
+3. Conectar el equipo del cliente mediante un cable Ethernet de 1 metro de longitud, a cada uno de los puertos que están dispuestos para el servicio DHCP, dispuestos en la Topología I estos son: "eth1" y "eth2"
 4. Conectar las placas RPI-I y RPI-II mediante el cable Ethernet de 2 metros de longitud, entre los puerto "eth3".  
 
 Para las pruebas de funcionamiento se emplea los mismos procedimientos que en la prueba anterior. Sin embargo, para las pruebas de conexión se agrega una prueba de extremo a extremo entre el cliente 1 y el cliente 2. También se realiza el trazado de la ruta entre clientes. Por otro lado, para las pruebas de enrutamiento se revisa las tablas de enrutamiento generadas por los contenedores de Routing.
