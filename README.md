@@ -1,11 +1,11 @@
-## Network Service on Containers
+           ## Network Service on Containers
 
 En este repositorio se proporciona instrucciones detalladas sobre cómo configurar y utilizar este entorno, junto con una descripción general de los componentes principales y sus interacciones.
 El siguiente Repositorio se encuentra distribuido de la siguiente manera:
-1. **[Archivos Docker](./tree/main/Docker)**
-2. **[Pasos de Implementación](./tree/main/Steps)**
-3. **[Resultados](./tree/main/Resultados)**
-4. **[Archivos de Configuración](./tree/main/Files)**
+1. **[Archivos Docker](./ Docker)**
+2. **[Pasos de Implementación](./Steps)**
+3. **[Resultados](./Resultados)**
+4. **[Archivos de Configuración](./Files)**
 
 ## Recursos adicionales
 
