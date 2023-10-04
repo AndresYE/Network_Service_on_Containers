@@ -1,0 +1,38 @@
+[Aug 10 20:54:42] Asterisk 16.8.0 built by root @ buildkitsandbox on a armv7l running Linux on 2020-02-17 21:08:40 UTC
+[Aug 10 20:54:42] NOTICE[10] loader.c: 292 modules will be loaded.
+[Aug 10 20:54:42] NOTICE[10] cdr.c: CDR logging disabled.
+[Aug 10 20:54:42] WARNING[10] res_phoneprov.c: Unable to find a valid server address or name.
+[Aug 10 20:54:42] NOTICE[10] res_smdi.c: No SMDI interfaces are available to listen on, not starting SMDI listener.
+[Aug 10 20:54:42] WARNING[10] sip/config_parser.c: nat=yes is deprecated, use nat=force_rport,comedia instead
+[Aug 10 20:54:42] NOTICE[10] chan_sip.c: The 'username' field for sip peers has been deprecated in favor of the term 'defaultuser'
+[Aug 10 20:54:42] NOTICE[10] chan_skinny.c: Configuring skinny from skinny.conf
+[Aug 10 20:54:42] ERROR[10] ari/config.c: No configured users for ARI
+[Aug 10 20:54:42] NOTICE[10] confbridge/conf_config_parser.c: Adding default_menu menu to app_confbridge
+[Aug 10 20:54:43] WARNING[10] loader.c: Some non-required modules failed to load.
+[Aug 10 20:54:43] ERROR[10] loader.c: res_pjsip_transport_websocket declined to load.
+[Aug 10 20:59:20] Asterisk 16.8.0 built by root @ buildkitsandbox on a armv7l running Linux on 2020-02-17 21:08:40 UTC
+[Aug 10 20:59:20] NOTICE[10] loader.c: 292 modules will be loaded.
+[Aug 10 20:59:20] NOTICE[10] cdr.c: CDR simple logging enabled.
+[Aug 10 20:59:20] WARNING[10] res_phoneprov.c: Unable to find a valid server address or name.
+[Aug 10 20:59:20] NOTICE[10] res_smdi.c: No SMDI interfaces are available to listen on, not starting SMDI listener.
+[Aug 10 20:59:20] WARNING[10] sip/config_parser.c: nat=yes is deprecated, use nat=force_rport,comedia instead
+[Aug 10 20:59:20] NOTICE[10] chan_sip.c: The 'username' field for sip peers has been deprecated in favor of the term 'defaultuser'
+[Aug 10 20:59:20] NOTICE[10] chan_skinny.c: Configuring skinny from skinny.conf
+[Aug 10 20:59:20] ERROR[10] ari/config.c: No configured users for ARI
+[Aug 10 20:59:20] NOTICE[10] confbridge/conf_config_parser.c: Adding default_menu menu to app_confbridge
+[Aug 10 20:59:21] WARNING[10] loader.c: Some non-required modules failed to load.
+[Aug 10 20:59:21] ERROR[10] loader.c: res_pjsip_transport_websocket declined to load.
+[Aug 10 21:00:51] Asterisk 16.8.0 built by root @ buildkitsandbox on a armv7l running Linux on 2020-02-17 21:08:40 UTC
+[Aug 10 21:00:51] NOTICE[10] loader.c: 292 modules will be loaded.
+[Aug 10 21:00:52] NOTICE[10] cdr.c: CDR simple logging enabled.
+[Aug 10 21:00:53] WARNING[10] res_phoneprov.c: Unable to find a valid server address or name.
+[Aug 10 21:00:53] NOTICE[10] res_smdi.c: No SMDI interfaces are available to listen on, not starting SMDI listener.
+[Aug 10 21:00:53] WARNING[10] sip/config_parser.c: nat=yes is deprecated, use nat=force_rport,comedia instead
+[Aug 10 21:00:53] NOTICE[10] chan_sip.c: The 'username' field for sip peers has been deprecated in favor of the term 'defaultuser'
+[Aug 10 21:00:53] NOTICE[10] chan_skinny.c: Configuring skinny from skinny.conf
+[Aug 10 21:00:53] ERROR[10] ari/config.c: No configured users for ARI
+[Aug 10 21:00:53] NOTICE[10] confbridge/conf_config_parser.c: Adding default_menu menu to app_confbridge
+[Aug 10 21:00:53] WARNING[10] loader.c: Some non-required modules failed to load.
+[Aug 10 21:00:53] ERROR[10] loader.c: res_pjsip_transport_websocket declined to load.
+[Aug 11 03:05:55] NOTICE[50] chan_sip.c: Peer '2001' is now Reachable. (102ms / 2000ms)
+[Aug 11 03:07:40] NOTICE[50] chan_sip.c: Peer '2002' is now Reachable. (30ms / 2000ms)
